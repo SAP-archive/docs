@@ -1,0 +1,47 @@
+<!-- Nav -->
+<nav id="nav">
+  <ul>
+    <h2>{{ site.data.start_builder.title }}</h2>
+    {% for item in site.data.start_builder.sections %}
+      <li>
+        <span>{{ item.title }}</span>
+      </li>
+    {% endfor %}
+
+    <hr/>
+
+    <h2>{{ site.data.start_nlp.title }}</h2>
+    {% for item in site.data.start_nlp.sections %}
+      <li>
+        <span>{{ item.title }}</span>
+      </li>
+    {% endfor %}
+
+    <hr/>
+
+    <h2>{{ site.data.nlp_lexic.title }}</h2>
+    {% for item in site.data.nlp_lexic.sections %}
+      <li>
+        <span>{{ item.title }}</span>
+      </li>
+    {% endfor %}
+
+    <hr/>
+
+    <h2>{{ site.data.bot_builder.title }}</h2>
+    {% for item in site.data.bot_builder.sections %}
+      <li>
+        <span>{{ item.title }}</span>
+      </li>
+    {% endfor %}
+
+    <hr/>
+
+    <h2>{{ site.data.bot_connector.title }}</h2>
+    {% for item in site.data.bot_connector.sections %}
+      <li>
+        <span>{{ item.title }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
