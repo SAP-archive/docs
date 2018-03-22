@@ -1,7 +1,5 @@
 ---
-layout: page
+layout: concept
 title: Concepts
 permalink: /concepts/
 ---
-
-{% include nav.html %}
