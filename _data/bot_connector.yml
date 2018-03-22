@@ -1,0 +1,14 @@
+title: Bot Connector
+sections:
+
+- title: Channel
+  url: bot_connector/channel.md
+
+- title: Hello World
+  url: bot_connector/hello_world.md
+
+- title: Receive messagges
+  url: bot_connector/receive_messages.md
+
+- title: Send rich messages
+  url: bot_connector/send_messages.md

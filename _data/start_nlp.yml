@@ -1,0 +1,11 @@
+title: Start with the NLP API
+sections:
+
+- title: Create your bot
+  url: start_nlp/create_bot.md
+
+- title: Train your bot
+  url: start_nlp/train_bot.md
+
+- title: Text analysis API
+  url: start_nlp/text_analysis.md

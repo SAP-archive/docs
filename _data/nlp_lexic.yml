@@ -1,0 +1,20 @@
+title: NLP Lexic
+sections:
+
+- title: Intent
+  url: nlp_lexic/intent.md
+
+- title: Expression
+  url: nlp_lexic/expression.md
+
+- title: Suggestion
+  url: nlp_lexic/suggestion.md
+
+- title: Entity
+  url: nlp_lexic/entity.md
+
+- title: Gazette
+  url: nlp_lexic/gazette.md
+
+- title: Language
+  url: nlp_lexic/language.md
