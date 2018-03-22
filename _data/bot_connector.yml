@@ -2,13 +2,13 @@ title: Bot Connector
 sections:
 
 - title: Channel
-  url: bot_connector/channel.md
+  url: /concepts/channel
 
 - title: Hello World
-  url: bot_connector/hello_world.md
+  url: /concepts/hello-world
 
 - title: Receive messagges
-  url: bot_connector/receive_messages.md
+  url: /concepts/receive-messages
 
 - title: Send rich messages
-  url: bot_connector/send_messages.md
+  url: /concepts/structured-messages
