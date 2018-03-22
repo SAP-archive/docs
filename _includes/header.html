@@ -1,15 +1,21 @@
-<header class="site-header" role="banner">
-  <div class="wrapper">
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+<style type="text/css" media="screen">
+  .header {
+    padding: 0 1rem;
 
-    <a class="site-title" rel="author" href="{{ "/concepts" | relative_url }}">Recast.AI Concepts</a>
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+</style>
 
-    <a class="site-title" rel="author" href="{{ "/tutorials" | relative_url }}">Tutorials</a>
+<header class="header" role="banner">
+  <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
-    <a class="site-title" rel="author" href="{{ "/api-reference" | relative_url }}">API Reference</a>
+  <a class="site-title" rel="author" href="{{ "/concepts" | relative_url }}">Recast.AI Concepts</a>
 
-    <a class="site-title" rel="author" href="{{ "/faq" | relative_url }}">FAQ</a>
+  <a class="site-title" rel="author" href="{{ "/tutorials" | relative_url }}">Tutorials</a>
 
-    <span>Recherche somewhere here</span>
-  </div>
+  <a class="site-title" rel="author" href="{{ "/api-reference" | relative_url }}">API Reference</a>
+
+  <a class="site-title" rel="author" href="{{ "/faq" | relative_url }}">FAQ</a>
 </header>
