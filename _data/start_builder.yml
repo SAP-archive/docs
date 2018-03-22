@@ -2,10 +2,10 @@ title: Start with Bot Builder
 sections:
 
 - title: Create your bot
-  url: start_builder/create_bot.md
+  url: /concepts/create-builder-bot
 
 - title: Build your conversation
-  url: start_builder/start_conversation.md
+  url: /concepts/build-your-conversation
 
 - title: Connect your bot
-  url: start_builder/connect_bot.md
+  url: /concepts/connect-your-bot

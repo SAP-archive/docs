@@ -4,8 +4,9 @@
     <h2>{{ site.data.start_builder.title }}</h2>
     {% for item in site.data.start_builder.sections %}
       <li>
-        <span>{{ item.title }}</span>
-        <span>{{ item.url }}</span>
+        <a href="{{ site.baseurl }}{{ item.url }}">
+          <span>{{ item.title }}</span>
+        </a>
       </li>
     {% endfor %}
 
@@ -14,7 +15,9 @@
     <h2>{{ site.data.start_nlp.title }}</h2>
     {% for item in site.data.start_nlp.sections %}
       <li>
-        <span>{{ item.title }}</span>
+        <a href="{{ site.baseurl }}{{ item.url }}">
+          <span>{{ item.title }}</span>
+        </a>
       </li>
     {% endfor %}
 
@@ -23,7 +26,9 @@
     <h2>{{ site.data.nlp_lexic.title }}</h2>
     {% for item in site.data.nlp_lexic.sections %}
       <li>
-        <span>{{ item.title }}</span>
+        <a href="{{ site.baseurl }}{{ item.url }}">
+          <span>{{ item.title }}</span>
+        </a>
       </li>
     {% endfor %}
 
@@ -32,7 +37,9 @@
     <h2>{{ site.data.bot_builder.title }}</h2>
     {% for item in site.data.bot_builder.sections %}
       <li>
-        <span>{{ item.title }}</span>
+        <a href="{{ site.baseurl }}{{ item.url }}">
+          <span>{{ item.title }}</span>
+        </a>
       </li>
     {% endfor %}
 
@@ -41,7 +48,9 @@
     <h2>{{ site.data.bot_connector.title }}</h2>
     {% for item in site.data.bot_connector.sections %}
       <li>
-        <span>{{ item.title }}</span>
+        <a href="{{ site.baseurl }}{{ item.url }}">
+          <span>{{ item.title }}</span>
+        </a>
       </li>
     {% endfor %}
   </ul>
