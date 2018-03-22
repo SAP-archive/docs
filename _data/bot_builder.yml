@@ -2,22 +2,22 @@ title: Bot Builder
 sections:
 
 - title: What is a skill?
-  url: bot_builder/what_skill.md
+  url: /concepts/what-skill
 
 - title: Condition
-  url: bot_builder/condition.md
+  url: /concepts/condition
 
 - title: Trigger
-  url: bot_builder/trigger.md
+  url: /concepts/trigger
 
 - title: Requirement
-  url: bot_builder/requirement.md
+  url: /concepts/requirement
 
 - title: Action
-  url: bot_builder/action.md
+  url: /concepts/action
 
 - title: Conversation State
-  url: bot_builder/conversation_state.md
+  url: /concepts/conversation-state
 
 - title: Code & Webhook
-  url: bot_builder/code_webhook.md
+  url: /concepts/code-and-webhook
