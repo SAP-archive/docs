@@ -2,10 +2,10 @@ title: Start with the NLP API
 sections:
 
 - title: Create your bot
-  url: start_nlp/create_bot.md
+  url: /concepts/create-nlp-bot
 
 - title: Train your bot
-  url: start_nlp/train_bot.md
+  url: /concepts/train-your-bot
 
 - title: Text analysis API
-  url: start_nlp/text_analysis.md
+  url: /concepts/text-analysis-nlp
