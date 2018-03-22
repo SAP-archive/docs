@@ -2,8 +2,16 @@
 layout: default
 ---
 
-{% include nav.html %}
+<style type="text/css" media="screen">
+  .concept-container {
+    display: flex;
+  }
+</style>
 
-<div>
-  {{ page.content | markdownify }}
+<div class="concept-container">
+  {% include nav.html %}
+
+  <div>
+    {{ page.content | markdownify }}
+  </div>
 </div>

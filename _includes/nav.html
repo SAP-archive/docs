@@ -1,57 +1,64 @@
 <!-- Nav -->
-<nav id="nav">
-  <ul>
-    <h2>{{ site.data.start_builder.title }}</h2>
-    {% for item in site.data.start_builder.sections %}
-      <li>
-        <a href="{{ site.baseurl }}{{ item.url }}">
-          <span>{{ item.title }}</span>
-        </a>
-      </li>
-    {% endfor %}
+<style type="text/css" media="screen">
+  .nav {
+    flex-shrink: 0;
+  }
 
-    <hr/>
+  .nav-header {
+    padding-top: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
-    <h2>{{ site.data.start_nlp.title }}</h2>
-    {% for item in site.data.start_nlp.sections %}
-      <li>
-        <a href="{{ site.baseurl }}{{ item.url }}">
-          <span>{{ item.title }}</span>
-        </a>
-      </li>
-    {% endfor %}
+  .nav-link > a {
+    color: inherit;
+    text-decoration: none;
+  }
+</style>
 
-    <hr/>
+<nav class="nav">
+  <h3 class="nav-header">{{ site.data.start_builder.title }}</h3>
+  {% for item in site.data.start_builder.sections %}
+    <div class="nav-link">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+    </div>
+  {% endfor %}
 
-    <h2>{{ site.data.nlp_lexic.title }}</h2>
-    {% for item in site.data.nlp_lexic.sections %}
-      <li>
-        <a href="{{ site.baseurl }}{{ item.url }}">
-          <span>{{ item.title }}</span>
-        </a>
-      </li>
-    {% endfor %}
+  <h3 class="nav-header">{{ site.data.start_nlp.title }}</h3>
+  {% for item in site.data.start_nlp.sections %}
+    <div class="nav-link">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+    </div>
+  {% endfor %}
 
-    <hr/>
+  <h3 class="nav-header">{{ site.data.nlp_lexic.title }}</h3>
+  {% for item in site.data.nlp_lexic.sections %}
+    <div class="nav-link">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+    </div>
+  {% endfor %}
 
-    <h2>{{ site.data.bot_builder.title }}</h2>
-    {% for item in site.data.bot_builder.sections %}
-      <li>
-        <a href="{{ site.baseurl }}{{ item.url }}">
-          <span>{{ item.title }}</span>
-        </a>
-      </li>
-    {% endfor %}
+  <h3 class="nav-header">{{ site.data.bot_builder.title }}</h3>
+  {% for item in site.data.bot_builder.sections %}
+    <div class="nav-link">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+    </div>
+  {% endfor %}
 
-    <hr/>
-
-    <h2>{{ site.data.bot_connector.title }}</h2>
-    {% for item in site.data.bot_connector.sections %}
-      <li>
-        <a href="{{ site.baseurl }}{{ item.url }}">
-          <span>{{ item.title }}</span>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+  <h3 class="nav-header">{{ site.data.bot_connector.title }}</h3>
+  {% for item in site.data.bot_connector.sections %}
+    <div class="nav-link">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+    </div>
+  {% endfor %}
 </nav>
