@@ -4,8 +4,6 @@ title: Connect your bot
 permalink: /concepts/connect-your-bot
 ---
 
-# Connect your bot
-
 How does it work? You will be able to connect your bot to multiple channels with our tool named **Bot Connector**.
 Bot Connector takes care of receiving all messages and transfers it to your bot in a uniform way.
 

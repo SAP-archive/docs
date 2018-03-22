@@ -4,8 +4,6 @@ title: Create your bot
 permalink: /concepts/create-builder-bot
 ---
 
-# Create your bot
-
 ## Start with a template
 
 To create a new bot, login and click on the link **+ NEW BOT** in the header section.
