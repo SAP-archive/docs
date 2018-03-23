@@ -43,7 +43,7 @@
 
   border-bottom: 3px solid transparent;
   
-  &.active {
+  &.active, &:hover {
     border-bottom: 3px solid white;
   }
 }
