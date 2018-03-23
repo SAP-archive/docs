@@ -1,0 +1,25 @@
+body {
+  background-color: white;
+  color: $grey-700;
+
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+
+  line-height: 1.5;
+}
+
+a {
+  color: $blue-500;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 1064px;
+  min-width: 320px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}

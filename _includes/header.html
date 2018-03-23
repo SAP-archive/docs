@@ -1,21 +1,18 @@
-<style type="text/css" media="screen">
-  .header {
-    padding: 0 1rem;
+<header class="Header" role="banner">
+  <a class="Header-logo" href="{{ "/" | relative_url }}">
+    <img
+      alt="Recast.AI logo"
+      class="Header-logo-image"
+      src="https://cdn.recast.ai/website/logo/recast-ai-logo-inline.svg"
+    />
+    <p class="Header-logo-text">DOCS</p>
+  </a>
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-</style>
+  <a class="Header-link" href="{{ "/concepts" | relative_url }}">Recast.AI Concepts</a>
 
-<header class="header" role="banner">
-  <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+  <a class="Header-link" href="{{ "/tutorials" | relative_url }}">Tutorials</a>
 
-  <a class="site-title" rel="author" href="{{ "/concepts" | relative_url }}">Recast.AI Concepts</a>
+  <a class="Header-link" href="{{ "/api-reference" | relative_url }}">API Reference</a>
 
-  <a class="site-title" rel="author" href="{{ "/tutorials" | relative_url }}">Tutorials</a>
-
-  <a class="site-title" rel="author" href="{{ "/api-reference" | relative_url }}">API Reference</a>
-
-  <a class="site-title" rel="author" href="{{ "/faq" | relative_url }}">FAQ</a>
+  <a class="Header-link" href="{{ "/faq" | relative_url }}">FAQ</a>
 </header>
