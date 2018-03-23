@@ -1,3 +1,5 @@
+{% assign current = page.url | remove_first: "/" | split: '/' | first %}
+
 <header class="Header" role="banner">
   <a class="Header-logo" href="{{ "/" | relative_url }}">
     <img
@@ -8,11 +10,11 @@
     <p class="Header-logo-text">DOCS</p>
   </a>
 
-  <a class="Header-link" href="{{ "/concepts" | relative_url }}">Recast.AI Concepts</a>
+  <a class="Header-link {% if current == 'concepts' %}active{% endif %}" href="{{ "/concepts" | relative_url }}">Recast.AI Concepts</a>
 
-  <a class="Header-link" href="{{ "/tutorials" | relative_url }}">Tutorials</a>
+  <a class="Header-link {% if current == 'tutorials' %}active{% endif %}" href="{{ "/tutorials" | relative_url }}">Tutorials</a>
 
-  <a class="Header-link" href="{{ "/api-reference" | relative_url }}">API Reference</a>
+  <a class="Header-link {% if current == 'api-reference' %}active{% endif %}" href="{{ "/api-reference" | relative_url }}">API Reference</a>
 
-  <a class="Header-link" href="{{ "/faq" | relative_url }}">FAQ</a>
+  <a class="Header-link {% if current == 'faq' %}active{% endif %}" href="{{ "/faq" | relative_url }}">FAQ</a>
 </header>
