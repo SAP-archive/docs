@@ -1,0 +1,64 @@
+.Concept {
+  display: flex;
+
+  .Concept-content {
+    padding: 0 1rem;
+
+    h1 {
+      padding: 1rem 0;
+      font-size: 32px;
+      font-weight: 400;
+    }
+
+    h2 {
+      font-size: 24px;
+      padding: 0.5rem 0;
+    }
+
+    h3 {
+      font-size: 20px;
+      padding: 0.3rem 0;
+    }
+
+    strong { font-weight: bold; }
+    em { font-style: italic; }
+
+    p {
+      padding: 0.3rem 0;
+    }
+
+    img {
+      margin: 0.5rem 0;
+      border-radius: 3px;
+      box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      li { line-height: 1.5rem; }
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+
+      thead > tr {
+        border-bottom: 1px solid $grey-300;
+        th { text-align: left; }
+      }
+
+      tbody {
+        tr {
+          border-bottom: 1px solid $grey-300;
+          td {
+            font-size: 13px;
+            line-height: 20px;
+            padding: 1rem;
+          }
+        }
+      }
+    }
+
+  }
+}
