@@ -5,19 +5,23 @@
   background-color: $grey-50;
 
   .Nav-header {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
   }
 
+  .Nav-link {
+    padding-top: 0.3rem;
+  }
+
   .Nav-link > a {
-    color: inherit;
+    color: $grey-700;
     text-decoration: none;
   }
 
   .Nav-title {
-    padding: 1rem 0;
-    font-weight: bold;
+    padding-top: 1rem;
     font-size: 14px;
+    font-weight: bold;
   }
 }
