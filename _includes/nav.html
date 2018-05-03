@@ -4,6 +4,7 @@
     flex-shrink: 0;
     background-color: lightgrey;
     padding: 0 2rem;
+    width: 300px;
   }
 
   .nav-header {
@@ -16,9 +17,19 @@
     color: inherit;
     text-decoration: none;
   }
+
+  .nav-title {
+    padding: 1rem 0;
+    font-weight: bold;
+    font-size: 14px;
+  }
 </style>
 
 <nav class="nav">
+  <h3 class='nav-title'>
+    DOCUMENTATION FOR THE SAP CONVERSATION AI PLATFORM
+  </h3>
+
   <h3 class="nav-header">{{ site.data.start_builder.title }}</h3>
   {% for item in site.data.start_builder.sections %}
     <div class="nav-link">
