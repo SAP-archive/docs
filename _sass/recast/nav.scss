@@ -1,0 +1,23 @@
+.Nav {
+  padding: 0 2rem;
+  width: 300px;
+  flex-shrink: 0;
+  background-color: $grey-50;
+
+  .Nav-header {
+    padding-top: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .Nav-link > a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .Nav-title {
+    padding: 1rem 0;
+    font-weight: bold;
+    font-size: 14px;
+  }
+}
