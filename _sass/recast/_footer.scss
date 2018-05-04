@@ -1,0 +1,31 @@
+.Footer {
+
+  .Footer-top {
+    display: flex;
+    justify-content: space-around;
+    background-color: $grey-100;
+    padding: 1rem 0 2rem 0;
+  }
+
+  .Footer-top-title {
+    font-weight: bold;
+    padding: 2rem 0 1rem 0;
+  }
+
+  .Footer-top-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Footer-top-link {
+    text-decoration: none;
+    padding: 0.15rem 0;
+    color: $grey-500;
+  }
+
+  .Footer-bottom {
+    padding: 2rem;
+    background-color: $grey-200;
+  }
+
+}

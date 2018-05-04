@@ -1,0 +1,54 @@
+<footer class="Footer">
+  <div class="Footer-top">
+    <div>
+      <p class="Footer-top-title">{{ site.data.footer.sections[0].title }}</p>
+      <div class="Footer-top-content">
+        {% for item in site.data.footer.sections[0].sections %}
+          <a class="Footer-top-link" href="{{ site.baseurl}}{{ item.url }}">
+            {{ item.title }}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div>
+      <p class="Footer-top-title">{{ site.data.footer.sections[1].title }}</p>
+      <div class="Footer-top-content">
+        {% for item in site.data.footer.sections[1].sections %}
+          <a class="Footer-top-link" href="{{ site.baseurl}}{{ item.url }}">
+            {{ item.title }}
+          </a>
+        {% endfor %}
+      </div>
+
+      <p class="Footer-top-title">{{ site.data.footer.sections[2].title }}</p>
+      <div class="Footer-top-content">
+        {% for item in site.data.footer.sections[2].sections %}
+          <a class="Footer-top-link" href="{{ site.baseurl}}{{ item.url }}">
+            {{ item.title }}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div>
+      <p class="Footer-top-title">{{ site.data.footer.sections[3].title }}</p>
+      <div class="Footer-top-content">
+        {% for item in site.data.footer.sections[3].sections %}
+          <a class="Footer-top-link" href="{{ site.baseurl}}{{ item.url }}">
+            {{ item.title }}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="Footer-bottom">
+    <div>
+      Privacy policy - terms
+    </div>
+
+    <div>
+    </div>
+  </div>
+</footer>
