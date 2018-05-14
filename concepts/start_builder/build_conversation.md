@@ -12,6 +12,7 @@ The grey section on the left is your command pannel. It allows you to create new
 Hover one of your skills, and click on it to edit it.
 You arrive on a new page, the page of your skill, containing a README. The README.md is the ideal place to explain what your skill does, what APIs it calls (if any), and even linking a git repository if your skill requires code.
 
+
 ## Triggers
 
 
