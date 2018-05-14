@@ -24,8 +24,36 @@
   }
 
   .Footer-bottom {
+    display: flex;
+    justify-content: space-around;
     padding: 2rem;
     background-color: $grey-200;
+  }
+
+  .Footer-bottom-logos {
+    display: flex;
+  }
+
+  .Footer-bottom-social {
+    padding: 0 0.4rem;
+    color: $grey-600;
+    text-decoration: none;
+    &:hover {
+      color: $grey-800;
+    }
+  }
+
+  .Footer-bottom-link {
+    padding: 0 0.2rem;
+    color: $grey-600;
+    text-decoration: none;
+    &:hover {
+      color: $grey-800;
+    }
+  }
+
+  .Footer-copyright {
+    padding-left: 1.3rem;
   }
 
 }
