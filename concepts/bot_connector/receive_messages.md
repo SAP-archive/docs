@@ -10,7 +10,7 @@ When you receive messages from Bot Connector, the body of the request contains v
 
 Your bot will receive the message in the same format, no matter what channel it comes from. Here's the content of the message:
 
-~~~ javascript
+~~~ json
 {
   chatId: 'XXXXXX'
   senderId: 'XXXXXXX',

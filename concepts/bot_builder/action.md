@@ -51,7 +51,7 @@ For webhooks (HTTP actions) you can either provide a full url, or simply a route
 
 When your url is called, you receive the complete state of conversation:
 
-~~~ javascript
+~~~ json
 {
   "conversation": {
     "id": "A_CONVERSATION_ID",

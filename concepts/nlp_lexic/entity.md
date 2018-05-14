@@ -17,7 +17,7 @@ To bring you a precise service with true added value, we enrich each and every o
 ### Example
 When \`tomorrow\` is detected in a sentence, a formatted version of the datetime that you can use as a reply is returned.
 
-~~~ javascript
+~~~ json
 {
   "formatted": "Thursday, 06 October 2017 at 09:00:00 AM",
   "iso": "2016-10-06T09:00:00Z",

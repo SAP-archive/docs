@@ -22,7 +22,7 @@ You will receive a POST HTTP request on this route, with all the conversation st
 Then you can perform any calculation, database checks or external API calls and send back data to Bot Builder.
 The body format is the following:
 
-~~~ javascript
+~~~ json
 {
   "conversation": {
     "id": "A_CONVERSATION_ID",

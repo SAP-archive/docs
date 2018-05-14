@@ -19,7 +19,7 @@ In the following payloads, buttons can either be:
 
 ![Bot Connector - Messenger text format](https://cdn.recast.ai/website/bot-connector/recast-ai-bc-text.svg)
 
-~~~ javascript
+~~~ json
 {
   type: 'text',
   content: 'MY_TEXT',
@@ -30,7 +30,7 @@ In the following payloads, buttons can either be:
 
 ![Bot Connector - Messenger Quick Replies format](https://cdn.recast.ai/website/bot-connector/recast-ai-bc-quickReplies.svg)
 
-~~~ javascript
+~~~ json
 {
   type: 'quickReplies',
   content: {
@@ -49,7 +49,7 @@ In the following payloads, buttons can either be:
 
 ![Bot Connector - Messenger Card format](https://cdn.recast.ai/website/bot-connector/recast-ai-bc-cards.svg)
 
-~~~ javascript
+~~~ json
 {
   type: 'card',
   content: {
@@ -71,7 +71,7 @@ In the following payloads, buttons can either be:
 
 ![Bot Connector - Messenger Buttons format](https://cdn.recast.ai/website/bot-connector/recast-ai-bc-buttons.svg)
 
-~~~ javascript
+~~~ json
 {
   type: 'buttons',
   content: {
@@ -91,7 +91,7 @@ In the following payloads, buttons can either be:
 
 ![Bot Connector - Messenger Carousel format](https://cdn.recast.ai/website/bot-connector/recast-ai-bc-carousel-01.svg)
 
-~~~ javascript
+~~~ json
 {
   type: 'carousel',
   content: [
@@ -114,7 +114,7 @@ In the following payloads, buttons can either be:
 
 ![Bot Connector - Messenger List format](https://cdn.recast.ai/website/bot-connector/recast-ai-bc-list.svg)
 
-~~~ javascript
+~~~ json
 {
   type: 'list',
   content: {
@@ -147,7 +147,7 @@ In the following payloads, buttons can either be:
 
 ![Bot Connector - Messenger Picture format](https://cdn.recast.ai/website/bot-connector/recast-ai-bc-image.svg)
 
-~~~ javascript
+~~~ json
 {
   type: 'picture',
   content: 'IMAGE_URL',
@@ -158,7 +158,7 @@ In the following payloads, buttons can either be:
 
 ![Bot Connector - Messenger Video format](https://cdn.recast.ai/website/bot-connector/recast-ai-bc-video.svg)
 
-~~~ javascript
+~~~ json
 {
   type: 'video',
   content: 'VIDEO_URL',

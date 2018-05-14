@@ -4,8 +4,6 @@ title: Hello World
 permalink: /concepts/hello-world
 ---
 
-# Hello world
-
 Each time a message is posted on one of the channels your bot is connected to, it receives a POST request on the endpoint you've set on the platform.
 To reply, you need to make a post request with your bot's **Request Token** available in your bot settings.
 In this example, we use SDKs to make it simpler. :)

@@ -13,7 +13,7 @@ The conversation state is the state of your bot's conversation with the user. It
 - **skill_occurences**: the number of consecutive messages handled by the current skill. This is set to 0 when the skill is done (actions are executed).
 - **participant_data**: an object containing the user information gathered from the channel your bot is connected to (Messenger, Slack,...).
 
-~~~ javascript
+~~~ json
  {
     "id": "A_CONVERSATION_ID",
     "language": "en",
