@@ -9,299 +9,163 @@ This comparison grid provides a comprehensive view of features supported across 
 
 If a channel doesn't natively support a rich format, Bot Connector will handle it and rewrite the content to have a readable message everywhere.
 
-<table className="mb3" style={{ width: '100%' }}>
-  <thead>
+<table class="mb3" style="width: 100%;">
+    <thead>
     <tr>
-      <th width="25%" />
-      {supportedChannels.map(el => (
-        <th key={el.type} width="50px" style={{ textAlign: 'center' }}>
-          {el.logoProps ? (
-            <i {...el.logoProps} />
-          ) : (
-            <img
-              className="custom mx-auto mb1"
-              src={el.type === 'microsoft' ? el.logo[0] : el.logo}
-              width="30px"
-              alt=""
-            />
-          )}
+        <th width="25%"></th>
+        <th width="50px" style="text-align: center;"><i class="ion-ios-chatbubbles c-amber-500"
+                                                        style="font-size: 30px; width: 40px; margin: 0px 0.5rem;"></i>
         </th>
-      ))}
+        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
+                                                          src="https://www.recast.ai/assets/images/integrations/callr.png" width="30px"
+                                                          alt=""></th>
+        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
+                                                          src="https://www.recast.ai/assets/images/integrations/cisco.svg" width="30px"
+                                                          alt=""></th>
+        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
+                                                          src="https://www.recast.ai/assets/images/integrations/kik.svg" width="30px" alt="">
+        </th>
+        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
+                                                          src="https://www.recast.ai/assets/images/integrations/line.svg" width="30px"
+                                                          alt=""></th>
+        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
+                                                          src="https://www.recast.ai/assets/images/integrations/messenger.svg" width="30px"
+                                                          alt=""></th>
+        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
+                                                          src="https://www.recast.ai/assets/images/integrations/skype.svg" width="30px"
+                                                          alt=""></th>
+        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
+                                                          src="https://www.recast.ai/assets/images/integrations/slack.svg" width="30px"
+                                                          alt=""></th>
+        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
+                                                          src="https://www.recast.ai/assets/images/integrations/sapjam.png" width="30px"
+                                                          alt=""></th>
+        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
+                                                          src="https://www.recast.ai/assets/images/integrations/telegram.svg" width="30px"
+                                                          alt=""></th>
+        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
+                                                          src="https://www.recast.ai/assets/images/integrations/twilio.svg" width="30px"
+                                                          alt=""></th>
+        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
+                                                          src="https://www.recast.ai/assets/images/integrations/twitch.svg" width="30px"
+                                                          alt=""></th>
+        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
+                                                          src="https://www.recast.ai/assets/images/integrations/twitter.svg" width="30px"
+                                                          alt=""></th>
     </tr>
-  </thead>
-  <tbody>
+    </thead>
+    <tbody>
     <tr>
-      <td>Text</td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-    </tr>
-    <tr>
-      <td>Image/Gif</td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled " />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
+        <td>Text</td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
-      <td>Card</td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
+        <td>Image/Gif</td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle "></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
-      <td>Carousel</td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
+        <td>Card</td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
     </tr>
     <tr>
-      <td>Buttons</td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
+        <td>Carousel</td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
     </tr>
     <tr>
-      <td>Quick Replies</td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
+        <td>Buttons</td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
     </tr>
     <tr>
-      <td>List</td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-blue-500 ion-checkmark-circled" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
-      <td className="center">
-        <i className="c-grey-400 ion-close" />
-      </td>
+        <td>Quick Replies</td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
-  </tbody>
+    <tr>
+        <td>List</td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+    </tr>
+    </tbody>
 </table>
