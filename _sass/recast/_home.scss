@@ -33,4 +33,67 @@
       }
     }
   }
+
+  &-content {
+    .title {
+      font-size: 48px;
+      font-weight: 500;
+    }
+
+    .cardContent {
+
+      .card {
+        width: 485px;
+        height: 190px;
+        box-shadow: 0 20px 50px 0 $amber-50;
+
+        &-title {
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        &-description {
+
+        }
+
+        &-goTo {
+          color: $blue-500;
+          font-weight: 500;
+
+          .icon {
+            height: 32px;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  .slack, .contact {
+
+    &-logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    &-title {
+      display: flex;
+      flex-flow: column-reverse;
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    &-description {
+
+    }
+  }
+
+  .slack-content {
+    max-width: 450px;
+  }
+
+  .contact-content {
+    max-width: 330px;
+    margin-top: 12px;
+  }
 }

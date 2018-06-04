@@ -1,0 +1,399 @@
+.btn {
+  height: auto;
+  cursor: pointer;
+  display: inline-flex;
+
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 1em;
+  padding: 14px 20px;
+  border: 0;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  color: inherit;
+  background-color: transparent;
+  user-select: none;
+  pointer-events: auto;
+
+  &.no-padding {
+    padding: 0 !important;
+  }
+
+  &.glued-right {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &.glued-left {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+    border-color: rgba(0, 0, 0, 0.15);
+  }
+  &:disabled,
+  &.isDisabled,
+  &.isLoading {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &.isLoading {
+    .btn--content {
+      opacity: 0;
+    }
+  }
+
+  .btn--content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  position: relative;
+  .loader-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .loop i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.btn-primary {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  color: #fff;
+  fill: #fff;
+  background-color: $blue-500;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.16);
+  border: 1px solid transparent;
+
+  &:not(:disabled, .isDisabled, .isLoading) {
+    &:hover,
+    &:focus {
+      border-color: rgba(0, 0, 0, 0.1);
+    }
+    &:active {
+      background-color: $blue-900;
+    }
+  }
+  &:disabled,
+  &.isLoading,
+  &.isDisabled {
+    opacity: 0.5;
+    box-shadow: none;
+  }
+}
+
+.btn-action {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  color: #fff;
+  fill: #fff;
+  background-color: $amber-600;
+  border-radius: 3px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.16);
+  border: 1px solid transparent;
+
+  &:not(:disabled, .isDisabled, .isLoading) {
+    &:hover,
+    &:focus {
+      border-color: rgba(0, 0, 0, 0.1);
+    }
+    &:active {
+      background-color: $amber-600;
+    }
+  }
+  &:disabled,
+  &.isLoading,
+  &.isDisabled {
+    opacity: 0.5;
+    box-shadow: none;
+  }
+}
+
+.btn-secondary {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  border: 1px solid transparent;
+
+  &.no-border {
+    border: none !important;
+  }
+  &.danger {
+    color: $red-500;
+    fill: $red-500;
+    border: 1px solid $red-500;
+  }
+  &.success {
+    color: $blue-500;
+    fill: $blue-500;
+    border: 1px solid $blue-500;
+  }
+  &.upload {
+    color: $grey-700;
+    fill: $grey-700;
+    border: 1px solid $grey-700;
+  }
+  &:not(:disabled, .isDisabled, .isLoading) {
+    &:hover,
+    &:active,
+    &:focus {
+      outline: none;
+      text-decoration: none;
+      box-shadow: none;
+      background-color: rgba(0, 0, 0, 0.01);
+      &.success {
+        border-color: $blue-900;
+        color: $blue-900;
+      }
+      &.danger {
+        border-color: $red-900;
+        color: $red-900;
+      }
+      &.upload {
+        border-color: $grey-900;
+        color: $grey-900;
+      }
+    }
+    &:active,
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+  }
+
+  &:disabled,
+  &.isLoading,
+  &.isDisabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+i.blink {
+  animation: btnBlinker 1.5s linear infinite;
+}
+
+.btn-icon {
+  padding: 0.5rem;
+  text-align: center;
+  color: $grey-500;
+  fill: $grey-500;
+
+  &:not(:disabled, .isDisabled, .isLoading, .disabled) {
+    &:hover,
+    &:active,
+    &:focus,
+    &.active {
+      color: $blue-500;
+    }
+  }
+
+  &:disabled,
+  &.isDisabled {
+    color: $grey-400;
+    cursor: default;
+  }
+}
+
+.btn-little {
+  @extend .btn;
+  @extend .btn-secondary;
+
+  padding: 8px;
+  font-size: 10px;
+}
+
+.btn-filter {
+  min-width: 40px;
+  text-align: center;
+  padding: 8px 12px;
+
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: $grey-400;
+  fill: $grey-400;
+  border-radius: 30px;
+  border: 1px solid $grey-300;
+  transition: border-color 0.05s ease-out;
+
+  &:not(:disabled, .isDisabled, .isLoading) {
+    &:hover,
+    &:active,
+    &:focus,
+    &.active {
+      outline: none;
+      text-decoration: none;
+      box-shadow: none;
+      border-color: $blue-500;
+      color: $blue-500;
+    }
+  }
+}
+
+.square {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  .btn--content {
+    width: 100%;
+  }
+  i {
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    width: 18px;
+  }
+}
+
+.btn-link {
+  cursor: pointer;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $blue-500;
+  }
+}
+
+.btn-label {
+  border-radius: 30px;
+  color: white;
+  background-color: $teal-500;
+  font-size: 12px;
+  padding: 5px 10px;
+  transition: background-color 0.05s ease-out;
+  &:hover,
+  &:active,
+  &:focus {
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    box-shadow: none;
+    color: $grey-50;
+    background-color: $teal-900;
+  }
+}
+
+.btn--silent {
+  outline: none;
+  text-decoration: none;
+  box-shadow: none;
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+    box-shadow: none;
+    border-color: transparent;
+  }
+}
+
+.link--silent {
+  outline: none;
+  text-decoration: none;
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+    border-color: transparent;
+  }
+}
+
+/*
+Link
+
+Your standard button suitable for clicking .btn
+
+.link-secondary    - :
+
+Markup:
+<a class='{{modifier_class}}'>click me</a>
+
+
+Styleguide Button.2
+ */
+.link-secondary {
+  outline: none;
+  text-decoration: none;
+
+  cursor: pointer;
+  font-size: 14px;
+  color: $grey-600;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $grey-800;
+    outline: none;
+    text-decoration: none;
+    border-color: transparent;
+  }
+}
+
+@keyframes btnBlinker {
+  0% {
+    color: $red-900;
+  }
+  50% {
+    color: $grey-500;
+  }
+  100% {
+    color: $red-900;
+  }
+}
+
+.card-button {
+  @extend .mt1;
+  @extend .border;
+  @extend .rounded;
+
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &.isDisabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  &.active {
+    border-color: $blue-500;
+    color: $blue-500;
+  }
+
+  &:not(.isDisabled) {
+    cursor: pointer;
+  }
+
+  &:not(:last-child) {
+    @extend .mr2;
+  }
+}
