@@ -7,118 +7,73 @@ permalink: /concepts/language
 ## Definition
 We currently support all languages, with different levels of functionality: the **basic**, the **standard** and the **advanced** level.
 
-<table className="mb3">
-<thead>
-  <tr>
-    <th width="25%" />
-    <th>Basic</th>
-    <th width="30%">Standard</th>
-    <th>Advanced</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Languages</td>
-    <td>All languages</td>
-    <td>
-      {standardLanguages.map(value => (
-        <span
-          key={value}
-          className={`flag-icon flag-icon-${getCountryFromLanguage(value)} m1`}
-        />
-      ))}
-    </td>
-    <td>
-      {templateArray.map(el => (
-        <span key={el} className={`flag-icon flag-icon-${getCountryFromLanguage(el)} m1`} />
-      ))}
-    </td>
-  </tr>
-  <tr>
-    <td>Intent Classification</td>
-    <td>
-      <i className="c-blue-500 ion-checkmark-circled" />
-    </td>
-    <td>
-      <i className="c-blue-500 ion-checkmark-circled" />
-    </td>
-    <td>
-      <i className="c-blue-500 ion-checkmark-circled" />
-    </td>
-  </tr>
-  <tr>
-    <td>Custom entities</td>
-    <td>
-      <i className="c-blue-500 ion-checkmark-circled" />
-    </td>
-    <td>
-      <i className="c-blue-500 ion-checkmark-circled" />
-    </td>
-    <td>
-      <i className="c-blue-500 ion-checkmark-circled" />
-    </td>
-  </tr>
-  <tr>
-    <td>Gold entities</td>
-    <td>
-      <i className="c-grey-400 ion-close" />
-    </td>
-    <td>
-      <i className="c-grey-400 ion-close" />
-    </td>
-    <td>
-      <i className="c-blue-500 ion-checkmark-circled" />
-    </td>
-  </tr>
-  <tr>
-    <td>Sentiment analysis</td>
-    <td>
-      <i className="c-grey-400 ion-close" />
-    </td>
-    <td>
-      <i className="c-grey-400 ion-close" />
-    </td>
-    <td>
-      <i className="c-blue-500 ion-checkmark-circled" />
-    </td>
-  </tr>
-  <tr>
-    <td>Enrichment, Type, Act</td>
-    <td>
-      <i className="c-grey-400 ion-close" />
-    </td>
-    <td>
-      <i className="c-grey-400 ion-close" />
-    </td>
-    <td>
-      <i className="c-blue-500 ion-checkmark-circled" />
-    </td>
-  </tr>
-  <tr>
-    <td>Language detection</td>
-    <td>
-      <i className="c-grey-400 ion-close" />
-    </td>
-    <td>
-      <i className="c-blue-500 ion-checkmark-circled" />
-    </td>
-    <td>
-      <i className="c-blue-500 ion-checkmark-circled" />
-    </td>
-  </tr>
-  <tr>
-    <td>Voice support</td>
-    <td>
-      <i className="c-grey-400 ion-close" />
-    </td>
-    <td>
-      <i className="c-blue-500 ion-checkmark-circled" />
-    </td>
-    <td>
-      <i className="c-blue-500 ion-checkmark-circled" />
-    </td>
-  </tr>
-</tbody>
+<table class="mb3">
+    <thead>
+    <tr>
+        <th width="25%"></th>
+        <th>Basic</th>
+        <th width="30%">Standard</th>
+        <th>Advanced</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Languages</td>
+        <td>All languages</td>
+        <td><span class="flag-icon flag-icon-sa m1"></span><span class="flag-icon flag-icon-ct m1"></span><span
+                class="flag-icon flag-icon-dk m1"></span><span class="flag-icon flag-icon-fi m1"></span><span
+                class="flag-icon flag-icon-in m1"></span><span class="flag-icon flag-icon-it m1"></span><span
+                class="flag-icon flag-icon-jp m1"></span><span class="flag-icon flag-icon-kr m1"></span><span
+                class="flag-icon flag-icon-no m1"></span><span class="flag-icon flag-icon-nl m1"></span><span
+                class="flag-icon flag-icon-pl m1"></span><span class="flag-icon flag-icon-pt m1"></span><span
+                class="flag-icon flag-icon-ru m1"></span><span class="flag-icon flag-icon-se m1"></span><span
+                class="flag-icon flag-icon-cn m1"></span></td>
+        <td><span class="flag-icon flag-icon-gb m1"></span><span class="flag-icon flag-icon-fr m1"></span><span
+                class="flag-icon flag-icon-es m1"></span><span class="flag-icon flag-icon-de m1"></span></td>
+    </tr>
+    <tr>
+        <td>Intent Classification</td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+    </tr>
+    <tr>
+        <td>Custom entities</td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+    </tr>
+    <tr>
+        <td>Gold entities</td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+    </tr>
+    <tr>
+        <td>Sentiment analysis</td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+    </tr>
+    <tr>
+        <td>Enrichment, Type, Act</td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+    </tr>
+    <tr>
+        <td>Language detection</td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+    </tr>
+    <tr>
+        <td>Voice support</td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+    </tr>
+    </tbody>
 </table>
 
 Bots are **multilingual**, which means you can speak several languages with the same bot.
