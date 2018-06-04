@@ -4,6 +4,42 @@ title: Hello World
 permalink: /concepts/hello-world
 ---
 
+<style>
+  .language-javascript,
+  .language-python,
+  .language-ruby,
+  .language-php {
+    display: none;
+  }
+
+  .highlight {
+    padding: 0.5rem;
+  }
+
+  .snippet-tab {
+    padding: 0.2rem 0.5rem;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+  }
+
+  .snippet-tab-active {
+    background-color: #002b36;
+  }
+
+  .snippet-active {
+    display: block !important;
+  }
+
+  .code {
+    background-color: lightgrey;
+    padding: 0.2rem;
+    border-radius: 3px;
+  }
+</style>
+
 Each time a message is posted on one of the channels your bot is connected to, it receives a POST request on the endpoint you've set on the platform.
 To reply, you need to make a post request with your bot's **Request Token** available in your bot settings.
 In this example, we use SDKs to make it simpler. :)
@@ -12,34 +48,23 @@ In this example, we use SDKs to make it simpler. :)
 
 **1.** Copy-paste this snippet in a file.
 
-**2.** Replace the **REQUEST_TOKEN** by your token.
+**2.** Replace the **REQUEST_TOKEN** by your bot request token.
 
-**3.** Install the dependencies and run the file
+**3.** Install the dependencies by running the following command:
 
+JS:
+<span class="code">npm install recastai express body-parser</span>
 
-JS: \`npm install recastai express body-parser\`
+Python:
+<span class="code">pip install recastai flask</span>
 
-Python: \`pip install recastai flask\`
+Ruby:
+<span class="code">gem install RecastAI sinatra</span>
 
-Ruby: \`gem install RecastAI sinatra\`
+PHP:
+<span class="code">composer require recastai/sdk-php</span>
 
-PHP: \`composer require recastai/sdk-php\`
-
-**TODO** get the code snippet
-
-<style>
-  .highlighter-rouge {
-    display: none;
-  }
-
-  .snippet-tab-active {
-    background-color: red;
-  }
-
-  .snippet-active {
-    display: block !important;
-  }
-</style>
+<br/>
 
 <script>
   function activateHelloSnippet(language) {
@@ -64,8 +89,8 @@ PHP: \`composer require recastai/sdk-php\`
 <div id="hello-snippet-container">
   <div class="snippet-tabs">
     <button onclick="activateHelloSnippet('javascript')" id="hello-snippet-javascript" class="snippet-tab">JS</button>
-    <button onclick="activateHelloSnippet('ruby')" id="hello-snippet-ruby" class="snippet-tab">RUBY</button>
-    <button onclick="activateHelloSnippet('python')" id="hello-snippet-python" class="snippet-tab">PYTHON</button>
+    <button onclick="activateHelloSnippet('ruby')" id="hello-snippet-ruby" class="snippet-tab">Ruby</button>
+    <button onclick="activateHelloSnippet('python')" id="hello-snippet-python" class="snippet-tab">Python</button>
     <button onclick="activateHelloSnippet('php')" id="hello-snippet-php" class="snippet-tab">PHP</button>
   </div>
 </div>
