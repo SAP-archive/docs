@@ -2,11 +2,31 @@
 layout: default
 ---
 
-<div class="home">
-  <p>This is the home</p>
+<div class="Home">
+  <div class='Home-menu flex flex-column flex-center flex-content-center flex-wrap'>
+    <h1 class='title mb3'>Documentation</h1>
+    <div class='menuCardContainer flex flex-center flex-content-center flex-wrap'>
+      <div class='menuCard box-shadow-02 rounded mr2 mb2 p2 flex flex-column flex-center flex-content-between'>
+        <img src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-cards.svg" alt="TEMPORARY IMG"/>
+        <span>Recast.AI Concepts</span>
+      </div>
+      <div class='menuCard box-shadow-02 rounded mr2 mb2 p2 flex flex-column flex-center flex-content-between'>
+        <img src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-cards.svg" alt="TEMPORARY IMG"/>
+        <span>Tutorials</span>
+      </div>
+      <div class='menuCard box-shadow-02 rounded mr2 mb2 p2 flex flex-column flex-center flex-content-between'>
+        <img src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-cards.svg" alt="TEMPORARY IMG"/>
+        <span>API Reference</span>
+      </div>
+      <div class='menuCard box-shadow-02 rounded mr2 mb2 p2 flex flex-column flex-center flex-content-between'>
+        <img src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-cards.svg" alt="TEMPORARY IMG"/>
+        <span>FAQ</span>
+      </div>
+    </div>
+  </div>
 
   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+  <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
   {{ content }}

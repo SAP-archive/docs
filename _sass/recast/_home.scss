@@ -1,0 +1,36 @@
+.Home {
+  &-menu {
+    min-height: 370px;
+    color: #fff;
+    background-color: $grey-700;
+    background-image: url('https://cdn.recast.ai/website/home/pattern.png');
+    background-size: 20px 20px;
+    box-shadow: inset 10px 35px 100px 30px $grey-700;
+
+    .title {
+      font-size: 48px;
+      font-weight: 500;
+    }
+
+    .menuCardContainer {
+      .menuCard {
+        width: 260px;
+        height: 120px;
+        font-size: 18px;
+        background-color: rgba(255, 255, 255, 0.125);
+        cursor: pointer;
+        transition: transform 0.2s;
+        transform: scale(1);
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
