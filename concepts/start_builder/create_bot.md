@@ -6,15 +6,15 @@ permalink: /concepts/create-builder-bot
 
 ## Start with a template
 
-To create a new bot, login and click on the link **+ NEW BOT** in the header section.
+To create a new bot, log in and click on the link **+ NEW BOT** in the header section.
 
 Select the first option "Create a complete chatbot".
 
 ![Recast.AI create bot](https://cdn.recast.ai/man/recast-ai-create-builder-1-bodyb.png)
 
-## Select pre-defined skills
+## Select predefined skills
 
-You can choose one or several pre-defined skills you want to use as a starting point.
+You can choose one or several predefined skills you want to use as a starting point.
 You are free to modify them if you don't like them as such, or even delete them once you're ready to make your own.
 
 If you want to fork them later on, they are available here: [https://recast.ai/scaffolder/starter-skills](https://recast.ai/scaffolder/starter-skills)

@@ -35,9 +35,9 @@ We automatically detect [31 different entities](https://recast.ai/docs/api-refer
 
 ## Use the console
 
-Once you’ve set up your bot, you can test it with the console. Click on the **TEST** bubble icon on the top right to make it appear. Select the tab **Analyse**, and type a sentence to test if your bot is well trained: \`I want meeting room 2 for tomorrow\`
+Once you’ve set up your bot, you can test it with the console. Click on the **TEST** bubble icon on the top right to make it appear. Select the tab **Analyze**, and type a sentence to test if your bot is well trained: \`I want meeting room 2 for tomorrow\`
 
-![Recast.AI NLP analyse](https://cdn.recast.ai/man/recast-ai-test-consoleb.png)
+![Recast.AI NLP analyze](https://cdn.recast.ai/man/recast-ai-test-consoleb.png)
 
 You will see which intent is detected and which entities are extracted. Click on the **Smart view** toggle to switch the view to the JSON mode.
 The JSON contains a lot of useful information about the message you’ve sent, like all the enrichments we can provide for the gold entities.
