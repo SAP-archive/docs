@@ -21,6 +21,7 @@
         cursor: pointer;
         transition: transform 0.2s;
         transform: scale(1);
+        color: #fff;
 
         img {
           width: 50px;
@@ -46,14 +47,21 @@
         width: 485px;
         height: 190px;
         box-shadow: 0 20px 50px 0 $amber-50;
+        transition: transform 0.2s;
+        transform: scale(1);
+
+        &:hover {
+          transform: scale(1.05);
+        }
 
         &-title {
           font-size: 20px;
           font-weight: 500;
+          color: $grey-700;
         }
 
         &-description {
-
+          color: $grey-700;
         }
 
         &-goTo {
