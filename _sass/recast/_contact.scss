@@ -1,0 +1,35 @@
+.contact {
+
+  .title {
+    font-size: 48px;
+    font-weight: 500;
+  }
+
+  .slack, .contact {
+
+    &-logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    &-title {
+      display: flex;
+      flex-flow: column-reverse;
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    &-description {
+
+    }
+  }
+
+  .slack-content {
+    max-width: 450px;
+  }
+
+  .contact-content {
+    max-width: 330px;
+    margin-top: 12px;
+  }
+}
