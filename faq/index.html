@@ -1,0 +1,26 @@
+---
+layout: default
+title: Faq
+permalink: /faq/
+---
+
+<div class="faq">
+  <div class='faq-header flex flex-column flex-center flex-content-center flex-wrap'>
+    <h1 class='title mb3'>FAQ</h1>
+  </div>
+
+  <div class="faq-content mt4">
+    <h1 class="title mb2">Most Popular FAQs</h1>
+
+    <div class="faq-list">
+      {% for question in site.data.faq.questions %}
+      <div class="faq-list-line">
+        <a href="{{ site.baseurl}}{{ question.url }}">{{ question.title }}</a>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+
+{% include contact.html %}

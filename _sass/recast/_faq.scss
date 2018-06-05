@@ -1,0 +1,57 @@
+.faq {
+
+  &-layout {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .faq-link, .page-title {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .card {
+      box-shadow: 0 20px 50px 0 $amber-50;
+
+      .title {
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+  }
+
+  &-header {
+    min-height: 238px;
+    color: #fff;
+    background-color: $grey-700;
+    background-image: url('https://cdn.recast.ai/website/home/pattern.png');
+    background-size: 20px 20px;
+    box-shadow: inset 10px 35px 100px 30px $grey-700;
+
+    .title {
+      font-size: 48px;
+      font-weight: 500;
+    }
+  }
+
+  &-content {
+    width: 820px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .title {
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+
+  &-list {
+    border-left: solid 3px $amber-300;
+    padding-left: 20px;
+
+    &-line {
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+}

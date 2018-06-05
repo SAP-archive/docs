@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="faq-layout">
+
+  <div class="mt4">
+    <h1 class="page-title mb3">
+      <a href="{{ site.baseurl }}/faq" class="faq-link">Faq</a> <span class="ion-ios-arrow-forward"></span> <span>{{ page.title }}</span>
+    </h1>
+
+    <div class="card p4 mb4">
+      <h1 class="title mb2">{{ page.title }}</h1>
+
+      {{ page.content | markdownify }}
+    </div>
+  </div>
+</div>
