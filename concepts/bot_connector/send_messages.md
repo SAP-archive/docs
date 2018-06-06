@@ -251,20 +251,20 @@ In the following payloads, buttons can either be:
 
 ### Sending a message to a conversation
 
-<span class='label label-post'>POST</span> \`https://api.recast.ai/connect/v1/conversations/:conversation_id/messages\`
+<span class='label label-post'>POST</span> `https://api.recast.ai/connect/v1/conversations/:conversation_id/messages`
 
 | Name | Type | Description | Constraints |
 | -----| ---- | ----------- | -------- |
-| \`messages\` | \`Array[Object]\` | The messages you want to send | Required  |
+| `messages` | `Array[Object]` | The messages you want to send | Required  |
 
 
 ### Broadcast a message to all your bot's conversations
 
-<span class='label label-post'>POST</span> \`https://api.recast.ai/connect/v1/messages\`
+<span class='label label-post'>POST</span> `https://api.recast.ai/connect/v1/messages`
 
 | Name | Type | Description | Constraints |
 | -----| ---- | ----------- | -------- |
-| \`messages\` | \`Array[Object]\` | The messages you want to send | Required |
+| `messages` | `Array[Object]` | The messages you want to send | Required |
 
 ## Response
 
@@ -273,15 +273,15 @@ If your call is successful, you should receive a 201.
 
 #### Errors
 
-We return an error (\`400: bad_request\`) if any of these cases is met:
+We return an error (`400: bad_request`) if any of these cases is met:
 
-* Parameter \`messages\` is missing.
+* Parameter `messages` is missing.
 
-We return an error (\`401: unauthorized\`) if the following case is met:
+We return an error (`401: unauthorized`) if the following case is met:
 
 * The token provided in your request is not linked to any of your bots.
 
-We return an error (\`503: service_unavailable\`) if any of these cases is met:
+We return an error (`503: service_unavailable`) if any of these cases is met:
 
 * The service you interact with (Messenger, Kik, Slack,...) is unavailable.
 
