@@ -1,0 +1,107 @@
+.Home {
+  &-menu {
+    min-height: 370px;
+    color: #fff;
+    background-color: $grey-700;
+    background-image: url('https://cdn.recast.ai/website/home/pattern.png');
+    background-size: 20px 20px;
+    box-shadow: inset 10px 35px 100px 30px $grey-700;
+
+    .title {
+      font-size: 48px;
+      font-weight: 500;
+    }
+
+    .menuCardContainer {
+      .menuCard {
+        width: 260px;
+        height: 120px;
+        font-size: 18px;
+        background-color: rgba(255, 255, 255, 0.125);
+        cursor: pointer;
+        transition: transform 0.2s;
+        transform: scale(1);
+        color: #fff;
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  &-content {
+    .title {
+      font-size: 48px;
+      font-weight: 500;
+    }
+
+    .cardContent {
+
+      .card {
+        width: 485px;
+        height: 190px;
+        box-shadow: 0 20px 50px 0 $amber-50;
+        transition: transform 0.2s;
+        transform: scale(1);
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        &-title {
+          font-size: 20px;
+          font-weight: 500;
+          color: $grey-700;
+        }
+
+        &-description {
+          color: $grey-700;
+        }
+
+        &-goTo {
+          color: $blue-500;
+          font-weight: 500;
+
+          .icon {
+            height: 32px;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  .slack, .contact {
+
+    &-logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    &-title {
+      display: flex;
+      flex-flow: column-reverse;
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    &-description {
+
+    }
+  }
+
+  .slack-content {
+    max-width: 450px;
+  }
+
+  .contact-content {
+    max-width: 330px;
+    margin-top: 12px;
+  }
+}
