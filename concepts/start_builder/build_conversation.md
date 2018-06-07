@@ -4,7 +4,7 @@ title: Build your conversation
 permalink: /concepts/build-your-conversation
 ---
 
-Click on the **BUILD** tab to find the pre-defined skills you have selected when creating your bot.
+Click on the **BUILD** tab to find the predefined skills you have selected when creating your bot.
 The grey section on the left is your command pannel. It allows you to create new blocks, called **SKILLS**.
 
 ![Recast.AI create bot](https://cdn.recast.ai/man/recast-ai-what-skill-1.png)

@@ -7,9 +7,6 @@ sections:
 - title: Expression
   url: /concepts/expression
 
-- title: Suggestion
-  url: /concepts/suggestion
-
 - title: Entity
   url: /concepts/entity
 
