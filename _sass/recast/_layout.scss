@@ -132,3 +132,27 @@ Display
 .inline-flex {
   display: inline-flex;
 }
+
+/*
+Float
+
+Don't forget to use '.clearfix' to clear your float
+
+.left    - :
+.right    - :
+*/
+.clearfix:before,
+.clearfix:after {
+  content: ' ';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
