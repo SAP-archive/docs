@@ -4,9 +4,15 @@
       <p class="Footer-top-title">{{ site.data.footer.sections[0].title }}</p>
       <div class="Footer-top-content">
         {% for item in site.data.footer.sections[0].sections %}
-          <a class="Footer-top-link" href="{{ site.baseurl}}{{ item.url }}">
-            {{ item.title }}
-          </a>
+          {% if item.external %}
+            <a class="Footer-top-link" target="_blank" rel="noopener noreferrer" href="{{ item.url }}">
+              {{ item.title }}
+            </a>
+          {% else %}
+            <a class="Footer-top-link" href="{{ site.baseurl}}{{ item.url }}">
+              {{ item.title }}
+            </a>
+          {% endif %}
         {% endfor %}
       </div>
     </div>
@@ -15,18 +21,30 @@
       <p class="Footer-top-title">{{ site.data.footer.sections[1].title }}</p>
       <div class="Footer-top-content">
         {% for item in site.data.footer.sections[1].sections %}
-          <a class="Footer-top-link" href="{{ site.baseurl}}{{ item.url }}">
-            {{ item.title }}
-          </a>
+          {% if item.external %}
+            <a class="Footer-top-link" target="_blank" rel="noopener noreferrer" href="{{ item.url }}">
+              {{ item.title }}
+            </a>
+          {% else %}
+            <a class="Footer-top-link" href="{{ site.baseurl}}{{ item.url }}">
+              {{ item.title }}
+            </a>
+          {% endif %}
         {% endfor %}
       </div>
 
       <p class="Footer-top-title">{{ site.data.footer.sections[2].title }}</p>
       <div class="Footer-top-content">
         {% for item in site.data.footer.sections[2].sections %}
-          <a class="Footer-top-link" href="{{ site.baseurl}}{{ item.url }}">
-            {{ item.title }}
-          </a>
+          {% if item.external %}
+            <a class="Footer-top-link" target="_blank" rel="noopener noreferrer" href="{{ item.url }}">
+              {{ item.title }}
+            </a>
+          {% else %}
+            <a class="Footer-top-link" href="{{ site.baseurl}}{{ item.url }}">
+              {{ item.title }}
+            </a>
+          {% endif %}
         {% endfor %}
       </div>
     </div>
@@ -35,9 +53,15 @@
       <p class="Footer-top-title">{{ site.data.footer.sections[3].title }}</p>
       <div class="Footer-top-content">
         {% for item in site.data.footer.sections[3].sections %}
-          <a class="Footer-top-link" href="{{ site.baseurl}}{{ item.url }}">
-            {{ item.title }}
-          </a>
+          {% if item.external %}
+            <a class="Footer-top-link" target="_blank" rel="noopener noreferrer" href="{{ item.url }}">
+              {{ item.title }}
+            </a>
+          {% else %}
+            <a class="Footer-top-link" href="{{ site.baseurl}}{{ item.url }}">
+              {{ item.title }}
+            </a>
+          {% endif %}
         {% endfor %}
       </div>
     </div>
