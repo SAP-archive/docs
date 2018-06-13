@@ -87,15 +87,19 @@
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.16);
   border: 1px solid transparent;
 
-  &:not(:disabled, .isDisabled, .isLoading) {
-    &:hover,
-    &:focus {
-      border-color: rgba(0, 0, 0, 0.1);
-    }
-    &:active {
-      background-color: $blue-900;
-    }
+  &:focus {
+    border-color: rgba(0, 0, 0, 0.1);
   }
+
+  &:hover,
+  &:focus {
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    background-color: $blue-900;
+  }
+
   &:disabled,
   &.isLoading,
   &.isDisabled {
@@ -140,24 +144,64 @@
 
   border: 1px solid transparent;
 
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
   &.no-border {
     border: none !important;
   }
+
   &.danger {
     color: $red-500;
-    fill: $red-500;
     border: 1px solid $red-500;
+    svg {
+      fill: $red-500;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: $red-900;
+      color: $red-900;
+    }
   }
+
   &.success {
     color: $blue-500;
-    fill: $blue-500;
     border: 1px solid $blue-500;
+    svg {
+      fill: $blue-500;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: $blue-900;
+      color: $blue-900;
+    }
   }
+
   &.upload {
     color: $grey-700;
-    fill: $grey-700;
     border: 1px solid $grey-700;
+    svg {
+      fill: $grey-700;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: $grey-900;
+      color: $grey-900;
+    }
   }
+
   &:not(:disabled, .isDisabled, .isLoading) {
     &:hover,
     &:active,
@@ -166,22 +210,6 @@
       text-decoration: none;
       box-shadow: none;
       background-color: rgba(0, 0, 0, 0.01);
-      &.success {
-        border-color: $blue-900;
-        color: $blue-900;
-      }
-      &.danger {
-        border-color: $red-900;
-        color: $red-900;
-      }
-      &.upload {
-        border-color: $grey-900;
-        color: $grey-900;
-      }
-    }
-    &:active,
-    &:focus {
-      background-color: rgba(0, 0, 0, 0.04);
     }
   }
 
