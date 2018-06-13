@@ -2,9 +2,9 @@
 
   .Footer-top {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: $grey-100;
-    padding: 1rem 0 2rem 0;
+    padding: 1rem 5rem;
   }
 
   .Footer-top-title {
@@ -28,8 +28,8 @@
 
   .Footer-bottom {
     display: flex;
-    justify-content: space-around;
-    padding: 2rem;
+    justify-content: space-between;
+    padding: 2rem 5rem;
     background-color: $grey-200;
   }
 
