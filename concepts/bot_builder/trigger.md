@@ -4,9 +4,9 @@ title: Trigger
 permalink: /concepts/trigger
 ---
 
-Triggers are [**conditions**](${
-  CONFIG.client
-}/docs/conditions) that determine whether the bot should execute the current skill or not.
+Triggers are
+**<a href="/concepts/condition">conditions</a>**
+ that determine whether the bot should execute the current skill or not.
 
 If the trigger conditions of the skill are validated, the bot will execute it over other skills.
 

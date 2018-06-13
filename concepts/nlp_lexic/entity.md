@@ -5,7 +5,9 @@ permalink: /concepts/entity
 ---
 
 ### Definition
-An entity is a **keyword** extracted from an expression. We automatically detect 31 different entities such as datetimes, names, locations, etc. We call these **Gold entities**.
+An entity is a **keyword** extracted from an expression.
+We automatically detect <a href="https://recast.ai/docs/api-reference#list-of-entities" target="_blank" >31 different entities</a> such as datetimes, names, locations, etc.
+We call these **Gold entities**.
 But you are not limited to these Gold entities: you can also tag your own **custom** entities to detect keywords depending on your bot's context, such as metro stations if you are building a transport assistant.
 To bring you a precise service with true added value, we enrich each and every one of our Gold entities with essential core information.
 
@@ -28,4 +30,4 @@ When \`tomorrow\` is detected in a sentence, a formatted version of the datetime
 }
 ~~~
 
-See all [gold entities](https://recast.ai/docs/api-reference#list-of-entities).
+See all <a target="_blank" rel="noopener noreferrer" href="https://recast.ai/docs/api-reference#list-of-entities">gold entities</a> and their enrichment.

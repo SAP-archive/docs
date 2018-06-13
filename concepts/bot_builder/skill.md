@@ -30,15 +30,8 @@ There is no execution difference between **business** and **floating** skills. T
 ## Skill composition
 
 A skill is made of three distinct parts:
-- **[triggers](${
-  CONFIG.client
-}/docs/triggers)**: conditions determining if the skill should or shouldn't be activated
-- **[requirements](${
-  CONFIG.client
-}/docs/requirements)**: determining the information the bot needs to retrieve from the user, and how to retrieve it
-- **[actions](${
-  CONFIG.client
-}/docs/actions)**: performed by the bot when all requirements are complete (for example, send a message)
+- **<a href="/concepts/trigger">triggers</a>**: conditions determining if the skill should or shouldn't be activated
+- **<a href="/concepts/requirement">requirements</a>**: determining the information the bot needs to retrieve from the user, and how to retrieve it
+- **<a href="/concepts/action">actions</a>**: performed by the bot when all requirements are complete (for example, send a message)
 
 ![Recast.AI - Skill logic](//cdn.recast.ai/man/recast-ai-skill-logic.png)
-

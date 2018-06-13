@@ -12,17 +12,17 @@ Your bot will receive the message in the same format, no matter what channel it 
 
 ~~~ json
 {
-  chatId: 'XXXXXX'
-  senderId: 'XXXXXXX',
-  mentioned: true,
-  origin: 'XXXX',
-  message: {
-    participant: 'XXXXXX',
-    conversation: 'XXXXXX',
-    receivedAt: 'XXXXXX',
-    attachment: {
-      type: 'text',
-      content: 'Hello, world!',
+  "chatId": "XXXXXX"
+  "senderId": "XXXXXXX",
+  "mentioned": true,
+  "origin": "XXXX",
+  "message": {
+    "participant": "XXXXXX",
+    "conversation": "XXXXXX",
+    "receivedAt": "XXXXXX",
+    "attachment": {
+      "type": "text",
+      "content": "Hello, world!",
     },
   },
 }

@@ -83,8 +83,6 @@ After the language has been detected the following rules applies:
 * If you do not have any expressions in this language, we will use your default bot language for processing.
 * Else, we will use it for processing.
 
-Follow [this tutorial](https://recast.ai/blog/build-multilingual-bot-hour/) to start building multilingual bot!
-
 ## Tips
 * If you use a single language, pass your language as a request parameter to avoid the language detection step
 * When you start constructing your intent in a new language, using a translation service can make the operation faster

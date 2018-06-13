@@ -20,24 +20,21 @@ An action can either be:
 ## Message actions
 For message actions, all rich messaging formats are supported.
 
-**TODO**
-Link to bot-channels
-
 ![Recast.AI - Messages types](//cdn.recast.ai/man/recast-ai-type-of-messages.png)
 
 Formatting:
 You can inject variables in your messages by using the double braces syntax.
-For example, \`{{nlp.source}}\` will be replaced by the input sentence.
+For example, *{{nlp.source}}* will be replaced by the input sentence.
 
 Here is a list of the more useful ones:
 * **{{nlp.source}}**: raw user input.
 * **{{nlp.entities.location[0]}}**: first entity detected of the type \`location\`. You can replace \`location\` by any entity name you want.
 * **{{#location.raw}}**: same as above, get the first entity location detected, and get its raw field.
-* **{{nlp.sentiment}}**: [sentiment](https://recast.ai/docs/api-reference#sentence-sentiments) of the sentence
-* **{{nlp.act}}**: [act](https://recast.ai/docs/api-reference#sentence-acts) of the sentence
-* **{{nlp.type}}**: [type](https://recast.ai/docs/api-reference#sentence-types) of the sentence
+* **{{nlp.sentiment}}**: <a href="https://recast.ai/docs/api-reference#sentence-sentiments" target="_blank" rel="noopener noreferrer">sentiment</a> of the sentence
+* **{{nlp.act}}**: <a href="https://recast.ai/docs/api-reference#sentence-acts" target="_blank" rel="noopener noreferrer">act</a> of the sentence
+* **{{nlp.type}}**: <a href="https://recast.ai/docs/api-reference#sentence-types" target="_blank" rel="noopener noreferrer">type</a> of the sentence
 * **{{nlp.intents[0].slug}}**: slug of the first intent detected
-* **{{memory.person.raw}}**: a value stored in the memory of the bot. Here \`person\` is the alias of a requirement
+* **{{memory.person.raw}}**: a value stored in the memory of the bot. Here *person* is the alias of a requirement
 * **{{skill}}**: slug of the current skill
 * **{{skill_occurrences}}**: number of consecutive occurrences of the current skill
 
@@ -90,10 +87,6 @@ When your url is called, you receive the complete state of conversation:
 ~~~
 
 You can send back messages you want to send to the user, as well as an updated conversation state.
-
-**TODO**
-
-Link about message format
 
 ## Go to actions
 

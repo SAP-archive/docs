@@ -24,9 +24,10 @@ A requirement is made of:
 
 ### Action at requirement completion
 
-Those actions are executed when the requirement is completed. The skill's execution then continues as far as it can. It can chain with other requirements, or with [**actions**](${
-  CONFIG.client
-}/docs/actions)
+Those actions are executed when the requirement is completed.
+The skill's execution then continues as far as it can.
+It can chain with other requirements, or with
+ **<a href="/concepts/action">actions</a>**
 
 ![Recast.AI - Action complete](//cdn.recast.ai/man/recast-ai-action-complete.png)
 
@@ -40,9 +41,9 @@ For example, with the username as a requirement, the action would be a message a
 ### Validators
 
 You can define validators in a requirement to validate that the user input matches your needs.
-These validators are made of [**conditions**](${
-  CONFIG.client
-}/docs/conditions) that will define validation, and of actions to execute if the validation fails.
+These validators are made of
+**<a href="/concepts/condition">conditions</a>**
+  that will define validation, and of actions to execute if the validation fails.
 
 If the validation fails, the retrieved data will not be stored in memory, and thus the requirement will not be completed.
 
@@ -52,6 +53,6 @@ For example, if we want to get an address from the user, we can create a require
 
 ## **Group of requirements**
 
-Like conditions, requirements can be grouped together with \`OR\` and \`AND\`.
+Like conditions, requirements can be grouped together with **OR** and **AND**.
 
 ![Recast.AI - Requirement](//cdn.recast.ai/man/recast-ai-requirement-1.png)

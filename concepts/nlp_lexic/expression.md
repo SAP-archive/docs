@@ -20,7 +20,7 @@ Intent: \`want-food\`
 **DOS**
 * I want to eat cheese
 * I really like apples, can I eat some?
-* Can you give me some pastas ?
+* Can you give me some pastas?
 * I'm hungry, I would love pizza
 
 **DON'TS**
