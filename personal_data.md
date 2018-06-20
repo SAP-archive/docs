@@ -4,14 +4,17 @@ title: Personal Data
 permalink: /personal-data/
 ---
 
-## Update your Personal Data
+## Update or Delete Your Personal Data
 
-If you wish to update your username and / or your email, please contact privacy@recast.ai.
+### Update your personal data
 
-## Delete your Personal Data
+To update your username and/or your email address, please contact privacy@recast.ai.
 
-If you wish to delete your account and all the bots associated to it, please contact privacy@recast.ai.
+### Delete your personal data
 
-## Access / Delete bot user Personal Data
+To delete your account and all bots associated with it, please contact privacy@recast.ai.
 
-If you are a bot developer and one of your end-user wish to access / delete its own Personal Data, please contact privacy@recast.ai.
+### Access or delete personal data for bot user
+
+If you are a bot developer and one of your end users wants to access or delete their own personal data, please contact privacy@recast.ai.
+
