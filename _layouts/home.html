@@ -36,22 +36,23 @@ layout: default
   <div class='Home-content flex flex-center flex-content-center flex-column'>
     <h1 class='title mt4 mb4'>How can we help ?</h1>
     <div class='cardContent flex flex-wrap flex-center flex-content-center mb3'>
-      <a href='#'>
-        <div class='card m3 rounded p3'>
-          <div class='card-title mb2'>
-            Get Started with Recast.AI
-          </div>
-          <div class='card-description mb2'>
-            Understand what's the Recast.AI platform and technology and build your first chatbox.
-          </div>
-          <div class='card-goTo flex flex-center'>
-            <span>Lean more </span>
-            <span class='icon ion-md-arrow-round-forward ml1'/>
-          </div>
-        </div>
-      </a>
 
-      <a href='#'>
+      {% comment %} <a href='#'> {% endcomment %}
+      {% comment %}   <div class='card m3 rounded p3'> {% endcomment %}
+      {% comment %}     <div class='card-title mb2'> {% endcomment %}
+      {% comment %}       Get Started with Recast.AI {% endcomment %}
+      {% comment %}     </div> {% endcomment %}
+      {% comment %}     <div class='card-description mb2'> {% endcomment %}
+      {% comment %}       Understand what's the Recast.AI platform and technology and build your first chatbox. {% endcomment %}
+      {% comment %}     </div> {% endcomment %}
+      {% comment %}     <div class='card-goTo flex flex-center'> {% endcomment %}
+      {% comment %}       <span>Lean more </span> {% endcomment %}
+      {% comment %}       <span class='icon ion-md-arrow-round-forward ml1'/> {% endcomment %}
+      {% comment %}     </div> {% endcomment %}
+      {% comment %}   </div> {% endcomment %}
+      {% comment %} </a> {% endcomment %}
+
+      <a href='{{ "/concepts/train-your-bot" | relative_url }}'>
         <div class='card m3 rounded p3'>
           <div class='card-title mb2'>
             Train your bot to understand humain language
@@ -66,13 +67,13 @@ layout: default
         </div>
       </a>
 
-      <a href='#'>
+      <a href='{{ "/concepts/what-skill" | relative_url }}'>
         <div class='card m3 rounded p3'>
           <div class='card-title mb2'>
             Build a bot skill
           </div>
           <div class='card-description mb2'>
-            Create your first bot skill, and understand how architecture your bot to make it somple and scalable in
+            Create your first bot skill, and understand how architecture your bot to make it simple and scalable in
             time.
           </div>
 
@@ -84,21 +85,21 @@ layout: default
         </div>
       </a>
 
-      <a href='#'>
-        <div class='card m3 rounded p3'>
-          <div class='card-title mb2'>
-            Improve and Monitor your bot
-          </div>
-          <div class='card-description mb2'>
-            Learn how monitor your bot during each steps of its existence and continue improving it all the time.
-          </div>
-          <div class='card-goTo flex flex-center'>
-            <span>Lean more </span>
-            <span class='icon ion-md-arrow-round-forward ml1'/>
-          </div>
-        </div>
-      </a>
-    </div>
+      {% comment %} <a href='#'> {% endcomment %}
+      {% comment %}   <div class='card m3 rounded p3'> {% endcomment %}
+      {% comment %}     <div class='card-title mb2'> {% endcomment %}
+      {% comment %}       Improve and Monitor your bot {% endcomment %}
+      {% comment %}     </div> {% endcomment %}
+      {% comment %}     <div class='card-description mb2'> {% endcomment %}
+      {% comment %}       Learn how monitor your bot during each steps of its existence and continue improving it all the time. {% endcomment %}
+      {% comment %}     </div> {% endcomment %}
+      {% comment %}     <div class='card-goTo flex flex-center'> {% endcomment %}
+      {% comment %}       <span>Lean more </span> {% endcomment %}
+      {% comment %}       <span class='icon ion-md-arrow-round-forward ml1'/> {% endcomment %}
+      {% comment %}     </div> {% endcomment %}
+      {% comment %}   </div> {% endcomment %}
+      {% comment %} </a> {% endcomment %}
+    {% comment %} </div> {% endcomment %}
 
     {%- include contact.html -%}
 
