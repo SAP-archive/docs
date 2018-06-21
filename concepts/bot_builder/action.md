@@ -9,6 +9,7 @@ Actions are, well, actions your bot executes at specific time in the skill execu
 ## Action categories
 
 An action can either be:
+
 - a **message** to send back to the user
 - an **HTTP call** to your API
 - the **redirection** and execution of another skill
@@ -27,6 +28,7 @@ You can inject variables in your messages by using the double braces syntax.
 For example, *{{nlp.source}}* will be replaced by the input sentence.
 
 Here is a list of the more useful ones:
+
 * **{{nlp.source}}**: raw user input.
 * **{{nlp.entities.location[0]}}**: first entity detected of the type \`location\`. You can replace \`location\` by any entity name you want.
 * **{{#location.raw}}**: same as above, get the first entity location detected, and get its raw field.
@@ -95,6 +97,7 @@ You can use Goto action to indicate which skill should be executed next.
 ![Recast.AI - Goto action](//cdn.recast.ai/man/recast-ai-goto-action.png)
 
 You have two options:
+
 - **Start the skill** will bypass the triggers of the skill and directly try to resolve the requirements and the actions.
 - **Wait for the user input** serves as an indicator, the next user input will try to enter this skill in priority, but triggers will be applied.
 
@@ -111,6 +114,7 @@ It can be especially useful when your user asks "Can you speak Spanish?" for exa
 ## Memory edition actions
 
 Theses actions allow you to do three different things:
+
 * Reset the entire memory of the conversation
 * Set values in the memory
 * Unset a key in the memory

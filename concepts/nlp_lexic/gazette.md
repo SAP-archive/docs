@@ -8,12 +8,14 @@ permalink: /concepts/gazette
 A gazette is a **list of words** that belong to an entity. You can define your own gazettes for your custom entities to improve the quality of the entity recognition.
 
 A gazette can either be **open** or **closed**:
+
 * an **open** gazette will be combined with the expressions you annotated to improve the training of our entity detection system for the entities which possess a gazette.
 * a **closed** gazette will not require the training of our entity detection system, and will ensure that no word can be recognized as an entity if it doesn't appear in the gazette.
 
 For each gazette, you can define a strictness parameter that will be used to determine if a word matches a given value in your gazette.
 
 ## Tips
+
 * Closed gazettes are useful to exhaustively list possible values for your entity
 * With a strictness of 100, a word must exactly match an entry of the gazette to be detected as such
 * To bootstrap your entity training, you can follow this process:

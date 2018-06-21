@@ -5,6 +5,7 @@ permalink: /concepts/conversation-state
 ---
 
 The conversation state is the state of your bot's conversation with the user. It contains the following information:
+
 - **id**: the id of the conversation provided by Bot Connector, and unique for each user
 - **language**: the current language of the conversation, detected by Recast.AI
 - **memory**: the data your bot has already collected from the user

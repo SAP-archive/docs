@@ -12,6 +12,7 @@ To send a message, you need to make a post request with your bot's **Request Tok
 ## Message format
 
 In the following payloads, buttons can either be:
+
 * **postback**: the basic type, once the button is tapped, the value is sent as a normal incoming message
 * **web_url**: depending on the channel, once this button is tapped, the URL in the value field is loaded
 * **phone_number**: depending on the channel, once this button is tapped, the phone number in the value field will be called

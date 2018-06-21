@@ -17,6 +17,7 @@ You can now choose a template to start easily, the Meeting Bot is a complete bot
 ![Recast.AI create NLP bot](https://cdn.recast.ai/man/recast-ai-create-nlp-2b.png)
 
 Finalise your bot creation by:
+
 * Choosing a name and a description
 * Setting the default language, you will be able to add more languages later ;)
 

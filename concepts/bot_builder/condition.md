@@ -7,6 +7,7 @@ permalink: /concepts/condition
 A condition is a test that can be evaluated to either true or false.
 
 You can find conditions in different sections of your skill:
+
 - in the **<a href="/concepts/trigger">triggers</a>**
 - in the **<a href="/concepts/requirement">requirements</a>**
 - in each group of **<a href="/concepts/action">actions</a>**
@@ -14,6 +15,7 @@ You can find conditions in different sections of your skill:
 ![Recast.AI - Bot condition](//cdn.recast.ai/man/recast-ai-data-condition-ex.png)
 
 In this example, we test:
+
 - if the **intent** is greetings
 - if the **sentiment** analyzed in the sentence is negative
 - if in the **conversation memory**, the value saved for **city** is *Paris*
@@ -34,6 +36,7 @@ As a left operand, you can use any value of
  (the last skill, memory values..).
 
 A few rules to distinguish the left operands categories:
+
 - operands starting by **@** will get the associated intent (for example *@greetings*)
 - operands starting by **#** will get the associated entity (for example *#location*), and will test the *raw* field unless you've specified one
 - operands starting by **_** will get the associated field in the [text analyze](https://recast.ai/docs/api-reference#request-text) JSON or in the conversation state
@@ -46,6 +49,7 @@ description of the first intent detected: *nlp.intents[0].description*.
 ### Operators
 
 There's a finite list of operators you can use:
+
 - **is** to test equality between two values
 - **is-not** to test inequality between two values
 - **in** to check if a value is in a list of elements
@@ -78,5 +82,6 @@ You can create multiple layers of condition using **and** and **or**.
 ![Recast.AI - Bot condition](//cdn.recast.ai/man/recast-ai-skill-conditions-or-and.png)
 
 You can see in this example two groups:
+
 - the first group (in line) is an \`and\` condition group
 - the second group (the entire block) is an \`or\` condition group

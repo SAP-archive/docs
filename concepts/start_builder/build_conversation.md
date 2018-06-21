@@ -17,6 +17,7 @@ You arrive on a new page, the page of your skill, containing a README. The READM
 
 
 Triggers are the conditions that need to be completed for your skill to be "triggered". You can define a wide range of conditions:
+
 * check what intent has been detected
 * check if a specific entity has been detected
 * check if the sentiment of the user sentence is positive or negative
@@ -56,6 +57,7 @@ You can define multiple validations, each with its own replies.
 ## Actions
 
 Actions allow your bot to actually do things when you need to. An action can either be:
+
 * A message to send back to the user
 * An HTTP call to your API
 * The execution of another skill

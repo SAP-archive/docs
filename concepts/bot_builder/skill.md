@@ -17,6 +17,7 @@ You can link your skills together to create more complex conversations.
 ## Skill types
 
 You can create three different types of skills:
+
 * **business**, for skills closely linked to the core purpose of your bot
 * **floating**, for small talk skills, topics not closely related to the core purpose of your bot
 * **fallback**, the skill triggered if no other skill is.
@@ -30,6 +31,7 @@ There is no execution difference between **business** and **floating** skills. T
 ## Skill composition
 
 A skill is made of three distinct parts:
+
 - **<a href="/concepts/trigger">triggers</a>**: conditions determining if the skill should or shouldn't be activated
 - **<a href="/concepts/requirement">requirements</a>**: determining the information the bot needs to retrieve from the user, and how to retrieve it
 - **<a href="/concepts/action">actions</a>**: performed by the bot when all requirements are complete (for example, send a message)

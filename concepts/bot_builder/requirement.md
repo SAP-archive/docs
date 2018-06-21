@@ -14,6 +14,7 @@ Once a requirement is completed, the associated value is stored in the memory of
 ## **Composition of a requirement**
 
 A requirement is made of:
+
 - the data to retrieve, an **entity** or an **intent**
 - the key that will be used to store the data retrieved in the bot memory
 - optional actions to execute to retrieve the information
