@@ -1,10 +1,8 @@
 ---
 layout: concept
-title: Personal Data
+title: Update or Delete Your Personal Data
 permalink: /personal-data/
 ---
-
-## Update or Delete Your Personal Data
 
 ### Update your personal data
 
