@@ -147,6 +147,7 @@ In the following payloads, buttons can either be:
     "content": [
       {
         "title": "CARD_1_TITLE",
+        "subtitle": "CARD_1_SUBTITLE",
         "imageUrl": "IMAGE_URL",
         "buttons": [
           {
