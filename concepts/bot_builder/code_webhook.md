@@ -1,29 +1,42 @@
 ---
 layout: concept
-title: Code and webhook
+title: Custom code and webhook
 permalink: /concepts/code-and-webhook
 ---
 
 
-If you want to extend Bot Builder with custom code, you can call your API with webhook actions.
+At many points in your conversation, you most likely want to retrieve business information or connect to an external system to perform actions. You can do this through **webhooks**.
+A webhook is a simple HTTP call to your backend. To configure your HTTP call, click Webhook action in the Bot Builder.
 
-![Recast.AI - Webhook url](//cdn.recast.ai/man/recast-ai-webhook-view.png)
+[IMAGE HERE]
 
-You must provide a full url or route (starting with a '/') to be called by Bot Builder, allowing you to run code or API calls.
+You can provide the full URL or route (starting with a '/') to be called by the Bot Builder. If you provide a route, it will be added to your bot's base URL (configurable in your bot's settings).
 
-If you provide a route, it will be added to your bot's base url (configurable in your bot's settings).
+[IMAGE HERE]
 
-![Recast.AI - Bot url settings](//cdn.recast.ai/man/recast-ai-settings-bot-url.png)
+You can specify the HTTP method to use in your webhook call (GET, POST, PUT, DELETE, or PATCH).
 
-Since the current version of webhook does not support authentication headers, your endpoints are open and reachable from anywhere.
-We have version 2.0 in the works which will let you secure all external endpoints.
+[IMAGE HERE]
 
-## What your code will receive
+## Authentication configuration
 
-You will receive a POST HTTP request on this route, with all the conversation state.
+You have the following options:
+•	No authentication: No authentication/authorization is passed with the request.
+•	Basic authentication: A username/password pair is passed with the request. 
 
-Then you can perform any calculation, database checks or external API calls and send back data to Bot Builder.
-The body format is the following:
+[IMAGE HERE]
+
+## Header configuration
+
+HTTP headers are accommodated by configuring a key-value pair, where you can name keys and set a value to be passed along in the header.
+
+[IMAGE HERE]
+
+## Body configuration
+
+The HTTP request body must be formatted as a standard JSON object. You can either receive the default body that we provide with all the conversation state or create your own custom body.
+
+The default body format is the following:
 
 ~~~ json
 {
@@ -63,12 +76,112 @@ The body format is the following:
 }
 ~~~
 
-## How to format your reply?
+In custom HTTP request bodies, conversation variables (like memories variables, nlp information..) can be referenced in place of hard-coded values, for example, `{{memory.person.raw}}`.
 
-Send back a formatted message, Bot Builder will forward it to the user.
-Of course all messages format from Bot Connector are supported.
+[IMAGE HERE]
 
-## Code example
+## Templates
+
+You can reuse specific configurations of authorizations, headers, and bodies in other skills by choosing Templates in the skill view. These templates can be managed on the Templates tab.
+
+[IMAGE HERE]
+
+## How to format the response of the webhook call?
+
+The body format of your response should be a valid JSON and can contain two key: `replies` and `conversation`.
+
+| Key                   | Required | Value
+|-----------------------|----------|-------------------------------------------|
+| replies               | optional | Array of object                           |
+| conversation          | optional | Object with a key `memory` and `language` |
+| conversation.memory   | optional | Object filled as you want                 |
+| conversation.language | optional | String with a language iso format         |
+
+Here is an example:
+
+~~~ json
+{
+  "replies": [
+    {
+      "type": "text",
+      "content": "Hello world!"
+    }
+  ],
+  "conversation": {
+    "language": "en",
+    "memory": {
+      "user": "Bob"
+    }
+  }
+}
+~~~
+
+The `conversation` data you send back will update the state of your conversation:
+
+* the `memory` will replace the actual memory of your bot (so be carreful if you just want to change one of your memory key to add all your others key to not losing everything).
+* the `language` will update the language of the conversation: each new sentence sent by the user will be processed in this language and the bot will reply in this language.
+
+The `replies` are send in the body of the result of the main Bot Builder and will appear in the `messages` key:
+
+POST `https://api.recast.ai/build/v1/dialog`
+
+~~~ json
+{
+    "messages": [
+        {
+             "type": "text",
+             "content": "Hello world!"
+        }
+    ],
+    "conversation": {
+        "id": "CONVERSATION_ID",
+        "language": "en",
+        "memory": {},
+        "skill": "default",
+        "skill_occurences": 1
+    },
+    "nlp": {
+        "uuid": "b96bc782-6aba-4fac-aeaa-2326936b08bf",
+        "source": "Hello Recast.AI",
+        "intents": [
+            {
+                "slug": "greetings",
+                "confidence": 0.99
+            }
+        ],
+        "act": "assert",
+        "type": null,
+        "sentiment": "neutral",
+        "entities": {},
+        "language": "en",
+        "processing_language": "en",
+        "version": "2.10.1",
+        "timestamp": "2017-10-19T13:24:12.984856+00:00",
+        "status": 200
+    }
+}
+~~~
+
+
+## How to format the array of replies?
+
+Objects in the array of reply can be formatted as you want, depending on your needs when you request the Bot Builder API.
+**If you are using Bot Connector**, meaning you have connected a channel on the Recast.AI platform like Facebook Messenger, Slack or a Webchat, you need to follow the format of Bot Connector:  **<a href="/concepts/structured-messages">Check the format to send rich messages</a>**
+
+~~~ json
+{
+  "replies": [
+    {
+      "type": "text",
+      "content": "Hello world!"
+    }
+  ]
+}
+~~~
+
+
+
+## How looks your code?
 
 Copy-paste this snippet in a file, install the dependencies and run the file.
 
