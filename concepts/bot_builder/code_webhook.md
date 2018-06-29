@@ -10,7 +10,9 @@ A webhook is a simple HTTP call to your backend. To configure your HTTP call, cl
 
 [IMAGE HERE]
 
-You can provide the full URL or route (starting with a '/') to be called by the Bot Builder. If you provide a route, it will be added to your bot's base URL (configurable in your bot's settings).
+You can provide the full URL or route (starting with a '/') to be called by the Bot Builder. 
+If you provide a route, the 'Bot webhook base URL' (configurable in your bot's settings) will be prepended to it.
+
 
 [IMAGE HERE]
 
