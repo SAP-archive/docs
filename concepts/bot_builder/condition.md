@@ -9,7 +9,7 @@ A condition is a test that can be evaluated to either true or false.
 You can find conditions in different sections of your skill:
 
 - in the **<a href="/concepts/trigger">triggers</a>**
-- in the **<a href="/concepts/requirement">requirements</a>**
+- in the **<a href="/concepts/requirements">requirements</a>**
 - in each group of **<a href="/concepts/action">actions</a>**
 
 ![Recast.AI - Bot condition](//cdn.recast.ai/man/recast-ai-data-condition-ex.png)

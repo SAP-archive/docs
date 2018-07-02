@@ -1,7 +1,7 @@
 ---
 layout: concept
 title: Requirement
-permalink: /concepts/requirement
+permalink: /concepts/requirements
 ---
 
 Requirements are either **intents** or **entities** your skill needs to retrieve before executing actions.
