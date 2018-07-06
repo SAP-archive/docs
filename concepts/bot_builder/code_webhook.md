@@ -5,13 +5,13 @@ permalink: /concepts/code-and-webhook
 ---
 
 
-At many points in your conversation, you most likely want to retrieve business information or connect to an external system to perform actions. You can do this through **webhooks**.
-A webhook is a simple HTTP call to your backend. To configure your HTTP call, click Webhook action in the Bot Builder.
+At many points in your conversation, you most likely want to retrieve business information or connect to an external system to perform actions. You can do this through webhooks.
+A webhook is a simple HTTP call to your backend. To configure your HTTP call, click **Webhook action** in the Bot Builder.
 
 [IMAGE HERE]
 
 You can provide the full URL or route (starting with a '/') to be called by the Bot Builder. 
-If you provide a route, the 'Bot webhook base URL' (configurable in your bot's settings) will be prepended to it.
+If you provide a route, the **Bot webhook base URL** (configurable in your bot's settings) will be prepended to it.
 
 
 [IMAGE HERE]
@@ -36,9 +36,9 @@ HTTP headers are accommodated by configuring a key-value pair, where you can nam
 
 ## Body configuration
 
-The HTTP request body must be formatted as a standard JSON object. You can either receive the default body that we provide with all the conversation state or create your own custom body.
+The HTTP request body must be formatted as a standard JSON object. You can either receive the default body that we provide with all the conversation states or create your own custom body.
 
-The default body format is the following:
+The default body format is as follows:
 
 ~~~ json
 {
@@ -78,26 +78,26 @@ The default body format is the following:
 }
 ~~~
 
-In custom HTTP request bodies, conversation variables (like memories variables, nlp information..) can be referenced in place of hard-coded values, for example, `{{memory.person.raw}}`.
+In custom HTTP request bodies, you can reference conversation variables (like memory variables, NLP information, and so on) in place of hard-coded values, for example, `{{memory.person.raw}}`.
 
 [IMAGE HERE]
 
 ## Templates
 
-You can reuse specific configurations of authorizations, headers, and bodies in other skills by choosing Templates in the skill view. These templates can be managed on the Templates tab.
+You can reuse specific configurations of authorizations, headers, and bodies in other skills by choosing **Templates** in the skill view. You can manage these templates on the **Templates** tab.
 
 [IMAGE HERE]
 
-## How to format the response of the webhook call?
+## Formatting the response of the webhook call
 
-The body format of your response should be a valid JSON and can contain two key: `replies` and `conversation`.
+The body format of your response should be a valid JSON and can contain two keys: `replies` and `conversation`.
 
 | Key                   | Required | Value
 |-----------------------|----------|-------------------------------------------|
-| replies               | optional | Array of object                           |
-| conversation          | optional | Object with a key `memory` and `language` |
-| conversation.memory   | optional | Object filled as you want                 |
-| conversation.language | optional | String with a language iso format         |
+| replies               | Optional | Array of object                           |
+| conversation          | Optional | Object with a key `memory` and `language` |
+| conversation.memory   | Optional | Object filled as you want                 |
+| conversation.language | Optional | String with a language ISO format         |
 
 Here is an example:
 
@@ -120,10 +120,10 @@ Here is an example:
 
 The `conversation` data you send back will update the state of your conversation:
 
-* the `memory` will replace the actual memory of your bot (so be carreful if you just want to change one of your memory key to add all your others key to not losing everything).
-* the `language` will update the language of the conversation: each new sentence sent by the user will be processed in this language and the bot will reply in this language.
+* `memory` will replace the actual memory of your bot (so be careful if you just want to change one of your memory keys to add all your other keys so that you don't lose everything).
+* `language` will update the language of the conversation. Each new sentence sent by the user will be processed in this language, and the bot will reply in this language.
 
-The `replies` are send in the body of the result of the main Bot Builder and will appear in the `messages` key:
+The `replies` are sent in the body of the result of the main Bot Builder and will appear in the `messages` key:
 
 POST `https://api.recast.ai/build/v1/dialog`
 
@@ -165,10 +165,10 @@ POST `https://api.recast.ai/build/v1/dialog`
 ~~~
 
 
-## How to format the array of replies?
+## Formatting the array of replies
 
-Objects in the array of reply can be formatted as you want, depending on your needs when you request the Bot Builder API.
-**If you are using Bot Connector**, meaning you have connected a channel on the Recast.AI platform like Facebook Messenger, Slack or a Webchat, you need to follow the format of Bot Connector:  **<a href="/concepts/structured-messages">Check the format to send rich messages</a>**
+You can format objects in the array of reply as desired, depending on your needs when you request the Bot Builder API.
+If you are using the Bot Connector (that is, you have connected a channel on the Recast.AI platform like Facebook Messenger, Slack, or a webchat), you need to follow the Bot Connector format:  **<a href="/concepts/structured-messages">Check the format to send rich messages</a>**
 
 ~~~ json
 {
@@ -183,9 +183,9 @@ Objects in the array of reply can be formatted as you want, depending on your ne
 
 
 
-## How looks your code?
+## Checking your code
 
-Copy-paste this snippet in a file, install the dependencies and run the file.
+Copy and paste this snippet in a file, install the dependencies, and run the file.
 
 JS:
 <span class="code">npm install express body-parser --save</span>
