@@ -1,6 +1,6 @@
 ---
 layout: concept
-title: Custom code and webhook
+title: Custom code and webhooks
 permalink: /concepts/code-and-webhook
 ---
 
@@ -36,7 +36,7 @@ HTTP headers are accommodated by configuring a key-value pair, where you can nam
 
 ## Body configuration
 
-The HTTP request body must be formatted as a standard JSON object. You can either receive the default body that we provide with all the conversation states or create your own custom body.
+The HTTP request body must be formatted as a standard JSON object. You can either receive the default body that we provide with all conversation states or create your own custom body.
 
 The default body format is as follows:
 
@@ -78,7 +78,7 @@ The default body format is as follows:
 }
 ~~~
 
-In custom HTTP request bodies, you can reference conversation variables (like memory variables, NLP information, and so on) in place of hard-coded values, for example, `{{memory.person.raw}}`.
+In custom HTTP request bodies, you can reference conversation variables (like memory variables, NLP information, etc.) in place of hard-coded values, for example, `{{memory.person.raw}}`.
 
 [IMAGE HERE]
 
