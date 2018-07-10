@@ -10,7 +10,7 @@ Organizations are shared accounts where groups of people can collaborate across 
 
 ## Create and manage an organization
 
-From your profile, you can create **private** and **public** organization. Everyone can view public organization you are member and visit the organization page and bots inside. Private organization is visible only by its members.
+From your profile, you can create **private** and **public** organizations. Everyone can view public organizations : the bots inside as well as the members. Private organizations are only visible by its members.
 
 Inside an organization, all members have the same permissions on bots. Only admins can update the members list and change the settings of the organization.
 
