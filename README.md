@@ -1,13 +1,18 @@
 # Recast.AI documentation
 
 This repository contains the documentation for the [Recast.AI platform](https://recast.ai).
-The hosted version is [here](https://recastai.github.io/documentation/).
+The hosted version is [here](https://recastai.github.io/docs/).
 
 ## Installation
 
+Make sure you have install bundler:
+```sh
+> gem install bundler
+```
+
 Clone the repository and install the dependencies.
 ```sh
-> git clone https://github.com/RecastAI/documentation.git
+> git clone https://github.com/RecastAI/docs.git
 > cd documentation
 > bundle install
 ```
