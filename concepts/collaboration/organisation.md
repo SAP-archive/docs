@@ -6,7 +6,7 @@ permalink: /concepts/organization-account
 
 # Organizations
 
-Organizations are shared accounts allowing groups of people to collaborate on many bots at the same time. Administrators manage member access to an organization's bots.
+Organizations are shared accounts, allowing groups of people to collaborate on many bots at the same time. Administrators manage member access to an organization's bots.
 
 ## Create and manage an organization
 
