@@ -4,21 +4,21 @@ title: Organization account
 permalink: /concepts/organization-account
 ---
 
-# Organization
+# Organizations
 
-Organizations are shared accounts where groups of people can collaborate across many bots at once. Administrators can manage member access to the organization's bots.
+Organizations are shared accounts allowing groups of people to collaborate on many bots at the same time. Administrators manage member access to an organization's bots.
 
 ## Create and manage an organization
 
-From your profile, you can create **private** and **public** organizations. Everyone can view public organizations : the bots inside as well as the members. Private organizations are only visible by its members.
+From your profile, you can create **private** and **public** organizations. Everyone can view public organizations, their bots, as well as their members. Private organizations can only be viewed by their members.
 
-Inside an organization, all members have the same permissions on bots. Only admins can update the members list and change the settings of the organization.
+Within an organization, all members have the same bot permissions. However, only administrators can update the members list and change the organization settings.
 
 ## Transfer your bots
 
-To transfer an existing bot, go to the settings page of this bot, and under the **danger** zone you can transfer the bot to one of your organization.
+To transfer an existing bot, go to the **Settings** page for the bot. Under **Danger Zone**, you can can then transfer the bot to one of your organizations.
 
-## What's the difference between user and organization account?
+## What's the difference between my user account and an organization account?
 
 Your user account is your identity on Recast.AI. Your user account can be a member of any number of organizations.
 
