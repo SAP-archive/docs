@@ -8,17 +8,14 @@ permalink: /concepts/code-and-webhook
 At many points in your conversation, you most likely want to retrieve business information or connect to an external system to perform actions. You can do this through webhooks.
 A webhook is a simple HTTP call to your backend. To configure your HTTP call, click **Webhook action** in the Bot Builder.
 
-[IMAGE HERE]
+![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/webhook.png)
 
 You can provide the full URL or route (starting with a '/') to be called by the Bot Builder. 
 If you provide a route, the **Bot webhook base URL** (configurable in your bot's settings) will be prepended to it.
 
-
-[IMAGE HERE]
-
 You can specify the HTTP method to use in your webhook call (GET, POST, PUT, DELETE, or PATCH).
 
-[IMAGE HERE]
+![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/header.png)
 
 ## Authentication configuration
 
@@ -26,13 +23,13 @@ You have the following options:
 •	No authentication: No authentication/authorization is passed with the request.
 •	Basic authentication: A username/password pair is passed with the request. 
 
-[IMAGE HERE]
+![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/authentication.png)
 
 ## Header configuration
 
 HTTP headers are accommodated by configuring a key-value pair, where you can name keys and set a value to be passed along in the header.
 
-[IMAGE HERE]
+![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/webhook-header.png)
 
 ## Body configuration
 
@@ -80,13 +77,17 @@ The default body format is as follows:
 
 In custom HTTP request bodies, you can reference conversation variables (like memory variables, NLP information, etc.) in place of hard-coded values, for example, `{{memory.person.raw}}`.
 
-[IMAGE HERE]
+![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/body.png)
 
 ## Templates
 
-You can reuse specific configurations of authorizations, headers, and bodies in other skills by choosing **Templates** in the skill view. You can manage these templates on the **Templates** tab.
+You can reuse specific configurations of authorizations, headers, and bodies in other skills by choosing **Templates** in the skill view.
 
-[IMAGE HERE]
+![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/templates-skill.png)
+
+ You can manage these templates on the **Templates** tab.
+ 
+ ![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/templates-builder.png)
 
 ## Formatting the response of the webhook call
 
