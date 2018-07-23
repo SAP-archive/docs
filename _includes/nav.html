@@ -82,13 +82,17 @@
   <br/>
 
   {% if page.url == '/personal-data/' %}
-  <a class='active' href="{{ site.baseurl}}/personal-data">
-    About personal data
-  </a>
+  <div class="Nav-link">
+    <a class="personalData active" href="{{ site.baseurl}}/personal-data">
+      About personal data
+    </a>
+  </div>
   {% else %}
-  <a href="{{ site.baseurl}}/personal-data">
-    About personal data
-  </a>
+  <div class="Nav-link">
+    <a class="personalData" href="{{ site.baseurl}}/personal-data">
+      About personal data
+    </a>
+  </div>
   {% endif %}
 
   <br/>

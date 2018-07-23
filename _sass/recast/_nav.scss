@@ -18,6 +18,10 @@
     color: $grey-700;
     text-decoration: none;
 
+    &.personalData {
+      color: $blue-500;
+    }
+
     &:hover {
       text-decoration: underline;
     }
