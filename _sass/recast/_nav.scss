@@ -17,11 +17,19 @@
   .Nav-link > a {
     color: $grey-700;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .Nav-title {
     padding-top: 1rem;
     font-size: 14px;
     font-weight: 400;
+  }
+
+  .active {
+    text-decoration: underline !important;
   }
 }
