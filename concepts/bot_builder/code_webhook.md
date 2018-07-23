@@ -20,8 +20,11 @@ You can specify the HTTP method to use in your webhook call (GET, POST, PUT, DEL
 ## Authentication configuration
 
 You have the following options:
+
 •	No authentication: No authentication/authorization is passed with the request.
+
 •	Basic authentication: A username/password pair is passed with the request. 
+
 
 ![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/authentication.png)
 
@@ -94,6 +97,7 @@ You can reuse specific configurations of authorizations, headers, and bodies in 
 ## Formatting the response of the webhook call
 
 The body format of your response should be a valid JSON and can contain two keys: `replies` and `conversation`.
+<br>
 
 | Key                   | Required | Value
 |-----------------------|----------|-------------------------------------------|
@@ -102,7 +106,7 @@ The body format of your response should be a valid JSON and can contain two keys
 | conversation.memory   | Optional | Object filled as you want                 |
 | conversation.language | Optional | String with a language ISO format         |
 
-
+<br>
 Here is an example:
 
 ~~~ json
@@ -122,6 +126,7 @@ Here is an example:
 }
 ~~~
 
+<br>
 The `conversation` data you send back will update the state of your conversation:
 
 * `memory` will replace the actual memory of your bot (so be careful if you just want to change one of your memory keys to add all your other keys so that you don't lose everything).
@@ -130,6 +135,7 @@ The `conversation` data you send back will update the state of your conversation
 The `replies` are sent in the body of the result of the main Bot Builder and will appear in the `messages` key:
 
 POST `https://api.recast.ai/build/v1/dialog`
+<br>
 
 ~~~ json
 {
