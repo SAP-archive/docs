@@ -1,6 +1,6 @@
 ---
 layout: concept
-title: Organization account
+title: Collaboration
 permalink: /concepts/organization-account
 ---
 
