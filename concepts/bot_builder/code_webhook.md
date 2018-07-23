@@ -75,9 +75,12 @@ The default body format is as follows:
 }
 ~~~
 
+
 In custom HTTP request bodies, you can reference conversation variables (like memory variables, NLP information, etc.) in place of hard-coded values, for example, `{{memory.person.raw}}`.
 
+
 ![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/body.png)
+
 
 ## Templates
 
