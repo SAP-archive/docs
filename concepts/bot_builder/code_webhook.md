@@ -75,9 +75,9 @@ The default body format is as follows:
 }
 ~~~
 
-
-In custom HTTP request bodies, you can reference conversation variables (like memory variables, NLP information, etc.) in place of hard-coded values, for example, `{{memory.person.raw}}`.
 <br><br>
+In custom HTTP request bodies, you can reference conversation variables (like memory variables, NLP information, etc.) in place of hard-coded values, for example, `{{memory.person.raw}}`.
+
 ![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/body.png)
 
 
@@ -94,14 +94,14 @@ You can reuse specific configurations of authorizations, headers, and bodies in 
 ## Formatting the response of the webhook call
 
 The body format of your response should be a valid JSON and can contain two keys: `replies` and `conversation`.
-<br><br>
+
 | Key                   | Required | Value
 |-----------------------|----------|-------------------------------------------|
 | replies               | Optional | Array of object                           |
 | conversation          | Optional | Object with a key `memory` and `language` |
 | conversation.memory   | Optional | Object filled as you want                 |
 | conversation.language | Optional | String with a language ISO format         |
-<br><br>
+
 
 Here is an example:
 
