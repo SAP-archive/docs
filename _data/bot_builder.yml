@@ -16,8 +16,8 @@ sections:
 - title: Action
   url: /concepts/action
 
-- title: Conversation State
+- title: Conversation state
   url: /concepts/conversation-state
 
-- title: Code & Webhook
+- title: Custom code and webhooks
   url: /concepts/code-and-webhook
