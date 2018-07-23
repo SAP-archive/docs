@@ -97,7 +97,7 @@ You can reuse specific configurations of authorizations, headers, and bodies in 
 ## Formatting the response of the webhook call
 
 The body format of your response should be a valid JSON and can contain two keys: `replies` and `conversation`.
-<br>
+<br><br>
 
 | Key                   | Required | Value
 |-----------------------|----------|-------------------------------------------|
