@@ -20,7 +20,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
                                                           src="https://www.recast.ai/assets/images/integrations/callr.png" width="30px"
                                                           alt=""></th>
         <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://www.recast.ai/assets/images/integrations/cisco.svg" width="30px"
+                                                          src="https://cdn.recast.ai/man/channels/cisco.png" width="30px"
                                                           alt=""></th>
         <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
                                                           src="https://www.recast.ai/assets/images/integrations/kik.svg" width="30px" alt="">
