@@ -15,7 +15,7 @@ All metrics are extracted from the conversations that users have with your bot t
 | I'm using the NLP API only (with the `/request` endpoint) | Not available |
 | I'm using the NLP API and Bot Connector | Not available |
 
-All metrics are filtered by one of the `languages` of your bot (unless some graphics, when it's specified) and a time range that you can select.
+All metrics are filtered by one of the `languages` of your bot (except for some graphics, where indicated) and a time range that you can select.
 
 ## Metrics type
 
