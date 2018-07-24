@@ -10,9 +10,11 @@ Organizations are shared accounts, allowing groups of people to collaborate on m
 
 ## Create and manage an organization
 
-From your profile, you can create **private** and **public** organizations. Everyone can view public organizations, their bots, as well as their members. Private organizations can only be viewed by their members.
+From your profile, you can create **private** and **public** organizations.
 
 ![Recast.AI - Organization](https://cdn.recast.ai/man/organisation/create-org.png)
+
+Everyone can view public organizations, their bots, as well as their members. Private organizations can only be viewed by their members.
 
 Within an organization, all members have the same bot permissions. However, only administrators can update the members list and change the organization settings.
 
