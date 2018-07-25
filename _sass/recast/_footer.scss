@@ -1,12 +1,12 @@
 .Footer {
+  background-color: $grey-100;
 
   .Footer-top {
-    background-color: $grey-100;
     padding: 1rem 5rem;
   }
 
   .Footer-top-title {
-    font-weight: bold;
+    font-weight: 400;
     padding: 2rem 0 1rem 0;
   }
 
@@ -27,8 +27,7 @@
   .Footer-bottom {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 5rem;
-    background-color: $grey-200;
+    padding: 1rem 5rem;
   }
 
   .Footer-bottom-logos {

@@ -71,30 +71,32 @@
     </div>
   </div>
   <div class="Footer-bottom">
-    <div>
-      <a target="_blank" rel="noopener noreferrer" href="https://recast.ai/privacy-policy" class="Footer-bottom-link">
-        Privacy policy
-      </a>
-      -
-      <a target="_blank" rel="noopener noreferrer" href="https://recast.ai/terms" class="Footer-bottom-link">
-        Terms
-      </a>
-    </div>
+    <div class='container flex flex-content-between'>
+      <div>
+        <a target="_blank" rel="noopener noreferrer" href="https://recast.ai/privacy-policy" class="Footer-bottom-link">
+          Privacy policy
+        </a>
+        -
+        <a target="_blank" rel="noopener noreferrer" href="https://recast.ai/terms" class="Footer-bottom-link">
+          Terms
+        </a>
+      </div>
 
-    <div class="Footer-bottom-logos">
-      {% for item in site.data.footer.logos %}
-      <a
-          target="_blank"
-          rel="noopener noreferrer"
-          class="Footer-bottom-social"
-          href="{{ item.link }}"
-          title="{{ item.title }}"
-      >
-        <i class="icon {{ item.logo }}"></i>
-      </a>
-      {% endfor %}
+      <div class="Footer-bottom-logos">
+        {% for item in site.data.footer.logos %}
+        <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="Footer-bottom-social"
+            href="{{ item.link }}"
+            title="{{ item.title }}"
+        >
+          <i class="icon {{ item.logo }}"></i>
+        </a>
+        {% endfor %}
 
-      <p class="Footer-copyright">&copy;&nbsp;Recast.AI</p>
+        <p class="Footer-copyright">&copy;&nbsp;Recast.AI</p>
+      </div>
     </div>
   </div>
 </footer>
