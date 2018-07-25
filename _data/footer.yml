@@ -6,21 +6,21 @@ sections:
       #   url: "/concepts/how-chatbot-works"
       # - title: "HOW NLP WORKS?"
       #   url: "/concepts/how-nlp-works"
-      - title: "CREATE A BOT"
+      - title: "Create a bot"
         url: "/concepts/create-builder-bot"
-      - title: "TRAIN A BOT"
+      - title: "Train a bot"
         url: "/concepts/train-your-bot"
-      - title: "TEXT ANALYSIS"
+      - title: "Text analysis"
         url: "/concepts/text-analysis-nlp"
-      - title: "BUILD A SKILL"
+      - title: "Build a skill"
         url: "/concepts/what-skill"
-      - title: "CONNECT A BOT"
+      - title: "Connect a bot"
         url: "/concepts/connect-your-bot"
       # - title: "MONITOR A BOT"
       #   url: "/concepts/"
       # - title: "ANALYSE A TRAINING"
       #   url: "/concepts/"
-      - title: "ENTITIES LEXIC"
+      - title: "Entities lexic"
         external: true
         url: "https://recast.ai/docs/api-reference/#list-of-entities"
   - title: "API REFERENCE"
@@ -28,44 +28,44 @@ sections:
       - title: "NLP API"
         external: true
         url: "https://recast.ai/docs/api-reference"
-      - title: "BOT BUILDER API"
+      - title: "Bot Builder API"
         external: true
         url: "https://recast.ai/docs/api-reference/#bot-builder-api"
-      - title: "BOT CONNECTOR API"
+      - title: "Bot Connector API"
         external: true
         url: "https://recast.ai/docs/api-reference/#bot-connector-api"
   - title: "SDKs"
     sections:
-      - title: "RUBY"
+      - title: "Ruby"
         external: true
         url: "https://github.com/RecastAI/SDK-ruby"
-      - title: "JAVASCRIPT"
+      - title: "Javascript"
         external: true
         url: "https://github.com/RecastAI/SDK-NodeJS"
-      - title: "PYTHON"
+      - title: "Python"
         external: true
         url: "https://github.com/RecastAI/SDK-python"
       - title: "PHP"
         external: true
         url: "https://github.com/RecastAI/SDK-PHP"
-      - title: "JAVA"
+      - title: "Java"
         external: true
         url: "https://github.com/RecastAI/SDK-Android"
-      - title: "IOS"
+      - title: "iOS"
         external: true
         url: "https://github.com/RecastAI/SDK-iOS"
   - title: "TUTORIALS"
     sections:
-      - title: "BUILD YOUR FIRST CHATBOT"
+      - title: "Build your first chatbot"
         external: true
         url: "https://recast.ai/blog/build-your-first-bot-with-recast-ai/"
-      - title: "NODEJS CHATBOT TUTORIAL"
+      - title: "NodeJS chatbot tutorial"
         external: true
         url: "https://recast.ai/blog/nodejs-chatbot-movie-bot/"
-      - title: "PYTHON CHATBOT TUTORIAL"
+      - title: "Python chatbot tutorial"
         external: true
         url: "https://recast.ai/blog/python-cryptobot/"
-      - title: "CHATFUEL + RECAST.AI"
+      - title: "Chatfuel + Recast.AI"
         external: true
         url: "https://recast.ai/blog/add-smalltalk-chatfuel-bot/"
 logos:
