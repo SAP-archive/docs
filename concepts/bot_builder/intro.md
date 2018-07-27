@@ -1,8 +1,8 @@
 
 ---
 layout: concept
-title: Action
-permalink: /concepts/action
+title: Introduction
+permalink: /concepts/builder-intro
 ---
 
 Actions are, well, actions your bot executes at specific time in the skill execution.
