@@ -1,6 +1,9 @@
 title: Bot Builder
 sections:
 
+- title: How it work?
+  url: /concepts/skill
+
 - title: What is a skill?
   url: /concepts/what-skill
 
