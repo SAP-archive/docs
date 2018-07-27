@@ -79,6 +79,15 @@
     </div>
   {% endfor %}
   
+  <h3 class="Nav-header">{{ site.data.monitor.title }}</h3>
+  {% for item in site.data.monitor.sections %}
+    <div class="Nav-link">
+      <a href="{{ site.baseurl }}{{ item.url }}">
+        {{ item.title }}
+      </a>
+    </div>
+  {% endfor %}
+  
   <h3 class="Nav-header">{{ site.data.collaboration.title }}</h3>
   {% for item in site.data.collaboration.sections %}
     <div class="Nav-link">
