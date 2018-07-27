@@ -1,4 +1,3 @@
-
 ---
 layout: concept
 title: Introduction
