@@ -4,9 +4,25 @@ title: Introduction
 permalink: /concepts/builder-intro
 ---
 
-Actions are, well, actions your bot executes at specific time in the skill execution.
+This is a introduction regarding how Bot Builder interacts with other services of the platform.
 
-## Action categories
+## Introduction
+
+The Bot Builder process is split in three disctincts parts:
+- Get the user’s input through a messaging channel
+- Understand user’s input using Natural Language Processing
+- Manage the conversation and the context
+
+1) Getting the user input can be done by the Bot Connector, meaning the Bot Connector when receiving a message is going to disptach the message to your Bot Builder. By default every single messages received by Bot Connector is sent to the https://api.recast.ai/build/v1/dialog which is the endpoint of your Bot Builder.
+
+2) Once the Bot Builder receives an input, it posts the message on our NLP API to extract structured information from this sentence
+
+3) The last step consists of using the JSON that it got back from the NLP API to manage the conversation using Skills and conditions.
+
+
+## Bot Builder with Bot Connector
+
+If you're using the Bot Builder with Bot Connector, as stated above all incoming messages are sent byt the Bot Connector to the 
 
 An action can either be:
 
@@ -17,6 +33,9 @@ An action can either be:
 - a switch to another **language**
 
 ![Recast.AI - Action](//cdn.recast.ai/man/recast-ai-actions-type.png)
+
+## Bot Builder without Bot Connector
+
 
 ## Message actions
 For message actions, all rich messaging formats are supported.
