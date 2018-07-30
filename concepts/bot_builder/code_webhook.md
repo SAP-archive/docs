@@ -129,7 +129,7 @@ Here is an example:
 <br>
 The `conversation` data you send back will update the state of your conversation:
 
-* `memory` will replace the actual memory of your bot (so be careful if you just want to change one of your memory keys to add all your other keys so that you don't lose everything).
+* `memory` will replace the actual memory of your bot (so be careful that you don't lose everything if you just want to change one of your memory keys to add all your other keys).
 * `language` will update the language of the conversation. Each new sentence sent by the user will be processed in this language, and the bot will reply in this language.
 
 The `replies` are sent in the body of the result of the main Bot Builder and will appear in the `messages` key:
