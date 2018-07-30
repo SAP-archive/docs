@@ -6,14 +6,14 @@ permalink: /concepts/code-and-webhook
 
 
 At many points in your conversation, you most likely want to retrieve business information or connect to an external system to perform actions. You can do this through webhooks.
-A webhook is a simple HTTP call to your backend. To configure your HTTP call, click **Webhook action** in the Bot Builder.
+A webhook is a simple HTTP call to your backend. To configure your HTTP call, click **CALL WEBHOOK** in the Bot Builder.
 
 ![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/webhook.png)
 
 You can provide the full URL or route (starting with a '/') to be called by the Bot Builder. 
 If you provide a route, the **Bot webhook base URL** (configurable in your bot's settings) will be prepended to it.
 
-You can specify the HTTP method to use in your webhook call (GET, POST, PUT, DELETE, or PATCH).
+You can specify the HTTP method to use in your webhook call (GET, POST, PUT, or PATCH).
 
 ![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/header.png)
 
