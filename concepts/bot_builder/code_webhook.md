@@ -178,7 +178,7 @@ POST `https://api.recast.ai/build/v1/dialog`
 ## Formatting the array of replies
 
 You can format objects in the array of reply as desired, depending on your needs when you request the Bot Builder API.
-If you are using the Bot Connector (that is, you have connected a channel on the Recast.AI platform like Facebook Messenger, Slack, or a webchat), you need to follow the Bot Connector format:  **<a href="/concepts/structured-messages">Check the format to send rich messages</a>**
+If you are using the Bot Connector (that is, you have connected a channel on the Recast.AI platform like Facebook Messenger, Slack, or a webchat), you need to follow the Bot Connector format:  **<a href="https://recast.ai/docs/concepts/structured-messages">Check the format to send rich messages</a>**
 
 ~~~ json
 {
