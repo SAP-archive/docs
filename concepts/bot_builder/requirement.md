@@ -54,7 +54,7 @@ if #location.type is-not locality
   send_message('Can you please give me a city ?')
 ```
 
-![Recast.AI - Validators action](//cdn.recast.ai/man/recast-ai-action-validators.png)
+![Recast.AI - Validators action](//cdn.recast.ai/man/bot-builder/validators.png)
 
 ## **Group of requirements**
 
