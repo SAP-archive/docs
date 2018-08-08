@@ -1,14 +1,18 @@
 {% assign current = page.url | remove_first: "/" | split: '/' | first %}
 
 <header class="Header" role="banner">
-  <a class="Header-logo" href="{{ "/" | relative_url }}">
-    <img
-      alt="Recast.AI logo"
-      class="Header-logo-image"
-      src="https://cdn.recast.ai/website/logo/recast-ai-logo-inline.svg"
-    />
-    <p class="Header-logo-text">DOCS</p>
-  </a>
+  <div class="Header-logo">
+    <a href="https://recast.ai" target="_blank" rel="noopener noreferrer">
+      <img
+        alt="Recast.AI logo"
+        class="Header-logo-image"
+        src="https://cdn.recast.ai/website/logo/recast-ai-logo-inline.svg"
+      />
+    </a>
+    <a href="{{ "/" | relative_url }}">
+      <p class="Header-logo-text">DOCS</p>
+    </a>
+  </div>
 
   <a class="Header-link {% if current == 'concepts' %}active{% endif %}" href="{{ "/concepts/create-builder-bot" | relative_url }}">Recast.AI Concepts</a>
 

@@ -16,6 +16,9 @@ sections:
 - title: Action
   url: /concepts/action
 
+- title: Messages
+  url: /concepts/builder_messages
+
 - title: Conversation state
   url: /concepts/conversation-state
 
