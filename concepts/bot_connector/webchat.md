@@ -11,6 +11,8 @@ You can use the default version of this webchat that we provide to you in the pl
 
 You need to activate this channel in the CONNECT tab of your bot.
 
+![Recast.AI - Webchat](//cdn.recast.ai/man/webchat-connector.png)
+
 ### How to use it
 
 1) Configure details like the color, the main title in the button, pictures etc..
