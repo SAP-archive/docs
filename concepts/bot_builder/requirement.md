@@ -42,13 +42,17 @@ For example, with the username as a requirement, the action would be a message a
 ### Validators
 
 You can define validators in a requirement to validate that the user input matches your needs.
-These validators are made of
-**<a href="/concepts/condition">conditions</a>**
-  that will define validation, and of actions to execute if the validation fails.
+These validators are made of **<a href="/concepts/condition">conditions</a>** and actions to execute in case of a validation error.
 
-If the validation fails, the retrieved data will not be stored in memory, and thus the requirement will not be completed.
+The validation fails when the condition is **true**. In such case, the retrieved data will not be stored in memory, and thus the requirement will not be completed.
 
-For example, if we want to get an address from the user, we can create a requirement that retrieves a location entity, and add a validator to check that this location is really an address and does not refer to a city or a country, and tell the user about this limitation.
+For example, if we want to get a city from the user, we can create a requirement that retrieves a location entity, and add a validator to check that this location is really a city and does not refer to a country for example, and tell the user about this limitation.
+
+You could write it this way :
+```
+if #location.type is-not locality
+  send_message('Can you please give me a city ?')
+```
 
 ![Recast.AI - Validators action](//cdn.recast.ai/man/recast-ai-action-validators.png)
 
