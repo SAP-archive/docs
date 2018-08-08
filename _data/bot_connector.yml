@@ -4,6 +4,9 @@ sections:
 - title: Channel
   url: /concepts/channel
 
+- title: Webchat
+  url: /concepts/webchat
+
 - title: Hello World
   url: /concepts/hello-world
 
