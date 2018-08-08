@@ -4,15 +4,17 @@ title: Webchat
 permalink: /concepts/webchat
 ---
 
-They are 2 versions of the webchat.
+The Webchat Channel is developed by the Recast.AI team and is an open source project on Github.
+You can use the default version of this webchat that we provide to you in the platform or customize it yourself by fork it and deploy it on your side.
 
-## Hosted version
-Can be found here: <a href="https://cdn.recast.ai/webchat/webchat.js" alt="Webchat Script" target="_blank">CDN RecastAI Webchat script</a>
-The hosted version webchat script is a compiled script of our webchat and has all functionalities supported by our platform.
+## Default Hosted version
+
+You need to activate this channel in the CONNECT tab of your bot.
 
 ### How to use it
 
-Per default, you can just add this script into your page to get the webchat.
+1) Configure details like the color, the main title in the button, pictures etc..
+2) just add this script into your page to get the webchat:
 
 ~~~ html
 <script src="https://cdn.recast.ai/webchat/webchat.js"
@@ -24,9 +26,9 @@ id="recast-webchat"
 
 Note: `CHANNEL_ID` and `TOKEN_ID` can be found when creating a webchat channel in the bot connector.
 
-## Open version
+## Open source version
 
-- If you want to custom style or add new functionalities which does not exist in the hosted version, you can fork the open source webchat.
+- If you want to custom style or add new functionalities which does not exist in the default hosted version, you can fork the open source webchat.
 - Link of Github webchat: <a href="https://github.com/Recastai/webchat" alt="Github Recast Webchat" target="_blank">Github RecastAI Webchat</a>
 
 ### How to use it
