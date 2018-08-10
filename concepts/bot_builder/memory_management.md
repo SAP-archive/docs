@@ -1,10 +1,16 @@
+---
+layout: concept
+title: Memory management
+permalink: /concepts/memory-management
+---
+
 ## Your conversation memory
 
-Each conversation with a uniq user got a memory object from the beginning to the end of the conversation. This memory is persistant during the entire conversation, can be updated at any moment and clear when you want.
+Each conversation with a unique user has a memory object from the beginning to the end of the conversation. This memory persists during the entire conversation; you can update it at any time or clear it whenever you want.
 
-This memory is an empty object when a new conversation starts (unless you want to start a new conversation with pre filled keys), is stored in your <a href="/concepts/conversation-state">conversation state</a>, returned in the <a href="/concepts/code-and-webhook#body-configuration">default body</a> of webhook and returned after the Bot Builder API call.
+When a new conversation starts, the memory is an empty object (unless you want to start a new conversation with prefilled keys). The memory is stored in your <a href="/concepts/conversation-state">conversation state</a>. It is returned in the <a href="/concepts/code-and-webhook#body-configuration">default body</a> of a webhook and after the Bot Builder API call.
 
-Your memory object could look like this:
+For example, your memory object could look like this:
 ~~~ json
 "memory": {
   "person": {
@@ -16,49 +22,50 @@ Your memory object could look like this:
 }
 ~~~
 
-### The lifecycle storage
+### Lifecycle storage
 
-- The memory key is created when the value can be filled by the requirement or through a configuration of an **edit memory action** or through your code, in a webhook call.
-- The memory key and the value never change and are never overwritten during all the conversation, unless you configure an update in the **edit memory action**
+The memory key is created when the value can be filled by the requirement, or through a configuration of an **edit memory action**, or through your code in a webhook call.
+
+The memory key and value never change and are never overwritten during the entire conversation, unless you configure an update in an **edit memory action**.
 
 
-## How manipulate memory in the platform
+## How to manipulate memory in the platform
 
-The memory can be filled automatically through the requirements, or manually through a configuration of an **edit memory action**.
+The memory can be filled automatically through the requirements or manually through a configuration of an **edit memory action**.
 
-### Through the requirements
+### Filling the memory through the requirements
 
-A requirement can be either an *entity* or an *intent* detected in the user input. When you create a requirement, it will automatically be detected and saved in your memory with the key you will choose:
+A requirement can be either an entity or an intent that is detected in the user input. When you create a requirement, it is automatically detected and saved in your memory with the key that you choose:
 
 ![Recast.AI - Requirement](//cdn.recast.ai/man/bot-builder/1-requirement.png)
 
-* Why the requirement **key** is important and usefull?
+You can reuse information at different moments in the conversation. For example, if you need the name of the user in two different skills, you create the same requirement "#person" (the entity that represents the person's name) in each skill. If you start the conversation with the first skill, the bot asks for the user's name. If the user replies with her name, the requirement is completed and the name is saved in the memory. When the conversation enters the second skill, the bot doesn't ask again for the user's name because the key is already filled in the memory.
 
-- You can reuse an information at different moment in the conversation. If you need the name of your user in two different skills, you have a requirement "#person" (The entity that represent human name) in each of these skills. If this name key is filled by the first skill, the bot will not ask when the discussion will be in the second skill
-
-- Maybe you need to store the same entity "#person" twice but for different purpose. You want the name of your user, and also his dog's name. You will then create a requirement with "#person" saved as "username" and a second requirement with "#person" saved as "dogname".
+Here's another example: You need to store the same entity "#person" twice, but for different purposes. You want the name of your user and also his dog's name. You therefore create a requirement with "#person" saved as "username", and a second requirement with "#person" saved as "dogname".
 
 ![Recast.AI - Requirement](//cdn.recast.ai/man/bot-builder/2-requirements.png)
 
 
-### Through the actions
+### Filling the memory through an edit memory action
 
-- clic on "edit memory action"
-- You can reset all the memory (erase all the keys) and reset new fields
-- You can just set new field and unset others
-- Value should be proper JSON
+Click "Edit memory action". You have the following options:
+- You can reset all the memory (that is, erase all the keys) and reset new fields
+- You can just set a new field and unset others
 
-This memory modification are done synchronously, it means if you configure a text message with a variable "Hello {{memory.username}}", then you edit the memory by replacing the value of `username` by `bob`, then you configure a new message "Hello {{memory,username}}", you will have this bot replies:
+Be sure that the value is proper JSON.
 
-Hello John (by assuming John was given previously by the user)
-Hello bob
+These memory modifications must be done synchronously. For example, if you configure a text message with a variable "Hello {{memory.username}}", then edit the memory by replacing the value of `username` with `Bob`, and then configure a new message "Hello {{memory,username}}", you will have these bot replies:
+
+Hello John (assuming John was given previously by the user)
+
+Hello Bob
 
 ![Recast.AI - Requirement](//cdn.recast.ai/man/bot-builder/edit-memory.png)
 
-## How manipulate memory in webhook custom code
+## How to manipulate memory in webhook custom code
 
-You can edit the memory in your code, during a webhook call. Read the (https://recast.ai/docs/concepts/code-and-webhook)[Webhook section] to understand how to format your response.
-Here is an example of how to format the return of your webhook call and update the memory of the conversation:
+You can edit the memory in your code during a webhook call. To understand how to format your response, see (https://recast.ai/docs/concepts/code-and-webhook)[Custom code and webhooks].
+Here's an example of how to format the return of your webhook call and update the memory of the conversation:
 
 ~~~ json
 {
@@ -72,12 +79,10 @@ Here is an example of how to format the return of your webhook call and update t
 
 <br>
 
-`memory` will replace the actual memory of your bot (so be careful if you just want to change one of your memory keys to add all your other keys so that you don't lose everything).
+`memory` will replace the actual memory of your bot (so be careful that you don't lose everything if you just want to change one of your memory keys to add all your other keys).
 
-You can also update the memory through an API call: (https://recast.ai/docs/api-reference/#update-a-conversation)[Check the API reference].
+You can also update the memory through an API call. For more information, see (https://recast.ai/docs/api-reference/#update-a-conversation)[Update a conversation] in the API Reference.
 
-## How start a conversation with memory
+## How to start a conversation with memory
 
-You can start a conversation with prefilled information in the memory, and not wait that the first user input is analysed and first skills is triggered.
-
-It's only possible if you are using Bot Builder directly (without Bot Connector). You can read (https://recast.ai/docs/api-reference/#dialog-endpoints)[this section] in the API reference to understand how you need to use the Bot Builder API to do so.
+You can start a conversation with prefilled information in the memory, and not wait until the first user input is analyzed and the first skills are triggered. However, this is only possible if you are using the Bot Builder directly (without the Bot Connector). To understand how to use the Bot Builder API to do this, see (https://recast.ai/docs/api-reference/#dialog-endpoints)[/Dialog (Text)] in the API Reference.
