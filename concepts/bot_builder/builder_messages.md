@@ -20,11 +20,11 @@ List of formats and their advantages:
 - list (same purpose as a carousel, but is presented as a vertical list so you can see everything at once, whereas with the carousel you have to scroll. A little bit tinyier than the carousel though, and the images are smaller)
 - image (how could you post entertaining GIFs otherwise?)
 
-![Recast.AI - Messages types](//cdn.recast.ai/man/recast-ai-type-of-messages.png)
+![Recast.AI - Messages types](https://cdn.recast.ai/man/recast-ai-type-of-messages.png)
 
 If your bot is connected to a channel through Bot Connector, these messages type will be adapted to the channel constraint and transformed, so the look and feel will probably change compared as what you see on the Recast.AI platform.
 
-![Recast.AI - Messages types](//cdn.recast.ai/man/bot-builder/test-card-recast-ai.png)
+![Recast.AI - Messages types](https://cdn.recast.ai/man/bot-builder/test-card-recast-ai.png)
 
 ### Limitations
 
@@ -45,7 +45,7 @@ the name in the memory of the bot.
 You can then create a text message (or every other messages actually) filled with: "Hello {{memory.username.raw}}".
 Then `{{memory.username.raw}}` will be replaced with the actual username.
 
-![Recast.AI - Action](//cdn.recast.ai/man/recast-ai-action-2.png)
+![Recast.AI - Action](https://cdn.recast.ai/man/recast-ai-action-2.png)
 
 Here is a list of the more useful variables injection:
 
