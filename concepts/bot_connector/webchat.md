@@ -4,19 +4,19 @@ title: Webchat
 permalink: /concepts/webchat
 ---
 
-The Webchat Channel is developed by the Recast.AI team and is an open source project on Github.
-You can use the default version of this webchat that we provide to you in the platform or customize it yourself by fork it and deploy it on your side.
+The Webchat channel is developed by the SAP Conversational AI team and is an open-source project on GitHub.
+You can use the default version of the webchat that we provide in the platform or customize the open-source version by forking it and deploying it on your side.
 
-## Default Hosted version
+## Default hosted version
 
-You need to activate this channel in the CONNECT tab of your bot.
+On the **Connect** tab of your bot, activate the **Webchat** channel.
 
 ![Recast.AI - Webchat](//cdn.recast.ai/man/webchat-connector.png)
 
 ### How to use it
 
-1) Configure details like the color, the main title in the button, pictures etc..
-2) just add this script into your page to get the webchat:
+1) Configure details like color, title of the button, bot picture, user picture, etc.
+2) Add the following script to your page to get the webchat:
 
 ~~~ html
 <script src="https://cdn.recast.ai/webchat/webchat.js"
@@ -26,12 +26,11 @@ id="recast-webchat"
 ></script>
 ~~~
 
-Note: `CHANNEL_ID` and `TOKEN_ID` can be found when creating a webchat channel in the bot connector.
+Note: You can find `CHANNEL_ID` and `TOKEN_ID` when creating a webchat channel in the Bot Connector.
 
-## Open source version
+## Open-source version
 
-- If you want to custom style or add new functionalities which does not exist in the default hosted version, you can fork the open source webchat.
-- Link of Github webchat: <a href="https://github.com/Recastai/webchat" alt="Github Recast Webchat" target="_blank">Github RecastAI Webchat</a>
+If you want to customize the style or add new functionalities that don't exist in the default hosted version, you can fork the open-source version on GitHub at <a href="https://github.com/Recastai/webchat" alt="Github Recast Webchat" target="_blank">RecastAI/Webchat</a>.
 
 ### How to use it
-Please look at the `README.md`. It is developed in ReactJS.
+Please see the `README.md`. The open-source version is developed in ReactJS.
