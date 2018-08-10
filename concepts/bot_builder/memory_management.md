@@ -1,3 +1,9 @@
+---
+layout: concept
+title: Memory management
+permalink: /concepts/memory-management
+---
+
 ## Your conversation memory
 
 Each conversation with a unique user has a memory object from the beginning to the end of the conversation. This memory persists during the entire conversation; you can update it at any time or clear it whenever you want.
