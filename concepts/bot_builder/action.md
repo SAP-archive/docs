@@ -11,84 +11,39 @@ Actions are, well, actions your bot executes at specific time in the skill execu
 An action can either be:
 
 - a **message** to send back to the user
-- an **HTTP call** to your API
-- the **redirection** and execution of another skill
-- an **edition** of the memory of the bot for the current conversation
+- a **Webhook call** to request your API
+- a **redirection** to execute another skill
+- a memory **edition** for the current conversation
 - a switch to another **language**
 
 ![Recast.AI - Action](//cdn.recast.ai/man/recast-ai-actions-type.png)
 
 ## Message actions
-For message actions, all rich messaging formats are supported.
+
+Various format exists, so you can build an awesome UX for your bots.
+
+If your bot is connected to a channel through Bot Connector, these messages type will be adapted to the channel constraint and transformed, so the look and feel will probably change compared as what you see on the Recast.AI platform.
+
+You can find more informations about this [messages format](https://recast.ai/docs/concepts/builder_messages).
 
 ![Recast.AI - Messages types](//cdn.recast.ai/man/recast-ai-type-of-messages.png)
 
-Formatting:
-You can inject variables in your messages by using the double braces syntax.
-For example, *{{nlp.source}}* will be replaced by the input sentence.
+You can dynamically inject the content gathered from the conversation in the bot replies by using the double braces syntax.
 
-Here is a list of the more useful ones:
+Ex: your bot asks for the user's name as a requirement. Once the requirement completed, you will have the name in the memory of the bot.
 
-* **{{nlp.source}}**: raw user input.
-* **{{nlp.entities.location[0]}}**: first entity detected of the type \`location\`. You can replace \`location\` by any entity name you want.
-* **{{#location.raw}}**: same as above, get the first entity location detected, and get its raw field.
-* **{{nlp.sentiment}}**: <a href="https://recast.ai/docs/api-reference#sentence-sentiments" target="_blank" rel="noopener noreferrer">sentiment</a> of the sentence
-* **{{nlp.act}}**: <a href="https://recast.ai/docs/api-reference#sentence-acts" target="_blank" rel="noopener noreferrer">act</a> of the sentence
-* **{{nlp.type}}**: <a href="https://recast.ai/docs/api-reference#sentence-types" target="_blank" rel="noopener noreferrer">type</a> of the sentence
-* **{{nlp.intents[0].slug}}**: slug of the first intent detected
-* **{{memory.person.raw}}**: a value stored in the memory of the bot. Here *person* is the alias of a requirement
-* **{{skill}}**: slug of the current skill
-* **{{skill_occurrences}}**: number of consecutive occurrences of the current skill
+You can then create a text message (or every other messages actually) filled with: "Hello {{memory.username.raw}}". Then {{memory.username.raw}} will be replaced with the actual username.
 
-![Recast.AI - Action](//cdn.recast.ai/man/recast-ai-action-2.png)
+You can find more informations about this [variable system](https://recast.ai/docs/concepts/builder_messages).
 
-## HTTP actions
 
-For webhooks (HTTP actions) you can either provide a full url, or simply a route that is added to your bot's base url (updatable in your bot settings).
+## Webhook actions
 
-![Recast.AI - Webhook action](//cdn.recast.ai/man/recast-ai-webhook-action.png)
+At many points in your conversation, you most likely want to retrieve business information or connect to an external system to perform actions. You can do this through webhooks. A webhook is a simple HTTP call to your backend. To configure your HTTP call, click **CALL WEBHOOK** in the Bot Builder.
 
-When your url is called, you receive the complete state of conversation:
+![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/header.png)
 
-~~~ json
-{
-  "conversation": {
-    "id": "A_CONVERSATION_ID",
-    "language": "en",
-    "memory": {
-      "person": {
-        "fullname": "Francois",
-        "raw": "Francois",
-        "confidence": 0.95
-      }
-    },
-    "skill": "small-talk",
-    "skill_occurences": 1,
-    "participant_data": {}
-  },
-  "nlp": {
-    "source": "hi",
-    "intents": [
-      {
-        "slug": "greetings",
-        "confidence": 0.99
-      }
-    ],
-    "sentiment": "vpositive",
-    "entities": {},
-    "act": "assert",
-    "type": null,
-    "version": "2.10.1",
-    "processing_language": "en",
-    "language": "en",
-    "uuid": "96597974-3ee1-4743-8a5d-341b67effb9a"
-    "status": 200,
-    "timestamp": "2017-10-25T21:36:02.071243+00:00",
-  }
-}
-~~~
-
-You can send back messages you want to send to the user, as well as an updated conversation state.
+When your url is called, a default body is sent with the complete state of conversation. You can send back messages you want to send to the user, as well as an updated conversation state. Everything you need to know about webhooks is described in [this section](https://recast.ai/docs/concepts/code-and-webhook).
 
 ## Go to actions
 
@@ -119,7 +74,7 @@ Theses actions allow you to do three different things:
 * Set values in the memory
 * Unset a key in the memory
 
-First the memory is reset, then the new values are set, and finally the specified keys are unset.
+First the memory is reset, then the new values are set, and finally the specified keys are unset. Leanr more about memory edition [in this dedicated section](https://recast.ai/docs/concepts/memory-management).
 
 ![Recast.AI - Memory action](//cdn.recast.ai/man/recast-ai-memory-action.png)
 
