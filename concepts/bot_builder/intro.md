@@ -19,7 +19,7 @@ The Bot Builder process is split in three disctincts parts:
 
 3) The last step consists of using the JSON that it got back from the NLP API to manage the conversation using Skills and conditions.
 
-[IMAGE]
+<img class='custom' src='https://cdn.recast.ai/man/bot-builder/bot-builder-01.png'>
 
 ## Bot Builder with Bot Connector
 
@@ -27,11 +27,10 @@ If you're using the Bot Builder with Bot Connector, as stated above all incoming
 
 Bot Builder is then replying to Bot Connector with messages formatted in [this way](https://recast.ai/docs/concepts/structured-messages).
 
-![IMAGE](//cdn.recast.ai/man/recast-ai-actions-type.png)
+<img class='custom' src='https://cdn.recast.ai/man/bot-builder/bc-bb-01.png'>
 
 ## Bot Builder without Bot Connector
 
 You will need to retrieve users's input by your own way, maybe through a channel you have implemented. You will directly request the Bot Builder API, and will follow [this documentation](https://recast.ai/docs/api-reference/#dialog-endpoints) to create new conversation.
 
-![IMAGE](//cdn.recast.ai/man/recast-ai-actions-type.png)
 
