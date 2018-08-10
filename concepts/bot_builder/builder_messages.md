@@ -20,7 +20,11 @@ List of formats and their advantages:
 - list (same purpose as a carousel, but is presented as a vertical list so you can see everything at once, whereas with the carousel you have to scroll. A little bit tinyier than the carousel though, and the images are smaller)
 - image (how could you post entertaining GIFs otherwise?)
 
-(LESLIE) Maybe a screenshot per format could be great?
+![Recast.AI - Messages types](//cdn.recast.ai/man/recast-ai-type-of-messages.png)
+
+If your bot is connected to a channel through Bot Connector, these messages type will be adapted to the channel constraint and transformed, so the look and feel will probably change compared as what you see on the Recast.AI platform.
+
+![Recast.AI - Messages types](//cdn.recast.ai/man/bot-builder/test-card-recast-ai.png)
 
 ### Limitations
 
@@ -39,19 +43,32 @@ Ex: your bot asks for the user's name as a requirement. Once the requirement com
 the name in the memory of the bot.
 
 You can then create a text message (or every other messages actually) filled with: "Hello {{memory.username.raw}}".
-Then {{memory.username.raw}} will be replaced with the actual username.
-You can find more examples here: https://recast.ai/docs/concepts/action , under "Message actions"
+Then `{{memory.username.raw}}` will be replaced with the actual username.
+
+![Recast.AI - Action](//cdn.recast.ai/man/recast-ai-action-2.png)
+
+Here is a list of the more useful variables injection:
+
+* **{{memory.person.raw}}**: a value stored in the memory of the bot. Here *person* is the alias of a requirement
+* **{{nlp.source}}**: raw user input.
+* **{{nlp.entities.location[0]}}**: first entity detected of the type \`location\`. You can replace \`location\` by any entity name you want.
+* **{{nlp.sentiment}}**: <a href="https://recast.ai/docs/api-reference#sentence-sentiments" target="_blank" rel="noopener noreferrer">sentiment</a> of the sentence
+* **{{nlp.intents[0].slug}}**: slug of the first intent detected
+* **{{skill}}**: slug of the current skill
+* **{{skill_occurrences}}**: number of consecutive occurrences of the current skill
+
+All these variables can be created by using information in your [Conversation state](https://recast.ai/docs/concepts/conversation-state).
 
 
 ## How can I send rich messages from my code?
 
-The list of the rich messages supported and their format is the following: https://recast.ai/docs/concepts/structured-messages
+The list of the rich messages supported and their format [can be found here](https://recast.ai/docs/concepts/structured-messages)
 
 Sometimes you want to interact with a database, or with an external API before sending back some replies to the user.
 To achieve that, you will want to create a "CALL WEBHOOK" action to interact with your own code, implement your own logic, and send back the responses built from
 the data you've gathered.
 
-Here's a JS snippet of how to achieve that, assuming that you have a CALL WEBHOOK action calling your /do_some_stuff route:
+Here's a JS snippet of how to achieve that, assuming that you have a CALL WEBHOOK action calling your `/do_some_stuff` route:
 
 ~~~ js
 const express = require('express')
@@ -105,4 +122,4 @@ app.listen(port, () => {
 })
 ~~~
 
-(LESLIE) More complex examples here https://recast.ai/docs/concepts/code-and-webhook
+Check how Webhook works: https://recast.ai/docs/concepts/code-and-webhook
