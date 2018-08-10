@@ -19,7 +19,7 @@ sections:
 - title: Conversation state
   url: /concepts/conversation-state
 
-- title: User Authentication
+- title: User authentication
   url: /concepts/user-authentication
 
 - title: Custom code and webhooks
