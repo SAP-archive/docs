@@ -8,7 +8,7 @@ permalink: /concepts/memory-management
 
 Each conversation with a unique user has a memory object from the beginning to the end of the conversation. This memory persists during the entire conversation; you can update it at any time or clear it whenever you want.
 
-When a new conversation starts, the memory is an empty object (unless you want to start a new conversation with prefilled keys). The memory is stored in your <a href="/concepts/conversation-state">conversation state</a>. It is returned in the <a href="/concepts/code-and-webhook#body-configuration">default body</a> of a webhook and after the Bot Builder API call.
+When a new conversation starts, the memory is an empty object (unless you want to start a new conversation with prefilled keys). The memory is stored in your [conversation state](https://recast.ai/docs/concepts/conversation-state). It is returned in the [default body](https://recast.ai/docs/concepts/code-and-webhook#body-configuration) of a webhook and after the Bot Builder API call.
 
 For example, your memory object could look like this:
 ~~~ json
