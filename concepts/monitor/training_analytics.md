@@ -37,3 +37,6 @@ Here is a way to fill this file by respecting the way people are using your bot:
 3) Randomly pick the number of logs you need (to calculate this number: your bot intents count * 50).
 4) Check manually (yes, you need to be the final validator), that each sentence is matching the right intent.
 5) Create the final validation file with these sentences and intents.
+
+**Final step**
+Upload your file in the platform, we'll analyse it and provide you a feedback. Maybe you'll need to add some sentences. You will always be able to run a benchmark, all of these guidelines are just suggestions.
