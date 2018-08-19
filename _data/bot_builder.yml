@@ -15,6 +15,9 @@ sections:
 
 - title: Action
   url: /concepts/action
+  
+- title: Memory management
+  url: /concepts/memory-management
 
 - title: Conversation state
   url: /concepts/conversation-state
