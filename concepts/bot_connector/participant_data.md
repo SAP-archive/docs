@@ -1,6 +1,6 @@
 ---
 layout: concept
-title: Channel
+title: Participant data
 permalink: /concepts/participant-data
 ---
  
