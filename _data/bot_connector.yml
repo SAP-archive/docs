@@ -4,6 +4,9 @@ sections:
 - title: Channel
   url: /concepts/channel
 
+- title: Participant data
+  url: /concepts/participant-data
+
 - title: Webchat
   url: /concepts/webchat
 
