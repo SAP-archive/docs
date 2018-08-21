@@ -64,7 +64,7 @@ Hello Bob
 
 ## How to manipulate memory in webhook custom code
 
-You can edit the memory in your code during a webhook call. To understand how to format your response, see (https://recast.ai/docs/concepts/code-and-webhook)[Custom code and webhooks].
+You can edit the memory in your code during a webhook call. To understand how to format your response, see [Custom code and webhooks](https://recast.ai/docs/concepts/code-and-webhook).
 Here's an example of how to format the return of your webhook call and update the memory of the conversation:
 
 ~~~ json
@@ -81,8 +81,8 @@ Here's an example of how to format the return of your webhook call and update th
 
 `memory` will replace the actual memory of your bot (so be careful that you don't lose everything if you just want to change one of your memory keys to add all your other keys).
 
-You can also update the memory through an API call. For more information, see (https://recast.ai/docs/api-reference/#update-a-conversation)[Update a conversation] in the API Reference.
+You can also update the memory through an API call. For more information, see [Update a conversation](https://recast.ai/docs/api-reference/#update-a-conversation) in the API Reference.
 
 ## How to start a conversation with memory
 
-You can start a conversation with prefilled information in the memory, and not wait until the first user input is analyzed and the first skills are triggered. However, this is only possible if you are using the Bot Builder directly (without the Bot Connector). To understand how to use the Bot Builder API to do this, see (https://recast.ai/docs/api-reference/#dialog-endpoints)[/Dialog (Text)] in the API Reference.
+You can start a conversation with prefilled information in the memory, and not wait until the first user input is analyzed and the first skills are triggered. However, this is only possible if you are using the Bot Builder directly (without the Bot Connector). To understand how to use the Bot Builder API to do this, see [/Dialog (Text)](https://recast.ai/docs/api-reference/#dialog-endpoints) in the API Reference.
