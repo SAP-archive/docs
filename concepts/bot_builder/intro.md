@@ -7,9 +7,12 @@ permalink: /concepts/builder-intro
 This is an introduction to how the Bot Builder interacts with the other services of the platform.
 
 The Bot Builder process is split into three distinct parts, each of which is described in more detail below.
-- 1. Get the user’s input through a messaging channel.
-- 2. Understand the user’s input using Natural Language Processing (NLP).
-- 3. Manage the conversation and context.
+
+1) Get the user’s input through a messaging channel.
+
+2) Understand the user’s input using Natural Language Processing (NLP).
+
+3) Manage the conversation and context.
 
 ### Get the user's input
 This can be done by the Bot Connector, meaning that when the Bot Connector receives a message, it dispatches the message to your Bot Builder. You can also collect the user's input by your own way and send it to the Bot Builder API directly.
