@@ -22,6 +22,9 @@ sections:
 - title: Memory management
   url: /concepts/memory-management
 
+- title: Messages
+  url: /concepts/builder_messages
+
 - title: Conversation state
   url: /concepts/conversation-state
 
