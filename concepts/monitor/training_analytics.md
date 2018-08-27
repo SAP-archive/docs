@@ -35,7 +35,7 @@ The goal of this file is to represent reality - the way your users are using you
 * Almost all of your bot intents should be represented (if a few intents, far from the core of you bot's usecase, are missing, that’s okay). At least 85% of the intents should be reprensented inside the validation file.
 * Many sentences per intent should be present. Don’t choose some sentences over others.
 * All sentences in your file should match an existing intent of your bot.
-* Avoid duplicate sentences.
+* Avoid duplicated sentences.
 
 A recommended way to create your validation file while respecting the way people are using your bot would be:
 
@@ -45,9 +45,14 @@ A recommended way to create your validation file while respecting the way people
 4) Check manually (yes, you need to be the final validator), that each sentence is matching the right intent.
 5) Create the final validation file with these sentences and intents.
 
+In case you don't have at least 85% of your intents in your file, you need to pick again sentences from your logs to complete your file and reach approximately 85%. Here is how you can complete your file:
+
+1) Go again in your Log feed page and search for specific intents that are missing.
+2) Select between 3 and 10 sentences by missing intents and add these sentences to your validation file.
+
 **Final step**
 Upload your file to the platform, we'll analyse it and provide you a feedback - you may need to add some sentences. You will always be able to run a benchmark, these guidelines are just suggestions.
 
-### Your benchmark scores
+## Your benchmark scores
 
 ## Your confusion Matrix
