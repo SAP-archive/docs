@@ -4,7 +4,14 @@ title: Training analytics
 permalink: /concepts/training-analytics
 ---
 
-## How can I create a validation file?
+## Your intent classification benchmark
+
+
+### With your bot training data
+
+### With a validation file
+
+### How can I create a validation file?
 
 A validation file is composed of sentences with their corresponding intents.
 For multi-language bots, please upload one file per supported language.
@@ -40,3 +47,7 @@ A recommended way to create your validation file while respecting the way people
 
 **Final step**
 Upload your file to the platform, we'll analyse it and provide you a feedback - you may need to add some sentences. You will always be able to run a benchmark, these guidelines are just suggestions.
+
+### Your benchmark scores
+
+## Your confusion Matrix
