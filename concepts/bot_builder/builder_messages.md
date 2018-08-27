@@ -11,13 +11,13 @@ On the **Actions** tab of a skill (or on the **Requirements** tab), you can choo
 ### Formats
 Many different formats are supported, enabling you to build an awesome user experience for your bots. Below is a list of formats and their advantages.
 
-- Text: Great for simple informative messages, even if the 640-character limit is pretty high. We recommend keeping them short if you want your users to read them!
-- Card: Super useful for presenting a product because you can include an image, title, subtitle, and so on.
-- Buttons: Cool if you want to guide the user in the conversation with a few limited choices.
-- Quick replies: Same purpose as buttons, but disappear once clicked. Great if you don't want the user to have to scroll up the conversation and click on a button again.
-- Carousel: A succession of cards that you can scroll from right to left, usually used for presenting multiple products.
-- List: Same purpose as a carousel, but presented as a vertical list so that you can see everything at once, whereas with the carousel you have to scroll. A list is a little bit smaller than a carousel though, and the images are smaller.
-- Image: How could you post entertaining GIFs otherwise?!
+- **Text**: Great for simple informative messages, even if the 640-character limit is pretty high. We recommend keeping them short if you want your users to read them!
+- **Card**: Super useful for presenting a product because you can include an image, title, subtitle, and so on.
+- **Buttons**: Cool if you want to guide the user in the conversation with a few limited choices.
+- **Quick replies**: Same purpose as buttons, but disappear once clicked. Great if you don't want the user to have to scroll up the conversation and click on a button again.
+- **Carousel**: A succession of cards that you can scroll from right to left, usually used for presenting multiple products.
+- **List**: Same purpose as a carousel, but presented as a vertical list so that you can see everything at once, whereas with the carousel you have to scroll. A list is a little bit smaller than a carousel though, and the images are smaller.
+- **Image**: How could you post entertaining GIFs otherwise?!
 
 ![Recast.AI - Messages types](https://cdn.recast.ai/man/recast-ai-type-of-messages.png)
 
