@@ -7,13 +7,20 @@ permalink: /concepts/training-analytics
 ## Your intent classification benchmark
 
 
+
+
 ### With your bot training data
+
+We split your expressions inside each of your intents in two parts: 90% is used for training, and 10% is used to evaluate the classification. The evaluation is simple: each sentence is tested with your training dataset and we check if the first intent returned is the right one. We repeat this process 5 times to enforce randomness in the splits. Once the evaluations are done, we average the results while taking in account the number of occurrences of each intent, resulting with 4 metrics between 0 and 1 for each intent: **Accuracy**, **Precision**, **Recall**, **F1 score**, and four global metrics on all the dataset.
 
 ### With a validation file
 
+A validation file is composed of sentences with their corresponding intents. It reflects the reality, so it's important to build this file with real sentences that users had really said.
+
+Each sentences will be tested with your training dataset and we check if the first intent returned is the right one. Once the evaluation is done, we also get 4 metrics between 0 and 1 on each intent and one global: **Accuracy**, **Precision**, **Recall**, **F1 score**.
+
 ### How can I create a validation file?
 
-A validation file is composed of sentences with their corresponding intents.
 For multi-language bots, please upload one file per supported language.
 
 **About the file format:**
@@ -54,5 +61,13 @@ In case you don't have at least 85% of your intents in your file, you need to pi
 Upload your file to the platform, we'll analyse it and provide you a feedback - you may need to add some sentences. You will always be able to run a benchmark, these guidelines are just suggestions.
 
 ## Your benchmark scores
+
+**Accuracy**
+
+**Precision**
+
+**Recall**
+
+**F1 score**
 
 ## Your confusion Matrix
