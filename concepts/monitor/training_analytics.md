@@ -78,9 +78,18 @@ Upload your file to the platform, we'll analyse it and provide you a feedback - 
 
 **Precision** is a metric that is calculated per intent. For each intent, it measures the proportion of correct predictions, out of all of the times the intent was declared during the benchmark. It answers the question *Out of all of the times my bot predicted this intent, how many times was it correct?*. Low precision usually signifies the relevant intent needs cleaning, meaning remove sentences that don't belongs to this intent.
 
+For your bot users, a low precision means: *The bot always thinks I am talking about A, no matter what I say!*
+
+
 **Recall** is also a metric calculated per intent. For each intent, it measures the proportion of correct predictions, out of all entries belonging to this intent. It answers the question *Out of all of the times my bot was supposed to detect this intent, how many times did it do so?*. Low recall usually signifies the relevant intent can use more training, by adding more sentences to enrich the training for example. 
 
-**F1 score** is the harmonic mean of the precision and the recall. It's a good indication for the performance of each intent, ranging from 0 (bad performance) to 1 (good performance). The F1-scores for each intent can be averaged to create a global indication for the performance of your bot. 
+For your bot users, a low recall means: *I cannot get the bot to understand I want to do B!*
+
+
+**F1 score** is the harmonic mean of the precision and the recall. It's a good indication for the performance of each intent, ranging from 0 (bad performance) to 1 (good performance). The F1-scores for each intent can be averaged to create a global indication for the performance of your bot.
+
+For your bot users, a low F1 score means: *This is completely useless*
+
 
 ## Your confusion Matrix
 
