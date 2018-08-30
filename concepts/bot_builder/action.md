@@ -15,8 +15,9 @@ An action can be one of the following:
 - Go to another skill
 - Edit the bot's memory for the current conversation
 - Change language
+- Fallback the conversation to a human agent
 
-![Recast.AI - Action](//cdn.recast.ai/man/recast-ai-actions-type.png)
+![Recast.AI - Action](//cdn.recast.ai/man/actions-type.png)
 
 ## Send message to the user
 
@@ -70,4 +71,14 @@ This action lets you change the language of the conversation. It can be especial
 
 ![Recast.AI - Language action](//cdn.recast.ai/man/recast-ai-language-action.png)
 
+## Fallback the conversation
 
+This action lets you redirect the conversation to a human agent. First you need to connect a **Fallback channel** where Recast.AI will redirect the message.
+
+In your **CONNECT** tab select a fallback channel and follow the instruction, don't forget to activate this channel after the creation by checking the input.
+
+![Recast.AI - Fallback action](https://cdn.recast.ai/man/fallback-channel.png)
+
+In a skill you can configure a **fallback action**, by selecting your channel and a dedicated group (usually, your support center is organised between diffenrent group of people) to redirect the conversation. When this action is triggered, the bot will not reply, the conversation hystoric will be sent to your support channel and a human agent will be able to write a reply that will be redirected to the user. When the human agent will close the ticket or the conversation in the CRM, the bot will be able to talk again to the user.
+
+![Recast.AI - Fallback action](https://cdn.recast.ai/man/fallback-action.png)
