@@ -10,7 +10,7 @@ sections:
 - title: Hello World
   url: /concepts/hello-world
 
-- title: Receive messagges
+- title: Receive messages
   url: /concepts/receive-messages
 
 - title: Send rich messages
