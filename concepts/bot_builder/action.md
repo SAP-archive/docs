@@ -12,10 +12,10 @@ An action can be one of the following:
 
 - Send message to the user
 - Call webhook
+- Fallback (that is, redirect the conversation to a human agent)
 - Go to another skill
 - Edit the bot's memory for the current conversation
 - Change language
-- Fallback the conversation to a human agent
 
 ![Recast.AI - Action](//cdn.recast.ai/man/actions-type.png)
 
@@ -29,7 +29,6 @@ If your bot is connected to a channel through the Bot Connector, the message typ
 
 You can dynamically inject the content gathered from the conversation in the bot replies by using double brace syntax. For example, if your bot asks for the user's name as a requirement, the name is added to the bot's memory once the requirement is completed. You can then create a text message (or any other message actually) filled with "Hello {{memory.username.raw}}", where {{memory.username.raw}} is replaced with the actual username. For more information, see [Variable system](https://recast.ai/docs/concepts/builder_messages).
 
-
 ## Call webhook
 
 At many points in your conversation, you most likely want to retrieve business information or connect to an external system to perform actions. You can do this through webhooks. A webhook is a simple HTTP call to your backend. To configure your HTTP call, click **CALL WEBHOOK** in the Bot Builder.
@@ -37,6 +36,16 @@ At many points in your conversation, you most likely want to retrieve business i
 ![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/header.png)
 
 When your URL is called, a default body is sent with the complete conversation state. You can send back messages you want to send to the user, as well as an updated conversation state. For more information, see [Custom code and webhooks](https://recast.ai/docs/concepts/code-and-webhook).
+
+## Fallback
+
+This action lets you redirect the conversation to a human agent. First, you need to connect the fallback channel where you want Recast.AI to redirect the message. You can do this on the **Connect** tab by selecting a fallback channel and following the instructions. Don't forget to activate this channel after the creation by checking the input.
+
+![Recast.AI - Fallback action](https://cdn.recast.ai/man/fallback-channel.png)
+
+In a skill, you can configure a fallback action by selecting your fallback channel and the group to which you want to redirect the conversation. (Usually, your support center is organized into different groups.) When the fallback action is triggered, the bot doesn't reply, but instead sends the conversation history to your support channel, where a human agent writes a reply that is redirected to the user. When the human agent closes the ticket or the conversation in the CRM system, the bot is able to talk to the user again.
+
+![Recast.AI - Fallback action](https://cdn.recast.ai/man/fallback-action.png)
 
 ## Go to another skill
 
@@ -71,14 +80,3 @@ This action lets you change the language of the conversation. It can be especial
 
 ![Recast.AI - Language action](//cdn.recast.ai/man/recast-ai-language-action.png)
 
-## Fallback the conversation
-
-This action lets you redirect the conversation to a human agent. First you need to connect a **Fallback channel** where Recast.AI will redirect the message.
-
-In your **CONNECT** tab select a fallback channel and follow the instruction, don't forget to activate this channel after the creation by checking the input.
-
-![Recast.AI - Fallback action](https://cdn.recast.ai/man/fallback-channel.png)
-
-In a skill you can configure a **fallback action**, by selecting your channel and a dedicated group (usually, your support center is organised between diffenrent group of people) to redirect the conversation. When this action is triggered, the bot will not reply, the conversation hystoric will be sent to your support channel and a human agent will be able to write a reply that will be redirected to the user. When the human agent will close the ticket or the conversation in the CRM, the bot will be able to talk again to the user.
-
-![Recast.AI - Fallback action](https://cdn.recast.ai/man/fallback-action.png)
