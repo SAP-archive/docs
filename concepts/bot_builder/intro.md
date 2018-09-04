@@ -35,7 +35,7 @@ The Bot Builder then replies to the Bot Connector with messages formatted as des
 
 ## Bot Builder without Bot Connector
 
-You need to retrieve the users's input by your own way, for example, through a channel that you've implemented. You then directly request the Bot Builder API and follow the [Dialog endpoints](https://recast.ai/docs/api-reference/#dialog-endpoints) documentation in the API Reference to create a new conversation.
+You need to retrieve the user input by your own way, for example, through a channel that you've implemented. You then directly request the Bot Builder API and follow the [Dialog endpoints](https://recast.ai/docs/api-reference/#dialog-endpoints) documentation in the API Reference to create a new conversation.
 
 
 
