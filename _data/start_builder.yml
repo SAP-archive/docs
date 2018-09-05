@@ -6,6 +6,9 @@ sections:
 
 - title: Build your conversation
   url: /concepts/build-your-conversation
+  
+- title: Train your bot
+  url: /concepts/train-your-bot
 
 - title: Connect your bot
   url: /concepts/connect-your-bot
