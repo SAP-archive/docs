@@ -4,14 +4,6 @@ title: Create your bot
 permalink: /concepts/create-builder-bot
 ---
 
-## Start with a template
-
-To create a new bot, log in and click on the link **+ NEW BOT** in the header section.
-
-Select the first option "Create a complete chatbot".
-
-![Recast.AI create bot](https://cdn.recast.ai/man/recast-ai-create-builder-1-bodyb.png)
-
 ## Select predefined skills
 
 You can choose one or several predefined skills you want to use as a starting point.
