@@ -42,7 +42,8 @@ You can create all these variables using these information:
 * `{{memory}}`: The complete memory object. You can access to each element like `{{memory.person.raw}}`, Here, *person* is the alias of a requirement,
 * `{{skill_occurences}}`: Number of consecutive occurrences of the current skill,
 * `{{language}}`: The language isocode of the current conversation,
-
+* `{{current_message}}`: The message source sent by the user,
+* `{{message_received_at}}` : A number between `0.0` and `24.0`,
 
 ## How to send rich messages from your code
 
