@@ -3,12 +3,12 @@ sections:
 
 - title: Create your bot
   url: /concepts/create-builder-bot
-
-- title: Build your conversation
-  url: /concepts/build-your-conversation
   
 - title: Train your bot
   url: /concepts/train-your-bot
+
+- title: Build your conversation
+  url: /concepts/build-your-conversation
 
 - title: Connect your bot
   url: /concepts/connect-your-bot
