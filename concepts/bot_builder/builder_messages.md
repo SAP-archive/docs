@@ -35,15 +35,15 @@ You can dynamically inject the content gathered from the conversation in the bot
 
 ![Recast.AI - Action](https://cdn.recast.ai/man/recast-ai-action-2.png)
 
-You can create all these variables using these information:
+You can create all these variables using the following information:
 
-* `{{conversation_id}}`: The id of the current conversation,
-* `{{participant_data}}`: An object filled with participant information filled by the channel connected through Bot Connector. By default you have always a `username`. You can easily use `{{participant_data.username}}`,
-* `{{memory}}`: The complete memory object. You can access to each element like `{{memory.person.raw}}`, Here, *person* is the alias of a requirement,
-* `{{skill_occurences}}`: Number of consecutive occurrences of the current skill,
-* `{{language}}`: The language isocode of the current conversation,
-* `{{current_message}}`: The message source sent by the user,
-* `{{message_received_at}}` : A timestamp of the message reception,
+* `{{conversation_id}}`: ID of the current conversation.
+* `{{participant_data}}`: An object filled with participant information that is provided by the channel connected through the Bot Connector. By default, you always have a `username`. You can easily use `{{participant_data.username}}`.
+* `{{memory}}`: The complete memory object. You can access each element like `{{memory.person.raw}}`. Here, *person* is the alias of a requirement.
+* `{{skill_occurences}}`: Number of consecutive occurrences of the current skill.
+* `{{language}}`: Language ISO code of the current conversation.
+* `{{current_message}}`: The message source sent by the user.
+* `{{message_received_at}}` : Timestamp of when the message was received.
 
 ## How to send rich messages from your code
 
