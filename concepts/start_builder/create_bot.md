@@ -6,17 +6,17 @@ permalink: /concepts/create-builder-bot
 
 Here is the first steps to understand the core concepts of the Recast.AI platform. You will be able to build a chatbot that can manage an entire conversation with a user.
 
-A Recast.AI chatbot is composed of two main "hearts" : Skills and Training Dataset.
+A Recast.AI chatbot is composed of two main *hearts* : **Skills** and **Training Dataset**.
 
 A **Skill** is a block of conversation that has a clear purpose and that your bot can execute to achieve a goal. You will need to configure these skills to build the scope of your bot.
 
 A **Training Dataset** is composed of lot of sentences organised in [intents](https://recastai.github.io/docs/concepts/intent) that represent what user can say to your chatbot to train it to understand their needs and be able to trigger the right piece of conversation, reply correctly and have a smooth conversation.
 
-Ready? Click on the **+ New Bot** button, on the top right and start create your first chatbot.
+*Ready?* Click on the **+ New Bot** button, on the top right and start create your first chatbot.
 
 ## Select predefined skills
 
-You can choose one or several predefined skills you want to use as a starting point.
+You can choose one or several predefined skills you want to use as a starting point. Select the **Greetings** one to start.
 You are free to modify them if you don't like them as such, or even delete them once you're ready to make your own.
 
 If you want to fork them later on, they are available here: [https://recast.ai/scaffolder/starter-skills](https://recast.ai/scaffolder/starter-skills)
