@@ -35,7 +35,7 @@ You can dynamically inject the content gathered from the conversation in the bot
 
 ![Recast.AI - Action](https://cdn.recast.ai/man/recast-ai-action-2.png)
 
-You can create all these variables using the following information:
+You can create all of the following variables:
 
 * `{{conversation_id}}`: ID of the current conversation.
 * `{{participant_data}}`: An object filled with participant information that is provided by the channel connected through the Bot Connector. By default, you always have a `username`. You can easily use `{{participant_data.username}}`.
