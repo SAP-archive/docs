@@ -43,7 +43,7 @@ You can create all these variables using these information:
 * `{{skill_occurences}}`: Number of consecutive occurrences of the current skill,
 * `{{language}}`: The language isocode of the current conversation,
 * `{{current_message}}`: The message source sent by the user,
-* `{{message_received_at}}` : A number between `0.0` and `24.0`,
+* `{{message_received_at}}` : A timestamp of the message reception,
 
 ## How to send rich messages from your code
 
