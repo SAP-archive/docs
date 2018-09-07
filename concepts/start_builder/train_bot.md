@@ -37,16 +37,16 @@ We call them gold entities. If you need another entity, a custom one like a **me
 
 Once you’ve created new intents, you can test it with the console. Click on the **TEST** bubble icon on the top right to make it appear. Type a sentence to test if your bot is well trained: \`I want meeting room 2 for tomorrow\`
 
-![Recast.AI NLP analyze](https://cdn.recast.ai/man/recast-ai-test-consoleb.png)
+![Recast.AI NLP analyze](https://cdn.recast.ai/man/introduction/console-view.png)
 
 You will see which intent is detected and which entities are extracted. Click on the **Smart view** toggle to switch the view to the JSON mode.
 The JSON contains a lot of useful information about the message you’ve sent, like all the enrichments we can provide for the gold entities.
 
-![Recast.AI NLP JSON](https://cdn.recast.ai/man/recast-ai-console-jsonc.png)
+![Recast.AI NLP JSON](https://cdn.recast.ai/man/introduction/console-json.png)
 
 ## Train your bot
 
 When your message doesn’t match any intent, you have to train your bot. Go to the **MONITOR** tab on your bot page, and click on the **Log feed** menu.
 Here are the logs of your bots. Select the expressions that did not match and redirect them to the right intent. After that, check that your custom entities have been automatically tagged. If not, do it and remember “Bot trained, mommy approved!”.
 
-![Recast.AI bot monitor](https://cdn.recast.ai/man/recast-ai-monitorb.png)
+![Recast.AI bot monitor](https://cdn.recast.ai/man/introduction/monitor-log-feed.png)
