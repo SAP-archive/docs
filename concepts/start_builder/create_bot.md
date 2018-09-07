@@ -33,5 +33,20 @@ Finish your bot creation by:
 
 ## Discover your first intents and skills
 
+If you have selected **greetings** skill, in the **TRAIN** tab you can find two intents: **greetings** and **goodbye**.
+
+An intent is a *box* of sentences that all carry the same meaning, even though they can be very different to one another. When a user sends some text to your bot, our algorithm predicts to which intents it’s close enough and decides what the intention of the message is.
+
+For example:
+
+*Are you a bot?*
+
+*You reply so fast, I’m sure you must be some kind of robot.*
+
+*Am I speaking to a human or not?*
+
+are all different, but they all ask the same question that we can can sum up as: Are you a bot? Well, that would make a great intent! If your bot is able to recognize this question, you can prepare a smart reaction, like “I’m a robot and I’m proud of it “.
+
+In the **BUILD** tab, you can find two skills: **greetings** and **fallback**
 
 
