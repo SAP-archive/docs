@@ -35,18 +35,15 @@ You can dynamically inject the content gathered from the conversation in the bot
 
 ![Recast.AI - Action](https://cdn.recast.ai/man/recast-ai-action-2.png)
 
-Here's a list of the more useful variables:
+You can create all of the following variables:
 
-* `{{memory.person.raw}}`: A value stored in the memory of the bot. Here, *person* is the alias of a requirement.
-* `{{nlp.source}}`: Raw user input
-* `{{nlp.entities.location[0]}}`: The first entity detected of the type \`location\`. You can replace \`location\` with any entity name you want.
-* `{{nlp.sentiment}}`: <a href="https://recast.ai/docs/api-reference#sentence-sentiments" target="_blank" rel="noopener noreferrer">Sentiment</a> of the sentence
-* `{{nlp.intents[0].slug}}`: Slug of the first intent detected
-* `{{skill}}`: Slug of the current skill
-* `{{skill_occurrences}}`: Number of consecutive occurrences of the current skill
-
-You can create all these variables using information in your [conversation state](https://recast.ai/docs/concepts/conversation-state).
-
+* `{{conversation_id}}`: ID of the current conversation.
+* `{{participant_data}}`: An object filled with participant information that is provided by the channel connected through the Bot Connector. By default, you always have a `username`. You can easily use `{{participant_data.username}}`.
+* `{{memory}}`: The complete memory object. You can access each element like `{{memory.person.raw}}`. Here, *person* is the alias of a requirement.
+* `{{skill_occurences}}`: Number of consecutive occurrences of the current skill.
+* `{{language}}`: Language ISO code of the current conversation.
+* `{{current_message}}`: The message source sent by the user.
+* `{{message_received_at}}` : Timestamp of when the message was received.
 
 ## How to send rich messages from your code
 
