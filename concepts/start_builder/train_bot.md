@@ -6,26 +6,25 @@ permalink: /concepts/train-your-bot
 
 ## Create an intent
 
-Everything your bot knows is in the intents. Intents are boxes including expressions that mean the same thing but are paraphrased. Each intent corresponds to one action your user wants to perform. For example, an intent **greetings** makes your bot understand when a user says \`Hello\`.
+Everything your chatbot understands is in the intents. Each intent corresponds to one action your user wants to perform. For example, an intent **greetings** makes your bot understand when a user says \`Hello\`.
 
-In the meeting bot you will find all intents you need to create a bot that can book you a meeting room.
 Explore each intent a little bit by clicking on the name and you will see expressions inside that train your bot to understand the user intent ;)
 
-Add a new intent called **Thanks**, to understand when users will thank your bot! Type \`thanks\` in the input Search and Fork from the community, then click on the **Search button**.
+Let's add a new capability to our chatbot to book meeting room. Add a new intent called **Booking**, to understand when users will ask to book a room to your chatbot! Type \`booking\` in the input Search then click on the **Search button** and Fork from the community, .
 
 As the platform is collaborative, there are a lot of intents already created. Select one of the first results and just click on the **FORK** button on the right.
 
-![Recast.AI fork intents](https://cdn.recast.ai/man/recast-ai-fork-intentb.png)
+![Recast.AI fork intents](https://cdn.recast.ai/man/introduction/search-booking.png)
 
 ## Add expressions
 
 You have a new intent in your bot! Click on it. The optimal setting for a great intent is to contain around twenty paraphrased expressions. Add some expressions your users will say by typing the sentence in the field **Add an expression**.
 
-![Recast.AI expressions](https://cdn.recast.ai/man/recast-ai-add-expressionsc.png)
+![Recast.AI expressions](https://cdn.recast.ai/man/introduction/booking-intent.png)
 
 ## Use entities
 
-Go to the **Booking** intent. If you click on one of the expressions you will see highlighted words, with tags. These are **entities**. They’re keywords detected in expressions that are important to you in order to automate a task.
+If you click on one of the expressions you will see highlighted words, with tags. These are **entities**. They’re keywords detected in expressions that are important to you in order to automate a task.
 
 ![Recast.AI intents](https://cdn.recast.ai/man/recast-ai-entitiesb.png)
 
@@ -34,9 +33,9 @@ We call them gold entities. If you need another entity, a custom one like a **me
 
 ![Recast.AI tag entities](https://cdn.recast.ai/man/recast-ai-tag-entitiesb.png)
 
-## Use the console
+## Use the NLP console
 
-Once you’ve set up your bot, you can test it with the console. Click on the **TEST** bubble icon on the top right to make it appear. Select the tab **Analyze**, and type a sentence to test if your bot is well trained: \`I want meeting room 2 for tomorrow\`
+Once you’ve created new intents, you can test it with the console. Click on the **TEST** bubble icon on the top right to make it appear. Type a sentence to test if your bot is well trained: \`I want meeting room 2 for tomorrow\`
 
 ![Recast.AI NLP analyze](https://cdn.recast.ai/man/recast-ai-test-consoleb.png)
 
