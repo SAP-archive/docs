@@ -69,8 +69,6 @@ A skill has four parts:
 If you navigate through the tabs, you’ll see that this skill is structured as follows:
 
 It is triggered if the intention greetings or the intention goodbye are matched.
-
 It has no requirements, because it does not need to collect additional information. That means that it will execute actions directly after a trigger.
-
 It has two possible actions: If the intention matched is greetings, it sends a random welcoming message chosen from a list, and if the intention is goodbye, it does the same thing, but picks the message from a different list
 
