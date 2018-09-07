@@ -7,7 +7,7 @@ permalink: /concepts/build-your-conversation
 Click on the **BUILD** tab to find the predefined skills you have selected when creating your bot.
 The grey section on the left is your command pannel. It allows you to create new blocks, called **SKILLS**.
 
-![Recast.AI create bot](https://cdn.recast.ai/man/recast-ai-what-skill-1.png)
+![Recast.AI create bot](https://cdn.recast.ai/man/introduction/builder-workplace.png)
 
 Hover one of your skills, and click on it to edit it.
 You arrive on a new page, the page of your skill, containing a README. The README.md is the ideal place to explain what your skill does, what APIs it calls (if any), and even linking a git repository if your skill requires code.
@@ -63,5 +63,4 @@ Actions allow your bot to actually do things when you need to. An action can eit
 * The execution of another skill
 * Reset the memory of the current conversation
 
-![Recast.AI create bot](https://cdn.recast.ai/man/recast-ai-action-1.png)
 
