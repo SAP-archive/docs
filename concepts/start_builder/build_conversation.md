@@ -36,25 +36,20 @@ To define how your bot asks for and then validates the requirement, click the ar
 
 ![Recast.AI create bot](https://cdn.recast.ai/man/recast-ai-requirement-2.png)
 
-If the requirement is complete (for example, **If #location is complete**), click the adjacent **+ NEW REPLIES** to define the actions that you want your bot to execute. You can send a message, call a webhook, or update the conversation, for example, by going to another skill.
+If the requirement is missing (for example, **If #location is missing**), click the adjacent **+ NEW REPLIES** to define the actions that you want your bot to execute. You can send a message, call a webhook, or update the conversation, for example, by going to another skill.
 
 ![Recast.AI create bot](https://cdn.recast.ai/man/recast-ai-requirement-4.png)
 
-Likewise, if there is no usable information in the user input, define the actions that you want your bot to execute.
-
-![Recast.AI create bot](https://cdn.recast.ai/man/recast-ai-requirement-3.png)
-
-Below this, you have the option to add validators. This lets you define custom conditions, exactly like those defined on the **Triggers** tab, to validate that the requirement is valid. For example, if you have a #location in your requirement, but want to continue the conversation only if the location is Paris, you can set a condition. If the condition is not valid, the location isn't added to your bot's memory, and instead the action defined for this validator is performed. You define the actions for the validator by clicking the adjacent **+ NEW REPLIES**. You can define multiple validators, each with its own replies.
 
 ## Actions
 
 Actions are things that your bot does at certain points when executing a skill. They can be the following:
 
 * Message to send back to the user
-* HTTP call to your API
+* HTTP call to your API (Webhook)
 * Fallback to a human agent
 * Execution of another skill
-* Reset the memory of the current conversation
+* Update the memory of the current conversation
 * Change the language
 
 
