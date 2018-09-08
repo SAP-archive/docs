@@ -19,21 +19,6 @@
     </div>
   {% endfor %}
 
-  <h3 class="Nav-header">{{ site.data.start_nlp.title }}</h3>
-  {% for item in site.data.start_nlp.sections %}
-    <div class="Nav-link">
-      {% if page.url == item.url %}
-      <a class='active' href="{{ site.baseurl }}{{ item.url }}">
-        {{ item.title }}
-      </a>
-      {% else %}
-      <a href="{{ site.baseurl }}{{ item.url }}">
-        {{ item.title }}
-      </a>
-      {% endif %}
-    </div>
-  {% endfor %}
-
   <h3 class="Nav-header">{{ site.data.nlp_lexic.title }}</h3>
   {% for item in site.data.nlp_lexic.sections %}
     <div class="Nav-link">
