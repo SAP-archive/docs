@@ -4,6 +4,8 @@ title: Create your chatbot
 permalink: /concepts/create-builder-bot
 ---
 
+## Introduction
+
 Here are the first steps to understand the core concepts of the Recast.AI platform. You'll then be able to build a chatbot that can manage an entire conversation with a user.
 
 A Recast.AI chatbot is composed of two main elements: **Skills** and a **training dataset**.
