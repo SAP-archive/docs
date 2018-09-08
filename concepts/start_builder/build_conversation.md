@@ -4,6 +4,8 @@ title: Build your conversation
 permalink: /concepts/build-your-conversation
 ---
 
+## Bot Builder
+
 To find the predefined skills that you selected when creating your bot, click the **BUILD** tab.
 The gray panel on the left is your command panel. It allows you to add new skills.
 
