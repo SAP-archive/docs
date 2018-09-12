@@ -52,8 +52,11 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
                                                           src="https://www.recast.ai/assets/images/integrations/twitter.svg" width="30px"
                                                           alt=""></th>
-                <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
+        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
                                                           src="https://cdn.recast.ai/man/channels/alexa.png" width="30px"
+                                                          alt=""></th>
+        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
+                                                          src="https://cdn.recast.ai/man/channels/copilot.png" width="30px"
                                                           alt=""></th>
         
     </tr>
@@ -75,6 +78,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         
     </tr>
     <tr>
@@ -93,6 +97,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
         <td>Card</td>
@@ -110,6 +115,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
         <td>Carousel</td>
@@ -127,6 +133,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
         <td>Buttons</td>
@@ -144,6 +151,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
         <td>Quick Replies</td>
@@ -161,6 +169,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
         <td>List</td>
@@ -178,6 +187,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
      <tr>
         <td>Voice</td>
@@ -194,6 +204,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     </tbody>
