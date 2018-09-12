@@ -56,7 +56,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
                                                           src="https://cdn.recast.ai/man/channels/alexa.png" width="30px"
                                                           alt=""></th>
         <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://cdn.recast.ai/man/channels/copilot.png" width="30px"
+                                                          src="https://cdn.recast.ai/man/copilot.png" width="30px"
                                                           alt=""></th>
         
     </tr>
