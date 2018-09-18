@@ -77,112 +77,171 @@ We currently support all languages, with different levels of functionality: the 
     </thead>
     <tbody>
     <tr>
-        <td><span class="flag-icon flag-icon-gb m1"></span> English</td>
+        <td><span class="flag-icon flag-icon-sa m1"></span> English</td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-    </tr>
-    <tr>
-        <td><span class="flag-icon flag-icon-fr m1"></span> French</td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
-        <td><span class="flag-icon flag-icon-es m1"></span> Spanish</td>
+        <td><span class="flag-icon flag-icon-ct m1"></span> French</td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+    </tr>
+    <tr>
+        <td><span class="flag-icon flag-icon-dk m1"></span> Spanish</td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         </tr>
     <tr>
-        <td><span class="flag-icon flag-icon-de m1"></span> German</td>
+        <td><span class="flag-icon flag-icon-fi m1"></span> German</td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
+    <tr>
+        <td><span class="flag-icon flag-icon-in m1"></span> English</td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+    </tr>
+    <tr>
+        <td><span class="flag-icon flag-icon-it m1"></span> Italian</td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+    </tr>
+    <tr>
+        <td><span class="flag-icon flag-icon-jp m1"></span> Japanese</td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        </tr>
+    <tr>
+        <td><span class="flag-icon flag-icon-kr m1"></span> Korean</td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+    </tr>
+    <tr>
+        <td><span class="flag-icon flag-icon-no m1"></span> English</td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+    </tr>
+    <tr>
+        <td><span class="flag-icon flag-icon-nl m1"></span> Italian</td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+    </tr>
+    <tr>
+        <td><span class="flag-icon flag-icon-pl m1"></span> Japanese</td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        </tr>
+    <tr>
+        <td><span class="flag-icon flag-icon-pt m1"></span> Korean</td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+    </tr>
+    <tr>
+        <td><span class="flag-icon flag-icon-ru m1"></span> English</td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+    </tr>
+    <tr>
+        <td><span class="flag-icon flag-icon-se m1"></span> Italian</td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+    </tr>
+    <tr>
+        <td><span class="flag-icon flag-icon-cn m1"></span> Japanese</td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-grey-400 ion-md-close"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+     </tr>
     </tbody>
 </table>
+
+### Basic languages
 
 <table class="mb3">
     <thead>
     <tr>
         <th width="25%"></th>
-        <th>Basic</th>
-        <th width="30%">Standard</th>
-        <th>Advanced</th>
+        <th>Intent Clasification</th>
+        <th>Custom Entities</th>
+        <th>Gold Entities</th>
+        <th>Sentiment analysis</th>
+        <th>Enrichment, Type, Act</th>
+        <th>Language detection</th>
     </tr>
     </thead>
     <tbody>
     <tr>
-        <td>Languages</td>
-        <td>All languages</td>
-        <td><span class="flag-icon flag-icon-sa m1"></span><span class="flag-icon flag-icon-ct m1"></span><span
-                class="flag-icon flag-icon-dk m1"></span><span class="flag-icon flag-icon-fi m1"></span><span
-                class="flag-icon flag-icon-in m1"></span><span class="flag-icon flag-icon-it m1"></span><span
-                class="flag-icon flag-icon-jp m1"></span><span class="flag-icon flag-icon-kr m1"></span><span
-                class="flag-icon flag-icon-no m1"></span><span class="flag-icon flag-icon-nl m1"></span><span
-                class="flag-icon flag-icon-pl m1"></span><span class="flag-icon flag-icon-pt m1"></span><span
-                class="flag-icon flag-icon-ru m1"></span><span class="flag-icon flag-icon-se m1"></span><span
-                class="flag-icon flag-icon-cn m1"></span></td>
-        <td><span class="flag-icon flag-icon-gb m1"></span><span class="flag-icon flag-icon-fr m1"></span><span
-                class="flag-icon flag-icon-es m1"></span><span class="flag-icon flag-icon-de m1"></span></td>
-    </tr>
-    <tr>
-        <td>Intent Classification</td>
+        <td>All other languages</td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-    </tr>
-    <tr>
-        <td>Custom entities</td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-    </tr>
-    <tr>
-        <td>Gold entities</td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-    </tr>
-    <tr>
-        <td>Sentiment analysis</td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-    </tr>
-    <tr>
-        <td>Enrichment, Type, Act</td>
-        <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-    </tr>
-    <tr>
-        <td>Language detection</td>
-        <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-    </tr>
-    <tr>
-        <td>Voice support</td>
-        <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     </tbody>
 </table>
+
+
 
 Bots are **multilingual**, which means you can speak several languages with the same bot.
 To do that, add languages in each intent and create expressions in each of the tab. Recast.AI will **automatically** detect what the input language is so you can adapt your answers (only available for standard and advanced level languages).
