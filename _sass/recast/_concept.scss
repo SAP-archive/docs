@@ -61,6 +61,19 @@
         th { text-align: left; }
       }
 
+      &.languages-tab {
+        thead > tr {
+          th { text-align: center; }
+        }
+        tbody {
+          tr {
+            td:not(:first-child) {
+              text-align: center;
+            }
+          }
+        }
+      }
+
       tbody {
         tr {
           border-bottom: 1px solid $grey-300;
