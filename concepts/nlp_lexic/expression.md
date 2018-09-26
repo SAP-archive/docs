@@ -14,7 +14,7 @@ In an expression, you can annotate entities to make them appear in the Recast.AI
 * Put yourself in your users’ shoes; imagine what they might ask your bot.
 * Keep your expressions to a reasonable length.
 * An intent should contain at least 30 expressions.
-* Train your bot with diversified expressions. In the following example, note how the expressions are structured differently. They try to anticipate the different ways that your user might ask for something. If all the expressions were structured the same way, for example, _I'd like …_, _I want …_, _I fancy …_, your bot will have less success understanding the user.
+* Train your bot with diversified expressions. In the following example, note how the expressions are structured differently. They try to anticipate the different ways that your user might ask for something. If all the expressions were structured the same way, for example, _I'd like pizza_, _I'd like burger …_, _I'd like salad_, your bot will have less success understanding the user.
 
 ## Example
 
