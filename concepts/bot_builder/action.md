@@ -4,7 +4,7 @@ title: Actions
 permalink: /concepts/action
 ---
 
-An action is something that your bot executes at a specific point when executing a [skill](https://recast.ai/docs/concepts/what-skill).
+An action is something that your bot executes at a specific point when executing a [skill](https://recast.ai/docs/concepts/what-skill). To add actions to a skill, open the skill on the **Build** tab and then open the **Actions** subtab and click **ADD NEW MESSAGE GROUP**.
 
 ## Action categories
 
@@ -18,6 +18,8 @@ An action can be one of the following:
 - Change language
 
 ![Recast.AI - Action](//cdn.recast.ai/man/actions-type.png)
+
+A message group can contain one or more actions. You can easily reorder actions within a message group by drag and drop; look for the **Move** icon below the action on the left. You can also reorder entire message groups by drag and drop; look for the **Move the group** icon at the bottom of the message group on the left.
 
 ## Send message to the user
 
