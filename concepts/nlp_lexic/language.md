@@ -5,7 +5,7 @@ permalink: /concepts/language
 ---
 
 ## Definition
-We currently support all languages, with different levels of functionality: the **basic**, the **standard** and the **advanced** level.
+Bots are multilingual, meaning that you can speak several languages with the same bot. We currently support all languages with different levels of functionality: Advanced, standard, and basic.
 
 ### Advanced level
 
@@ -13,11 +13,11 @@ We currently support all languages, with different levels of functionality: the 
     <thead>
     <tr>
         <th width="25%"></th>
-        <th>Intent Clasification</th>
-        <th>Custom Entities</th>
-        <th>Gold Entities</th>
+        <th>Intent classification</th>
+        <th>Custom entities</th>
+        <th>Gold entities</th>
         <th>Sentiment analysis</th>
-        <th>Enrichment,<br>Type, Act</th>
+        <th>Enrichment,<br>type, act</th>
         <th>Language detection</th>
     </tr>
     </thead>
@@ -67,11 +67,11 @@ We currently support all languages, with different levels of functionality: the 
     <thead>
     <tr>
         <th width="25%"></th>
-        <th>Intent Clasification</th>
-        <th>Custom Entities</th>
-        <th>Gold Entities</th>
+        <th>Intent classification</th>
+        <th>Custom entities</th>
+        <th>Gold entities</th>
         <th>Sentiment analysis</th>
-        <th>Enrichment, Type, Act</th>
+        <th>Enrichment, type, act</th>
         <th>Language detection</th>
     </tr>
     </thead>
@@ -220,11 +220,11 @@ We currently support all languages, with different levels of functionality: the 
     <thead>
     <tr>
         <th width="25%"></th>
-        <th>Intent Clasification</th>
-        <th>Custom Entities</th>
-        <th>Gold Entities</th>
+        <th>Intent classification</th>
+        <th>Custom entities</th>
+        <th>Gold entities</th>
         <th>Sentiment analysis</th>
-        <th>Enrichment, Type, Act</th>
+        <th>Enrichment, type, act</th>
         <th>Language detection</th>
     </tr>
     </thead>
@@ -241,40 +241,38 @@ We currently support all languages, with different levels of functionality: the 
     </tbody>
 </table>
 
+To enable users to speak different languages with your bot, add the desired languages for each intent on the **Train** tab and create expressions in those languages. (For advanced level languages, remember that Recast.AI suggests additional expressions for each expression you add, so you can add expressions quickly and easily to an intent.)
 
+Recast.AI automatically detects the input language. For advanced and standard level languages, this lets you adapt your answers.
 
-Bots are **multilingual**, which means you can speak several languages with the same bot.
-To do that, add languages in each intent and create expressions in each of the tab. Recast.AI will **automatically** detect what the input language is so you can adapt your answers (only available for standard and advanced level languages).
-
-After the language has been detected the following rules applies:
-* If you do not have any expressions in this language, we will use your default bot language for processing.
-* Else, we will use it for processing.
+After the language has been detected, the following rules apply:
+* If you have expressions in that language, it is used for processing.
+* If you don't have any expressions in that language, your default bot language is used for processing.
 
 ## Tips
-* If you use a single language, pass your language as a request parameter to avoid the language detection step when you want to [analyse text](https://recast.ai/docs/api-reference/#request-text) or [use Bot Builder API](https://recast.ai/docs/api-reference/#dialog-endpoints)
-* When you start constructing your intent in a new language, using a translation service can make the operation faster
-* Don’t forget to set up all intents with the new language
+* If you use a single language, pass your language as a request parameter to avoid the language detection step when you want to [analyze text](https://recast.ai/docs/api-reference/#request-text) or [use the Bot Builder API](https://recast.ai/docs/api-reference/#dialog-endpoints).
+* Consider using a translation service when you start constructing an intent in a new language. It'll make the operation faster.
+* Don’t forget to set up all your intents in the new language.
 
-## How the language is detected?
+## Example of how the language is detected
 
 You have intents in French and English, but none in Spanish, and your bot's default language is French.
-* You receive an user utterance we detect as being Spanish:
-We will use French as the processing language because your bot does not handle Spanish and return a JSON containing `fr` in the `processing_language` field, and `es` in the `language` field
+* You receive an user utterance that we detect as Spanish:
+We use French as the processing language because your bot doesn't handle Spanish, and return a JSON containing `fr` in the `processing_language` field, and `es` in the `language` field.
 * You send us an user utterance telling us it's English:
-We will use English as the processing language and return a JSON containing `en` in the `processing_language` field, and `en` in the `language` field
-* You receive an user utterance we detect as being French:
-We will use French as the processing language and return a JSON containing `fr` in the `processing_language` field, and `fr` in the `language` field
+We use English as the processing language and return a JSON containing `en` in the `processing_language` field and `en` in the `language` field.
+* You receive an user utterance that we detect as French:
+We use French as the processing language and return a JSON containing `fr` in the `processing_language` field and `fr` in the `language` field.
 * You send us an user utterance telling us it's Spanish:
-We will use French as the processing language because your bot does not handle Spanish and return a JSON containing `fr` in the `processing_language` field, and `es` in the `language` field
+We use French as the processing language because your bot doesn't handle Spanish, and return a JSON containing `fr` in the `processing_language` field and `es` in the `language` field.
 
-## How the language is handle in a conversation?
+## How the language is handled in a conversation
 
-In Bot Builder the first sentence sent in a new conversation is analysed by the NLP API and we detect the language. We set the `conversation_language` to the `processing_language` that we detect.
+In the Bot Builder, the first sentence sent in a new conversation is analyzed by the natural language processing (NLP) API and the language is detected. We set the `conversation_language` to the `processing_language` detected.
 
-All the next messages will be processed with the `conversation_language`, so we'll not detect the language anymore.
+All subsequent messages are processed with the `conversation_language` that was detected in the first sentence of the conversation. This is to avoid changing the language when processing ambiguous international expressions like *OK*, *Cool*, and so on.
 
-If you want to change the `conversation_language` you can use the [language action](https://recast.ai/docs/concepts/action#change-language).
+If you want to change the `conversation_language`, you can use a [Change language action](https://recast.ai/docs/concepts/action#change-language).
 
-Why are we locking the conversation to the language detected in the first sentence? to avoid changing language when processing ambiguous international expressions like \`Ok\`,  \`Cool\` etc.
 
 
