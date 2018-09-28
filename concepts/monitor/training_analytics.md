@@ -12,9 +12,7 @@ Your dataset (all your intents and entities that you created and trained) is a f
 
 At the top of the page, you can run a benchmark: It will trigger several processes to measure the performance of your dataset and give you insights on how to improve it.
 
-A benchmark can be really long, depending on your bot size, you can have an idea here:
-
----- WIP -------
+A benchmark can be really long and take hours, depending on your bot size, you can have an idea here.
 
 You can only have one benchmark running in the same time for your bot.
 
@@ -93,8 +91,13 @@ For your bot users, a low F1 score means: *This is completely useless*
 
 ## Your confusion Matrix
 
-Your confusion matrix is used to gain further insight into intents that may clash and get confused. The element in the intersection of row A and column B signifies the proportion, out of all entries pertaining to intent A, of entries that we classified as B.
+Your confusion matrix is used to gain further insight into intents that may clash and get confused. The element in the intersection of row A and column B signifies the percentage of sentences that should be classified as A but classified as B.
+
+You can order the confusion matrix by intent name and by performance. If you don't have any problem between your intents you should have a confusion matrix with a beautifull diagonal, since 100% of expressions match the right intent, as expected.
+
+![Recast.AI - Confusion Matrix](//cdn.recast.ai/man/monitoring/confusion-matrix.png)
+
 
 ## Tips to improve your intent classification
 
-WIP
+
