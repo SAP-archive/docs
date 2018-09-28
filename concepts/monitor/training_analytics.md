@@ -23,6 +23,8 @@ We use your bot training data and a validation file that you can provide to have
 
 We split your expressions inside each of your intents in two parts: 90% is used for training, and 10% is used to evaluate the classification. The evaluation is simple: each sentence is tested with your training dataset and we check if the first intent returned is the right one. We repeat this process 5 times to enforce randomness in the splits. Once the evaluations are done, we average the results while taking in account the number of occurrences of each intent, resulting with 4 metrics between 0 and 1 for each intent: **Accuracy**, **Precision**, **Recall**, **F1 score**, and four global metrics on all the dataset.
 
+Note that since we are evaluating by randomly picking 90% of your training dataset, on the same dataset, the scores can be a little bit different each time you run the benchmark.
+
 ### Your validation file
 
 A validation file is composed of sentences with their corresponding intents. It reflects the reality, so it's important to build this file with real sentences that users had really said.
