@@ -100,4 +100,24 @@ You can order the confusion matrix by intent name and by performance. If you don
 
 ## Tips to improve your intent classification
 
+On top of benchmark metrics, we'll suggest actions on your dataset. We give you step by step suggestions to improve your dataset in a more accurate way. If suggestions are not meaningful for you, you can click on the button "Next tips".
+
+Here is the list of suggestions that we can make, prioritized:
+
+### Remove expressions
+We can detect that a lot of testing examples of some intents are falsely predicted as another inent. Moreover we check if the number of training examples of this intent is more than 50% larger than the median number of examples in your dataset (it is said to be unbalanced). As a result, the algorithm may learn to increase the importance and detection rate of this intent. To prevent that, we advise removing any misclassified examples.
+
+### Avoid duplicates
+Machine learning algorithms are excellent at predicting the results of data that they encountered during the training step. Duplicates could end up in the training set and testing set, and anormally improve the benchmark results. 
+
+### Add expressions
+We check if some intents have a low **recall** (For each intent, it measures the proportion of correct predictions, out of all entries belonging to this intent.). Since there is no balance problem in your dataset, our ML strategy is unable to capture the globality of the semantic complexity of this intent. You may be able to solve this by adding more training examples. 
+
+### Merge intents
+Two intents may be too close semantically to be efficiently distinguished. A significant part of the error of one intent is directed toward the second one, and vice versa. Merging them may help improve the bot’s flow.
+
+### Split intent
+If an intent has both low precision and low recall, while the recall scores of the other intents are acceptable. It may reflect a use case that is too broad semantically, which would benefit from an intent-split into several intents. 
+
+
 
