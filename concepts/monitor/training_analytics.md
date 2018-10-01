@@ -6,7 +6,7 @@ permalink: /concepts/training-analytics
 
 On the **Monitor** tab, the **Training Analytics** section helps you to build a great dataset for your bot. These analytics are only available for bots with more than 5 intents and more than 30 sentences by intents.
 
-Your dataset (that is, all the intents and entities that you created and trained) is a fundamental element of your bot. If your bot isn't well-trained (meaning your dataset isn't well-structured or is incomplete), your bot will misunderstand messages from the user, and the conversational experience will be disappointing.
+Your dataset (that is, all the intents and entities that you created and trained) is a fundamental element of your bot. If your bot isn't well-trained (meaning your dataset isn't well-structured or is incomplete), your bot won't correctly understand the messages from users, and the conversational experience will be disappointing.
 
 ## Your intent classification benchmark
 
@@ -21,24 +21,24 @@ For more accurate results, we use your bot training data and a validation file t
 
 ### Your bot training data
 
-We split your expressions inside each of your intents into two parts: 90% is used for training, 10% is used to evaluate the classification. The evaluation is simple: Each sentence is tested with your training dataset, and we check if the first intent returned is the right one. We repeat this process five times to enforce randomness in the splits. Once the evaluations are done, we average the results while taking into account the number of occurrences of each intent, resulting in 4 metrics between 0 and 1 for each intent: **Accuracy**, **Precision**, **Recall**, **F1 score**, and four global metrics on all the dataset.
+We split the expressions inside each intent into two parts: 90% is used for training, 10% is used to evaluate the classification. The evaluation is simple: Each sentence is tested with your training dataset, and we check if the first intent returned is the right one. We repeat this process five times to enforce randomness in the splits. Once the evaluation is done, we average the results while taking into account the number of occurrences of each intent. This results in four metrics between 0 and 1 for each intent (**Accuracy**, **Precision**, **Recall**, and **F1 score**) and four global metrics for the entire dataset.
 
-Note that since we are evaluating by randomly picking 90% of your training dataset, on the same dataset, the scores can be a little bit different each time you run the benchmark.
+Note that the scores can be a little different if you run the benchmark again on the same dataset. This is because we randomly pick 90% of your training dataset to evaluate.
 
 ### Your validation file
 
-A validation file is composed of sentences with their corresponding intents. It reflects the reality, so it's important to build this file with real sentences that users had really said.
+A validation file is composed of sentences with their corresponding intents. It reflects the reality, so it's important to build this file with real sentences that users actually said.
 
-Each sentence will be tested with your training dataset and we check if the first intent returned is the right one. Once the evaluation is done, we also get 4 metrics between 0 and 1 on each intent and one global: **Accuracy**, **Precision**, **Recall**, **F1 score**.
+Each sentence is tested with your training dataset, and we check if the first intent returned is the right one. Once the evaluation is done, we also get four metrics between 0 and 1 for each intent (**Accuracy**, **Precision**, **Recall**, and **F1 score**) and one global metric.
 
-### How can I create a validation file?
+### How do I create a validation file?
 
 For multilingual bots, please upload one file for each supported language.
 
-**About the file format:**
+**File format**
 
 Your file should be a valid CSV file. It should end with .csv and the separator should be a comma “,”.
-It should look like this:
+For example, it should look like this:
 
 ~~~ json
 “expressions”,”intents”
@@ -47,30 +47,30 @@ It should look like this:
 “What’s the weather in Paris”,”weather”
 ~~~
 
-**About the content**
+**Content**
 
-The goal of this file is to represent reality - the way your users are using your bot. Real user entries should include dedicated vocabulary, typos, etc. The proportions of presence of each intent in your file should also reflect the way real users are using your bot.
+The goal of this file is to represent reality, that is, to show how users are using your bot. Real user entries should include dedicated vocabulary, typos, etc. The proportion of presence of each intent in your file should also reflect the way real users use your bot.
 
-* Almost all your bot intents should be represented (if a few intents, far from the core of you bot's use case, are missing, that’s okay). At least 85% of the intents should be represented inside the validation file.
-* Many sentences per intent should be present. Don’t choose some sentences over others.
-* All sentences in your file should match an existing intent of your bot.
+* Almost all your bot intents should be represented. It's okay if a few intents, far from the core of you bot's use case, are missing. However, at least 85% of the intents should be represented in the validation file.
+* Many sentences should be present for each intent. Don’t choose some sentences over others.
+* All sentences in your file should match an existing intent in your bot.
 * Avoid duplicate sentences.
 
-A recommended way to create your validation file while respecting the way people use your bot would be:
+To ensure that your validation file reflects the way that people use your bot, we recommend creating your file as follows:
 
-1) Go to your **Log Feed** page and filter only matched logs from the past 1 to 3 months.
+1) On the **Monitor** tab, go to the **Log Feed** section and filter only matched logs from the past 1 to 3 months.
 2) Export these logs by clicking **Merge duplicate logs on a single line**.
-3) Randomly pick the number of logs you need (rule of thumb: your bot intents count * 50).
-4) Check manually (yes, you need to be the final validator) that each sentence is matching the right intent.
+3) Randomly pick the number of logs you need (as a rule of thumb, your bot intents count * 50).
+4) Check manually (yes, you need to be the final validator!) that each sentence matches the right intent.
 5) Create the final validation file with these sentences and intents.
 
-In case you don't have at least 85% of your intents in your file, you need to pick again sentences from your logs to complete your file and reach approximately 85%. Here is how you can complete your file:
+If your file doesn't include at least 85% of your intents, you need to pick sentences from your logs to complete your file and reach approximately 85%. You can do this as follows:
 
-1) Go back to your **Log Feed** page and search for specific intents that are missing.
-2) Select between 3 and 10 sentences by missing intents and add these sentences to your validation file.
+1) Go back to your **Log Feed** page and search for the specific intents that are missing.
+2) Select between 3 and 10 sentences for each missing intent, and add these sentences to your validation file.
 
 **Final step**
-Upload your file to the platform. We'll analyze it and provide feedback - you may need to add some sentences. You'll always be able to run a benchmark; these guidelines are just suggestions.
+Upload your file to the platform. We'll analyze it and provide feedback. For example, we may suggest adding more sentences. You can always run a benchmark; these guidelines are just suggestions.
 
 ## Your benchmark scores
 
