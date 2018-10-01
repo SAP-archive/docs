@@ -4,9 +4,9 @@ title: Training analytics
 permalink: /concepts/training-analytics
 ---
 
-On the **Monitor** tab, you can find a **Training Analytics** section to help you build a great dataset. These analytics are only available for bots with more than 5 intents and more than 30 sentences by intents.
+On the **Monitor** tab, the **Training Analytics** section helps you to build a great dataset for your bot. These analytics are only available for bots with more than 5 intents and more than 30 sentences by intents.
 
-Your dataset (all your intents and entities that you created and trained) is a fundamental stone of your bot. If your bot is not well-trained (meaning your dataset is not well-structured or not complete enough), your bot will not correctly understand a user input and the conversational experience will be disappointing.
+Your dataset (that is, all the intents and entities that you created and trained) is a fundamental element of your bot. If your bot isn't well-trained (meaning your dataset isn't well-structured or is incomplete), your bot will misunderstand messages from the user, and the conversational experience will be disappointing.
 
 ## Your intent classification benchmark
 
@@ -14,9 +14,9 @@ At the top of the page, you can run a benchmark. It will trigger several process
 
 A benchmark can be really long and take hours, depending on the size of your bot, you can have an idea here.
 
-You can only have one benchmark running at the same time for your bot.
+You can only run one benchmark at a time for your bot.
 
-We use your bot training data and a validation file that you can provide to have more accurate results. Since we *take* your bot training data at a time **t**, and provide tips and insights based on this data, we advise you not to update your dataset during the benchmark, otherwise insights will be less accurate.
+For more accurate results, we use your bot training data and a validation file that you provide. Since we take your bot training data at a time *t*, and provide tips and insights based on this data, we advise you not to update your dataset during the benchmark; otherwise the insights will be less accurate.
 
 
 ### Your bot training data
