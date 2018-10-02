@@ -6,13 +6,13 @@ permalink: /concepts/training-analytics
 
 On the **Monitor** tab, the **Training Analytics** section helps you to build a great dataset for your bot. These analytics are only available for bots with more than 5 intents and more than 30 sentences by intents.
 
-Your dataset (that is, all the intents and entities that you created and trained) is a fundamental element of your bot. If your bot isn't well-trained (meaning your dataset isn't well-structured or is incomplete), your bot won't correctly understand the messages from users, and the conversational experience will be disappointing.
+Your dataset (that is, all the intents and entities that you created and trained) is a fundamental element of your bot. If your bot isn't well-trained (meaning your dataset isn't well-structured or is incomplete), your bot won't be able to correctly understand messages from users, resulting in a disappointing conversational experience.
 
 ## Your intent classification benchmark
 
 At the top of the page, you can run a benchmark. It will trigger several processes to measure the performance of your dataset and give you insights on how to improve it.
 
-A benchmark can be really long and take hours, depending on the size of your bot, you can have an idea here.
+A benchmark can be really long and take hours, depending on the size of your bot, but you can have an idea here.
 
 You can only run one benchmark at a time for your bot.
 
@@ -23,11 +23,11 @@ For more accurate results, we use your bot training data and a validation file t
 
 We split the expressions inside each intent into two parts: 90% is used for training, 10% is used to evaluate the classification. The evaluation is simple: Each sentence is tested with your training dataset, and we check if the first intent returned is the right one. We repeat this process five times to enforce randomness in the splits. Once the evaluation is done, we average the results while taking into account the number of occurrences of each intent. This results in four metrics between 0 and 1 for each intent (**Accuracy**, **Precision**, **Recall**, and **F1 score**) and four global metrics for the entire dataset.
 
-Note that the scores can be a little different if you run the benchmark again on the same dataset. This is because we randomly pick 90% of your training dataset to evaluate.
+Note that the scores may differ slightly if you run the benchmark again on the same dataset. This is because we randomly pick 90% of your training dataset to evaluate.
 
 ### Your validation file
 
-A validation file is composed of sentences with their corresponding intents. It reflects the reality, so it's important to build this file with real sentences that users actually said.
+A validation file is composed of sentences with their corresponding intents. It reflects the reality, so it's important to build this file with real sentences that users actually sent to your bot.
 
 Each sentence is tested with your training dataset, and we check if the first intent returned is the right one. Once the evaluation is done, we also get four metrics between 0 and 1 for each intent (**Accuracy**, **Precision**, **Recall**, and **F1 score**) and one global metric.
 
@@ -49,14 +49,14 @@ For example, it should look like this:
 
 **Content**
 
-The goal of this file is to represent reality, that is, to show how users are using your bot. Real user entries should include dedicated vocabulary, typos, etc. The proportion of presence of each intent in your file should also reflect the way real users use your bot.
+The goal of this file is to represent reality, that is, to show how users use your bot. Real user entries should include dedicated vocabulary, typos, etc. The proportion to which each intent is present in your file should also reflect the way real users use your bot. Here are some guidelines:
 
-* Almost all your bot intents should be represented. It's okay if a few intents, far from the core of you bot's use case, are missing. However, at least 85% of the intents should be represented in the validation file.
-* Many sentences should be present for each intent. Don’t choose some sentences over others.
-* All sentences in your file should match an existing intent in your bot.
+* Try to represent almost all intents in your bot. It's okay if a few intents, far from the core of your bot's use case, are missing. However, at least 85% of the intents should be represented in the validation file.
+* Provide many sentences for each intent. Don’t choose some sentences over others.
+* Check that all sentences in your file match an existing intent in your bot.
 * Avoid duplicate sentences.
 
-To ensure that your validation file reflects the way that people use your bot, we recommend creating your file as follows:
+To ensure that your validation file reflects the way that people actually use your bot, we recommend creating your file as follows:
 
 1) On the **Monitor** tab, go to the **Log Feed** section and filter only matched logs from the past 1 to 3 months.
 2) Export these logs by clicking **Merge duplicate logs on a single line**.
@@ -70,7 +70,7 @@ If your file doesn't include at least 85% of your intents, you need to pick sent
 2) Select between 3 and 10 sentences for each missing intent, and add these sentences to your validation file.
 
 **Final step**
-Upload your file to the platform. We'll analyze it and provide feedback. For example, we may suggest adding more sentences. You can always run a benchmark; these guidelines are just suggestions.
+Upload your file to the platform. We'll analyze it and provide feedback. For example, we may suggest adding more sentences. You can still run a benchmark at any time; these guidelines are just suggestions.
 
 ## Your benchmark scores
 
@@ -117,7 +117,7 @@ We check if some intents have a low **recall** (see definition above). Since the
 Two intents may be too close semantically to be efficiently distinguished. A significant part of the error of one intent is directed toward the second one, and vice versa. Merging them may help improve the bot’s flow.
 
 ### Split intent
-If an intent has both low precision and low recall, while the recall scores of the other intents are acceptable, it may reflect a use case that is too broad semantically. Splitting the intent into several intents may help.
+If an intent has both low precision and low recall, while the recall scores of the other intents are acceptable, it may reflect a use case that is too broad semantically. Try splitting this intent into several intents.
 
 
 
