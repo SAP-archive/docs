@@ -4,15 +4,15 @@ title: Training analytics
 permalink: /concepts/training-analytics
 ---
 
-On the **Monitor** tab, the **Training Analytics** section helps you to build a great dataset for your bot. These analytics are only available for bots with more than 5 intents and more than 30 sentences by intents.
+On the **Monitor** tab, the **Training Analytics** section helps you to build a great dataset for your bot. These analytics are only available for bots with at least 5 intents and at least 30 expressions per intent.
 
-Your dataset (that is, all the intents and entities that you created and trained) is a fundamental element of your bot. If your bot isn't well-trained (meaning your dataset isn't well-structured or is incomplete), your bot won't be able to correctly understand messages from users, resulting in a disappointing conversational experience.
+Your dataset (that is, all the intents and entities that you created and trained) is a fundamental element of your bot. If your bot isn't well-trained (meaning your dataset isn't well-structured or is incomplete), your bot won't be able to correctly understand messages from its users, resulting in a disappointing conversational experience.
 
 ## Your intent classification benchmark
 
 At the top of the page, you can run a benchmark. It will trigger several processes to measure the performance of your dataset and give you insights on how to improve it.
 
-A benchmark can be really long and take hours, depending on the size of your bot, but you can have an idea here.
+A benchmark can take several hours, depending on the size of your bot.
 
 You can only run one benchmark at a time for your bot.
 
