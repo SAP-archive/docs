@@ -76,13 +76,13 @@ Upload your file to the platform. We'll analyze it and provide feedback. For exa
 
 **Accuracy** is a global grade on the performance of your bot. It's the proportion of successful classifications out of all of the predictions conducted during your benchmark. While it's a good indication of performance for bots with balanced intents, it may be biased for unbalanced bots.
 
-**Precision** is a metric that is calculated per intent. For each intent, it measures the proportion of correct predictions, out of all of the times the intent was declared during the benchmark. It answers the question *Out of all of the times my bot predicted this intent, how many times was it correct?* Low precision usually signifies the relevant intent needs cleaning, meaning remove sentences that don't belong to this intent.
+**Precision** is a metric that is calculated per intent. For each intent, it measures the proportion of correct predictions out of all of the times the intent was declared during the benchmark. It answers the question *Out of all the times my bot predicted this intent, how many times was it correct?* Low precision usually signifies the relevant intent needs cleaning, which means removing sentences that don't belong to this intent.
 
 For your bot users, a low precision means *The bot always thinks I'm talking about A, no matter what I say!*
 
-**Recall** is also a metric calculated per intent. For each intent, it measures the proportion of correct predictions, out of all entries belonging to this intent. It answers the question *Out of all of the times my bot was supposed to detect this intent, how many times did it do so?* Low recall usually signifies the relevant intent can use more training, for example, by adding more sentences to enrich the training. 
+**Recall** is also a metric calculated per intent. For each intent, it measures the proportion of correct predictions out of all of the entries belonging to this intent. It answers the question *Out of all of the times my bot was supposed to detect this intent, how many times did it do so?* Low recall usually signifies the relevant intent needs more training, for example, by adding more sentences to enrich the training. 
 
-For your bot users, a low recall means *I can't get the bot to understand I want to do B!*
+For your bot users, a low recall means *I can't get the bot to understand that I want to do B!*
 
 **F1 score** is the harmonic mean of the precision and the recall. It's a good indication for the performance of each intent, ranging from 0 (bad performance) to 1 (good performance). The F1 scores for each intent can be averaged to create a global indication for the performance of your bot.
 
@@ -91,7 +91,7 @@ For your bot users, a low F1 score means *This is completely useless!*
 
 ## Your confusion matrix
 
-Your confusion matrix is used to gain further insight into intents that may clash and get confused. The element in the intersection of row A and column B signifies the percentage of sentences that should be classified as A but classified as B.
+Your confusion matrix is used to gain further insight into intents that may clash and get confused. The element in the intersection of row A and column B signifies the percentage of sentences that should be classified as A, but are classified as B.
 
 You can order the confusion matrix by intent name and by performance. If you don't have any problem between your intents, you should have a confusion matrix with a beautiful diagonal since 100% of expressions match the right intent, as expected.
 
@@ -100,9 +100,9 @@ You can order the confusion matrix by intent name and by performance. If you don
 
 ## Tips to improve your intent classification
 
-On top of benchmark metrics, we'll suggest actions on your dataset. We give you step-by-step suggestions to improve your dataset in a more accurate way. If the suggestions are not meaningful for you, click **Next tips**.
+In addition to benchmark metrics, we provide step-by-step suggestions to improve your dataset in a more accurate way. If the suggestions are not meaningful for you, click **Next tips**.
 
-Here is the list of suggestions that we can make, prioritized:
+Here's a prioritized list of the suggestions we may make.
 
 ### Remove expressions
 We can detect that a lot of testing examples of some intents are falsely predicted as another intent. Moreover, we check if the number of training examples of this intent is more than 50% larger than the median number of examples in your dataset (it is said to be unbalanced). As a result, the algorithm may learn to increase the importance and detection rate of this intent. To prevent that, we advise removing any misclassified examples.
@@ -111,13 +111,13 @@ We can detect that a lot of testing examples of some intents are falsely predict
 Machine learning algorithms are excellent at predicting the results of data that they encountered during the training step. Duplicates could end up in the training set and testing set, and abnormally improve the benchmark results. 
 
 ### Add expressions
-We check if some intents have a low **recall** (For each intent, it measures the proportion of correct predictions, out of all entries belonging to this intent.) Since there is no balance problem in your dataset, our ML strategy is unable to capture the globality of the semantic complexity of this intent. You may be able to solve this by adding more training examples. 
+We check if some intents have a low **recall** (see definition above). Since there is no balance problem in your dataset, our machine learning strategy is unable to capture the globality of the semantic complexity of this intent. You may be able to solve this by adding more training examples. 
 
 ### Merge intents
 Two intents may be too close semantically to be efficiently distinguished. A significant part of the error of one intent is directed toward the second one, and vice versa. Merging them may help improve the bot’s flow.
 
 ### Split intent
-If an intent has both low precision and low recall, while the recall scores of the other intents are acceptable, it may reflect a use case that is too broad semantically, which would benefit from an intent-split into several intents. 
+If an intent has both low precision and low recall, while the recall scores of the other intents are acceptable, it may reflect a use case that is too broad semantically. Splitting the intent into several intents may help.
 
 
 
