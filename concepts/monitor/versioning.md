@@ -4,39 +4,43 @@ title: Versioning
 permalink: /concepts/versioning
 ---
 
-Versions and Environments may be used to manage and update large, complex chatbots in an organized way that does not expose working drafts of a chatbot to chatbot consumers. 
+You can use versions and environments to manage and update large, complex chatbots in an organized way that doesn't expose working drafts of a chatbot to users. 
 
-## Enable bot versioning
+## What's a version and why are they useful?
 
-By default, your bot has only one main version `v1`. To enable versioning feature, go to the Settings, in the Versions Settings area and activate the feature. Once this feature is enabled, it may not be disabled.
+A version is a package of your bot training dataset and skills. Each version is independent of the others and can be managed individually. For example, you might want to create a new version prior to major updates to your training dataset or skills. Additionally, separate versions may be useful if you want to leverage two variations of the same core bot. 
 
-You will then see at the top of your page a drop-down to create and switch to different versions.
+## Enable versioning for your bot
+
+**Note:** Once you enable versioning for your bot, you can't disable it.
+
+To enable versioning for your bot:
+1. Go to the **Settings** page for your bot
+2. In the Version Settings area, activate versioning.
+
+At the top of the page, you'll now see a dropdown to create and switch to different versions.
 
 [IMAGE]
 
-## What's a Version?
+## How do I create a version?
 
-A version is a package of your bot training dataset and your skills. Each version is independent of other one and can be managed individually. 
-
-A new version can be created within the Version Settings area or in the drop-down near your bot name. Click the 'Create New Version' button and select the Version which to copy. This copies the Build and Train tabs of the source Version and creates a new Version which can then be named. The new Version is a pure copy, it means that you can update the new one or the old one separatly.
+By default, your bot has only one main version `v1`. You can create a new version in the Version Settings area or in the dropdown near the bot name. Click **Create New Version** and select the version you want to copy. This copies the **Train** and **Build** tabs of the source version and creates a new version that you can then name. The new version is a pure copy; you can update the new version or the old one separately.
 
 [IMAGE]
 
-It is best to create a new Version prior to major updates to your skills or your training dataset. Additionally, separate versions may be useful when you want to leverage two variations of the same core bot. 
-
-**Note: Bots are restricted to having five or fewer Versions.**
+**Note:** Bots are restricted to five or fewer versions.
 
 ### Version request token
 
-Each version has a dedicated request token. It means that if you want to analyse a text with the `/request` endpoint or use the Bot Builder API with the `/dialog` API, you will now have to provide the request token from the version you want to use.
+Each version has a dedicated request token. This means that if you want to analyze a text with the `/request` endpoint or use the Bot Builder API with the `/dialog` API, you have to provide the request token from the version that you want to use.
 
 [IMAGE]
 
-## What's an Environment?
+## What's an environment?
 
-Environments are configurations applied to specific versions and will help you to deploy seamlessly your chatbot in production. They are best leveraged as specific consumption environments, for example: Development, Staging, and Production.
+Environments are configurations applied to specific versions and help you to seamlessly deploy your chatbot in production. They are best leveraged as specific consumption environments, for example, Development, Staging, and Production.
 
-When you first enable the versioning feature, your first version `v1` will be associated and linked to the environment `production`. Additional Environments may be created and named within the Environments area in Versions Settings.
+When you first enable versioning, your first version `v1` is associated and linked to the environment `production`. You can create and name additional environments in the Version Settings area under Environments.
 
 [IMAGE]
 
@@ -44,45 +48,45 @@ Each environment is always linked to a specific version.
 
 [IMAGE]
 
-In the **CONNECT** tab you will be able to connect each channel to a specific environment. It means that you can have a Facebook Messenger channel for your `DEVELOPMENT` environment, and this environment is linked to the version `v2`, and you can have a Facebook Messenger channel for your `PRODUCTION` environment, and this environment is linked to the version `v1`. 
+On the **Connect** tab, you can connect each channel to a specific environment. This means that you can have a Facebook Messenger channel for your `DEVELOPMENT` environment and link this environment to version `v2`, and have a Facebook Messenger channel for your `PRODUCTION` environment and link this environment to version `v1`. 
 
 [IMAGE]
 
 ### Environment request token
 
-Each environment has a dedicated request token. It means that if you want to analyse a text with the `/request` endpoint or use the Bot Builder API with the `/dialog` API, you can either provide a `version token` or an `environment token`.
+Each environment has a dedicated request token. This means that if you want to analyze a text with the `/request` endpoint or use the Bot Builder API with the `/dialog` API, you can either provide a `version token` or an `environment token`.
 
-If you provide an `environment token` in your request, it will use the version of your chatbot linked to this environment.
+If you provide an `environment token` in your request, it uses the version of your chatbot that is linked to this environment.
 
-## Versions + Environments: How Does it Work?
+## How do versions + environments work?
 
 Since each environment is linked to a version, it's really easy to deploy a new version to a production environment.
-Here you have to Facebook Messenger channels, one for the `DEVELOPMENT` and for the `PRODUCTION`. Now, the `v1` version of my bot is in `PRODUCTION`, and users that are chatting with my facebook page `Awesome bot` are chatting with this one.
+Here you have two Facebook Messenger channels: one for the `DEVELOPMENT` environment and one for the `PRODUCTION` environment. The `v1` version of my bot is in the `PRODUCTION` environment. The users chatting with my Facebook Messenger page `Awesome bot` are chatting with this version.
 
 [IMAGE]
 
-Let's say that I'm working on a different version `v2`, and I'm testing it on a `STAGING` environement, so with another Facebook Messenger page. I'm pretty confortable with this new version, and now I want to deploy it to the `PRODUCTION` environment.
+Let's say I'm working on a different version `v2` and I'm testing it on the `STAGING` environment with another Facebook Messenger page. I'm pretty comfortable with this new version and now I want to deploy it to the `PRODUCTION` environment.
 
-I go to the settings, on the versions area, and change the version that is linked to the `PRODUCTION`.
-
-[IMAGE]
-
-Now the `PRODUCTION` environment is linkes to my `v2` version of my bot, and my users on my Facebook Messenger page `Awesome bot` can talk to the new version of my bot.
-
-Each Versions may be assigned to multiple Environments, however only a single Version can be assigned to each Environment.
-
-
-## Bot Builder API (without Bot Connector): how it work?
-
-If you are using directly the Bot Builder endpoint `/dialog` without a channel in Bot Connector. The best practice is to use `environment` request tokens and not versions tokens.
-
-In your code, when you will request Recast.AI and send a message, it will be always on the same environment, the `PRODUCTION` one for example. When you will need to deploy a new version of your chatbot to your users, you will just need to go to the settings, in the versions area, and change the version that is linked to the `PRODUCTION` environment.
+On the **Settings** page for my bot, I go to the Version Settings area and change the version that is linked to the `PRODUCTION` environment.
 
 [IMAGE]
 
-You will not need to change the `request token` in your code, since it's the same environment that you are requesting, and it's in the Recast.AI settings that you will switch to a different version.
+Now the `PRODUCTION` environment is linked to the `v2` version of my bot. The users on my Facebook Messenger page `Awesome bot` can now talk to the new version of my bot.
+
+You can assign a version to multiple environments. However, you can assign only one version to each environment.
+
+
+## How does the Bot Builder API (without Bot Connector) work?
+
+If you're directly using the Bot Builder endpoint `/dialog` without a channel in the Bot Connector, the best practice is to use `environment` request tokens and not version tokens.
+
+In your code, when you request Recast.AI and send a message, it will always be on the same environment, for example, the `PRODUCTION` environment. When you need to deploy a new version of your chatbot to your users, you just need to go to the **Settings** page for your bot and, in the Version Settings area, change the version that is linked to the `PRODUCTION` environment.
+
+[IMAGE]
+
+You don't need to change the `request token` in your code because it's the same environment that you're requesting; you simply switch to a different version in the Recast.AI settings.
 
 
 ## Monitoring
 
-In all areas of the Monitor tab, the metrics shown can be filtered on a specific environment and versions. For example, you can opt to only see the Log Feed generated on a `STAGING` environment or see the Usage Metrics only on the `PRODUCTION` environment.
+On the **Monitor** tab, you can filter all of the metrics by environment and version. For example, you can opt to see only the log feed for the `STAGING` environment or only the usage metrics for the `PRODUCTION` environment.
