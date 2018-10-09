@@ -16,6 +16,8 @@ On the **Connect** tab of your bot, activate the **Webchat** channel.
 ### How to use it
 
 1) Configure details like color, title of the button, bot picture, user picture, etc.
+
+    You can restrict messages from users to 512 characters or less. For example, you may want to do this if users tend to add a lot of details that obscure the intent of the request.
 2) Add the following script to your page to get the webchat:
 
 ~~~ html
