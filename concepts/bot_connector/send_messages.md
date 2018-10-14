@@ -275,15 +275,9 @@ If your call is successful, you should receive a 201.
 
 #### Errors
 
-We return an error (`400: bad_request`) if any of these cases is met:
+A `400: bad_request` error is returned if the parameter `messages` is missing.
 
-* Parameter `messages` is missing.
+A `401: unauthorized` error is returned if the token provided in your request is not linked to any of your bots.
 
-We return an error (`401: unauthorized`) if the following case is met:
-
-* The token provided in your request is not linked to any of your bots.
-
-We return an error (`503: service_unavailable`) if any of these cases is met:
-
-* The service you interact with (Messenger, Kik, Slack,...) is unavailable.
+A `503: service_unavailable` error is returned if the service you interact with (Facebook Messenger, Kik, Slack, etc.) is unavailable.
 
