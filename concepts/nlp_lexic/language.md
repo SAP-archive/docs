@@ -82,7 +82,7 @@ Bots are multilingual, meaning that you can speak several languages with the sam
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-close"></i></td>
+        <td><i class="c-grey-500 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
@@ -91,7 +91,7 @@ Bots are multilingual, meaning that you can speak several languages with the sam
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-close"></i></td>
+        <td><i class="c-grey-500 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
@@ -100,7 +100,7 @@ Bots are multilingual, meaning that you can speak several languages with the sam
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-close"></i></td>
+        <td><i class="c-grey-500 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         </tr>
     <tr>
@@ -109,7 +109,7 @@ Bots are multilingual, meaning that you can speak several languages with the sam
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-close"></i></td>
+        <td><i class="c-gery-500 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
@@ -118,7 +118,7 @@ Bots are multilingual, meaning that you can speak several languages with the sam
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-close"></i></td>
+        <td><i class="c-grey-500 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
@@ -127,7 +127,7 @@ Bots are multilingual, meaning that you can speak several languages with the sam
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-close"></i></td>
+        <td><i class="c-grey-500 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
@@ -136,7 +136,7 @@ Bots are multilingual, meaning that you can speak several languages with the sam
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-close"></i></td>
+        <td><i class="c-grey-500 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         </tr>
     <tr>
@@ -145,7 +145,7 @@ Bots are multilingual, meaning that you can speak several languages with the sam
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-close"></i></td>
+        <td><i class="c-grey-500 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
@@ -154,7 +154,7 @@ Bots are multilingual, meaning that you can speak several languages with the sam
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-close"></i></td>
+        <td><i class="c-grey-500 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
@@ -163,7 +163,7 @@ Bots are multilingual, meaning that you can speak several languages with the sam
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td><i class="c-grey-500 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
@@ -172,7 +172,7 @@ Bots are multilingual, meaning that you can speak several languages with the sam
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-close"></i></td>
+        <td><i class="c-grey-500 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         </tr>
     <tr>
@@ -181,7 +181,7 @@ Bots are multilingual, meaning that you can speak several languages with the sam
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-close"></i></td>
+        <td><i class="c-grey-500 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
@@ -190,7 +190,7 @@ Bots are multilingual, meaning that you can speak several languages with the sam
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-close"></i></td>
+        <td><i class="c-grey-500 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
@@ -199,7 +199,7 @@ Bots are multilingual, meaning that you can speak several languages with the sam
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-close"></i></td>
+        <td><i class="c-grey-500 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
@@ -208,7 +208,7 @@ Bots are multilingual, meaning that you can speak several languages with the sam
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
-        <td><i class="c-blue-500 ion-md-close"></i></td>
+        <td><i class="c-grey-500 ion-md-close"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
      </tr>
     </tbody>
