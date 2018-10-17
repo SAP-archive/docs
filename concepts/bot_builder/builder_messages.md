@@ -43,7 +43,9 @@ You can create all of the following variables:
 * `{{skill_occurences}}`: Number of consecutive occurrences of the current skill.
 * `{{language}}`: Language ISO code of the current conversation.
 * `{{current_message}}`: The message source sent by the user.
-* `{{message_received_at}}` : Timestamp of when the message was received.
+* `{{#entity}}`: An alias of the `nlp.entities` object. You can access each element like `{{#entity.confidence}}` where `confidence` is `nlp.entities.confidence`.
+* `{{message_received_at}}`: Timestamp of when the message was received.
+* `{{nlp}}`: The full `nlp` object. You can access any property of it like `{{nlp.sentiment}}` for example if you want to get the `sentiment` property.
 
 ## How to send rich messages from your code
 
