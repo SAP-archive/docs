@@ -5,15 +5,15 @@ The hosted version is [here](https://recastai.github.io/docs/).
 
 ## Installation
 
-Make sure you have install bundler:
+Make sure you have bundler installed:
 ```sh
 > gem install bundler
 ```
 
-Clone the repository and install the dependencies.
+Clone the repository and install the dependencies:
 ```sh
 > git clone https://github.com/RecastAI/docs.git
-> cd documentation
+> cd docs
 > bundle install
 ```
 
