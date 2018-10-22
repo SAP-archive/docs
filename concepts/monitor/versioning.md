@@ -15,8 +15,8 @@ A version is a package of your bot training dataset and skills. Each version is 
 **Note:** Once you enable versioning for your bot, you can't disable it.
 
 To enable versioning for your bot:
-1. Go to the **Settings** page for your bot
-2. In the Version Settings area, activate versioning.
+1. Go to the **Settings** page for your bot.
+2. Under **VERSION SETTINGS**, activate versioning.
 
 At the top of the page, you'll now see a dropdown to create and switch to different versions.
 
@@ -24,7 +24,7 @@ At the top of the page, you'll now see a dropdown to create and switch to differ
 
 ## How do I create a version?
 
-By default, your bot has only one main version `v1`. You can create a new version in the Version Settings area or in the dropdown near the bot name. Click **Create New Version** and select the version you want to copy. This copies the **Train** and **Build** tabs of the source version and creates a new version that you can then name. The new version is a pure copy; you can update the new version or the old one separately.
+By default, your bot has only one main version `v1`. You can create a new version under **VERSION SETTINGS** or in the dropdown near the bot name. Click **CREATE NEW VERSION** and select the version you want to copy. This copies the **Train** and **Build** tabs of the source version and creates a new version that you can then name. The new version is a pure copy; you can update the new version or the old one separately.
 
 ![Recast.AI versioning](https://cdn.recast.ai/man/monitoring/versioning-new-version.png)
 
@@ -40,7 +40,7 @@ Each version has a dedicated request token. This means that if you want to analy
 
 Environments are configurations applied to specific versions and help you to seamlessly deploy your chatbot in production. They are best leveraged as specific consumption environments, for example, Development, Staging, and Production.
 
-When you first enable versioning, your first version `v1` is associated and linked to the environment `production`. You can create and name additional environments in the Version Settings area under Environments.
+When you first enable versioning, your first version `v1` is associated and linked to the environment `production`. You can create and name additional environments in the **VERSION SETTINGS** area under Environments.
 
 ![Recast.AI versioning](https://cdn.recast.ai/man/monitoring/versionings-envs.png)
 
@@ -67,7 +67,7 @@ Here you have two Facebook Messenger channels: one for the `DEVELOPMENT` environ
 
 Let's say I'm working on a different version `v2` and I'm testing it on the `DEVELOPMENT` environment with another Facebook Messenger page. I'm pretty comfortable with this new version and now I want to deploy it to the `PRODUCTION` environment.
 
-On the **Settings** page for my bot, I go to the Version Settings area and change the version that is linked to the `PRODUCTION` environment.
+On the **Settings** page for my bot, I go to **VERSION SETTINGS** and change the version that is linked to the `PRODUCTION` environment.
 
 ![Recast.AI versioning](https://cdn.recast.ai/man/monitoring/versioning-deploy.png)
 
@@ -80,7 +80,7 @@ You can assign a version to multiple environments. However, you can assign only 
 
 If you're directly using the Bot Builder endpoint `/dialog` without a channel in the Bot Connector, the best practice is to use `environment` request tokens and not version tokens.
 
-In your code, when you request Recast.AI and send a message, it will always be on the same environment, for example, the `PRODUCTION` environment. When you need to deploy a new version of your chatbot to your users, you just need to go to the **Settings** page for your bot and, in the Version Settings area, change the version that is linked to the `PRODUCTION` environment.
+In your code, when you request Recast.AI and send a message, it will always be on the same environment, for example, the `PRODUCTION` environment. When you need to deploy a new version of your chatbot to your users, you just need to go to the **Settings** page for your bot and, under **VERSION SETTINGS**, change the version that is linked to the `PRODUCTION` environment.
 
 ![Recast.AI versioning](https://cdn.recast.ai/man/monitoring/versioning-deploy.png)
 
