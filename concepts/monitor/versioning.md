@@ -40,7 +40,7 @@ Each version has a dedicated request token. This means that if you want to analy
 
 Environments are configurations applied to specific versions and help you to seamlessly deploy your chatbot in production. They are best leveraged as specific consumption environments, for example, Development, Staging, and Production.
 
-When you first enable versioning, your first version `v1` is associated and linked to the environment `production`. You can create and name additional environments in the **VERSION SETTINGS** area under Environments.
+When you first enable versioning, your first version `v1` is associated and linked to the environment `production`. You can create and name additional environments in the **VERSION SETTINGS** area under **Environments**.
 
 ![Recast.AI versioning](https://cdn.recast.ai/man/monitoring/versionings-envs.png)
 
