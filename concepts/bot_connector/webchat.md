@@ -15,11 +15,8 @@ On the **Connect** tab of your bot, activate the **Webchat** channel.
 
 ### How to use it
 
-1. Configure details like color, title of the button, bot picture, user picture, etc.
-
-    You can restrict messages from users to 512 characters or less. For example, you may want to do this if users tend to add a lot of details that obscure the intent of the request.
-    
-2. Add the following script to your page to get the webchat:
+1) Configure details like color, title of the button, bot picture, user picture, etc.
+2) Add the following script to your page to get the webchat:
 
 ~~~ html
 <script src="https://cdn.recast.ai/webchat/webchat.js"
@@ -36,13 +33,27 @@ One thing you might want to do is to send custom data from your website to the b
 
 If you use Recast.AI's bot-builder (you should :)), your payload will be put in the memory of the conversation, meaning that you will be able to access this data in your bot-builder. Let's say you send this as payload : `{ "userName": "Dominik", "userId": 123456 }`, you will then be able to send this as a greeting message : `Hello {{ memory.userName }} ! How do you do ?`.
 
-`window.webchatMethods.getMemory` must return a JSON object or a Promise resolving a JSON object :
-  - `{ "memory": { ... }, "merge": <boolean> }`
-where `{ ... }` is your arbitrary payload. `merge` is an instruction for the bot-builder. If set to true, the payload will be merged with the existing memory, overriding common keys but keeping the ones absent from the payload. If set to false, the memory will be replaced entirely by your payload.
+`window.webchatMethods.getMemory` is called with one parameter `conversationId` and must return a JSON object or a Promise resolving a JSON object :
+
+```javascript
+{
+  "memory": { "userName": "Dominik" },
+  "merge": true
+}
+```
+
+
+| Key                   | Required | Value
+|-----------------------|----------|-------------------------------------------|
+| memory               | Required | An object like { "userName": "Dominik" }   |
+| merge          | Optional | A boolean: If set to true, the payload will be merged with the existing memory, overriding common keys but keeping the ones absent from the payload. If set to false or missing, the memory will be replaced entirely by your payload. |
+
 
 If your `getMemory` function takes more than 10 seconds, the message will be sent anyway, without waiting for your function to finish.
 
 #### Examples :
+
+Here is a simple example:
 ```html
 <html>
   <head>
@@ -66,6 +77,8 @@ If your `getMemory` function takes more than 10 seconds, the message will be sen
 </html>
 ```
 
+An example to retrieve users information from the cookie and page url:
+
 ```javascript
 window.webchatMethods = {
   getMemory: (conversationId) => {
@@ -79,6 +92,8 @@ window.webchatMethods = {
   }
 }
 ```
+
+An example to retrieve users information from an API call:
 
 ```javascript
 window.webchatData = {}
@@ -99,6 +114,8 @@ window.webchatMethods = {
   }
 }
 ```
+
+An example with the page url information and the reset of memory information:
 
 ```javascript
 window.webchatData = {}
