@@ -28,12 +28,12 @@ id="recast-webchat"
 
 Note: You can find `CHANNEL_ID` and `TOKEN_ID` when creating a webchat channel in the Bot Connector.
 
-### Bot Memory management
-One thing you might want to do is to send custom data from your website to the bot, like the name of the logged in user, his ID, the page he is currently on (to send product suggestions for example). To do that, you can define a `window.webchatMethods.getMemory` function, the webchat will call it before sending user messages, and send your arbitrary payload along with the message to the bot.
+### Bot memory management
+You might want to send custom data from your website to the bot, like the name of the logged in user, their ID, and the page they are currently viewing (for example, to send product suggestions). To do that, you can define a `window.webchatMethods.getMemory` function. The webchat will call this function before sending user messages. It will then send your arbitrary payload along with the message to the bot.
 
-If you use Recast.AI's bot-builder (you should :)), your payload will be put in the memory of the conversation, meaning that you will be able to access this data in your bot-builder. Let's say you send this as payload : `{ "userName": "Dominik", "userId": 123456 }`, you will then be able to send this as a greeting message : `Hello {{ memory.userName }} ! How do you do ?`.
+If you use the Bot Builder (which we highly recommend!), your payload is put in the conversation memory. This enables you to access this data in the Bot Builder. Let's say you send this as the payload: `{ "userName": "Dominik", "userId": 123456 }`. You can then send this as a greeting message: `Hello {{ memory.userName }}! How do you do?`
 
-`window.webchatMethods.getMemory` is called with one parameter `conversationId` and must return a JSON object or a Promise resolving a JSON object :
+`window.webchatMethods.getMemory` is called with the parameter `conversationId` and must return a JSON object or a promise resolving a JSON object:
 
 ```javascript
 {
@@ -46,14 +46,14 @@ If you use Recast.AI's bot-builder (you should :)), your payload will be put in 
 | Key                   | Required | Value
 |-----------------------|----------|-------------------------------------------|
 | memory               | Required | An object like { "userName": "Dominik" }   |
-| merge          | Optional | A boolean: If set to true, the payload will be merged with the existing memory, overriding common keys but keeping the ones absent from the payload. If set to false or missing, the memory will be replaced entirely by your payload. |
+| merge          | Optional | A boolean: If set to true, the payload is merged with the existing memory, overriding common keys, but keeping the ones absent from the payload. If set to false or missing, the memory is replaced entirely by your payload. |
 
 
-If your `getMemory` function takes more than 10 seconds, the message will be sent anyway, without waiting for your function to finish.
+If your `getMemory` function takes more than 10 seconds, the message is sent anyway, without waiting for your function to finish.
 
 #### Examples :
 
-Here is a simple example:
+Here's a simple example:
 ```html
 <html>
   <head>
@@ -77,7 +77,7 @@ Here is a simple example:
 </html>
 ```
 
-An example to retrieve users information from the cookie and page url:
+Here's an example to retrieve the user information from the cookie and page URL:
 
 ```javascript
 window.webchatMethods = {
@@ -93,7 +93,7 @@ window.webchatMethods = {
 }
 ```
 
-An example to retrieve users information from an API call:
+Here's an example to retrieve the user information from an API call:
 
 ```javascript
 window.webchatData = {}
@@ -115,7 +115,7 @@ window.webchatMethods = {
 }
 ```
 
-An example with the page url information and the reset of memory information:
+Finally, here's an example with the page URL information and reset memory information:
 
 ```javascript
 window.webchatData = {}
