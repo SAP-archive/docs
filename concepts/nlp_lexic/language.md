@@ -113,7 +113,7 @@ Bots are multilingual, meaning that you can speak several languages with the sam
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
-        <td><span class="flag-icon flag-icon-in m1"></span> Hindu</td>
+        <td><span class="flag-icon flag-icon-in m1"></span> Hindi</td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td><i class="c-grey-400 ion-md-close"></i></td>
