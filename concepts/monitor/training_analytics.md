@@ -37,7 +37,7 @@ For multilingual bots, please upload one file for each supported language.
 
 **File format**
 
-Your file should be a valid CSV file. It should end with .csv and the separator should be a comma “,”.
+Your file must be a valid CSV file. It must end with .csv and the separator must be a comma “,”.
 For example, it should look like this:
 
 ~~~ json
