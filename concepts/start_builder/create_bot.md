@@ -1,31 +1,68 @@
 ---
 layout: concept
-title: Create your bot
+title: Create your chatbot
 permalink: /concepts/create-builder-bot
 ---
 
-## Start with a template
+## Introduction
 
-To create a new bot, log in and click on the link **+ NEW BOT** in the header section.
+Here are the first steps to understand the core concepts of the Recast.AI platform. You'll then be able to build a chatbot that can manage an entire conversation with a user.
 
-Select the first option "Create a complete chatbot".
+A Recast.AI chatbot is composed of two main elements: **Skills** and a **training dataset**.
 
-![Recast.AI create bot](https://cdn.recast.ai/man/recast-ai-create-builder-1-bodyb.png)
+A **skill** is a block of conversation that has a clear purpose and that your bot can execute to achieve a goal. You need to configure these skills to build the scope of your bot.
 
-## Select predefined skills
+A **training dataset** is composed of many sentences organized into [intents](https://recastai.github.io/docs/concepts/intent) that represent what users say to your chatbot. The training dataset is used to train the bot to understand the user's needs and to trigger the right piece of conversation, reply correctly, and have a smooth conversation.
 
-You can choose one or several predefined skills you want to use as a starting point.
-You are free to modify them if you don't like them as such, or even delete them once you're ready to make your own.
+Ready? Click **+ New Bot** at the top right of the page and let's create your first chatbot.
 
-If you want to fork them later on, they are available here: [https://recast.ai/scaffolder/starter-skills](https://recast.ai/scaffolder/starter-skills)
+## Select predefined skills for your bot
 
-![Recast.AI create bot](https://cdn.recast.ai/man/recast-ai-create-builder-2-bodyb.png)
+You can choose one or several predefined skills to use as a starting point. Let's select **Greetings**.
+You're free to modify them if you don't like them as such, or even delete them once you're ready to make your own.
+
+If you want to fork the skills later on, they're available here: [https://recast.ai/scaffolder/starter-skills](https://recast.ai/scaffolder/starter-skills)
+
+![Recast.AI create bot](https://cdn.recast.ai/man/introduction/predefined-skills.png)
 
 ## Create your bot
 
-Finish your bot creation by:
-* Choosing a name and a description
-* Setting the default language (it is possible to add more languages later)
+Enter a name and (optionally) a description and set the default language. (You can add more languages later.) Then click **CREATE A BOT**.
 
 ![Recast.AI create bot](https://cdn.recast.ai/man/recast-ai-create-builder-3-body.png)
+
+## Discover your first intents and skills
+
+### Train
+
+If you selected the skill **Greetings**, you'll see two intents on the **Train** tab: **greetings** and **goodbye**.
+
+An intent is a collection of sentences that all have the same meaning, even though they can be very different to one another. When a user sends a message to your bot, our algorithm predicts to which intents it’s close enough and decides what the intention of the message is. Here are three examples of sentences with the same meaning:
+
+*Are you a bot?*
+
+*You reply so fast, I’m sure you must be some kind of robot.*
+
+*Am I speaking to a human or not?*
+
+They're all different, but they all ask the same question that we can can sum up as *Are you a bot?* Well, that would make a great intent! If your bot is able to recognize this question, you can prepare a smart reaction, like *I’m a robot and I’m proud of it*.
+
+### Build
+
+On the **Build** tab, you'll find two skills: **greetings** and **fallback**. Click **greetings**. You'll see that a skill has four parts:
+
+**README.md**: Where you explain the purpose of the skill.
+
+**Triggers**: Where you define why this skill should be activated after a user message.
+
+**Requirements**: What information this skill has to collect, and what questions need to be asked to fulfill the requirements.
+
+**Actions**: What to do once the requirements are fulfilled.
+
+
+If you navigate through the tabs, you’ll see that this skill is structured as follows:
+
+It is triggered if the intention **greetings** or **goodbye** is matched.
+It has no requirements because it does not need to collect additional information. This means that it will execute actions directly after a trigger.
+It has two possible actions. If the intention matched is **greetings**, it sends a random welcoming message chosen from a list. If the intention is **goodbye**, it does the same thing, but picks the message from a different list.
 
