@@ -59,14 +59,19 @@ The goal of this file is to represent reality, that is, to show how users use yo
 To ensure that your validation file reflects the way that people actually use your bot, we recommend creating your file as follows:
 
 1) On the **Monitor** tab, go to the **Log Feed** section and filter only matched logs from the past 1 to 3 months.
+
 2) Export these logs by clicking **Merge duplicate logs on a single line**.
+
 3) Randomly pick the number of logs you need (as a rule of thumb, your bot intents count * 50).
+
 4) Check manually (yes, you need to be the final validator!) that each sentence matches the right intent.
+
 5) Create the final validation file with these sentences and intents.
 
 If your file doesn't include at least 85% of your intents, you need to pick sentences from your logs to complete your file and reach approximately 85%. You can do this as follows:
 
 1) Go back to your **Log Feed** page and search for the specific intents that are missing.
+
 2) Select between 3 and 10 sentences for each missing intent, and add these sentences to your validation file.
 
 **Final step**
