@@ -52,7 +52,7 @@ These entities are detected with Machine Learning process. It means that you nee
 To train a **free** custom entity:
 1) In your intent, tag (by highlighting a word or a group of word, and add the entity label) the appropriate words. Annotate it in each expression, and continue to add expressions until your entity is automatically detected.
 
-[tag entity](https://cdn.recast.ai/man/nlp-lexic/tag-entity.png)
+![tag entity](https://cdn.recast.ai/man/nlp-lexic/tag-entity.png)
 
 2) You can also provide a list of values for this entity without tagging it in sentences. Go in the *Entities* section, and here you can just add synonyms. These values will be combined with the expressions you annotated to improve the training of our entity detection system. Be carefull, if you provide too much examples of values in this synonyms list, the algorythm will prioritize the fact that the word is present in this list and will use the information provided by the tagging (like the place of the entity in a sentence, the previous word, the length...).
 
