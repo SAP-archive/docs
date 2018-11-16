@@ -54,7 +54,7 @@ To train a **free** custom entity:
 
 2) You can also provide a list of values for this entity without tagging it in sentences. In Recast.AI, go to *Entities* and just add synonyms. These values are combined with the expressions you annotated to improve the training of our entity detection system. Caution: If you provide too many examples of values in this list of synonyms, the algorithm will prioritize the fact that the word is present in this list and will use the information provided by the tagging (like the position of the entity in a sentence, the previous word, the length, and so on).
 
-### How restricted custom entities work
+#### How restricted custom entities work
 
 A **restricted** custom entity is used if you have a strict list of words to detect and don't need automatic detection of the entity. No word can be recognized as an entity if it doesn’t appear in a closed list of synonyms. For example, you build a bot to help your customers order pizza. You want to detect all pizza names that your restaurant offers.
 
