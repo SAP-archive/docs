@@ -1,7 +1,7 @@
 ---
 layout: concept
 title: Sentence Types
-permalink: /concepts/sentence_types
+permalink: /concepts/sentence-types
 ---
 
 The type of a sentence comes from the task of question classification in the domain of Question Answering Systems. Detecting the type of a question helps you define what the answer to your user's request needs to be. Below are the exhaustive list of classes we detect, their description, and an example of sentence each type.
