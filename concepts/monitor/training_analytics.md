@@ -8,9 +8,9 @@ On the **Monitor** tab, the **Training Analytics** section helps you to build a 
 
 Your dataset (that is, all the intents and entities that you created and trained) is a fundamental element of your bot. If your bot isn't well-trained (meaning your dataset isn't well-structured or is incomplete), your bot won't be able to correctly understand messages from its users, resulting in a disappointing conversational experience.
 
-## Your intent classification benchmark
+## Your dataset benchmark
 
-At the top of the page, you can run a benchmark. It will trigger several processes to measure the performance of your dataset and give you insights on how to improve it.
+At the top of the page, you can run a benchmark. It will trigger several processes to measure the performance of your dataset and give you insights on how to improve your intents classification and your custom entities detection.
 
 A benchmark can take several hours, depending on the size of your bot.
 
@@ -18,6 +18,7 @@ You can only run one benchmark at a time for your bot.
 
 For more accurate results, we use your bot training data and a validation file that you provide. Since we take your bot training data at a time *t*, and provide tips and insights based on this data, we advise you not to update your dataset during the benchmark; otherwise the insights will be less accurate.
 
+## Your intent classification benchmark
 
 ### Your bot training data
 
@@ -94,7 +95,7 @@ For your bot users, a low recall means *I can't get the bot to understand that I
 For your bot users, a low F1 score means *This is completely useless!*
 
 
-## Your confusion matrix
+## Your intent confusion matrix
 
 Your confusion matrix is used to gain further insight into intents that may clash and get confused. The element in the intersection of row A and column B signifies the percentage of sentences that should be classified as A, but are classified as B.
 
@@ -124,5 +125,23 @@ Two intents may be too close semantically to be efficiently distinguished. A sig
 ### Split intent
 If an intent has both low precision and low recall, while the recall scores of the other intents are acceptable, it may reflect a use case that is too broad semantically. Try splitting this intent into several intents.
 
+## Your entities detection benchmark
+
+We split the expressions inside each intent into two parts: 90% is used for training, 10% is used to evaluate the classification. The evaluation is simple: Each sentence is tested with your training dataset, and we check if the first intent returned is the right one. We repeat this process five times to enforce randomness in the splits. Once the evaluation is done, we average the results while taking into account the number of occurrences of each intent. This results in four metrics between 0 and 1 for each intent (**Accuracy**, **Precision**, **Recall**, and **F1 score**) and four global metrics for the entire dataset.
+
+## Your entities detection confusion matrix
+
+Your confusion matrix is used to gain further insight into entities that may clash and get confused. The element in the intersection of row A and column B signifies the percentage of entities that should be detected as A, but are detected as B.
+
+## Tips to improve your entities detection
+
+### Remove values
+Too many words are tagged as custom entities in your chatbot. Custom entities should be used and tagged on words only if you really need them to detect and retrieve key information from your users. 
+
+### Add more different values
+You’re using the same value too many times in this entity. This can be intentional if you want to check that something is present or not (and you don’t need to detect several values). If this is the case, please ignore this tip. If not, you may want to either delete this entity because you’re not really using it, or add different values. 
+
+### Remove mis-taging errors
+A custom entity is always confused with another one. You may have a tagging issue. For example, some values may be tagged in both entities, or an entity is mistagged. If it’s not a mistagging issue, the entities might be too similar; check whether you can merge them.
 
 
