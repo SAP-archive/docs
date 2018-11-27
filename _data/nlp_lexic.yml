@@ -11,7 +11,7 @@ sections:
   url: /concepts/entity
 
 - title: Gold Entities List
-  url: /concepts/gold_entities
+  url: /concepts/gold-entities
 
 - title: Gazette
   url: /concepts/gazette
@@ -20,10 +20,10 @@ sections:
   url: /concepts/sentiment
 
 - title: Sentence Acts
-  url: /concepts/sentence_acts
+  url: /concepts/sentence-acts
 
 - title: Sentence Types
-  url: /concepts/sentence_types
+  url: /concepts/sentence-types
 
 - title: Language
   url: /concepts/language
