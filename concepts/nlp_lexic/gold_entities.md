@@ -1,7 +1,7 @@
 ---
 layout: concept
 title: Gold Entities List
-permalink: /concepts/gold_entities
+permalink: /concepts/gold-entities
 ---
 
 This is the list of the current entities we detect, with examples and formatted information for each one.
