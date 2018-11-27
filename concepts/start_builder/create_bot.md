@@ -27,9 +27,17 @@ If you want to fork the skills later on, they're available here: [https://recast
 
 ## Create your bot
 
-Enter a name and (optionally) a description and set the default language. (You can add more languages later.) Then click **CREATE A BOT**.
+1) Enter a name and (optional) a description.
 
-![Recast.AI create bot](https://cdn.recast.ai/man/recast-ai-create-builder-3-body.png)
+2) (Optional) Add up to six topics to your bot (for example, *Customer Support*, *HR*, *Payments*, etc.). By categorizing your bot in this way, we can suggest more appropriate training data to improve it later.
+
+3) Set the default language. You can add more languages later. 
+
+4) Specify whether your bot is public or private.
+
+5) Click **CREATE A BOT**.
+
+![Recast.AI create bot](https://cdn.recast.ai/man/introduction/create-bot.png)
 
 ## Discover your first intents and skills
 
