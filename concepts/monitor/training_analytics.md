@@ -10,7 +10,7 @@ Your dataset (that is, all the intents and entities that you created and trained
 
 ## Your dataset benchmark
 
-At the top of the page, you can run a benchmark. It will trigger several processes to measure the performance of your dataset and give you insights on how to improve your intents classification and your custom entities detection.
+At the top of the page, you can run a benchmark. It will trigger several processes to measure the performance of your dataset and give you insights on how to improve your intent classification and your custom entity detection.
 
 A benchmark can take several hours, depending on the size of your bot.
 
@@ -63,7 +63,7 @@ To ensure that your validation file reflects the way that people actually use yo
 
 2) Export these logs by clicking **Merge duplicate logs on a single line**.
 
-3) Randomly pick the number of logs you need (as a rule of thumb, your bot intents count * 50).
+3) Randomly pick the number of logs you need (as a rule of thumb, your bot intent count * 50).
 
 4) Check manually (yes, you need to be the final validator!) that each sentence matches the right intent.
 
@@ -82,11 +82,11 @@ Upload your file to the platform. We'll analyze it and provide feedback. For exa
 
 **Accuracy** is a global grade on the performance of your bot. It's the proportion of successful classifications out of all of the predictions conducted during your benchmark. While it's a good indication of performance for bots with balanced intents, it may be biased for unbalanced bots.
 
-**Precision** is a metric that is calculated per intent. For each intent, it measures the proportion of correct predictions out of all of the times the intent was declared during the benchmark. It answers the question *Out of all the times my bot predicted this intent, how many times was it correct?* Low precision usually signifies the relevant intent needs cleaning, which means removing sentences that don't belong to this intent.
+**Precision** is a metric that is calculated per intent. For each intent, it measures the proportion of correct predictions out of all the times the intent was declared during the benchmark. It answers the question *Out of all the times my bot predicted this intent, how many times was it correct?* Low precision usually signifies the relevant intent needs cleaning, which means removing sentences that don't belong to this intent.
 
 For your bot users, a low precision means *The bot always thinks I'm talking about A, no matter what I say!*
 
-**Recall** is also a metric calculated per intent. For each intent, it measures the proportion of correct predictions out of all of the entries belonging to this intent. It answers the question *Out of all of the times my bot was supposed to detect this intent, how many times did it do so?* Low recall usually signifies the relevant intent needs more training, for example, by adding more sentences to enrich the training. 
+**Recall** is also a metric calculated per intent. For each intent, it measures the proportion of correct predictions out of all the entries belonging to this intent. It answers the question *Out of all the times my bot was supposed to detect this intent, how many times did it do so?* Low recall usually signifies the relevant intent needs more training, for example, by adding more sentences to enrich the training. 
 
 For your bot users, a low recall means *I can't get the bot to understand that I want to do B!*
 
@@ -97,9 +97,9 @@ For your bot users, a low F1 score means *This is completely useless!*
 
 ## Your intent confusion matrix
 
-Your confusion matrix is used to gain further insight into intents that may clash and get confused. The element in the intersection of row A and column B signifies the percentage of sentences that should be classified as A, but are classified as B.
+Your confusion matrix is used to gain further insight into intents that may clash and get confused. The element at the intersection of row A and column B signifies the percentage of sentences that should be classified as A, but are classified as B.
 
-You can order the confusion matrix by intent name and by performance. If you don't have any problem between your intents, you should have a confusion matrix with a beautiful diagonal since 100% of expressions match the right intent, as expected.
+You can order the confusion matrix by intent name and by performance. If you don't have any problems between your intents, you should have a confusion matrix with a beautiful diagonal since 100% of expressions match the right intent, as expected.
 
 ![Recast.AI - Confusion Matrix](//cdn.recast.ai/man/monitoring/confusion-matrix.png)
 
@@ -125,23 +125,23 @@ Two intents may be too close semantically to be efficiently distinguished. A sig
 ### Split intent
 If an intent has both low precision and low recall, while the recall scores of the other intents are acceptable, it may reflect a use case that is too broad semantically. Try splitting this intent into several intents.
 
-## Your entities detection benchmark
+## Your entity detection benchmark
 
 We split the expressions inside each intent into two parts: 90% is used for training, 10% is used to evaluate the classification. The evaluation is simple: Each sentence is tested with your training dataset, and we check if the first intent returned is the right one. We repeat this process five times to enforce randomness in the splits. Once the evaluation is done, we average the results while taking into account the number of occurrences of each intent. This results in four metrics between 0 and 1 for each intent (**Accuracy**, **Precision**, **Recall**, and **F1 score**) and four global metrics for the entire dataset.
 
-## Your entities detection confusion matrix
+## Your entity detection confusion matrix
 
-Your confusion matrix is used to gain further insight into entities that may clash and get confused. The element in the intersection of row A and column B signifies the percentage of entities that should be detected as A, but are detected as B.
+Your confusion matrix is used to gain further insight into entities that may clash and get confused. The element at the intersection of row A and column B signifies the percentage of entities that should be detected as A, but are detected as B.
 
-## Tips to improve your entities detection
+## Tips to improve your entity detection
 
 ### Remove values
 Too many words are tagged as custom entities in your chatbot. Custom entities should be used and tagged on words only if you really need them to detect and retrieve key information from your users. 
 
-### Add more different values
+### Add different values
 You’re using the same value too many times in this entity. This can be intentional if you want to check that something is present or not (and you don’t need to detect several values). If this is the case, please ignore this tip. If not, you may want to either delete this entity because you’re not really using it, or add different values. 
 
-### Remove mis-taging errors
-A custom entity is always confused with another one. You may have a tagging issue. For example, some values may be tagged in both entities, or an entity is mistagged. If it’s not a mistagging issue, the entities might be too similar; check whether you can merge them.
+### Remove mistagging errors
+A custom entity is always confused with another one. You may have a tagging issue. For example, some values may be tagged in both entities, or an entity is mistagged. If it’s not a mistagging issue, the entities may be too similar; check whether you can merge them.
 
 
