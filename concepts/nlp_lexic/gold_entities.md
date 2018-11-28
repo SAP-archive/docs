@@ -15,6 +15,40 @@ Keep an eye on it, as we're always improving the detection for current entities,
 | [`distance`](https://recast.ai/docs/concepts/gold-entities#distance) | [`interval`](https://recast.ai/docs/concepts/gold-entities#interval) | [`money`](https://recast.ai/docs/concepts/gold-entities#money) | [`phone`](https://recast.ai/docs/concepts/gold-entities#phone) | [`sort`](https://recast.ai/docs/concepts/gold-entities#sort) | 
 | [`duration`](https://recast.ai/docs/concepts/gold-entities#duration) | [`job`](https://recast.ai/docs/concepts/gold-entities#job) | [`nationality`](https://recast.ai/docs/concepts/gold-entities#nationality) | [`pronoun`](https://recast.ai/docs/concepts/gold-entities#pronoun) | [`speed`](https://recast.ai/docs/concepts/gold-entities#speed) |
 
+Gold entities can also be a reference to another gold entities previously detected. For users to meaningfully converse with your chatbot using natural language, your bot needs to be able to recognize pronouns (like *it* or *that*) and map them to entities previously mentioned in the conversation.
+
+## References between entities
+
+ In the following example, the pronoun *it* refers to the entity *Apple USB-C to HDMI dongle*.
+
+![Recast.AI gold entities](https://cdn.recast.ai/man/nlp-lexic/entity-and-pronoun-example.png)
+
+For your bot to resolve pronouns, you must first go to the **Settings** page for your bot, choose **Options**, and select the **Resolve pronouns** checkbox. (The default setting is not selected.) Selecting this checkbox enables your bot to resolve the following pronouns: she, he, it, we, they, her, him, it, us, them, his, this, that.
+
+![Recast.AI gold entities](https://cdn.recast.ai/man/nlp-lexic/resolve-pronouns-checkbox.png)
+
+With this checkbox selected, the bot now successfully maps the pronoun *it* to the entity *Apple USB-C to HDMI dongle*.
+
+![Recast.AI gold entities](https://cdn.recast.ai/man/nlp-lexic/entity-and-pronoun-resolved.png)
+
+The following are not supported:
+ 
+* Split antecedents
+
+This is where you have more than one entity (for example, *Check whether Harry and Sally are available*) before a pronoun is used that encompasses these multiple entities (for example, *Set up a meeting with them*).
+ 
+* Cataphora
+
+  This is the use of a pronoun that refers to or stands for a subsequent entity (for example, *When she arrives, let Sally know I’ll be waiting in the conference room*). 
+ 
+Remember to set a message that your bot can use if it is unable to map the pronoun to an entity. For example, if your bot is unable to map the pronoun *her* to a person, you might want to set the message *Sorry, can you please name the person?* To do this, first open the skill. Under **Requirements**, click **EDIT REPLIES** next to **If #person is missing** and enter the message.
+
+![Recast.AI gold entities](https://cdn.recast.ai/man/nlp-lexic/edit-replies.png)
+
+![Recast.AI gold entities](https://cdn.recast.ai/man/nlp-lexic/message-example.png)
+
+## The 28 Gold Entities
+
 ### Cardinal
 
 ```json
@@ -512,33 +546,6 @@ Keep an eye on it, as we're always improving the detection for current entities,
 | `raw` | The raw value extracted from the sentence |
 | `confidence` | The confidence score between 0 and 1 for the detection |
 
-For users to meaningfully converse with your chatbot using natural language, your bot needs to be able to recognize pronouns (like *it* or *that*) and map them to entities previously mentioned in the conversation. In the following example, the pronoun *it* refers to the entity *Apple USB-C to HDMI dongle*.
-
-![Recast.AI gold entities](https://cdn.recast.ai/man/nlp-lexic/entity-and-pronoun-example.png)
-
-For your bot to resolve pronouns, you must first go to the **Settings** page for your bot, choose **Options**, and select the **Resolve pronouns** checkbox. (The default setting is not selected.) Selecting this checkbox enables your bot to resolve the following pronouns: she, he, it, we, they, her, him, it, us, them, his, this, that.
-
-![Recast.AI gold entities](https://cdn.recast.ai/man/nlp-lexic/resolve-pronouns-checkbox.png)
-
-With this checkbox selected, the bot now successfully maps the pronoun *it* to the entity *Apple USB-C to HDMI dongle*.
-
-![Recast.AI gold entities](https://cdn.recast.ai/man/nlp-lexic/entity-and-pronoun-resolved.png)
-
-The following are not supported:
- 
-* Split antecedents
-
-  This is where you have more than one entity (for example, *Check whether Harry and Sally are available*) before a pronoun is used that encompasses these multiple entities (for example, *Set up a meeting with them*).
- 
-* Cataphora
-
-  This is the use of a pronoun that refers to or stands for a subsequent entity (for example, *When she arrives, let Sally know I’ll be waiting in the conference room*). 
- 
-Remember to set a message that your bot can use if it is unable to map the pronoun to an entity. For example, if your bot is unable to map the pronoun *her* to a person, you might want to set the message *Sorry, can you please name the person?* To do this, first open the skill. Under **Requirements**, click **EDIT REPLIES** next to **If #person is missing** and enter the message.
-
-![Recast.AI gold entities](https://cdn.recast.ai/man/nlp-lexic/edit-replies.png)
-
-![Recast.AI gold entities](https://cdn.recast.ai/man/nlp-lexic/message-example.png)
 
 ### Set
 
