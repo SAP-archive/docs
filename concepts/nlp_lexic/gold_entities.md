@@ -4,8 +4,19 @@ title: Gold Entities List
 permalink: /concepts/gold-entities
 ---
 
-This is the list of the current entities we detect, with examples and formatted information for each one.
-Keep an eye on it, we are always improving detection for current entities, adding new entities or improving the information we extract from them.
+This is the list of current entities that we detect, with examples and formatted information for each.
+Keep an eye on it, as we're always improving the detection for current entities, adding new entities, or improving the information we extract from them.
+
+| a - d | e - j | h - n | n - p | p - s | t - x |
+| --- | --- | --- | --- | --- | --- |
+| [`cardinal`](https://recast.ai/docs/concepts/gold-entities#cardinal) | [`email`](https://recast.ai/docs/concepts/gold-entities#email) | [`language`](https://recast.ai/docs/concepts/gold-entities#language) | [`number`](https://recast.ai/docs/concepts/gold-entities#number) | [`percent`](https://recast.ai/docs/concepts/gold-entities#percent) | [`temperature`](https://recast.ai/docs/concepts/gold-entities#temperature) |
+| [`color`](https://recast.ai/docs/concepts/gold-entities#color) | [`emoji`](https://recast.ai/docs/concepts/gold-entities#emoji) | [`location`](https://recast.ai/docs/concepts/gold-entities#location) | [`ordinal`](https://recast.ai/docs/concepts/gold-entities#ordinal) | [`person`](https://recast.ai/docs/concepts/gold-entities#person) |[`url`](https://recast.ai/docs/concepts/gold-entities#url) |
+| [`datetime`](https://recast.ai/docs/concepts/gold-entities#datetime) | [`ip`](https://recast.ai/docs/concepts/gold-entities#ip) | [`mass`](https://recast.ai/docs/concepts/gold-entities#mass) | [`organization`](https://recast.ai/docs/concepts/gold-entities#organization) | [`set`](https://recast.ai/docs/concepts/gold-entities#set) | [`volume`](https://recast.ai/docs/concepts/gold-entities#volume) |
+| [`distance`](https://recast.ai/docs/concepts/gold-entities#distance) | [`interval`](https://recast.ai/docs/concepts/gold-entities#interval) | [`money`](https://recast.ai/docs/concepts/gold-entities#money) | [`phone`](https://recast.ai/docs/concepts/gold-entities#phone) | [`sort`](https://recast.ai/docs/concepts/gold-entities#sort) | 
+| [`duration`](https://recast.ai/docs/concepts/gold-entities#duration) | [`job`](https://recast.ai/docs/concepts/gold-entities#job) | [`nationality`](https://recast.ai/docs/concepts/gold-entities#nationality) | [`pronoun`](https://recast.ai/docs/concepts/gold-entities#pronoun) | [`speed`](https://recast.ai/docs/concepts/gold-entities#speed) |
+
+
+## The 28 Gold Entities
 
 ### Cardinal
 
@@ -503,6 +514,7 @@ Keep an eye on it, we are always improving detection for current entities, addin
 | | Can be unknown, neutral, male of female |
 | `raw` | The raw value extracted from the sentence |
 | `confidence` | The confidence score between 0 and 1 for the detection |
+
 
 ### Set
 
