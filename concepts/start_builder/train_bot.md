@@ -26,7 +26,7 @@ Go to the intent **booking**. If you click one of the expressions, you'll see hi
 
 ![Recast.AI intents](https://cdn.recast.ai/man/recast-ai-entitiesb.png)
 
-We automatically detect <a target="_blank" rel="noopener noreferrer" href="https://recast.ai/docs/api-reference#list-of-entities">31 different entities</a> such as *Datetime*, *Location*, *Person*, and so on.
+We automatically detect <a href="https://recast.ai/docs/concepts/gold-entities" target="_blank" >28 different entities</a> such as *Datetime*, *Location*, *Person*, and so on.
 We call them gold entities. If you need another entity – for example, a custom entity like a meal for a cooking bot – just select what you want to tag as your new entity and type a name. The more examples you provide, the better the detection will be.
 
 ![Recast.AI tag entities](https://cdn.recast.ai/man/recast-ai-tag-entitiesb.png)
