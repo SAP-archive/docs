@@ -526,7 +526,7 @@ The following are not supported:
 
   This is the use of a pronoun that refers to or stands for a subsequent entity (for example, *When she arrives, let Sally know I’ll be waiting in the conference room*). 
  
-Remember to set a message that your bot can use if it is unable to map the pronoun to an entity. For example, if your bot is unable to map the pronoun *her* to a person, you might want to set the message *Sorry, can you please name the person?* To do this, first open the intent. Under **Requirements**, click **EDIT REPLIES** next to **If #person is missing** and enter the message.
+Remember to set a message that your bot can use if it is unable to map the pronoun to an entity. For example, if your bot is unable to map the pronoun *her* to a person, you might want to set the message *Sorry, can you please name the person?* To do this, first open the skill. Under **Requirements**, click **EDIT REPLIES** next to **If #person is missing** and enter the message.
 
 ![Recast.AI gold entities](https://cdn.recast.ai/man/nlp-lexic/edit-replies.png)
 
