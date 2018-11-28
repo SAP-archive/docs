@@ -7,6 +7,16 @@ permalink: /concepts/gold-entities
 This is the list of current entities that we detect, with examples and formatted information for each.
 Keep an eye on it, as we're always improving the detection for current entities, adding new entities, or improving the information we extract from them.
 
+
+| [`cardinal`](https://recast.ai/docs/concepts/gold-entities#cardinal) | [`color`](https://recast.ai/docs/concepts/gold-entities#color) | `datetime` | `distance` | `duration` |
+| --- | --- | --- | --- | --- |
+|`email` | `emoji` | `ip` | `interval` | `job` |
+| `language` | `location` | `mass` | `money` | `nationality` |
+| `number` | `ordinal` | `organization` | `percent` | `person` |
+| `phone` | `pronoun` | `set` | `sort` | `speed` |
+| `temperature` | `url` | `volume` | 
+
+
 ### Cardinal
 
 ```json
