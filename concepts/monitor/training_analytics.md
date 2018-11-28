@@ -127,7 +127,7 @@ If an intent has both low precision and low recall, while the recall scores of t
 
 ## Your entity detection benchmark
 
-We split the expressions inside each intent into two parts: 90% is used for training, 10% is used to evaluate the classification. The evaluation is simple: Each sentence is tested with your training dataset, and we check if the first intent returned is the right one. We repeat this process five times to enforce randomness in the splits. Once the evaluation is done, we average the results while taking into account the number of occurrences of each intent. This results in four metrics between 0 and 1 for each intent (**Accuracy**, **Precision**, **Recall**, and **F1 score**) and four global metrics for the entire dataset.
+We split the expressions inside each intent into two parts: 90% is used for training, 10% is used to evaluate the custom entities detection. The evaluation is simple: We detect each custom entities in each sentences is tested based on the knowledge we have from the training dataset. We check if each words has been well detected as a custom entity or just detected a simple word. We repeat this process five times to enforce randomness in the splits. This results in four metrics between 0 and 1 for each entity (**Accuracy**, **Precision**, **Recall**, and **F1 score**) and four global metrics for the entire dataset.
 
 ## Your entity detection confusion matrix
 
