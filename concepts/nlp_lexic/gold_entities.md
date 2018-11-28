@@ -15,11 +15,11 @@ Keep an eye on it, as we're always improving the detection for current entities,
 | [`distance`](https://recast.ai/docs/concepts/gold-entities#distance) | [`interval`](https://recast.ai/docs/concepts/gold-entities#interval) | [`money`](https://recast.ai/docs/concepts/gold-entities#money) | [`phone`](https://recast.ai/docs/concepts/gold-entities#phone) | [`sort`](https://recast.ai/docs/concepts/gold-entities#sort) | 
 | [`duration`](https://recast.ai/docs/concepts/gold-entities#duration) | [`job`](https://recast.ai/docs/concepts/gold-entities#job) | [`nationality`](https://recast.ai/docs/concepts/gold-entities#nationality) | [`pronoun`](https://recast.ai/docs/concepts/gold-entities#pronoun) | [`speed`](https://recast.ai/docs/concepts/gold-entities#speed) |
 
-Gold entities can also be a reference to another gold entities previously detected. For users to meaningfully converse with your chatbot using natural language, your bot needs to be able to recognize pronouns (like *it* or *that*) and map them to entities previously mentioned in the conversation.
+Gold entities can also be a reference to another entities previously detected.
 
 ## References between entities
 
- In the following example, the pronoun *it* refers to the entity *Apple USB-C to HDMI dongle*.
+For users to meaningfully converse with your chatbot using natural language, your bot needs to be able to recognize pronouns (like *it* or *that*) and map them to entities previously mentioned in the conversation. In the following example, the pronoun *it* refers to the entity *Apple USB-C to HDMI dongle*.
 
 ![Recast.AI gold entities](https://cdn.recast.ai/man/nlp-lexic/entity-and-pronoun-example.png)
 
