@@ -61,7 +61,7 @@ A **restricted** custom entity is used if you have a strict list of words to det
 To create a **restricted** custom entity:
 In Recast.AI, go to *Entities*, click **CREATE**, and select **Restricted entity**. Then add values (synonyms) for this entity. You can also upload a CSV file or use the [gazette endpoint of the API](https://recast.ai/docs/api-reference/#gazettes) to quickly create a large list of synonyms.
 
-[IMAGE]
+![synonyms](https://cdn.recast.ai/man/nlp-lexic/synonym-list.png)
 
 You can define a strictness parameter that is used to determine if a word matches a given value in your list. With a strictness of 100, a word must exactly match an entry of the gazette to be detected as such.
 
