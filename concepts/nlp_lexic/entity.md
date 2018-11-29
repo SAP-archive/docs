@@ -85,7 +85,7 @@ The following are not supported:
  
 * Split antecedents
 
-This is where you have more than one entity (for example, *Check whether Harry and Sally are available*) before a pronoun is used that encompasses these multiple entities (for example, *Set up a meeting with them*).
+  This is where you have more than one entity (for example, *Check whether Harry and Sally are available*) before a pronoun is used that encompasses these multiple entities (for example, *Set up a meeting with them*).
  
 * Cataphora
 
