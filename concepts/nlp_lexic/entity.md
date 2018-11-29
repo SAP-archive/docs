@@ -48,11 +48,12 @@ A **free** custom entity is used when you don't have a strict list of values and
 These entities are detected through machine learning. This means that you need to provide examples of the characteristics to train the detection, that is, provide possible values and the way the entity is used in a sentence.
 
 To train a **free** custom entity:
+
 1) In your intent, tag the appropriate words (by highlighting a word or group of words, and adding the entity label). Annotate it in each expression and continue to add expressions until your entity is detected automatically.
 
 ![tag entity](https://cdn.recast.ai/man/nlp-lexic/tag-entity.png)
 
-2) You can also provide a list of values for this entity without tagging it in sentences. In Recast.AI, go to *Entities* and just add synonyms. These values are combined with the expressions you annotated to improve the training of our entity detection system. Caution: If you provide too many examples of values in this list of synonyms, the algorithm will prioritize the fact that the word is present in this list and will use the information provided by the tagging (like the position of the entity in a sentence, the previous word, the length, and so on).
+2) You can also provide a list of values for this entity without tagging it in sentences. In Recast.AI, go to *Entities* and just add synonyms. These values are combined with the expressions you annotated to improve the training of our entity detection system. **Caution:** If you provide too many examples of values in this list of synonyms, the algorithm will prioritize the fact that the word is present in this list and will use the information provided by the tagging (like the position of the entity in a sentence, the previous word, the length, and so on).
 
 ### How restricted custom entities work
 
