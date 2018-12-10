@@ -1,0 +1,9 @@
+{
+  "intents": [
+    {
+      "name": "want-food",
+      "description": "Intent for ordering groceries",
+      "activated": true
+    }
+  ]
+}

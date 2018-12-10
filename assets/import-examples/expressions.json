@@ -1,0 +1,22 @@
+{
+  "expressions": [
+    {
+      "source": [
+        "I",
+        "want",
+        "to",
+        "eat",
+        {
+          "raw": "cheese",
+          "entity": {
+            "name": "food"
+          }
+        },
+        "."
+      ],
+      "language": {
+        "isocode": "en"
+      }
+    }
+  ]
+}
