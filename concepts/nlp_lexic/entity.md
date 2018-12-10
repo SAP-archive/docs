@@ -72,15 +72,16 @@ You can still tag a **restricted** custom entity in your sentences, but it will 
 
 For users to meaningfully converse with your chatbot using natural language, your bot needs to be able to recognize pronouns (like *it* or *that*) and map them to entities previously mentioned in the conversation. In the following example, the pronoun *it* refers to the entity *Apple USB-C to HDMI dongle*.
 
-![Recast.AI gold entities](https://cdn.recast.ai/man/nlp-lexic/entity-and-pronoun-example.png)
+<img src='https://cdn.recast.ai/man/nlp-lexic/entity-and-pronoun-example.png' width='380px' />
 
 For your bot to resolve pronouns, you must first go to the **Settings** page for your bot, choose **Options**, and select the **Resolve pronouns** checkbox. (The default setting is not selected.) Selecting this checkbox enables your bot to resolve the following pronouns: she, he, it, we, they, her, him, it, us, them, his, this, that.
 
-![Recast.AI gold entities](https://cdn.recast.ai/man/nlp-lexic/resolve-pronouns-checkbox.png)
+<img src='https://cdn.recast.ai/man/nlp-lexic/resolve-pronouns-checkbox.png' width='300px' />
 
 With this checkbox selected, the bot now successfully maps the pronoun *it* to the entity *Apple USB-C to HDMI dongle*.
 
-![Recast.AI gold entities](https://cdn.recast.ai/man/nlp-lexic/entity-and-pronoun-resolved.png)
+![Recast.AI gold entities]()
+<img src='https://cdn.recast.ai/man/nlp-lexic/entity-and-pronoun-resolved.png' width='380px' />
 
 The following are not supported:
  
