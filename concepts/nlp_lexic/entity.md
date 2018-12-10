@@ -80,7 +80,6 @@ For your bot to resolve pronouns, you must first go to the **Settings** page for
 
 With this checkbox selected, the bot now successfully maps the pronoun *it* to the entity *Apple USB-C to HDMI dongle*.
 
-![Recast.AI gold entities]()
 <img src='https://cdn.recast.ai/man/nlp-lexic/entity-and-pronoun-resolved.png' width='380px' />
 
 The following are not supported:
