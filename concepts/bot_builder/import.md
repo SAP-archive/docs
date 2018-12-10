@@ -5,12 +5,15 @@ permalink: /concepts/import
 ---
 
 
-Building bigger bots can take a lot of time. In order to speed up your bot development process you can use the import function. To keep the training effort low and make it easier for you to move to our platform you can import intents, expressions and your own custom entities.
-Currently we support both: CSV and JSON format for importing your NLP data.
+Building bigger bots can take a lot of time.
+In order to speed up your bot development process, you can use the import function.
+To keep the training effort low and make it easier for you to move to our platform you can import intents, expressions, and your own custom entities.
+Currently, we support both: CSV and JSON format for importing your NLP data.
 
 ## Importing intents
 
-In order to import intents you must provide at least a name for each intent. Furthermore you can disable an intent or add a description.
+In order to import intents, you must provide at least a name for each intent.
+Furthermore, you can disable an intent or add a description.
 
 <br><br>
 
