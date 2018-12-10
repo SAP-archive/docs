@@ -20,7 +20,7 @@ Furthermore, you can disable an intent or add a description.
 | Key         | Required | Value                     | Description                                    |
 | ----------- | -------- | ------------------------- | ---------------------------------------------- |
 | name        | Yes      | String                    | The name of the intent                         |
-| description | Optional | String                    | A short description for what the intent is for |
+| description | Optional | String                    | A short description of what the intent is for  |
 | activated   | Optional | Boolean (true by default) | A flag to enable/ disable the intent           |
 
 <br>
@@ -60,7 +60,7 @@ The import process does not get executed if an intent with the specified name is
 ## Importing expressions
 
 Each expression is defined through the language it is written in and a source/ sentence.
-For each word of the expression you can determine the entity the expression belongs to.
+For each word of the expression, you can determine the entity, the expression belongs to.
 
 <br><br>
 
@@ -117,20 +117,20 @@ If you choose to use a CSV file for the import, please format it as the followin
 
 All specified entity names have to exist before starting the expression import.
 Currently, you are allowed to import up to 15,000 expressions at once while not exceeding the file size limit of 1 MB.
-Additionally you can add the same expression multiple times to the same intent.
+Additionally, you can add the same expression multiple times to the same intent.
 
 ## Importing entities
 
 Each entity consists of an entity-name and can have an open or closed gazette.
-If you choose to have an closed gazette you need to specify the strictness of that gazette.
+If you choose to have a closed gazette you need to specify the strictness of that gazette.
 
 <br><br>
 
 | Key         | Required           | Value                     | Description                                                       |
 | ----------- | ------------------ | ------------------------- | ----------------------------------------------------------------- |
 | name        | Yes                | String                    | The name of the entity                                            |
-| open        | Optional           | Boolean (true by default) | A flag to mark the gazette of the entity as open or closed        |
-| strictness  | Partially required | Number within 0-100       | The strictness of the gazette. Only required if gazette is closed |
+| open        | Optional           | Boolean (true by default) | A flag to mark the Gazette of the entity as open or closed        |
+| strictness  | Partially required | Number within 0-100       | The strictness of the Gazette. Only required if gazette is closed |
 
 <br>
 
@@ -168,7 +168,7 @@ The import process does not get executed if an entity with the specified name is
 
 ## Importing all together
 
-This import allows you to add intents, expressions and entities at the same time using a single file.
+This import allows you to add intents, expressions, and entities at the same time using a single file.
 The main difference of this method compared to the others is the way on how the import works.
 Instead of rejecting the import file if there is an entity or intent already existing, this one will update the existing ones with the latest import information.
 If there is an expression referencing to an entity which is not already existing, the entity will get created.
