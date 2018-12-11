@@ -87,4 +87,4 @@ You can also update the memory through an API call. For more information, see [U
 
 You can start a conversation with prefilled information in the memory, and not wait until the first user input is analyzed and the first skills are triggered. However, this is only possible if you are using the Bot Builder directly (without the Bot Connector). To understand how to use the Bot Builder API to do this, see [/Dialog (Text)](https://recast.ai/docs/api-reference/#dialog-endpoints) in the API Reference.
 
-If you are using the Webchat, you can easily start a conversation by sending information in the memory, [Check this section](https://recast.ai/docs/concepts/webchat#bot-memory-management).
+If you're using Webchat, you can easily start a conversation by sending information in the memory. For more information, see  [Bot memory management](https://recast.ai/docs/concepts/webchat#bot-memory-management).
