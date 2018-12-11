@@ -25,6 +25,7 @@ You have the following options:
 
 •	Basic authentication: A username/password pair is passed with the request. 
 
+•	OAuth 2 authentication: A client ID, client secret, and authorization URL is passed with the request.
 
 ![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/authentication.png)
 
