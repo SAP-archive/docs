@@ -144,4 +144,4 @@ You’re using the same value too many times in this entity. This can be intenti
 ### Remove mistagging errors
 A custom entity is always confused with another one. You may have a tagging issue. For example, some values may be tagged in both entities, or an entity is mistagged. If it’s not a mistagging issue, the entities may be too similar; check whether you can merge them.
 
-
+## Reality Check
