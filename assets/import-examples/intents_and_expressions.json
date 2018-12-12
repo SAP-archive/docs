@@ -1,10 +1,4 @@
 {
-  "entities": [
-    {
-      "name": "food",
-      "open": true
-    }
-  ],
   "intents": [
     {
       "name": "want food",
