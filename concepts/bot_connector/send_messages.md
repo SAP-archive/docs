@@ -19,8 +19,8 @@ In the following payloads, buttons can either be:
 
 ## Delay
 
-You can also set an optional delay for each of your messages, between 0 and 5 seconds. This delay will be applied before sending the next message.
-If you don't set a "delay" then the messages will be sent consecutively in the order you specified without waiting time.
+You can also set an optional delay of between 0 and 5 seconds for each of your messages. This delay is applied before sending the next message.
+If you don't set a delay, the messages are sent consecutively in the order you specified, with no wait time.
 
 <div class="mt2" />
 
