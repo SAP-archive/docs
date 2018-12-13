@@ -29,9 +29,11 @@ If your bot is connected to a channel through the Bot Connector, these messages 
 
 On the platform, we display a character limit for every message. For example, a text message has a limit of 640 characters. This isn't a real limitation; you can still create a text message with more characters. It serves as an indication based on what Facebook Messenger will accept. So if you're using Messenger, it's a good idea to observe the character limit; otherwise your messages won't be posted in the user's conversation.
 
-### Delay
+### Message delay
 
-You can add a specific delay between each message in a group of messages. This delay should be between 0 and 5 seconds.
+You can add a specific delay between each message in a group of messages. This delay should be between 0 and 5 seconds so that users aren't waiting unnecessarily for the message to appear.
+
+The main reason for adding a delay is so that users have enough time to read the message before your bot sends the next one. In a chat interface, this is especially important because each new message moves the previous message up. Also, dropping several messages with no delay can feel a little ... robotic! Another important reason for adding a delay is to give your bot personality. For example, you might want to add a short delay to pretend that your bot is thinking!
 
 ![Recast.AI - Specific delay](https://cdn.recast.ai/man/recast-ai-specific-delay.png)
 
