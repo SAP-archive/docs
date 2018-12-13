@@ -31,16 +31,17 @@ On the platform, we display a character limit for every message. For example, a 
 
 ### Delay
 
-You can add delay between each messages in a group of message. This delay should be comprised between 0 and 5 seconds.
+You can add a specific delay between each message in a group of messages. This delay should be between 0 and 5 seconds.
 
 ![Recast.AI - Specific delay](https://cdn.recast.ai/man/recast-ai-specific-delay.png)
 
-In the screenshot above, the second message will be sent to the user 2 seconds after the first message has been sent.
-You can also configure a default message delay, that will be used if you don't specifiy a specific delay.
+In the screenshot above, the second message will be sent to the user 2 seconds after the first message.
+
+You can also configure a default delay that is used if you don't set a specific delay.
 
 SCREENSHOT AGAIN
 
-If you don't set a delay, the messages are sent consecutively as usual.
+If you don't set any delay, the messages are sent consecutively as usual.
 
 ### Variables
 
