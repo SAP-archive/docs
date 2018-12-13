@@ -17,6 +17,11 @@ In the following payloads, buttons can either be:
 * **web_url**: depending on the channel, once this button is tapped, the URL in the value field is loaded
 * **phone_number**: depending on the channel, once this button is tapped, the phone number in the value field will be called
 
+## Delay
+
+You can also set an optional delay for each of your messages, between 0 and 5 seconds. This delay will be applied before sending the next message.
+If you don't set a "delay" then the messages will be sent consecutively in the order you specified without waiting time.
+
 <div class="mt2" />
 
 ### Text Message
@@ -32,6 +37,7 @@ In the following payloads, buttons can either be:
   ~~~ json
     {
       "type": "text",
+      "delay": 2,
       "content": "MY_TEXT",
     }
   ~~~
