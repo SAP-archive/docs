@@ -10,12 +10,15 @@ In order to speed up your bot development process, you can use the import functi
 To keep the training effort low and make it easier for you to move to our platform you can import intents, expressions, and your own custom entities.
 Currently, we support both: CSV and JSON format for importing your NLP data.
 
-## Importing entities
+## Importing entities and synonyms
 
 Each entity consists of an entity-name and can have an open or closed gazette.
 If you choose to have a closed gazette you need to specify the strictness of that gazette.
+To import synonyms you need to specify the name of the related entity as well as the language iso code and the synonym itself.
 
-<br><br>
+<br>
+*Attributes for entities*
+<br>
 
 | Key         | Required           | Value                     | Description                                                       |
 | ----------- | ------------------ | ------------------------- | ----------------------------------------------------------------- |
@@ -25,8 +28,21 @@ If you choose to have a closed gazette you need to specify the strictness of tha
 
 <br>
 
+
+<br>
+*Attributes for synonyms*
+<br>
+
+| Key         | Required | Value  | Description                            |
+| ----------- | -------- | ------ | -------------------------------------- |
+| entity-name | Yes      | String | The name of the related entity         |
+| language    | Yes      | String | The iso code representing the language |
+| synonym     | Yes      | String | The actual value of the synonym        |
+
+<br>
+
 If you choose to use a JSON file for the import, please format it as the following:
-(<a href="/assets/import-examples/entities.json" download>Example</a>)
+(<a href="/assets/import-examples/entities_and_synonyms.json" download>Example</a>)
 
 ~~~ json
 {
@@ -34,7 +50,15 @@ If you choose to use a JSON file for the import, please format it as the followi
     {
       "name": "food",
       "open": false,
-      "strictness": 90
+      "strictness": 90,
+      "synonyms": [
+        {
+          "synonym": "Apple",
+          "language": {
+            "isocode": "en"
+          }
+        }
+      ]
     }
   ]
 }
@@ -43,18 +67,19 @@ If you choose to use a JSON file for the import, please format it as the followi
 <br>
 
 If you choose to use a CSV file for the import, please format it as the following:
-(<a href="/assets/import-examples/entities.csv" download>Example</a>)
+(<a href="/assets/import-examples/entities_and_synonyms.csv" download>Example</a>)
 
 <br>
 
-| name | open  | strictness |
-| ---- | ----- | ---------- |
-| food | false | 90         |
+| import type |
+| ----------- | ----------- | ------------ | ---------- |
+| entities    | entity name | open         | strictness |
+| synonyms    | entity name | language-iso | synonym    |
 
 <br>
 
 Please be aware that the entity names might be subject to modification.
-Furthermore, you can only import max. 5,000 intents at once while the file size must not exceed 1 MB.
+There is a limit for importing entities and synonyms you can import at once of 10,000 each, while not exceeding the file size limit of 1 MB.
 The import process does not get executed if an entity with the specified name is already existing.
 
 ## Importing intents and expressions
@@ -145,10 +170,11 @@ If you choose to use a CSV file for the import, please format it as the followin
 
 | import type |
 | ----------- | ------------ | ------------------ | ------------------------ | ------------------------ | --- |
-| intent      | intent-name  | intent-description | is-activated             |
-| expression  | intent-name  | language-iso       | first word               | second word\tentity-name | ... |
+| intents      | intent-name  | intent-description | is-activated             |
+| expressions  | intent-name  | language-iso       | first word               | second word\tentity-name | ... |
 
 <br>
 Please be aware that the intent names might be subject to modification.
-There is a limit for importing intents, expressions and entities you can import at once of 10,000 each, while not exceeding the file size limit of 1 MB.
+There is a limit for importing intents and expressions you can import at once of 10,000 each, while not exceeding the file size limit of 1 MB.
 Additionally, you can add the same expression multiple times to the same intent.
+If you link an expression to an intent which is not existing nor stated in the import file it will get created.

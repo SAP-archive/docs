@@ -1,9 +1,0 @@
-{
-  "entities": [
-    {
-      "name": "food",
-      "open": false,
-      "strictness": 90
-    }
-  ]
-}

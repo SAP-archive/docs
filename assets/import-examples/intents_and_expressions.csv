@@ -1,4 +1,4 @@
 import type
-intent;want food;;
-expression;want-food;en;I;want;to;eat;cheese	food;.
-expression;want-food;en;I’m;hungry,;I;would;love;pizza	food
+intents;want food;;
+expressions;want-food;en;I;want;to;eat;cheese	food;.
+expressions;want-food;en;I’m;hungry,;I;would;love;pizza	food

@@ -1,0 +1,17 @@
+{
+  "entities": [
+    {
+      "name": "food",
+      "open": false,
+      "strictness": 90,
+      "synonyms": [
+        {
+          "synonym": "Apple",
+          "language": {
+            "isocode": "en"
+          }
+        }
+      ]
+    }
+  ]
+}
