@@ -241,9 +241,9 @@ Bots are multilingual, meaning that you can speak several languages with the sam
     </tbody>
 </table>
 
-To enable users to speak different languages with your bot, add the desired languages for each intent on the **Train** tab and create expressions in those languages. (For advanced level languages, remember that Recast.AI suggests additional expressions for each expression you add, so you can add expressions quickly and easily to an intent.)
+To enable users to speak different languages with your bot, add the desired languages for each intent on the **Train** tab and create expressions in those languages. (For advanced level languages, remember that SAP Conversational AI suggests additional expressions for each expression you add, so you can add expressions quickly and easily to an intent.)
 
-Recast.AI automatically detects the input language. For advanced and standard level languages, this lets you adapt your answers.
+SAP Conversational AI automatically detects the input language. For advanced and standard level languages, this lets you adapt your answers.
 
 After the language has been detected, the following rules apply:
 * If you have expressions in that language, it is used for processing.
@@ -257,13 +257,13 @@ After the language has been detected, the following rules apply:
 ## Example of how the language is detected
 
 You have intents in French and English, but none in Spanish, and your bot's default language is French.
-* You receive an user utterance that we detect as Spanish:
+* You receive a user utterance that we detect as Spanish:
 We use French as the processing language because your bot doesn't handle Spanish, and return a JSON containing `fr` in the `processing_language` field, and `es` in the `language` field.
-* You send us an user utterance telling us it's English:
+* You send us a user utterance telling us it's English:
 We use English as the processing language and return a JSON containing `en` in the `processing_language` field and `en` in the `language` field.
-* You receive an user utterance that we detect as French:
+* You receive a user utterance that we detect as French:
 We use French as the processing language and return a JSON containing `fr` in the `processing_language` field and `fr` in the `language` field.
-* You send us an user utterance telling us it's Spanish:
+* You send us a user utterance telling us it's Spanish:
 We use French as the processing language because your bot doesn't handle Spanish, and return a JSON containing `fr` in the `processing_language` field and `es` in the `language` field.
 
 ## How the language is handled in a conversation
