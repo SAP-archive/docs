@@ -69,8 +69,8 @@ There's a finite list of operators you can use:
 
 The right value can either be a free input or a finite list depending on what you've picked as the left operand.
 
-For example, if you've picked *sentiment*, the right operand will be limited to what the Recast.AI API can return (in this case, from "very positive" to "very negative").
-But if you've picked *_memory.my_value.my_key*, any format is supported as it's not dependent of the Recast.AI API.
+For example, if you've picked *sentiment*, the right operand will be limited to what the SAP Conversational AI API can return (in this case, from "very positive" to "very negative").
+But if you've picked *_memory.my_value.my_key*, any format is supported because it's not dependent on the SAP Conversational AI API.
 
 You can find more details on the entities' enrichment and the other keys with a finite list of possible values
 <a href="https://recast.ai/docs/api-reference#glossary" target="_blank" rel="noopener noreferrer">in the MAN</a>.
