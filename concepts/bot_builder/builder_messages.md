@@ -21,7 +21,7 @@ Many different formats are supported, enabling you to build an awesome user expe
 
 ![Recast.AI - Messages types](https://cdn.recast.ai/man/recast-ai-type-of-messages.png)
 
-If your bot is connected to a channel through the Bot Connector, these messages types are adapted to the channel constraint and transformed, so the look and feel will probably change compared with what you see on the Recast.AI platform.
+If your bot is connected to a channel through the Bot Connector, these messages types are adapted to the channel constraint and transformed, so the look and feel will probably change compared with what you see on the SAP Conversational AI platform.
 
 ![Recast.AI - Messages types](https://cdn.recast.ai/man/bot-builder/test-card-recast-ai.png)
 
