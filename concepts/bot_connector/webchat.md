@@ -4,7 +4,7 @@ title: Webchat
 permalink: /concepts/webchat
 ---
 
-The Webchat channel is developed by the Recast.AI team and is an open-source project on GitHub.
+The Webchat channel is developed by the SAP Conversational AI team and is an open-source project on GitHub.
 You can use the default version of the webchat that we provide in the platform or customize the open-source version by forking it and deploying it on your side.
 
 ## Default hosted version
