@@ -26,5 +26,5 @@ To transfer an existing bot, go to the **Settings** page for the bot. Under **Da
 
 ## What's the difference between my user account and an organization account?
 
-Your user account is your identity on Recast.AI. Your user account can be a member of any number of organizations.
+Your user account is your identity on SAP Conversational AI. Your user account can be a member of any number of organizations.
 
