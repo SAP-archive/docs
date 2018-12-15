@@ -80,7 +80,7 @@ You can assign a version to multiple environments. However, you can assign only 
 
 If you're directly using the Bot Builder endpoint `/dialog` without a channel in the Bot Connector, the best practice is to use `environment` request tokens and not version tokens.
 
-In your code, when you request Recast.AI and send a message, it will always be on the same environment, for example, the `PRODUCTION` environment. When you need to deploy a new version of your chatbot to your users, you just need to go to the **Settings** page for your bot and, under **VERSION SETTINGS**, change the version that is linked to the `PRODUCTION` environment.
+In your code, when you request SAP Conversational AI and send a message, it will always be on the same environment, for example, the `PRODUCTION` environment. When you need to deploy a new version of your chatbot to your users, you just need to go to the **Settings** page for your bot and, under **VERSION SETTINGS**, change the version that is linked to the `PRODUCTION` environment.
 
 ![Recast.AI versioning](https://cdn.recast.ai/man/monitoring/versioning-deploy.png)
 
