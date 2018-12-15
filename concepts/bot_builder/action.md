@@ -25,7 +25,7 @@ A message group can contain one or more actions. You can easily reorder actions 
 
 Various formats exist, enabling you to build an awesome user experience for your bots.
 
-If your bot is connected to a channel through the Bot Connector, the message type is adapted to the channel constraint and transformed, so the look and feel will probably change compared with what you see on the Recast.AI platform. For more information, see [Message format](https://recast.ai/docs/concepts/builder_messages).
+If your bot is connected to a channel through the Bot Connector, the message type is adapted to the channel constraint and transformed, so the look and feel will probably change compared with what you see on the SAP Conversational AI platform. For more information, see [Message format](https://recast.ai/docs/concepts/builder_messages).
 
 ![Recast.AI - Messages types](//cdn.recast.ai/man/recast-ai-type-of-messages.png)
 
@@ -41,7 +41,7 @@ When your URL is called, a default body is sent with the complete conversation s
 
 ## Fallback
 
-This action lets you redirect the conversation to a human agent. First, you need to connect the fallback channel where you want Recast.AI to redirect the message. You can do this on the **Connect** tab by selecting a fallback channel and following the instructions. After connecting the fallback channel, remember to activate it by checking the input.
+This action lets you redirect the conversation to a human agent. First, you need to connect the fallback channel where you want SAP Conversational AI to redirect the message. You can do this on the **Connect** tab by selecting a fallback channel and following the instructions. After connecting the fallback channel, remember to activate it by checking the input.
 
 ![Recast.AI - Fallback action](https://cdn.recast.ai/man/fallback-channel.png)
 
