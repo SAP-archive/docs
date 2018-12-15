@@ -53,14 +53,15 @@ To train a **free** custom entity:
 
 ![tag entity](https://cdn.recast.ai/man/nlp-lexic/tag-entity.png)
 
-2) You can also provide a list of values for this entity without tagging it in sentences. In Recast.AI, go to *Entities* and just add synonyms. These values are combined with the expressions you annotated to improve the training of our entity detection system. **Caution:** If you provide too many examples of values in this list of synonyms, the algorithm will prioritize the fact that the word is present in this list and will use the information provided by the tagging (like the position of the entity in a sentence, the previous word, the length, and so on).
+2) You can also provide a list of values for this entity without tagging it in sentences. In SAP Conversational AI, go to *Entities* and just add synonyms. These values are combined with the expressions you annotated to improve the training of our entity detection system. **Caution:** If you provide too many examples of values in this list of synonyms, the algorithm will prioritize the fact that the word is present in this list and will use the information provided by the tagging (like the position of the entity in a sentence, the previous word, the length, and so on).
 
 ### How restricted custom entities work
 
 A **restricted** custom entity is used if you have a strict list of words to detect and don't need automatic detection of the entity. No word can be recognized as an entity if it doesn’t appear in a closed list of synonyms. For example, you build a bot to help your customers order pizza. You want to detect all pizza names that your restaurant offers.
 
 To create a **restricted** custom entity:
-In Recast.AI, go to *Entities*, click **CREATE**, and select **Restricted entity**. Then add values (synonyms) for this entity. You can also upload a CSV file or use the [gazette endpoint of the API](https://recast.ai/docs/api-reference/#gazettes) to quickly create a large list of synonyms.
+
+In SAP Conversational AI, go to *Entities*, click **CREATE**, and select **Restricted entity**. Then add values (synonyms) for this entity. You can also upload a CSV file or use the [gazette endpoint of the API](https://recast.ai/docs/api-reference/#gazettes) to quickly create a large list of synonyms.
 
 ![synonyms](https://cdn.recast.ai/man/nlp-lexic/synonym-list.png)
 
