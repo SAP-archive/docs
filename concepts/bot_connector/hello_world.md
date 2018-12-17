@@ -53,16 +53,16 @@ In this example, we use SDKs to make it simpler. :)
 **3.** Install the dependencies by running the following command:
 
 JS:
-<span class="code">npm install recastai express body-parser</span>
+<span class="code">npm install sapcai express body-parser</span>
 
 Python:
-<span class="code">pip install recastai flask</span>
+<span class="code">pip install sapcai flask</span>
 
 Ruby:
-<span class="code">gem install RecastAI sinatra</span>
+<span class="code">gem install sapcai sinatra</span>
 
 PHP:
-<span class="code">composer require recastai/sdk-php</span>
+<span class="code">composer require sapcai/sdk-php</span>
 
 <br/>
 
@@ -98,9 +98,9 @@ PHP:
 ~~~ javascript
 var express = require('express')
 var bodyParser = require('body-parser')
-var recastai = require('recastai').default
+var sapcai = require('sapcai').default
 
-var connect = new recastai.connect('YOUR_REQUEST_TOKEN')
+var connect = new sapcai.connect('YOUR_REQUEST_TOKEN')
 
 var app = express()
 
@@ -128,9 +128,9 @@ app.listen(app.get('port'), function () { console.log('App is listening on port 
 
 ~~~ ruby
 require 'sinatra'
-require 'recastai'
+require 'sapcai'
 
-connect = RecastAI::Connect.new('YOUR_REQUEST_TOKEN')
+connect = sapcai::Connect.new('YOUR_REQUEST_TOKEN')
 
 set :port, 5000
 
@@ -151,7 +151,7 @@ end
 ~~~
 
 ~~~ python
-from recastai import Connect
+from sapcai import Connect
 from flask import Flask, request, jsonify
 
 connect = Connect('YOUR_REQUEST_TOKEN')
@@ -183,7 +183,7 @@ app.run(port='5000')
 
 ~~~ php
 <?php
-use RecastAI\Client;
+use sapcai\Client;
 
 // Start Slim server
 $app = new \Slim\App();

@@ -9,11 +9,11 @@ Keep an eye on it, as we're always improving the detection for current entities,
 
 | a - d | e - j | h - n | n - p | p - s | t - x |
 | --- | --- | --- | --- | --- | --- |
-| [`cardinal`](https://recast.ai/docs/concepts/gold-entities#cardinal) | [`email`](https://recast.ai/docs/concepts/gold-entities#email) | [`language`](https://recast.ai/docs/concepts/gold-entities#language) | [`number`](https://recast.ai/docs/concepts/gold-entities#number) | [`percent`](https://recast.ai/docs/concepts/gold-entities#percent) | [`temperature`](https://recast.ai/docs/concepts/gold-entities#temperature) |
-| [`color`](https://recast.ai/docs/concepts/gold-entities#color) | [`emoji`](https://recast.ai/docs/concepts/gold-entities#emoji) | [`location`](https://recast.ai/docs/concepts/gold-entities#location) | [`ordinal`](https://recast.ai/docs/concepts/gold-entities#ordinal) | [`person`](https://recast.ai/docs/concepts/gold-entities#person) |[`url`](https://recast.ai/docs/concepts/gold-entities#url) |
-| [`datetime`](https://recast.ai/docs/concepts/gold-entities#datetime) | [`ip`](https://recast.ai/docs/concepts/gold-entities#ip) | [`mass`](https://recast.ai/docs/concepts/gold-entities#mass) | [`organization`](https://recast.ai/docs/concepts/gold-entities#organization) | [`set`](https://recast.ai/docs/concepts/gold-entities#set) | [`volume`](https://recast.ai/docs/concepts/gold-entities#volume) |
-| [`distance`](https://recast.ai/docs/concepts/gold-entities#distance) | [`interval`](https://recast.ai/docs/concepts/gold-entities#interval) | [`money`](https://recast.ai/docs/concepts/gold-entities#money) | [`phone`](https://recast.ai/docs/concepts/gold-entities#phone) | [`sort`](https://recast.ai/docs/concepts/gold-entities#sort) | 
-| [`duration`](https://recast.ai/docs/concepts/gold-entities#duration) | [`job`](https://recast.ai/docs/concepts/gold-entities#job) | [`nationality`](https://recast.ai/docs/concepts/gold-entities#nationality) | [`pronoun`](https://recast.ai/docs/concepts/gold-entities#pronoun) | [`speed`](https://recast.ai/docs/concepts/gold-entities#speed) |
+| [`cardinal`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#cardinal) | [`email`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#email) | [`language`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#language) | [`number`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#number) | [`percent`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#percent) | [`temperature`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#temperature) |
+| [`color`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#color) | [`emoji`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#emoji) | [`location`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#location) | [`ordinal`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#ordinal) | [`person`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#person) |[`url`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#url) |
+| [`datetime`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#datetime) | [`ip`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#ip) | [`mass`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#mass) | [`organization`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#organization) | [`set`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#set) | [`volume`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#volume) |
+| [`distance`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#distance) | [`interval`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#interval) | [`money`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#money) | [`phone`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#phone) | [`sort`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#sort) | 
+| [`duration`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#duration) | [`job`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#job) | [`nationality`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#nationality) | [`pronoun`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#pronoun) | [`speed`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#speed) |
 
 
 ## The 28 Gold Entities
@@ -144,15 +144,15 @@ Keep an eye on it, as we're always improving the detection for current entities,
 {
   "local": "paul",
   "tag": null,
-  "domain": "recast.ai",
-  "raw": "paul@recast.ai",
+  "domain": "cai.tools.sap",
+  "raw": "paul@sap.com",
   "confidence": 0.99
 }
 ```
 
 | Entity | Examples |
 | ------ | -------- |
-| `email` | hello@recast.ai, hello+devs@recast.ai, hello.you+devs@recast.co.uk |
+| `email` | pierre-edouard.lieb@sap.com |
 | **Key** | **Comments** |
 | `local` | String, the local part of the email |
 | `tag` | String, the tag part of the email |
@@ -612,19 +612,19 @@ Keep an eye on it, as we're always improving the detection for current entities,
 ```json
 {
   "scheme": "https",
-  "host": "pokebot.recast.ai",
+  "host": "pokebot.cai.tools.sap",
   "path": "/register",
   "params": null,
   "query": null,
   "fragment": null,
-  "raw": "https://pokebot.recast.ai/register",
+  "raw": "https://pokebot.cai.tools.sap/register",
   "confidence": 0.99
 }
 ```
 
 | Entity | Examples |
 | ------ | -------- |
-| `url` | https://recast.ai, localhost:9000, api.recast.ai/v2/request |
+| `url` | https://cdn.cai.tools.sap, localhost:9000, api.cai.tools.sap/v2/request |
 | **Key** | **Comments** |
 | `scheme` | String, the URL scheme |
 || Can be `http`, `https`, `mailto`, `ssh`, `git`, etc. |

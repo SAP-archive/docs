@@ -241,16 +241,16 @@ Bots are multilingual, meaning that you can speak several languages with the sam
     </tbody>
 </table>
 
-To enable users to speak different languages with your bot, add the desired languages for each intent on the **Train** tab and create expressions in those languages. (For advanced level languages, remember that Recast.AI suggests additional expressions for each expression you add, so you can add expressions quickly and easily to an intent.)
+To enable users to speak different languages with your bot, add the desired languages for each intent on the **Train** tab and create expressions in those languages. (For advanced level languages, remember that SAP Conversational AI suggests additional expressions for each expression you add, so you can add expressions quickly and easily to an intent.)
 
-Recast.AI automatically detects the input language. For advanced and standard level languages, this lets you adapt your answers.
+SAP Conversational AI automatically detects the input language. For advanced and standard level languages, this lets you adapt your answers.
 
 After the language has been detected, the following rules apply:
 * If you have expressions in that language, it is used for processing.
 * If you don't have any expressions in that language, your default bot language is used for processing.
 
 ## Tips
-* If you use a single language, pass your language as a request parameter to avoid the language detection step when you want to [analyze text](https://recast.ai/docs/api-reference/#request-text) or [use the Bot Builder API](https://recast.ai/docs/api-reference/#dialog-endpoints).
+* If you use a single language, pass your language as a request parameter to avoid the language detection step when you want to [analyze text](https://cdn.cai.tools.sap/docs/api-reference/#request-text) or [use the Bot Builder API](https://cdn.cai.tools.sap/docs/api-reference/#dialog-endpoints).
 * Consider using a translation service when you start constructing an intent in a new language. It'll make the operation faster.
 * Don’t forget to set up all your intents in the new language.
 
@@ -272,7 +272,7 @@ In the Bot Builder, the first sentence sent in a new conversation is analyzed by
 
 All subsequent messages are processed with the `conversation_language` that was detected in the first sentence of the conversation. This is to avoid changing the language when processing ambiguous international expressions like *OK*, *Cool*, and so on.
 
-If you want to change the `conversation_language`, you can use a [Change language action](https://recast.ai/docs/concepts/action#change-language).
+If you want to change the `conversation_language`, you can use a [Change language action](https://cdn.cai.tools.sap/docs/concepts/action#change-language).
 
 
 

@@ -7,7 +7,7 @@ permalink: /concepts/conversation-state
 The conversation state is the state of your bot's conversation with the user. It contains the following information:
 
 - **id**: the id of the conversation provided by Bot Connector, and unique for each user
-- **language**: the current language of the conversation, detected by Recast.AI
+- **language**: the current language of the conversation, detected by SAP Conversational AI
 - **memory**: the data your bot has already collected from the user
 - **skill_stack**: the last skill in the skill_stack has priority of execution, and is popped after its actions have been executed
 - **skill**: the currently active skill in the conversation

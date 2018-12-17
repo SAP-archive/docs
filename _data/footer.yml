@@ -1,5 +1,5 @@
 sections:
-  - title: "RECAST.AI CONCEPTS"
+  - title: "SAP Conversational AI CONCEPTS"
     sections:
       # TODO
       # - title: "HOW CHATBOT WORKS?"
@@ -22,68 +22,68 @@ sections:
       #   url: "/concepts/"
       - title: "Entities lexic"
         external: true
-        url: "https://recast.ai/docs/api-reference/#list-of-entities"
+        url: "https://cdn.cai.tools.sap/docs/api-reference/#list-of-entities"
   - title: "API REFERENCE"
     sections:
       - title: "NLP API"
         external: true
-        url: "https://recast.ai/docs/api-reference"
+        url: "https://cdn.cai.tools.sap/docs/api-reference"
       - title: "Bot Builder API"
         external: true
-        url: "https://recast.ai/docs/api-reference/#bot-builder-api"
+        url: "https://cdn.cai.tools.sap/docs/api-reference/#bot-builder-api"
       - title: "Bot Connector API"
         external: true
-        url: "https://recast.ai/docs/api-reference/#bot-connector-api"
+        url: "https://cdn.cai.tools.sap/docs/api-reference/#bot-connector-api"
   - title: "SDKs"
     sections:
       - title: "Ruby"
         external: true
-        url: "https://github.com/RecastAI/SDK-ruby"
+        url: "https://github.com/SAPConversationalAI/SDK-ruby"
       - title: "Javascript"
         external: true
-        url: "https://github.com/RecastAI/SDK-NodeJS"
+        url: "https://github.com/SAPConversationalAI/SDK-NodeJS"
       - title: "Python"
         external: true
-        url: "https://github.com/RecastAI/SDK-python"
+        url: "https://github.com/SAPConversationalAI/SDK-python"
       - title: "PHP"
         external: true
-        url: "https://github.com/RecastAI/SDK-PHP"
+        url: "https://github.com/SAPConversationalAI/SDK-PHP"
       - title: "Java"
         external: true
-        url: "https://github.com/RecastAI/SDK-Android"
+        url: "https://github.com/SAPConversationalAI/SDK-Android"
       - title: "iOS"
         external: true
-        url: "https://github.com/RecastAI/SDK-iOS"
+        url: "https://github.com/SAPConversationalAI/SDK-iOS"
   - title: "TUTORIALS"
     sections:
       - title: "Build your first chatbot"
         external: true
-        url: "https://recast.ai/blog/build-your-first-bot-with-recast-ai/"
+        url: "https://cdn.cai.tools.sap/blog/build-your-first-bot-with-recast-ai/"
       - title: "NodeJS chatbot tutorial"
         external: true
-        url: "https://recast.ai/blog/nodejs-chatbot-movie-bot/"
+        url: "https://cdn.cai.tools.sap/blog/nodejs-chatbot-movie-bot/"
       - title: "Python chatbot tutorial"
         external: true
-        url: "https://recast.ai/blog/python-cryptobot/"
-      - title: "Chatfuel + Recast.AI"
+        url: "https://cdn.cai.tools.sap/blog/python-cryptobot/"
+      - title: "Chatfuel + SAP Conversational AI"
         external: true
-        url: "https://recast.ai/blog/add-smalltalk-chatfuel-bot/"
+        url: "https://cdn.cai.tools.sap/blog/add-smalltalk-chatfuel-bot/"
 logos:
   - logo: "ion-logo-slack"
     title: "slack"
-    link: "https://slack.recast.ai"
+    link: "https://slack.cai.tools.sap"
   - logo: "ion-logo-github"
     title: "github"
-    link: "https://github.com/recastAI"
+    link: "https://github.com/SAPConversationalAI"
   - logo: "ion-logo-twitter"
     title: "twitter"
-    link: "https://twitter.com/recastai"
+    link: "https://twitter.com/sapcai"
   - logo: "ion-logo-facebook"
     title: "facebook"
-    link: "https://facebook.com/recastAI"
+    link: "https://facebook.com/sapconversationalai"
   - logo: "ion-logo-instagram"
     title: "instagram"
-    link: "https://instagram.com/recast.ai"
+    link: "https://instagram.com/sapconversationalai"
   - logo: "ion-logo-linkedin"
     title: "linkedin"
     link: "https://www.linkedin.com/company/recast-ai"
