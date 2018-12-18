@@ -6,7 +6,7 @@ permalink: /concepts/entity
 
 ## Definition
 An entity is a **keyword** that is extracted from an expression.
-We automatically detect <a href="https://recast.ai/docs/concepts/gold-entities" target="_blank" >28 different entities</a> such as Datetime, Location, Person, and so on.
+We automatically detect <a href="https://cai.tools.sap/docs/concepts/gold-entities" target="_blank" >28 different entities</a> such as Datetime, Location, Person, and so on.
 We call them **gold entities**.
 However, you're not limited to these gold entities. You can also tag your own **custom entities** to detect keywords depending on your bot's context, such as subway stations if you're building a transport assistant.
 
@@ -26,7 +26,7 @@ For example, when the gold entity \`tomorrow\` is detected in a sentence, a form
 }
 ~~~
 
-See all <a target="_blank" rel="noopener noreferrer" href="https://recast.ai/docs/concepts/gold-entities">gold entities</a> and their enrichment.
+See all <a target="_blank" rel="noopener noreferrer" href="https://cai.tools.sap/docs/concepts/gold-entities">gold entities</a> and their enrichment.
 
 ## Custom entities
 
@@ -61,9 +61,9 @@ A **restricted** custom entity is used if you have a strict list of words to det
 
 To create a **restricted** custom entity:
 
-In SAP Conversational AI, go to *Entities*, click **CREATE**, and select **Restricted entity**. Then add values (synonyms) for this entity. You can also upload a CSV file or use the [gazette endpoint of the API](https://recast.ai/docs/api-reference/#gazettes) to quickly create a large list of synonyms.
+In SAP Conversational AI, go to *Entities*, click **CREATE**, and select **Restricted entity**. Then add values (synonyms) for this entity. You can also upload a CSV file or use the [gazette endpoint of the API](https://cai.tools.sap/docs/api-reference/#gazettes) to quickly create a large list of synonyms.
 
-![synonyms](https://cdn.recast.ai/man/nlp-lexic/synonym-list.png)
+![synonyms](https://cdn.cai.tools.sap/man/nlp-lexic/synonym-list.png)
 
 You can define a strictness parameter that is used to determine if a word matches a given value in your list. With a strictness of 100, a word must exactly match an entry of the gazette to be detected as such.
 
@@ -73,15 +73,15 @@ You can still tag a **restricted** custom entity in your sentences, but it will 
 
 For users to meaningfully converse with your chatbot using natural language, your bot needs to be able to recognize pronouns (like *it* or *that*) and map them to entities previously mentioned in the conversation. In the following example, the pronoun *it* refers to the entity *Apple USB-C to HDMI dongle*.
 
-<img src='https://cdn.recast.ai/man/nlp-lexic/entity-and-pronoun-example.png' width='380px' />
+<img src='https://cdn.cai.tools.sap/man/nlp-lexic/entity-and-pronoun-example.png' width='380px' />
 
 For your bot to resolve pronouns, you must first go to the **Settings** page for your bot, choose **Options**, and select the **Resolve pronouns** checkbox. (The default setting is not selected.) Selecting this checkbox enables your bot to resolve the following pronouns: she, he, it, we, they, her, him, it, us, them, his, this, that.
 
-<img src='https://cdn.recast.ai/man/nlp-lexic/resolve-pronouns-checkbox.png' width='300px' />
+<img src='https://cdn.cai.tools.sap/man/nlp-lexic/resolve-pronouns-checkbox.png' width='300px' />
 
 With this checkbox selected, the bot now successfully maps the pronoun *it* to the entity *Apple USB-C to HDMI dongle*.
 
-<img src='https://cdn.recast.ai/man/nlp-lexic/entity-and-pronoun-resolved.png' width='380px' />
+<img src='https://cdn.cai.tools.sap/man/nlp-lexic/entity-and-pronoun-resolved.png' width='380px' />
 
 The following are not supported:
  
@@ -95,6 +95,6 @@ The following are not supported:
  
 Remember to set a message that your bot can use if it is unable to map the pronoun to an entity. For example, if your bot is unable to map the pronoun *her* to a person, you might want to set the message *Sorry, can you please name the person?* To do this, first open the skill. Under **Requirements**, click **EDIT REPLIES** next to **If #person is missing** and enter the message.
 
-![Recast.AI gold entities](https://cdn.recast.ai/man/nlp-lexic/edit-replies.png)
+![SAP Conversational AI gold entities](https://cdn.cai.tools.sap/man/nlp-lexic/edit-replies.png)
 
-![Recast.AI gold entities](https://cdn.recast.ai/man/nlp-lexic/message-example.png)
+![SAP Conversational AI gold entities](https://cdn.cai.tools.sap/man/nlp-lexic/message-example.png)
