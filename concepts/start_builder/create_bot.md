@@ -12,7 +12,7 @@ A SAP Conversational AI chatbot is composed of two main elements: **Skills** and
 
 A **skill** is a block of conversation that has a clear purpose and that your bot can execute to achieve a goal. You need to configure these skills to build the scope of your bot.
 
-A **training dataset** is composed of many sentences organized into [intents](https://recastai.github.io/docs/concepts/intent) that represent what users say to your chatbot. The training dataset is used to train the bot to understand the user's needs and to trigger the right piece of conversation, reply correctly, and have a smooth conversation.
+A **training dataset** is composed of many sentences organized into [intents](https://sapconversationalai.github.io/docs/concepts/intent) that represent what users say to your chatbot. The training dataset is used to train the bot to understand the user's needs and to trigger the right piece of conversation, reply correctly, and have a smooth conversation.
 
 Ready? Click **+ New Bot** at the top right of the page and let's create your first chatbot.
 

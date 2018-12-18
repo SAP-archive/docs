@@ -7,19 +7,19 @@ permalink: /personal-data/
 
 ### Update your personal data
 
-If you are a bot developer and you want to update your username and/or your email address, please email privacy@recast.ai from the email address associated with your SAP Conversational AI profile.
+If you are a bot developer and you want to update your username and/or your email address, please email sap-cai-privacy@sap.com from the email address associated with your SAP Conversational AI profile.
 
 <br/>
 
 ### Delete your personal data
 
-If you are a bot developer and you want to delete your account and all bots associated with it, please email privacy@recast.ai from the email address associated with your SAP Conversational AI profile.
+If you are a bot developer and you want to delete your account and all bots associated with it, please email sap-cai-privacy@sap.com from the email address associated with your SAP Conversational AI profile.
 
 <br/>
 
 ### Access or delete bot user's personal data
 
-If you are a bot developer and one of your end users wants to access or delete their own personal data, please email the following information to privacy@recast.ai from the email address associated with your SAP Conversational AI profile:
+If you are a bot developer and one of your end users wants to access or delete their own personal data, please email the following information to sap-cai-privacy@sap.com from the email address associated with your SAP Conversational AI profile:
 -   Name of the channel used to access the bot
 -   Information required for this channel \(see following table\) 
 
