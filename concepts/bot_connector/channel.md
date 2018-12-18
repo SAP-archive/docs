@@ -20,7 +20,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
                                                           src="https://www.recast.ai/assets/images/integrations/callr.png" width="30px"
                                                           alt="callr"></th>
         <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://cdn.recast.ai/man/channels/cisco.png" width="30px"
+                                                          src="https://cdn.cai.tools.sap/man/channels/cisco.png" width="30px"
                                                           alt="Cisco Webex Teams"></th>
         <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
                                                           src="https://www.recast.ai/assets/images/integrations/kik.svg" width="30px" alt="kik">
@@ -53,10 +53,10 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
                                                           src="https://www.recast.ai/assets/images/integrations/twitter.svg" width="30px"
                                                           alt="Twitter"></th>
         <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://cdn.recast.ai/man/channels/alexa.png" width="30px"
+                                                          src="https://cdn.cai.tools.sap/man/channels/alexa.png" width="30px"
                                                           alt="Amazon Alexa"></th>
         <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://cdn.recast.ai/man/copilot.png" width="30px"
+                                                          src="https://cdn.cai.tools.sap/man/copilot.png" width="30px"
                                                           alt="SAP CoPilot"></th>
         
     </tr>
@@ -64,7 +64,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
     <tbody>
     <tr>
         <th width="25%"></th>
-        <td>Recast.AI Webchat</td>
+        <td>SAP Conversational AI Webchat</td>
         <td>callr</td>
         <td>Cisco Webex Teams</td>
         <td>kik</td>
@@ -164,7 +164,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
