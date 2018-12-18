@@ -22,4 +22,4 @@ You want your bot to understand when someone asks for help. Just create an inten
 * Can you help?
 * What can you do for me?
 
-![Schema_intents](//cdn.recast.ai/man/recast-ai-whats-intentb.png)
+![Schema_intents](//cdn.cai.tools.sap/man/recast-ai-whats-intentb.png)
