@@ -71,7 +71,7 @@ If you choose to use a CSV file for the import, please format it as the followin
 
 <br>
 
-| import type |
+| import type |             |              |            |
 | ----------- | ----------- | ------------ | ---------- |
 | entities    | entity name | open         | strictness |
 | synonyms    | entity name | language-iso | synonym    |
@@ -81,6 +81,7 @@ If you choose to use a CSV file for the import, please format it as the followin
 Please be aware that the entity names might be subject to modification.
 There is a limit for importing entities and synonyms you can import at once of 10,000 each, while not exceeding the file size limit of 1 MB.
 The import process does not get executed if an entity with the specified name is already existing.
+If you link a synonym to an entity which is not existing nor stated in the import file it will get created.
 
 ## Importing intents and expressions
 
@@ -168,10 +169,10 @@ If you choose to use a CSV file for the import, please format it as the followin
 
 <br>
 
-| import type |
+| import type |              |                    |                          |                          |     |
 | ----------- | ------------ | ------------------ | ------------------------ | ------------------------ | --- |
-| intents      | intent-name  | intent-description | is-activated             |
-| expressions  | intent-name  | language-iso       | first word               | second word\tentity-name | ... |
+| intents     | intent-name  | intent-description | is-activated             |
+| expressions | intent-name  | language-iso       | first word               | second word\tentity-name | ... |
 
 <br>
 Please be aware that the intent names might be subject to modification.
