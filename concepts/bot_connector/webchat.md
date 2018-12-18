@@ -20,7 +20,7 @@ On the **Connect** tab of your bot, activate the **Webchat** channel.
 2) Add the following script to your page to get the webchat:
 
 ~~~ html
-<script src="https://cdn.recast.ai/webchat/webchat.js"
+<script src="https://cdn.cai.tools.sap/webchat/webchat.js"
 channelId="CHANNEL_ID"
 token="TOKEN_ID"
 id="recast-webchat"
@@ -69,7 +69,7 @@ Here's a simple example:
     </script>
   </head>
   <body>
-    <script src="https://cdn.recast.ai/webchat/webchat.js"
+    <script src="https://cdn.cai.tools.sap/webchat/webchat.js"
       channelId="<channelId>"
       token="<token>"
       id="recast-webchat"
@@ -138,7 +138,7 @@ window.webchatMethods = {
 
 ## Open-source version
 
-If you want to customize the style or add new functionalities that don't exist in the default hosted version, you can fork the open-source version on GitHub at <a href="https://github.com/Recastai/webchat" alt="Github Recast Webchat" target="_blank">RecastAI/Webchat</a>.
+If you want to customize the style or add new functionalities that don't exist in the default hosted version, you can fork the open-source version on GitHub at <a href="https://github.com/SAPConversationalAI/webchat" alt="GitHub SAP Conversational AI Webchat" target="_blank">SAPConversationalAI/Webchat</a>.
 
 ### How to use it
 Please see the `README.md`. The open-source version is developed in ReactJS.
