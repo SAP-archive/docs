@@ -12,7 +12,7 @@ You can find conditions in different sections of your skill:
 - in the **<a href="/docs/concepts/requirements">requirements</a>**
 - in each group of **<a href="/docs/concepts/action">actions</a>**
 
-![Recast.AI - Bot condition](//cdn.recast.ai/man/recast-ai-data-condition-ex.png)
+![SAP Conversational AI - Bot condition](//cdn.cai.tools.sap/man/recast-ai-data-condition-ex.png)
 
 In this example, we test:
 
@@ -29,7 +29,7 @@ In the condition *if #location.raw is Paris*, the left operand is **#location.ra
 ### Left operand
 
 As a left operand, you can use any value of
-<a href="https://recast.ai/docs/api-reference#request-text" target="_blank" rel="noopener noreferrer">text analyse</a>
+<a href="https://cai.tools.sap/docs/api-reference#request-text" target="_blank" rel="noopener noreferrer">text analyse</a>
  (intents, entities, ..) from your user input
  and any value from the
  <a href="/docs/concepts/conversation-state">conversation state</a>
@@ -39,12 +39,12 @@ A few rules to distinguish the left operands categories:
 
 - operands starting by **@** will get the associated intent (for example *@greetings*)
 - operands starting by **#** will get the associated entity (for example *#location*), and will test the *raw* field unless you've specified one
-- operands starting by **_** will get the associated field in the [text analyze](https://recast.ai/docs/api-reference#request-text) JSON or in the conversation state
+- operands starting by **_** will get the associated field in the [text analyze](https://cai.tools.sap/docs/api-reference#request-text) JSON or in the conversation state
 
 *Note*: you can write the entire path if you need, like: *#location.lat* (if you need the latitude) is the same as *nlp.entities.location.lat*. Or if you need to access the
 description of the first intent detected: *nlp.intents[0].description*.
 
-![Recast.AI - Condition Select](//cdn.recast.ai/man/recast-ai-condition-select.png)
+![SAP Conversational AI - Condition Select](//cdn.cai.tools.sap/man/recast-ai-condition-select.png)
 
 ### Operators
 
@@ -73,13 +73,13 @@ For example, if you've picked *sentiment*, the right operand will be limited to 
 But if you've picked *_memory.my_value.my_key*, any format is supported because it's not dependent on the SAP Conversational AI API.
 
 You can find more details on the entities' enrichment and the other keys with a finite list of possible values
-<a href="https://recast.ai/docs/api-reference#glossary" target="_blank" rel="noopener noreferrer">in the MAN</a>.
+<a href="https://cai.tools.sap/docs/api-reference#glossary" target="_blank" rel="noopener noreferrer">in the MAN</a>.
 
 ## Create complex conditions
 
 You can create multiple layers of condition using **and** and **or**.
 
-![Recast.AI - Bot condition](//cdn.recast.ai/man/recast-ai-skill-conditions-or-and.png)
+![SAP Conversational AI - Bot condition](//cdn.cai.tools.sap/man/recast-ai-skill-conditions-or-and.png)
 
 You can see in this example two groups:
 
