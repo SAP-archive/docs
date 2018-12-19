@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Recast.AI Doc
+title: Recast.AI Docs
 email: services@recast.ai
 description: >- # this means to ignore newlines until "baseurl:"
   Find out our latest NLU, UX, DevOps and business news on our blog.

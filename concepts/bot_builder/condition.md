@@ -8,9 +8,9 @@ A condition is a test that can be evaluated to either true or false.
 
 You can find conditions in different sections of your skill:
 
-- in the **<a href="/concepts/trigger">triggers</a>**
-- in the **<a href="/concepts/requirements">requirements</a>**
-- in each group of **<a href="/concepts/action">actions</a>**
+- in the **<a href="/docs/concepts/trigger">triggers</a>**
+- in the **<a href="/docs/concepts/requirements">requirements</a>**
+- in each group of **<a href="/docs/concepts/action">actions</a>**
 
 ![Recast.AI - Bot condition](//cdn.recast.ai/man/recast-ai-data-condition-ex.png)
 
@@ -32,7 +32,7 @@ As a left operand, you can use any value of
 <a href="https://recast.ai/docs/api-reference#request-text" target="_blank" rel="noopener noreferrer">text analyse</a>
  (intents, entities, ..) from your user input
  and any value from the
- <a href="/concepts/conversation-state">conversation state</a>
+ <a href="/docs/concepts/conversation-state">conversation state</a>
  (the last skill, memory values..).
 
 A few rules to distinguish the left operands categories:
@@ -58,8 +58,8 @@ There's a finite list of operators you can use:
 - **matches-not** to check if the value doesn't match with a regular expression
 - **lower-than** to test if the value is lower than another
 - **greater-than** to test if the value is greater than another
-- **is-present** to test if the value is present in the **<a href="/concepts/conversation-state">conversation state</a>**
-- **is-asbent** to test if the value is asbent in the **<a href="/concepts/conversation-state">conversation state</a>**
+- **is-present** to test if the value is present in the **<a href="/docs/concepts/conversation-state">conversation state</a>**
+- **is-asbent** to test if the value is asbent in the **<a href="/docs/concepts/conversation-state">conversation state</a>**
 
 *Note*: the regex syntax follows the <a href="https://ruby-doc.org/core-2.4.1/Regexp.html" target="_blank" rel="noopener noreferrer">Ruby regex syntax</a>
 

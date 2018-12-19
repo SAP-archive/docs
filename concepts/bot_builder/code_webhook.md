@@ -6,14 +6,14 @@ permalink: /concepts/code-and-webhook
 
 
 At many points in your conversation, you most likely want to retrieve business information or connect to an external system to perform actions. You can do this through webhooks.
-A webhook is a simple HTTP call to your backend. To configure your HTTP call, click **Webhook action** in the Bot Builder.
+A webhook is a simple HTTP call to your backend. To configure your HTTP call, click **CALL WEBHOOK** in the Bot Builder.
 
 ![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/webhook.png)
 
 You can provide the full URL or route (starting with a '/') to be called by the Bot Builder. 
 If you provide a route, the **Bot webhook base URL** (configurable in your bot's settings) will be prepended to it.
 
-You can specify the HTTP method to use in your webhook call (GET, POST, PUT, DELETE, or PATCH).
+You can specify the HTTP method to use in your webhook call (GET, POST, PUT, or PATCH).
 
 ![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/header.png)
 
@@ -79,7 +79,7 @@ The default body format is as follows:
 ~~~
 
 <br><br>
-In custom HTTP request bodies, you can reference conversation variables (like memory variables, NLP information, etc.) in place of hard-coded values, for example, `{{memory.person.raw}}`.
+In custom HTTP request bodies, you can reference conversation variables (like memory variables, NLP information, etc.) in place of hard-coded values, for example, `{{memory.person.raw}}`. Check all the [variables](https://recast.ai/docs/concepts/builder_messages#variables) you can use.
 
 ![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/body.png)
 
@@ -129,7 +129,7 @@ Here is an example:
 <br>
 The `conversation` data you send back will update the state of your conversation:
 
-* `memory` will replace the actual memory of your bot (so be careful if you just want to change one of your memory keys to add all your other keys so that you don't lose everything).
+* `memory` will replace the actual memory of your bot (so be careful that you don't lose everything if you just want to change one of your memory keys to add all your other keys).
 * `language` will update the language of the conversation. Each new sentence sent by the user will be processed in this language, and the bot will reply in this language.
 
 The `replies` are sent in the body of the result of the main Bot Builder and will appear in the `messages` key:
@@ -178,7 +178,7 @@ POST `https://api.recast.ai/build/v1/dialog`
 ## Formatting the array of replies
 
 You can format objects in the array of reply as desired, depending on your needs when you request the Bot Builder API.
-If you are using the Bot Connector (that is, you have connected a channel on the Recast.AI platform like Facebook Messenger, Slack, or a webchat), you need to follow the Bot Connector format:  **<a href="/concepts/structured-messages">Check the format to send rich messages</a>**
+If you are using the Bot Connector (that is, you have connected a channel on the Recast.AI platform like Facebook Messenger, Slack, or a webchat), you need to follow the Bot Connector format:  **<a href="https://recast.ai/docs/concepts/structured-messages">Check the format to send rich messages</a>**
 
 ~~~ json
 {

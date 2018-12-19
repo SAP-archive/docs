@@ -1,111 +1,101 @@
 <!-- Nav -->
 <nav class="Nav">
-  <h3 class='Nav-title'>
-    DOCUMENTATION FOR SAP CONVERSATIONAL AI
-  </h3>
 
-  <h3 class="Nav-header">{{ site.data.start_builder.title }}</h3>
-  {% for item in site.data.start_builder.sections %}
+  <div class="Nav-content">
+
+    <h3 class="Nav-header">{{ site.data.start_builder.title }}</h3>
+    {% for item in site.data.start_builder.sections %}
+      <div class="Nav-link">
+        {% if page.url == item.url %}
+        <a class='active' href="{{ site.baseurl }}{{ item.url }}">
+          {{ item.title }}
+        </a>
+        {% else %}
+        <a href="{{ site.baseurl }}{{ item.url }}">
+          {{ item.title }}
+        </a>
+        {% endif %}
+      </div>
+    {% endfor %}
+
+    <h3 class="Nav-header">{{ site.data.nlp_lexic.title }}</h3>
+    {% for item in site.data.nlp_lexic.sections %}
+      <div class="Nav-link">
+        {% if page.url == item.url %}
+        <a class='active' href="{{ site.baseurl }}{{ item.url }}">
+          {{ item.title }}
+        </a>
+        {% else %}
+        <a href="{{ site.baseurl }}{{ item.url }}">
+          {{ item.title }}
+        </a>
+        {% endif %}
+      </div>
+    {% endfor %}
+
+    <h3 class="Nav-header">{{ site.data.bot_builder.title }}</h3>
+    {% for item in site.data.bot_builder.sections %}
+      <div class="Nav-link">
+        {% if page.url == item.url %}
+        <a class='active' href="{{ site.baseurl }}{{ item.url }}">
+          {{ item.title }}
+        </a>
+        {% else %}
+        <a href="{{ site.baseurl }}{{ item.url }}">
+          {{ item.title }}
+        </a>
+        {% endif %}
+      </div>
+    {% endfor %}
+
+    <h3 class="Nav-header">{{ site.data.bot_connector.title }}</h3>
+    {% for item in site.data.bot_connector.sections %}
+      <div class="Nav-link">
+        {% if page.url == item.url %}
+        <a class='active' href="{{ site.baseurl }}{{ item.url }}">
+          {{ item.title }}
+        </a>
+        {% else %}
+        <a href="{{ site.baseurl }}{{ item.url }}">
+          {{ item.title }}
+        </a>
+        {% endif %}
+      </div>
+    {% endfor %}
+    
+    <h3 class="Nav-header">{{ site.data.monitor.title }}</h3>
+    {% for item in site.data.monitor.sections %}
+      <div class="Nav-link">
+        <a href="{{ site.baseurl }}{{ item.url }}">
+          {{ item.title }}
+        </a>
+      </div>
+    {% endfor %}
+    
+    <h3 class="Nav-header">{{ site.data.collaboration.title }}</h3>
+    {% for item in site.data.collaboration.sections %}
+      <div class="Nav-link">
+        <a href="{{ site.baseurl }}{{ item.url }}">
+          {{ item.title }}
+        </a>
+      </div>
+    {% endfor %}
+
+    <br/>
+
+    {% if page.url == '/personal-data/' %}
     <div class="Nav-link">
-      {% if page.url == item.url %}
-      <a class='active' href="{{ site.baseurl }}{{ item.url }}">
-        {{ item.title }}
+      <a class="personalData active" href="{{ site.baseurl}}/personal-data">
+        About personal data
       </a>
-      {% else %}
-      <a href="{{ site.baseurl }}{{ item.url }}">
-        {{ item.title }}
-      </a>
-      {% endif %}
     </div>
-  {% endfor %}
-
-  <h3 class="Nav-header">{{ site.data.start_nlp.title }}</h3>
-  {% for item in site.data.start_nlp.sections %}
+    {% else %}
     <div class="Nav-link">
-      {% if page.url == item.url %}
-      <a class='active' href="{{ site.baseurl }}{{ item.url }}">
-        {{ item.title }}
-      </a>
-      {% else %}
-      <a href="{{ site.baseurl }}{{ item.url }}">
-        {{ item.title }}
-      </a>
-      {% endif %}
-    </div>
-  {% endfor %}
-
-  <h3 class="Nav-header">{{ site.data.nlp_lexic.title }}</h3>
-  {% for item in site.data.nlp_lexic.sections %}
-    <div class="Nav-link">
-      {% if page.url == item.url %}
-      <a class='active' href="{{ site.baseurl }}{{ item.url }}">
-        {{ item.title }}
-      </a>
-      {% else %}
-      <a href="{{ site.baseurl }}{{ item.url }}">
-        {{ item.title }}
-      </a>
-      {% endif %}
-    </div>
-  {% endfor %}
-
-  <h3 class="Nav-header">{{ site.data.bot_builder.title }}</h3>
-  {% for item in site.data.bot_builder.sections %}
-    <div class="Nav-link">
-      {% if page.url == item.url %}
-      <a class='active' href="{{ site.baseurl }}{{ item.url }}">
-        {{ item.title }}
-      </a>
-      {% else %}
-      <a href="{{ site.baseurl }}{{ item.url }}">
-        {{ item.title }}
-      </a>
-      {% endif %}
-    </div>
-  {% endfor %}
-
-  <h3 class="Nav-header">{{ site.data.bot_connector.title }}</h3>
-  {% for item in site.data.bot_connector.sections %}
-    <div class="Nav-link">
-      {% if page.url == item.url %}
-      <a class='active' href="{{ site.baseurl }}{{ item.url }}">
-        {{ item.title }}
-      </a>
-      {% else %}
-      <a href="{{ site.baseurl }}{{ item.url }}">
-        {{ item.title }}
-      </a>
-      {% endif %}
-    </div>
-  {% endfor %}
-  
-  <h3 class="Nav-header">{{ site.data.collaboration.title }}</h3>
-  {% for item in site.data.collaboration.sections %}
-    <div class="Nav-link">
-      <a href="{{ site.baseurl }}{{ item.url }}">
-        {{ item.title }}
+      <a class="personalData" href="{{ site.baseurl}}/personal-data">
+        About personal data
       </a>
     </div>
-  {% endfor %}
+    {% endif %}
 
-  <br/>
-
-  {% if page.url == '/personal-data/' %}
-  <div class="Nav-link">
-    <a class="personalData active" href="{{ site.baseurl}}/personal-data">
-      About personal data
-    </a>
   </div>
-  {% else %}
-  <div class="Nav-link">
-    <a class="personalData" href="{{ site.baseurl}}/personal-data">
-      About personal data
-    </a>
-  </div>
-  {% endif %}
-
-  <br/>
-  <br/>
-  <br/>
-
 </nav>

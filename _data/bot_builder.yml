@@ -1,6 +1,9 @@
 title: Bot Builder
 sections:
 
+- title: How does it work?
+  url: /concepts/builder-intro
+
 - title: What is a skill?
   url: /concepts/what-skill
 
@@ -15,9 +18,18 @@ sections:
 
 - title: Action
   url: /concepts/action
+  
+- title: Memory management
+  url: /concepts/memory-management
+
+- title: Messages
+  url: /concepts/builder_messages
 
 - title: Conversation state
   url: /concepts/conversation-state
+
+- title: User authentication
+  url: /concepts/user-authentication
 
 - title: Custom code and webhooks
   url: /concepts/code-and-webhook

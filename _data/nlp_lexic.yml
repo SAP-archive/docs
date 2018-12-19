@@ -10,8 +10,17 @@ sections:
 - title: Entity
   url: /concepts/entity
 
-- title: Gazette
-  url: /concepts/gazette
+- title: Gold Entities List
+  url: /concepts/gold-entities
+
+- title: Sentiment
+  url: /concepts/sentiment
+
+- title: Sentence Acts
+  url: /concepts/sentence-acts
+
+- title: Sentence Types
+  url: /concepts/sentence-types
 
 - title: Language
   url: /concepts/language
