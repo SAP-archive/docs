@@ -11,7 +11,7 @@ You can use the default version of the webchat that we provide in the platform o
 
 On the **Connect** tab of your bot, activate the **Webchat** channel.
 
-![Recast.AI - Webchat](//cdn.recast.ai/man/webchat-connector.png)
+![SAP Conversational AI - Webchat](//cdn.cai.tools.sap/man/webchat-connector.png)
 
 ### How to use it
 
