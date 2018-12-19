@@ -12,7 +12,7 @@ Currently, we support the CSV- and the JSON format for importing your NLP data.
 
 ## Importing entities and synonyms
 
-Each entity consists of an entity name and belongs to either an open or a closed [gazette](/docs/concepts/nlp_lexic/gazette).
+Each [entity](/concepts/entity) consists of an entity name and belongs to either an open or a closed [gazette](/concepts/gazette).
 You need to specify the strictness for all closed gazettes.
 To import synonyms, you need to specify the name of the related entity as well as the iso code of the language and the synonym itself.
 
@@ -87,9 +87,9 @@ If you link a synonym to an entity which is not existing nor stated in the impor
 ## Importing intents and expressions
 
 This import allows you to add intents and expressions at the same time using a single file.
-To import an intent, you must provide at least a name.
+To import an [intent](/concepts/intent), you must provide at least a name.
 Furthermore, you can disable an intent or add a description.
-A valid expression-import requires the language, in which the expression is written in, and a source-sentence to be present.
+A valid [expression](/concepts/expression)-import requires the language, in which the expression is written in, and a source-sentence to be present.
 All words of the source-sentence can get assigned to an entity.
 The import will update existing intents to reflect the state of the first entry in the import file.
 If an expressions references to a non-existing entity an entity with the specified name will get created.
