@@ -23,7 +23,7 @@ In the following payloads, buttons can either be:
 
 <div class="flex flex-center mb3">
   <img
-    src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-text.svg"
+    src="https://cdn.cai.tools.sap/website/bot-connector/recast-ai-bc-text.svg"
     class="custom mb2 mr4"
     alt="Bot Connector - messenger text format"
   />
@@ -43,7 +43,7 @@ In the following payloads, buttons can either be:
 
 <div class="flex flex-center mb3">
   <img
-    src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-quickreplies.svg"
+    src="https://cdn.cai.tools.sap/website/bot-connector/recast-ai-bc-quickreplies.svg"
     class="custom m0 mb2 mr4"
     alt="Bot Connector - messenger Quick Replies format"
   />
@@ -72,7 +72,7 @@ In the following payloads, buttons can either be:
 
 <div class="flex flex-center mb3">
   <img
-    src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-cards.svg"
+    src="https://cdn.cai.tools.sap/website/bot-connector/recast-ai-bc-cards.svg"
     class="custom m0 mb2 mr4"
     alt="Bot Connector - Messenger Card format"
   />
@@ -104,7 +104,7 @@ In the following payloads, buttons can either be:
 
 <div class="flex flex-center mb3">
   <img
-    src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-buttons.svg"
+    src="https://cdn.cai.tools.sap/website/bot-connector/recast-ai-bc-buttons.svg"
     class="custom m0 mb2 mr4"
     alt="Bot Connector - Messenger Buttons format"
   />
@@ -134,7 +134,7 @@ In the following payloads, buttons can either be:
 
 <div class="flex flex-center mb3">
   <img
-    src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-carousel-01.svg"
+    src="https://cdn.cai.tools.sap/website/bot-connector/recast-ai-bc-carousel-01.svg"
     class="custom m0 mb2 mr4"
     alt="Bot Connector - Messenger Carousel format"
   />
@@ -168,7 +168,7 @@ In the following payloads, buttons can either be:
 
 <div class="flex flex-center mb3">
   <img
-    src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-list.svg"
+    src="https://cdn.cai.tools.sap/website/bot-connector/recast-ai-bc-list.svg"
     class="custom m0 mb2 mr4"
     alt="Bot Connector - Messenger List format"
   />
@@ -211,7 +211,7 @@ In the following payloads, buttons can either be:
 
 <div class="flex flex-center mb3">
   <img
-    src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-image.svg"
+    src="https://cdn.cai.tools.sap/website/bot-connector/recast-ai-bc-image.svg"
     class="custom m0 mb2 mr4"
     alt="Bot Connector - Messenger Picture format"
   />
@@ -232,7 +232,7 @@ In the following payloads, buttons can either be:
 
 <div class="flex flex-center mb3">
   <img
-    src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-video.svg"
+    src="https://cdn.cai.tools.sap/website/bot-connector/recast-ai-bc-video.svg"
     class="custom m0 mb2 mr4"
     alt="Bot Connector - Messenger Video format"
   />
