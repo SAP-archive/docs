@@ -9,7 +9,7 @@ This user authentication concept is only available if you're using the Bot Build
 You can add these unique user identifiers by setting specific keys in the memory field when you initiate a new conversation during the first request made to the /dialog endpoint.
 This field will contain a user-defined value (for example, an authentication token or user ID of the client-side database).
 
-To understand how to format your API request, see [/Dialog (Text)](https://recast.ai/docs/api-reference/#dialog-endpoints) in the API Reference.
+To understand how to format your API request, see [/Dialog (Text)](https://cai.tools.sap/docs/api-reference/#dialog-endpoints) in the API Reference.
 
 Below is an example of a `POST /dialog` request body with `memory` field. In this example, the token for the user is `myAwesomeUniqueToken`):
 ~~~ json
@@ -27,4 +27,4 @@ Below is an example of a `POST /dialog` request body with `memory` field. In thi
 
 You can access this memory field during the entire conversation and use it, for example, in webhook actions, headers, or authentication fields.
 
-![Recast.AI - webhook with variables](//cdn.recast.ai/man/bot-builder/headers-with-id.png)
+![SAP Conversational AI - webhook with variables](//cdn.cai.tools.sap/man/bot-builder/headers-with-id.png)
