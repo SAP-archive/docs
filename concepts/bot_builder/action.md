@@ -4,7 +4,7 @@ title: Actions
 permalink: /concepts/action
 ---
 
-An action is something that your bot executes at a specific point when executing a [skill](https://cdn.cai.tools.sap/docs/concepts/what-skill). To add actions to a skill, open the skill on the **Build** tab and then open the **Actions** subtab and click **ADD NEW MESSAGE GROUP**.
+An action is something that your bot executes at a specific point when executing a [skill](https://cai.tools.sap/docs/concepts/what-skill). To add actions to a skill, open the skill on the **Build** tab and then open the **Actions** subtab and click **ADD NEW MESSAGE GROUP**.
 
 ## Action categories
 
@@ -25,11 +25,11 @@ A message group can contain one or more actions. You can easily reorder actions 
 
 Various formats exist, enabling you to build an awesome user experience for your bots.
 
-If your bot is connected to a channel through the Bot Connector, the message type is adapted to the channel constraint and transformed, so the look and feel will probably change compared with what you see on the SAP Conversational AI platform. For more information, see [Message format](https://recast.ai/docs/concepts/builder_messages).
+If your bot is connected to a channel through the Bot Connector, the message type is adapted to the channel constraint and transformed, so the look and feel will probably change compared with what you see on the SAP Conversational AI platform. For more information, see [Message format](https://cai.tools.sap/docs/concepts/builder_messages).
 
 ![SAP Conversational AI - Messages types](//cdn.cai.tools.sap/man/recast-ai-type-of-messages.png)
 
-You can dynamically inject the content gathered from the conversation in the bot replies by using double brace syntax. For example, if your bot asks for the user's name as a requirement, the name is added to the bot's memory once the requirement is completed. You can then create a text message (or any other message actually) filled with "Hello {{memory.username.raw}}", where {{memory.username.raw}} is replaced with the actual username. For more information, see [Variable system](https://cdn.cai.tools.sap/docs/concepts/builder_messages).
+You can dynamically inject the content gathered from the conversation in the bot replies by using double brace syntax. For example, if your bot asks for the user's name as a requirement, the name is added to the bot's memory once the requirement is completed. You can then create a text message (or any other message actually) filled with "Hello {{memory.username.raw}}", where {{memory.username.raw}} is replaced with the actual username. For more information, see [Variable system](https://cai.tools.sap/docs/concepts/builder_messages).
 
 ## Call webhook
 
@@ -37,7 +37,7 @@ At many points in your conversation, you most likely want to retrieve business i
 
 ![SAP Conversational AI - Webhook](//cdn.cai.tools.sap/man/webhook/header.png)
 
-When your URL is called, a default body is sent with the complete conversation state. You can send back messages you want to send to the user, as well as an updated conversation state. For more information, see [Custom code and webhooks](https://cdn.cai.tools.sap/docs/concepts/code-and-webhook).
+When your URL is called, a default body is sent with the complete conversation state. You can send back messages you want to send to the user, as well as an updated conversation state. For more information, see [Custom code and webhooks](https://cai.tools.sap/docs/concepts/code-and-webhook).
 
 ## Fallback
 
@@ -70,7 +70,7 @@ This action lets you do three different things:
 * Set values in the memory
 * Unset a key in the memory
 
-First the memory is reset, then the new values are set, and finally the specified keys are unset. For more information, see [Memory management](https://cdn.cai.tools.sap/docs/concepts/memory-management).
+First the memory is reset, then the new values are set, and finally the specified keys are unset. For more information, see [Memory management](https://cai.tools.sap/docs/concepts/memory-management).
 
 ![SAP Conversational AI - Memory action](//cdn.cai.tools.sap/man/recast-ai-memory-action.png)
 

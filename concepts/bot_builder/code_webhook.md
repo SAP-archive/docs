@@ -79,7 +79,7 @@ The default body format is as follows:
 ~~~
 
 <br><br>
-In custom HTTP request bodies, you can reference conversation variables (like memory variables, NLP information, etc.) in place of hard-coded values, for example, `{{memory.person.raw}}`. Check all the [variables](https://cdn.cai.tools.sap/docs/concepts/builder_messages#variables) you can use.
+In custom HTTP request bodies, you can reference conversation variables (like memory variables, NLP information, etc.) in place of hard-coded values, for example, `{{memory.person.raw}}`. Check all the [variables](https://cai.tools.sap/docs/concepts/builder_messages#variables) you can use.
 
 ![SAP Conversational AI - Webhook](//cdn.cai.tools.sap/man/webhook/body.png)
 
@@ -92,7 +92,7 @@ You can reuse specific configurations of authorizations, headers, and bodies in 
 
  You can manage these templates on the **Templates** tab.
  
- ![SAP Conversational AI - Webhook](//cdn.cai.tools.sap/man/webhook/templates-builder.png)
+![SAP Conversational AI - Webhook](//cdn.cai.tools.sap/man/webhook/templates-builder.png)
 
 ## Formatting the response of the webhook call
 
@@ -178,7 +178,7 @@ POST `https://api.cai.tools.sap/build/v1/dialog`
 ## Formatting the array of replies
 
 You can format objects in the array of reply as desired, depending on your needs when you request the Bot Builder API.
-If you are using the Bot Connector (that is, you have connected a channel on the SAP Conversational AI platform like Facebook Messenger, Slack, or a webchat), you need to follow the Bot Connector format:  **<a href="https://recast.ai/docs/concepts/structured-messages">Check the format to send rich messages</a>**
+If you are using the Bot Connector (that is, you have connected a channel on the SAP Conversational AI platform like Facebook Messenger, Slack, or a webchat), you need to follow the Bot Connector format:  **<a href="https://cai.tools.sap/docs/concepts/structured-messages">Check the format to send rich messages</a>**
 
 ~~~ json
 {

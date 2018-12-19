@@ -34,9 +34,9 @@ Here's the attribute of the payload your bot receive:
 
 | Key         | Value                                 |
 | ---         | ------                                |
-| chatId      | [String] The channel's native id of the chat   |
-| senderId    | [String] The channel's native id of the sender |
-| mentioned   | [Boolean] Wether the bot is mentioned or not   |
+| chatId      | [String] The channel's native ID of the chat   |
+| senderId    | [String] The channel's native ID of the sender |
+| mentioned   | [Boolean] Whether the bot is mentioned or not   |
 | origin      | [String] The origin of the message ('messenger', 'slack',...) |
 | message     | [Object] The message itself                    |
 
@@ -44,7 +44,7 @@ And here's the exact content of the \`message\` itself:
 
 | Key            | Value                                 |
 | -------------- | ------                                |
-| participant    | [String] The Id of the participant on Bot Connector                   |
-| conversation   | [String] The Id of the conversation on Bot Connector                  |
+| participant    | [String] The ID of the participant on Bot Connector                   |
+| conversation   | [String] The ID of the conversation on Bot Connector                  |
 | receivedAt     | [String] The date at which you received the message                   |
 | attachment     | [Object] An object containing the type and the content of the message |

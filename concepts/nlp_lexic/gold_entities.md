@@ -9,11 +9,11 @@ Keep an eye on it, as we're always improving the detection for current entities,
 
 | a - d | e - j | h - n | n - p | p - s | t - x |
 | --- | --- | --- | --- | --- | --- |
-| [`cardinal`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#cardinal) | [`email`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#email) | [`language`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#language) | [`number`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#number) | [`percent`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#percent) | [`temperature`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#temperature) |
-| [`color`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#color) | [`emoji`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#emoji) | [`location`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#location) | [`ordinal`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#ordinal) | [`person`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#person) |[`url`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#url) |
-| [`datetime`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#datetime) | [`ip`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#ip) | [`mass`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#mass) | [`organization`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#organization) | [`set`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#set) | [`volume`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#volume) |
-| [`distance`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#distance) | [`interval`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#interval) | [`money`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#money) | [`phone`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#phone) | [`sort`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#sort) | 
-| [`duration`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#duration) | [`job`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#job) | [`nationality`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#nationality) | [`pronoun`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#pronoun) | [`speed`](https://cdn.cai.tools.sap/docs/concepts/gold-entities#speed) |
+| [`cardinal`](https://cai.tools.sap/docs/concepts/gold-entities#cardinal) | [`email`](https://cai.tools.sap/docs/concepts/gold-entities#email) | [`language`](https://cai.tools.sap/docs/concepts/gold-entities#language) | [`number`](https://cai.tools.sap/docs/concepts/gold-entities#number) | [`percent`](https://cai.tools.sap/docs/concepts/gold-entities#percent) | [`temperature`](https://cai.tools.sap/docs/concepts/gold-entities#temperature) |
+| [`color`](https://cai.tools.sap/docs/concepts/gold-entities#color) | [`emoji`](https://cai.tools.sap/docs/concepts/gold-entities#emoji) | [`location`](https://cai.tools.sap/docs/concepts/gold-entities#location) | [`ordinal`](https://cai.tools.sap/docs/concepts/gold-entities#ordinal) | [`person`](https://cai.tools.sap/docs/concepts/gold-entities#person) |[`url`](https://cai.tools.sap/docs/concepts/gold-entities#url) |
+| [`datetime`](https://cai.tools.sap/docs/concepts/gold-entities#datetime) | [`ip`](https://cai.tools.sap/docs/concepts/gold-entities#ip) | [`mass`](https://cai.tools.sap/docs/concepts/gold-entities#mass) | [`organization`](https://cai.tools.sap/docs/concepts/gold-entities#organization) | [`set`](https://cai.tools.sap/docs/concepts/gold-entities#set) | [`volume`](https://cai.tools.sap/docs/concepts/gold-entities#volume) |
+| [`distance`](https://cai.tools.sap/docs/concepts/gold-entities#distance) | [`interval`](https://cai.tools.sap/docs/concepts/gold-entities#interval) | [`money`](https://cai.tools.sap/docs/concepts/gold-entities#money) | [`phone`](https://cai.tools.sap/docs/concepts/gold-entities#phone) | [`sort`](https://cai.tools.sap/docs/concepts/gold-entities#sort) | 
+| [`duration`](https://cai.tools.sap/docs/concepts/gold-entities#duration) | [`job`](https://cai.tools.sap/docs/concepts/gold-entities#job) | [`nationality`](https://cai.tools.sap/docs/concepts/gold-entities#nationality) | [`pronoun`](https://cai.tools.sap/docs/concepts/gold-entities#pronoun) | [`speed`](https://cai.tools.sap/docs/concepts/gold-entities#speed) |
 
 
 ## The 28 Gold Entities
@@ -624,7 +624,7 @@ Keep an eye on it, as we're always improving the detection for current entities,
 
 | Entity | Examples |
 | ------ | -------- |
-| `url` | https://cdn.cai.tools.sap, localhost:9000, api.cai.tools.sap/v2/request |
+| `url` | https://cai.tools.sap, localhost:9000, api.cai.tools.sap/v2/request |
 | **Key** | **Comments** |
 | `scheme` | String, the URL scheme |
 || Can be `http`, `https`, `mailto`, `ssh`, `git`, etc. |

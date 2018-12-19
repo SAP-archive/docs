@@ -84,7 +84,7 @@ In your code, when you request SAP Conversational AI and send a message, it will
 
 ![SAP Conversational AI versioning](https://cdn.cai.tools.sap/man/monitoring/versioning-deploy.png)
 
-You don't need to change the `request token` in your code because it's the same environment that you're requesting; you simply switch to a different version in the SAP Conversational AI settings.
+You don't need to change the `request token` in your code because it's the same environment that you're requesting; you simply switch to a different version on the **Settings** page.
 
 
 ## Monitoring

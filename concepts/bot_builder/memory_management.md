@@ -8,7 +8,7 @@ permalink: /concepts/memory-management
 
 Each conversation with a unique user has a memory object from the beginning to the end of the conversation. This memory persists during the entire conversation; you can update it at any time or clear it whenever you want.
 
-When a new conversation starts, the memory is an empty object (unless you want to start a new conversation with prefilled keys). The memory is stored in your [conversation state](https://cdn.cai.tools.sap/docs/concepts/conversation-state). It is returned in the [default body](https://cdn.cai.tools.sap/docs/concepts/code-and-webhook#body-configuration) of a webhook and after the Bot Builder API call.
+When a new conversation starts, the memory is an empty object (unless you want to start a new conversation with prefilled keys). The memory is stored in your [conversation state](https://cai.tools.sap/docs/concepts/conversation-state). It is returned in the [default body](https://cai.tools.sap/docs/concepts/code-and-webhook#body-configuration) of a webhook and after the Bot Builder API call.
 
 For example, your memory object could look like this:
 ~~~ json
@@ -64,7 +64,7 @@ Hello Bob
 
 ## How to manipulate memory in webhook custom code
 
-You can edit the memory in your code during a webhook call. To understand how to format your response, see [Custom code and webhooks](https://cdn.cai.tools.sap/docs/concepts/code-and-webhook).
+You can edit the memory in your code during a webhook call. To understand how to format your response, see [Custom code and webhooks](https://cai.tools.sap/docs/concepts/code-and-webhook).
 Here's an example of how to format the return of your webhook call and update the memory of the conversation:
 
 ~~~ json
@@ -81,10 +81,10 @@ Here's an example of how to format the return of your webhook call and update th
 
 `memory` will replace the actual memory of your bot (so be careful that you don't lose everything if you just want to change one of your memory keys to add all your other keys).
 
-You can also update the memory through an API call. For more information, see [Update a conversation](https://cdn.cai.tools.sap/docs/api-reference/#update-a-conversation) in the API Reference.
+You can also update the memory through an API call. For more information, see [Update a conversation](https://cai.tools.sap/docs/api-reference/#update-a-conversation) in the API Reference.
 
 ## How to start a conversation with memory
 
-You can start a conversation with prefilled information in the memory, and not wait until the first user input is analyzed and the first skills are triggered. However, this is only possible if you are using the Bot Builder directly (without the Bot Connector). To understand how to use the Bot Builder API to do this, see [/Dialog (Text)](https://cdn.cai.tools.sap/docs/api-reference/#dialog-endpoints) in the API Reference.
+You can start a conversation with prefilled information in the memory, and not wait until the first user input is analyzed and the first skills are triggered. However, this is only possible if you are using the Bot Builder directly (without the Bot Connector). To understand how to use the Bot Builder API to do this, see [/Dialog (Text)](https://cai.tools.sap/docs/api-reference/#dialog-endpoints) in the API Reference.
 
-If you're using Webchat, you can easily start a conversation by sending information in the memory. For more information, see  [Bot memory management](https://cdn.cai.tools.sap/docs/concepts/webchat#bot-memory-management).
+If you're using Webchat, you can easily start a conversation by sending information in the memory. For more information, see  [Bot memory management](https://cai.tools.sap/docs/concepts/webchat#bot-memory-management).

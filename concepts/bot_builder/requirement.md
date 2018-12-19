@@ -5,7 +5,7 @@ permalink: /concepts/requirements
 ---
 
 Requirements are either intents or entities that your skill needs to retrieve before executing 
-[actions](https://cdn.cai.tools.sap/docs/concepts/action).
+[actions](https://cai.tools.sap/docs/concepts/action).
 Requirements are pieces of information that are important in the conversation and that your bot can use, for example, the user's name or a location.
 
 Once a requirement is completed, the associated value is stored in the bot's memory for the entire conversation.
@@ -43,7 +43,7 @@ It can chain with other requirements or with actions.
 ### Optional conditions to validate the data provided by the user, with associated actions to execute if the validation fails
 
 You can define validators in a requirement to validate that the user input matches your needs.
-These validators are made up of **[conditions](https://cdn.cai.tools.sap/docs/concepts/condition)** and actions to execute in case of a validation error.
+These validators are made up of **[conditions](https://cai.tools.sap/docs/concepts/condition)** and actions to execute in case of a validation error.
 
 The validation fails if the condition is **true**. In such cases, the retrieved data is not stored in memory and the requirement is not completed. For example, if we want to get a city from the user, we can create a requirement that retrieves a location entity. We can add a validator to check that this location really is a city (and doesn't, for example, refer to a country). If the location isn't a city, we can then ask the user for a city. You could write it like this:
 ```

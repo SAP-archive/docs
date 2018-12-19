@@ -21,7 +21,7 @@ Ready? Click **+ New Bot** at the top right of the page and let's create your fi
 You can choose one or several predefined skills to use as a starting point. Let's select **Greetings**.
 You're free to modify them if you don't like them as such, or even delete them once you're ready to make your own.
 
-If you want to fork the skills later on, they're available here: [https://cdn.cai.tools.sap/scaffolder/starter-skills](https://cdn.cai.tools.sap/scaffolder/starter-skills)
+If you want to fork the skills later on, they're available here: [https://cai.tools.sap/scaffolder/starter-skills](https://cai.tools.sap/scaffolder/starter-skills)
 
 ![SAP Conversational AI create bot](https://cdn.cai.tools.sap/man/introduction/predefined-skills.png)
 

@@ -19,11 +19,11 @@ Many different formats are supported, enabling you to build an awesome user expe
 - **List**: Same purpose as a carousel, but presented as a vertical list so that you can see everything at once, whereas with the carousel you have to scroll. A list is a little bit smaller than a carousel though, and the images are smaller.
 - **Image**: How could you post entertaining GIFs otherwise?!
 
-![SAP Conversational AI - Messages types](https://cdn.cai.tools.sap/man/recast-ai-type-of-messages.png)
+![SAP Conversational AI - Message types](https://cdn.cai.tools.sap/man/recast-ai-type-of-messages.png)
 
 If your bot is connected to a channel through the Bot Connector, these messages types are adapted to the channel constraint and transformed, so the look and feel will probably change compared with what you see on the SAP Conversational AI platform.
 
-![SAP Conversational AI - Messages types](https://cdn.cai.tools.sap/man/bot-builder/test-card-recast-ai.png)
+![SAP Conversational AI - Message types](https://cdn.cai.tools.sap/man/bot-builder/test-card-recast-ai.png)
 
 ### Character limits
 
@@ -49,7 +49,7 @@ You can create all of the following variables:
 
 ## How to send rich messages from your code
 
-For a list of the rich messages supported and their format, see [Structured messages](https://cdn.cai.tools.sap/docs/concepts/structured-messages).
+For a list of the rich messages supported and their format, see [Structured messages](https://cai.tools.sap/docs/concepts/structured-messages).
 
 Sometimes, you want to interact with a database or external API before sending a reply to the user.
 To achieve that, you can create a **CALL WEBHOOK** action to interact with your own code, implement your own logic, and send back the responses built from the data you've gathered. Here's a JS snippet as an example. It assumes that you have a CALL WEBHOOK action calling your `/do_some_stuff` route.
@@ -106,4 +106,4 @@ app.listen(port, () => {
 })
 ~~~
 
-For more information, see [Custom code and webhooks](https://cdn.cai.tools.sap/docs/concepts/code-and-webhook).
+For more information, see [Custom code and webhooks](https://cai.tools.sap/docs/concepts/code-and-webhook).

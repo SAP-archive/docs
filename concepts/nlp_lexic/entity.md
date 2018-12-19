@@ -6,7 +6,7 @@ permalink: /concepts/entity
 
 ## Definition
 An entity is a **keyword** that is extracted from an expression.
-We automatically detect <a href="https://cdn.cai.tools.sap/docs/concepts/gold-entities" target="_blank" >28 different entities</a> such as Datetime, Location, Person, and so on.
+We automatically detect <a href="https://cai.tools.sap/docs/concepts/gold-entities" target="_blank" >28 different entities</a> such as Datetime, Location, Person, and so on.
 We call them **gold entities**.
 However, you're not limited to these gold entities. You can also tag your own **custom entities** to detect keywords depending on your bot's context, such as subway stations if you're building a transport assistant.
 
@@ -26,7 +26,7 @@ For example, when the gold entity \`tomorrow\` is detected in a sentence, a form
 }
 ~~~
 
-See all <a target="_blank" rel="noopener noreferrer" href="https://cdn.cai.tools.sap/docs/concepts/gold-entities">gold entities</a> and their enrichment.
+See all <a target="_blank" rel="noopener noreferrer" href="https://cai.tools.sap/docs/concepts/gold-entities">gold entities</a> and their enrichment.
 
 ## Custom entities
 
@@ -61,7 +61,7 @@ A **restricted** custom entity is used if you have a strict list of words to det
 
 To create a **restricted** custom entity:
 
-In SAP Conversational AI, go to *Entities*, click **CREATE**, and select **Restricted entity**. Then add values (synonyms) for this entity. You can also upload a CSV file or use the [gazette endpoint of the API](https://recast.ai/docs/api-reference/#gazettes) to quickly create a large list of synonyms.
+In SAP Conversational AI, go to *Entities*, click **CREATE**, and select **Restricted entity**. Then add values (synonyms) for this entity. You can also upload a CSV file or use the [gazette endpoint of the API](https://cai.tools.sap/docs/api-reference/#gazettes) to quickly create a large list of synonyms.
 
 ![synonyms](https://cdn.cai.tools.sap/man/nlp-lexic/synonym-list.png)
 

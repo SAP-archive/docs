@@ -138,7 +138,7 @@ window.webchatMethods = {
 
 ## Open-source version
 
-If you want to customize the style or add new functionalities that don't exist in the default hosted version, you can fork the open-source version on GitHub at <a href="https://github.com/SAPConversationalAI/webchat" alt="Github CAI Webchat" target="_blank">SAPConversationalAI/Webchat</a>.
+If you want to customize the style or add new functionalities that don't exist in the default hosted version, you can fork the open-source version on GitHub at <a href="https://github.com/SAPConversationalAI/webchat" alt="GitHub SAP Conversational AI Webchat" target="_blank">SAPConversationalAI/Webchat</a>.
 
 ### How to use it
 Please see the `README.md`. The open-source version is developed in ReactJS.
