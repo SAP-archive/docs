@@ -130,7 +130,7 @@ app.listen(app.get('port'), function () { console.log('App is listening on port 
 require 'sinatra'
 require 'sapcai'
 
-connect = sapcai::Connect.new('YOUR_REQUEST_TOKEN')
+connect = Sapcai::Connect.new('YOUR_REQUEST_TOKEN')
 
 set :port, 5000
 
@@ -183,7 +183,7 @@ app.run(port='5000')
 
 ~~~ php
 <?php
-use sapcai\Client;
+use Sapcai\Client;
 
 // Start Slim server
 $app = new \Slim\App();
