@@ -60,7 +60,8 @@ To train a **free** custom entity:
 A **restricted** custom entity is used if you have a strict list of words to detect and don't need automatic detection of the entity. No word can be recognized as an entity if it doesn’t appear in a closed list of synonyms. For example, you build a bot to help your customers order pizza. You want to detect all pizza names that your restaurant offers.
 
 To create a **restricted** custom entity:
-In SAP Conversational AI, go to *Entities*, click **CREATE**, and select **Restricted entity**. Then add values (synonyms) for this entity. You can also upload a CSV file or use the [gazette endpoint of the API](https://cdn.cai.tools.sap/docs/api-reference/#gazettes) to quickly create a large list of synonyms.
+
+In SAP Conversational AI, go to *Entities*, click **CREATE**, and select **Restricted entity**. Then add values (synonyms) for this entity. You can also upload a CSV file or use the [gazette endpoint of the API](https://recast.ai/docs/api-reference/#gazettes) to quickly create a large list of synonyms.
 
 ![synonyms](https://cdn.cai.tools.sap/man/nlp-lexic/synonym-list.png)
 

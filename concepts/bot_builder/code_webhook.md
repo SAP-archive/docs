@@ -154,7 +154,7 @@ POST `https://api.cai.tools.sap/build/v1/dialog`
     },
     "nlp": {
         "uuid": "b96bc782-6aba-4fac-aeaa-2326936b08bf",
-        "source": "Hello SAP Conversational AI",
+        "source": "Hello SAP",
         "intents": [
             {
                 "slug": "greetings",
@@ -178,7 +178,7 @@ POST `https://api.cai.tools.sap/build/v1/dialog`
 ## Formatting the array of replies
 
 You can format objects in the array of reply as desired, depending on your needs when you request the Bot Builder API.
-If you are using the Bot Connector (that is, you have connected a channel on the SAP Conversational AI platform like Facebook Messenger, Slack, or a webchat), you need to follow the Bot Connector format:  **<a href="https://cdn.cai.tools.sap/docs/concepts/structured-messages">Check the format to send rich messages</a>**
+If you are using the Bot Connector (that is, you have connected a channel on the SAP Conversational AI platform like Facebook Messenger, Slack, or a webchat), you need to follow the Bot Connector format:  **<a href="https://recast.ai/docs/concepts/structured-messages">Check the format to send rich messages</a>**
 
 ~~~ json
 {

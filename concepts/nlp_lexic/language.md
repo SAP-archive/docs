@@ -257,13 +257,13 @@ After the language has been detected, the following rules apply:
 ## Example of how the language is detected
 
 You have intents in French and English, but none in Spanish, and your bot's default language is French.
-* You receive an user utterance that we detect as Spanish:
+* You receive a user utterance that we detect as Spanish:
 We use French as the processing language because your bot doesn't handle Spanish, and return a JSON containing `fr` in the `processing_language` field, and `es` in the `language` field.
-* You send us an user utterance telling us it's English:
+* You send us a user utterance telling us it's English:
 We use English as the processing language and return a JSON containing `en` in the `processing_language` field and `en` in the `language` field.
-* You receive an user utterance that we detect as French:
+* You receive a user utterance that we detect as French:
 We use French as the processing language and return a JSON containing `fr` in the `processing_language` field and `fr` in the `language` field.
-* You send us an user utterance telling us it's Spanish:
+* You send us a user utterance telling us it's Spanish:
 We use French as the processing language because your bot doesn't handle Spanish, and return a JSON containing `fr` in the `processing_language` field and `es` in the `language` field.
 
 ## How the language is handled in a conversation
