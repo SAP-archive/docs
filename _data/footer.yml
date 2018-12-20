@@ -22,18 +22,18 @@ sections:
       #   url: "/concepts/"
       - title: "Entities lexic"
         external: true
-        url: "https://cdn.cai.tools.sap/docs/api-reference/#list-of-entities"
+        url: "https://cai.tools.sap/docs/api-reference/#list-of-entities"
   - title: "API REFERENCE"
     sections:
       - title: "NLP API"
         external: true
-        url: "https://cdn.cai.tools.sap/docs/api-reference"
+        url: "https://cai.tools.sap/docs/api-reference"
       - title: "Bot Builder API"
         external: true
-        url: "https://cdn.cai.tools.sap/docs/api-reference/#bot-builder-api"
+        url: "https://cai.tools.sap/docs/api-reference/#bot-builder-api"
       - title: "Bot Connector API"
         external: true
-        url: "https://cdn.cai.tools.sap/docs/api-reference/#bot-connector-api"
+        url: "https://cai.tools.sap/docs/api-reference/#bot-connector-api"
   - title: "SDKs"
     sections:
       - title: "Ruby"
@@ -58,16 +58,16 @@ sections:
     sections:
       - title: "Build your first chatbot"
         external: true
-        url: "https://cdn.cai.tools.sap/blog/build-your-first-bot-with-recast-ai/"
+        url: "https://cai.tools.sap/blog/build-your-first-bot-with-recast-ai/"
       - title: "NodeJS chatbot tutorial"
         external: true
-        url: "https://cdn.cai.tools.sap/blog/nodejs-chatbot-movie-bot/"
+        url: "https://cai.tools.sap/blog/nodejs-chatbot-movie-bot/"
       - title: "Python chatbot tutorial"
         external: true
-        url: "https://cdn.cai.tools.sap/blog/python-cryptobot/"
+        url: "https://cai.tools.sap/blog/python-cryptobot/"
       - title: "Chatfuel + SAP Conversational AI"
         external: true
-        url: "https://cdn.cai.tools.sap/blog/add-smalltalk-chatfuel-bot/"
+        url: "https://cai.tools.sap/blog/add-smalltalk-chatfuel-bot/"
 logos:
   - logo: "ion-logo-slack"
     title: "slack"

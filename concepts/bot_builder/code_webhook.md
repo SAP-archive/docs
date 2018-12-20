@@ -154,7 +154,7 @@ POST `https://api.cai.tools.sap/build/v1/dialog`
     },
     "nlp": {
         "uuid": "b96bc782-6aba-4fac-aeaa-2326936b08bf",
-        "source": "Hello SAP",
+        "source": "Hello SAP Conversational AI",
         "intents": [
             {
                 "slug": "greetings",

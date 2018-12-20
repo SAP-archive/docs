@@ -15,7 +15,7 @@ Below is an example of a `POST /dialog` request body with `memory` field. In thi
 ~~~ json
 {
   "message": {
-    "content":"Hello SAP",
+    "content":"Hello SAP Conversational AI",
     "type":"text"
   },
   "conversation_id": "CONVERSATION_ID",

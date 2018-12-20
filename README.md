@@ -1,6 +1,6 @@
 # SAP Conversational AI documentation
 
-This repository contains the documentation for the [SAP Conversational AI platform](https://cdn.cai.tools.sap).
+This repository contains the documentation for the [SAP Conversational AI platform](https://cai.tools.sap).
 The hosted version is [here](https://sapconversationalai.github.io/docs/).
 
 ## Installation

@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Find out our latest NLU, UX, DevOps and business news on our blog.
   We focus on understanding users’ inputs to help you build intelligent dialog based apps.
 # baseurl: "/docs" # the subpath of your site, e.g. /blog
-url: "https://cdn.cai.tools.sap" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://cai.tools.sap" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: recastai
 github_username: recastAI
 

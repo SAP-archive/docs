@@ -152,7 +152,7 @@ Keep an eye on it, as we're always improving the detection for current entities,
 
 | Entity | Examples |
 | ------ | -------- |
-| `email` | pierre-edouard.lieb@sap.com |
+| `email` | myemail@sap.com |
 | **Key** | **Comments** |
 | `local` | String, the local part of the email |
 | `tag` | String, the tag part of the email |
