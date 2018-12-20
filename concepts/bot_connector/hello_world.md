@@ -59,7 +59,7 @@ Python:
 <span class="code">pip install sapcai flask</span>
 
 Ruby:
-<span class="code">gem install sapcai sinatra</span>
+<span class="code">gem install Sapcai sinatra</span>
 
 PHP:
 <span class="code">composer require sapcai/sdk-php</span>
