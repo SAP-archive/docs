@@ -53,7 +53,7 @@ To train a **free** custom entity:
 
 ![tag entity](https://cdn.recast.ai/man/nlp-lexic/tag-entity.png)
 
-2) You can also provide a list of values for this entity without tagging it in sentences. In Recast.AI, go to *Entities* and just add synonyms. These values are combined with the expressions you annotated to improve the training of our entity detection system. **Caution:** If you provide too many examples of values in this list of synonyms, the algorithm will prioritize the fact that the word is present in this list and will use the information provided by the tagging (like the position of the entity in a sentence, the previous word, the length, and so on).
+2) You can also provide a list of values for this entity without tagging it in sentences. In Recast.AI, go to *Entities* and just add synonyms. These values are combined with the expressions you annotated to improve the training of our entity detection system. **Caution:** If you provide too many examples of values in this list of synonyms, the algorithm will prioritize the fact that the word is present in this list and will not use the information provided by the tagging (like the position of the entity in a sentence, the previous word, the length, and so on).
 
 ### How restricted custom entities work
 
