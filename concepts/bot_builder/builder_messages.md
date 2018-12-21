@@ -39,9 +39,9 @@ The main reason for adding a delay is so that users have enough time to read the
 
 In the screenshot above, the second message will be sent to the user 2 seconds after the first message.
 
-You can also configure a default delay that is used if you don't set a specific delay.
+In your bot settings, you can also configure a default delay that is used if you don't set a specific delay.
 
-SCREENSHOT AGAIN
+![Recast.AI - Default delay](https://cdn.recast.ai/man/recast-ai-default-delay.png)
 
 If you don't set any delay, the messages are sent consecutively as usual.
 
