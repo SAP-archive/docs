@@ -35,7 +35,7 @@ You can use custom entities for three different reasons:
 
 1) You want to detect all possible occurrences of something in a sentence. For example, you're building a transport bot and you want to detect all subway stations.
 
-2) You want to understand if something is present or not in a sentence. 
+2) You want to understand if something is present or not in a sentence.
 
 3) Entities have an influence on intent detection. You can create a custom entity unique to an intent to facilitate this intent’s detection.
 
@@ -53,7 +53,7 @@ To train a **free** custom entity:
 
 ![tag entity](https://cdn.cai.tools.sap/man/nlp-lexic/tag-entity.png)
 
-2) You can also provide a list of values for this entity without tagging it in sentences. In SAP Conversational AI, go to *Entities* and just add synonyms. These values are combined with the expressions you annotated to improve the training of our entity detection system. **Caution:** If you provide too many examples of values in this list of synonyms, the algorithm will prioritize the fact that the word is present in this list and will use the information provided by the tagging (like the position of the entity in a sentence, the previous word, the length, and so on).
+2) You can also provide a list of values for this entity without tagging it in sentences. In SAP Conversational AI, go to *Entities* and just add synonyms. These values are combined with the expressions you annotated to improve the training of our entity detection system. **Caution:** If you provide too many examples of values in this list of synonyms, the algorithm will prioritize the fact that the word is present in this list and will not use the information provided by the tagging (like the position of the entity in a sentence, the previous word, the length, and so on).
 
 ### How restricted custom entities work
 
@@ -84,15 +84,15 @@ With this checkbox selected, the bot now successfully maps the pronoun *it* to t
 <img src='https://cdn.cai.tools.sap/man/nlp-lexic/entity-and-pronoun-resolved.png' width='380px' />
 
 The following are not supported:
- 
+
 * Split antecedents
 
   This is where you have more than one entity (for example, *Check whether Harry and Sally are available*) before a pronoun is used that encompasses these multiple entities (for example, *Set up a meeting with them*).
- 
+
 * Cataphora
 
-  This is the use of a pronoun that refers to or stands for a subsequent entity (for example, *When she arrives, let Sally know I’ll be waiting in the conference room*). 
- 
+  This is the use of a pronoun that refers to or stands for a subsequent entity (for example, *When she arrives, let Sally know I’ll be waiting in the conference room*).
+
 Remember to set a message that your bot can use if it is unable to map the pronoun to an entity. For example, if your bot is unable to map the pronoun *her* to a person, you might want to set the message *Sorry, can you please name the person?* To do this, first open the skill. Under **Requirements**, click **EDIT REPLIES** next to **If #person is missing** and enter the message.
 
 ![SAP Conversational AI gold entities](https://cdn.cai.tools.sap/man/nlp-lexic/edit-replies.png)

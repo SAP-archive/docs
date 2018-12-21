@@ -29,6 +29,22 @@ If your bot is connected to a channel through the Bot Connector, these messages 
 
 On the platform, we display a character limit for every message. For example, a text message has a limit of 640 characters. This isn't a real limitation; you can still create a text message with more characters. It serves as an indication based on what Facebook Messenger will accept. So if you're using Messenger, it's a good idea to observe the character limit; otherwise your messages won't be posted in the user's conversation.
 
+### Message delay
+
+You can add a delay of up to 5 seconds between each message in a group of messages. 
+
+The main reason for adding a delay is so that users have enough time to read the message before your bot sends the next one. In a chat interface, this is especially important because each new message moves the previous message up. Also, dropping several messages with no delay can feel a little ... robotic! Another important reason for adding a delay is to give your bot personality. For example, you might want to add a short delay to make it look as though your bot is thinking! But be careful not to make your delays too long, so that users aren't waiting unnecessarily.
+
+![Recast.AI - Specific delay](https://cdn.recast.ai/man/recast-ai-specific-delay.png)
+
+In the screenshot above, the second message will be sent to the user 2 seconds after the first message.
+
+In your bot settings, you can also configure a default delay that is used if you don't set a specific delay.
+
+![Recast.AI - Default delay](https://cdn.recast.ai/man/recast-ai-default-delay.png)
+
+If you don't set any delay, the messages are sent consecutively as usual.
+
 ### Variables
 
 You can dynamically inject the content gathered from the conversation in the bot replies by using double brace syntax. For example, if your bot asks for the user's name as a requirement, the name is added to the bot's memory once the requirement is completed. You can then create a text message (or any other message actually) filled with "Hello {{memory.username.raw}}", where `{{memory.username.raw}}` is replaced with the actual username.
