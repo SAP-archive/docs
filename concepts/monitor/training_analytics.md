@@ -125,6 +125,14 @@ Two intents may be too close semantically to be efficiently distinguished. A sig
 ### Split intent
 If an intent has both low precision and low recall, while the recall scores of the other intents are acceptable, it may reflect a use case that is too broad semantically. Try splitting this intent into several intents.
 
+## Reality check
+
+This helps you to ensure that your dataset represents reality as far as possible. 
+
+Before you can carry out a reality check, you must first upload a validation file.
+
+Under **Make your dataset closer to reality**, choose an intent in the dropdown. You’ll then get metrics about how close your training dataset is to reality (from your validation file), as well as suggestions to improve your dataset. For example, you can find the length of the expressions in your training dataset compared with the medium length of the sentences sent by your users. You can also find the most important words in your intent compared with the most important words when your users chat. If some words are missing in your dataset, or if some words are never used by your users, we provide tips to help you solve the issue.
+
 ## Your entity detection benchmark
 
 We split the expressions inside each intent into two parts: 90% is used for training, 10% is used to evaluate the custom entity detection. The evaluation is simple: We detect each custom entity in each sentence, based on the knowledge we have from the training dataset. We check if each word has been properly detected as a custom entity or as a simple word. We repeat this process five times to enforce randomness in the splits. This results in four metrics between 0 and 1 for each entity (**Accuracy**, **Precision**, **Recall**, and **F1 score**) and four global metrics for the entire dataset.
@@ -143,5 +151,3 @@ You’re using the same value too many times in this entity. This can be intenti
 
 ### Remove mistagging errors
 A custom entity is always confused with another one. You may have a tagging issue. For example, some values may be tagged in both entities, or an entity is mistagged. If it’s not a mistagging issue, the entities may be too similar; check whether you can merge them.
-
-
