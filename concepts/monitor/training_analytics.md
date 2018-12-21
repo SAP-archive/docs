@@ -125,6 +125,13 @@ Two intents may be too close semantically to be efficiently distinguished. A sig
 ### Split intent
 If an intent has both low precision and low recall, while the recall scores of the other intents are acceptable, it may reflect a use case that is too broad semantically. Try splitting this intent into several intents.
 
+## Reality Check
+
+This tips are only available if you have a validation file.
+You can select an intent in the dropdown and then have metrics about how the reality (from your validation file) and the training dataset are different.
+The goal is too have a dataset that represent the reality as best as possible.
+You can find the length of your expressions in your training compared to the medium length of the sentences sent by your users. You can find the most important words in your intent compared to the most important words when your users chat. If some words are missing in your dataset, or if some words are never used by your users, you'll have a tip describing what you can do to solve this issue.
+
 ## Your entity detection benchmark
 
 We split the expressions inside each intent into two parts: 90% is used for training, 10% is used to evaluate the custom entity detection. The evaluation is simple: We detect each custom entity in each sentence, based on the knowledge we have from the training dataset. We check if each word has been properly detected as a custom entity or as a simple word. We repeat this process five times to enforce randomness in the splits. This results in four metrics between 0 and 1 for each entity (**Accuracy**, **Precision**, **Recall**, and **F1 score**) and four global metrics for the entire dataset.
@@ -143,5 +150,3 @@ You’re using the same value too many times in this entity. This can be intenti
 
 ### Remove mistagging errors
 A custom entity is always confused with another one. You may have a tagging issue. For example, some values may be tagged in both entities, or an entity is mistagged. If it’s not a mistagging issue, the entities may be too similar; check whether you can merge them.
-
-## Reality Check
