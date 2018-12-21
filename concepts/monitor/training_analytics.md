@@ -129,7 +129,7 @@ If an intent has both low precision and low recall, while the recall scores of t
 
 This helps you to ensure that your dataset represents reality as far as possible. 
 
-Before you can carry out a reality check, you must first upload a validation file.
+Before you can carry out a reality check, you must first upload a validation file (see *How do I create a validation file?* above).
 
 Under **Make your dataset closer to reality**, choose an intent in the dropdown. You’ll then get metrics about how close your training dataset is to reality (from your validation file), as well as suggestions to improve your dataset. For example, you can find the length of the expressions in your training dataset compared with the medium length of the sentences sent by your users. You can also find the most important words in your intent compared with the most important words when your users chat. If some words are missing in your dataset, or if some words are never used by your users, we provide tips to help you solve the issue.
 
