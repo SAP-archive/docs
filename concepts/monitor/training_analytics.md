@@ -125,12 +125,13 @@ Two intents may be too close semantically to be efficiently distinguished. A sig
 ### Split intent
 If an intent has both low precision and low recall, while the recall scores of the other intents are acceptable, it may reflect a use case that is too broad semantically. Try splitting this intent into several intents.
 
-## Reality Check
+## Reality check
 
-This tips are only available if you have a validation file.
-You can select an intent in the dropdown and then have metrics about how the reality (from your validation file) and the training dataset are different.
-The goal is too have a dataset that represent the reality as best as possible.
-You can find the length of your expressions in your training compared to the medium length of the sentences sent by your users. You can find the most important words in your intent compared to the most important words when your users chat. If some words are missing in your dataset, or if some words are never used by your users, you'll have a tip describing what you can do to solve this issue.
+This helps you to ensure that your dataset represents reality as far as possible. 
+
+Before you can carry out a reality check, you must first upload a validation file.
+
+Under **Make your dataset closer to reality**, choose an intent in the dropdown. You’ll then get metrics about how close your training dataset is to reality (from your validation file), as well as suggestions to improve your dataset. For example, you can find the length of the expressions in your training dataset compared with the medium length of the sentences sent by your users. You can also find the most important words in your intent compared with the most important words when your users chat. If some words are missing in your dataset, or if some words are never used by your users, we provide tips to help you solve the issue.
 
 ## Your entity detection benchmark
 
