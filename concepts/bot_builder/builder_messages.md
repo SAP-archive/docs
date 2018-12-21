@@ -31,9 +31,9 @@ On the platform, we display a character limit for every message. For example, a 
 
 ### Message delay
 
-You can add a specific delay between each message in a group of messages. This delay should be between 0 and 5 seconds so that users aren't waiting unnecessarily for the message to appear.
+You can add a delay of up to 5 seconds between each message in a group of messages. 
 
-The main reason for adding a delay is so that users have enough time to read the message before your bot sends the next one. In a chat interface, this is especially important because each new message moves the previous message up. Also, dropping several messages with no delay can feel a little ... robotic! Another important reason for adding a delay is to give your bot personality. For example, you might want to add a short delay to pretend that your bot is thinking!
+The main reason for adding a delay is so that users have enough time to read the message before your bot sends the next one. In a chat interface, this is especially important because each new message moves the previous message up. Also, dropping several messages with no delay can feel a little ... robotic! Another important reason for adding a delay is to give your bot personality. For example, you might want to add a short delay to make it look as though your bot is thinking! But be careful not to make your delays too long, so that users aren't waiting unnecessarily.
 
 ![Recast.AI - Specific delay](https://cdn.recast.ai/man/recast-ai-specific-delay.png)
 
