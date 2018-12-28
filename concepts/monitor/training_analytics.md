@@ -38,16 +38,18 @@ For multilingual bots, please upload one file for each supported language.
 
 **File format**
 
-Your file must be a valid CSV file. It must end with .csv and the separator must be a comma “,”.
+Your file must be a valid CSV file. It must end with .csv and the separator must be a comma “,”. If you want to add quotes in your expression or intent, you must use the quote characters two times in front of and at the end of the expected quoted word(s).
 For example, it should look like this:
 
-~~~ json
-“expressions”,”intents”
-“Hello”,”greetings”
-“Hi”,”greetings”
-“What’s the weather in Paris”,”weather”
+~~~
+"intent","expression"
+"greetings","Hello"
+"greetings","Hi"
+"weather","What’s the weather in Paris"
+"translation","What means ""Bonjour"" in french?"
 ~~~
 
+<br/>
 **Content**
 
 The goal of this file is to represent reality, that is, to show how users use your bot. Real user entries should include dedicated vocabulary, typos, etc. The proportion to which each intent is present in your file should also reflect the way real users use your bot. Here are some guidelines:
@@ -86,7 +88,7 @@ Upload your file to the platform. We'll analyze it and provide feedback. For exa
 
 For your bot users, a low precision means *The bot always thinks I'm talking about A, no matter what I say!*
 
-**Recall** is also a metric calculated per intent. For each intent, it measures the proportion of correct predictions out of all the entries belonging to this intent. It answers the question *Out of all the times my bot was supposed to detect this intent, how many times did it do so?* Low recall usually signifies the relevant intent needs more training, for example, by adding more sentences to enrich the training. 
+**Recall** is also a metric calculated per intent. For each intent, it measures the proportion of correct predictions out of all the entries belonging to this intent. It answers the question *Out of all the times my bot was supposed to detect this intent, how many times did it do so?* Low recall usually signifies the relevant intent needs more training, for example, by adding more sentences to enrich the training.
 
 For your bot users, a low recall means *I can't get the bot to understand that I want to do B!*
 
@@ -114,10 +116,10 @@ Here's a prioritized list of the suggestions we may make.
 We can detect that a lot of testing examples of some intents are falsely predicted as another intent. Moreover, we check if the number of training examples of this intent is more than 50% larger than the median number of examples in your dataset (it is said to be unbalanced). As a result, the algorithm may learn to increase the importance and detection rate of this intent. To prevent that, we advise removing any misclassified examples.
 
 ### Avoid duplicates
-Machine learning algorithms are excellent at predicting the results of data that they encountered during the training step. Duplicates could end up in the training set and testing set, and abnormally improve the benchmark results. 
+Machine learning algorithms are excellent at predicting the results of data that they encountered during the training step. Duplicates could end up in the training set and testing set, and abnormally improve the benchmark results.
 
 ### Add expressions
-We check if some intents have a low **recall** (see definition above). Since there is no balance problem in your dataset, our machine learning strategy is unable to capture the globality of the semantic complexity of this intent. You may be able to solve this by adding more training examples. 
+We check if some intents have a low **recall** (see definition above). Since there is no balance problem in your dataset, our machine learning strategy is unable to capture the globality of the semantic complexity of this intent. You may be able to solve this by adding more training examples.
 
 ### Merge intents
 Two intents may be too close semantically to be efficiently distinguished. A significant part of the error of one intent is directed toward the second one, and vice versa. Merging them may help improve the bot’s flow.
@@ -127,7 +129,7 @@ If an intent has both low precision and low recall, while the recall scores of t
 
 ## Reality check
 
-This helps you to ensure that your dataset represents reality as far as possible. 
+This helps you to ensure that your dataset represents reality as far as possible.
 
 Before you can carry out a reality check, you must first upload a validation file (see *How do I create a validation file?* above).
 
@@ -144,10 +146,10 @@ Your confusion matrix is used to gain further insight into entities that may cla
 ## Tips to improve your entity detection
 
 ### Remove values
-Too many words are tagged as custom entities in your chatbot. Custom entities should be used and tagged on words only if you really need them to detect and retrieve key information from your users. 
+Too many words are tagged as custom entities in your chatbot. Custom entities should be used and tagged on words only if you really need them to detect and retrieve key information from your users.
 
 ### Add different values
-You’re using the same value too many times in this entity. This can be intentional if you want to check that something is present or not (and you don’t need to detect several values). If this is the case, please ignore this tip. If not, you may want to either delete this entity because you’re not really using it, or add different values. 
+You’re using the same value too many times in this entity. This can be intentional if you want to check that something is present or not (and you don’t need to detect several values). If this is the case, please ignore this tip. If not, you may want to either delete this entity because you’re not really using it, or add different values.
 
 ### Remove mistagging errors
 A custom entity is always confused with another one. You may have a tagging issue. For example, some values may be tagged in both entities, or an entity is mistagged. If it’s not a mistagging issue, the entities may be too similar; check whether you can merge them.
