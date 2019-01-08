@@ -31,17 +31,17 @@ On the platform, we display a character limit for every message. For example, a 
 
 ### Message delay
 
-You can add a delay of up to 5 seconds between each message in a group of messages. 
+You can add a delay of up to 5 seconds between each message in a group of messages.
 
 The main reason for adding a delay is so that users have enough time to read the message before your bot sends the next one. In a chat interface, this is especially important because each new message moves the previous message up. Also, dropping several messages with no delay can feel a little ... robotic! Another important reason for adding a delay is to give your bot personality. For example, you might want to add a short delay to make it look as though your bot is thinking! But be careful not to make your delays too long, so that users aren't waiting unnecessarily.
 
-![Recast.AI - Specific delay](https://cdn.recast.ai/man/recast-ai-specific-delay.png)
+![SAP Conversational AI - Specific delay](https://cdn.cai.tools.sap/man/recast-ai-specific-delay.png)
 
 In the screenshot above, the second message will be sent to the user 2 seconds after the first message.
 
 In your bot settings, you can also configure a default delay that is used if you don't set a specific delay.
 
-![Recast.AI - Default delay](https://cdn.recast.ai/man/recast-ai-default-delay.png)
+![SAP Conversational AI - Default delay](https://cdn.cai.tools.sap/man/recast-ai-default-delay.png)
 
 If you don't set any delay, the messages are sent consecutively as usual.
 

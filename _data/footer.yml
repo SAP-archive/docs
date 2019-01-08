@@ -58,7 +58,7 @@ sections:
     sections:
       - title: "Build your first chatbot"
         external: true
-        url: "https://cai.tools.sap/blog/build-your-first-bot-with-recast-ai/"
+        url: "https://cai.tools.sap/blog/build-your-first-bot-with-sap-conversational-ai/"
       - title: "NodeJS chatbot tutorial"
         external: true
         url: "https://cai.tools.sap/blog/nodejs-chatbot-movie-bot/"
