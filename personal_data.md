@@ -7,7 +7,7 @@ permalink: /personal-data/
 
 ### Update your personal data
 
-If you are a bot developer and you want to update your username and/or your email address, please email sap-cai-privacy@sap.com from the email address associated with your SAP Conversational AI profile.
+If you are a bot developer and you want to update your username and/or your email address, click your avatar at the top right of the page in SAP Conversational AI and choose **Settings**.
 
 <br/>
 
