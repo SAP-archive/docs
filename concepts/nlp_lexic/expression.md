@@ -7,7 +7,7 @@ permalink: /concepts/expression
 ## Definition
 An expression is a sentence that your bot can understand –- it's basically something that a user might say to your bot. Expressions are organized into intents and constitute the entire knowledge of your bot. The more expressions you have, the more precisely your bot can understand its users. If you've added the languages English, French, German, or Spanish to an intent, and enter a new expression for the intent in any of those languages, the platform automatically suggests additional expressions in those languages. You can then easily add the suggested expressions to the intent and quickly build up the training dataset for your bot.  
 
-In an expression, you can annotate entities to make them appear in the SAP Conversational AI response and use them in your code.
+In an expression, you can annotate custom [entities](/concepts/entity) to train your bot to recognize key elements in hour sentences.
 
 ## Tips
 

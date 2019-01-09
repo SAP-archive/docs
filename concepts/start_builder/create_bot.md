@@ -8,7 +8,7 @@ permalink: /concepts/create-builder-bot
 
 Here are the first steps to understand the core concepts of the SAP Conversational AI platform. You'll then be able to build a chatbot that can manage an entire conversation with a user.
 
-An SAP Conversational AI chatbot is composed of two main elements: **Skills** and a **training dataset**.
+A chatbot is composed of two main elements: **Skills** and a **training dataset**.
 
 A **skill** is a block of conversation that has a clear purpose and that your bot can execute to achieve a goal. You need to configure these skills to build the scope of your bot.
 

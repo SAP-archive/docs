@@ -20,9 +20,8 @@ sections:
       #   url: "/concepts/"
       # - title: "ANALYSE A TRAINING"
       #   url: "/concepts/"
-      - title: "Entities lexic"
-        external: true
-        url: "https://cai.tools.sap/docs/concepts/gold-entities"
+      - title: "Gold Entities"
+        url: "/concepts/gold-entities"
   - title: "API REFERENCE"
     sections:
       - title: "NLP API"

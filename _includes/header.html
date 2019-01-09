@@ -3,19 +3,18 @@
 <header class="Header" role="banner">
   <div class="Header-logo">
     <a href="https://cai.tools.sap" target="_blank" rel="noopener noreferrer" class='flex flex-center'>
-      <img src="https://cdn.cai.tools.sap/website/home/logo-sap.png" class='ml2' alt="SAP" width='61' height='31'>
-      <p class='c-white'>Conversational AI</p>
+      <img src="https://cdn.cai.tools.sap/brand/sapcai/sap-cai-white.svg" alt="SAP Conversational AI logo"  height='40' width='171'/>
     </a>
     <a href="{{ "/" | relative_url }}">
       <p class="Header-logo-text">DOCS</p>
     </a>
   </div>
 
-  <a class="Header-link {% if current == 'concepts' %}active{% endif %}" href="{{ "/concepts/create-builder-bot" | relative_url }}">SAP Conversational AI Concepts</a>
+  <a class="Header-link {% if current == 'concepts' %}active{% endif %}" href="{{ "/concepts/create-builder-bot" | relative_url }}">Concepts</a>
 
-  <a class="Header-link {% if current == 'tutorials' %}active{% endif %}" target="_blank" rel="noopener noreferrer" href="https://cai.tools.sap/blog/category/tutorial/">Tutorials</a>
+  <a class="Header-link {% if current == 'tutorials' %}active{% endif %}" href="https://cai.tools.sap/blog/category/tutorial/">Tutorials</a>
 
-  <a class="Header-link {% if current == 'api-reference' %}active{% endif %}" target="_blank" rel="noopener noreferrer" href="https://cai.tools.sap/docs/api-reference/">API Reference</a>
+  <a class="Header-link {% if current == 'api-reference' %}active{% endif %}" href="https://cai.tools.sap/docs/api-reference/">API Reference</a>
 
   <a class="Header-link {% if current == 'faq' %}active{% endif %}" href="{{ "/faq/index" | relative_url }}">FAQ</a>
 </header>
