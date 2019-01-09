@@ -35,22 +35,44 @@ layout: default
 
   <div class='Home-content flex flex-center flex-content-center flex-column'>
     <h1 class='title mt4 mb4'>How can we help ?</h1>
-    <div class='cardContent flex flex-wrap flex-center flex-content-center mb3'>
 
-      {% comment %} <a href='#'> {% endcomment %}
-      {% comment %}   <div class='card m3 rounded p3'> {% endcomment %}
-      {% comment %}     <div class='card-title mb2'> {% endcomment %}
-      {% comment %}       Get Started with SAP Conversational AI {% endcomment %}
-      {% comment %}     </div> {% endcomment %}
-      {% comment %}     <div class='card-description mb2'> {% endcomment %}
-      {% comment %}       Understand what's the SAP Conversational AI platform and technology and build your first chatbox. {% endcomment %}
-      {% comment %}     </div> {% endcomment %}
-      {% comment %}     <div class='card-goTo flex flex-center'> {% endcomment %}
-      {% comment %}       <span>Lean more </span> {% endcomment %}
-      {% comment %}       <span class='icon ion-md-arrow-round-forward ml1'/> {% endcomment %}
-      {% comment %}     </div> {% endcomment %}
-      {% comment %}   </div> {% endcomment %}
-      {% comment %} </a> {% endcomment %}
+    <div class='cardContent flex flex-wrap flex-center flex-content-center mb3'>
+      <a href='https://cai.tools.sap/blog/how-to-migrate-your-bot'>
+        <div class='card rounded p3 m3'>
+          <div class='card-title mb2'>
+            How migrate from recast.ai to cai.tools.sap
+          </div>
+          <div class='card-description mb2'>
+            Our domain name has been changed. Please check if your bots need an update to keep working efficiently.
+          </div>
+
+          <div class='card-goTo flex flex-center'>
+            <span>Here is how to ensure a smooth transition</span>
+            <span class='icon ion-md-arrow-round-forward ml1'/>
+          </div>
+
+        </div>
+      </a>
+
+      <a href='https://cai.tools.sap/blog/build-your-first-bot-with-sap-conversational-ai/'>
+        <div class='card rounded p3 m3'>
+          <div class='card-title mb2'>
+            Create your first bot
+          </div>
+          <div class='card-description mb2'>
+            Understand how to create your first bot on Conversational AI from A to Z.
+          </div>
+
+          <div class='card-goTo flex flex-center'>
+            <span>Follow this tutorial</span>
+            <span class='icon ion-md-arrow-round-forward ml1'/>
+          </div>
+
+        </div>
+      </a>
+    </div>
+
+    <div class='cardContent flex flex-wrap flex-center flex-content-center mb3'>
 
       <a href='{{ "/concepts/train-your-bot" | relative_url }}'>
         <div class='card m3 rounded p3'>
@@ -84,21 +106,6 @@ layout: default
         </div>
       </a>
 
-      {% comment %} <a href='#'> {% endcomment %}
-      {% comment %}   <div class='card m3 rounded p3'> {% endcomment %}
-      {% comment %}     <div class='card-title mb2'> {% endcomment %}
-      {% comment %}       Improve and Monitor your bot {% endcomment %}
-      {% comment %}     </div> {% endcomment %}
-      {% comment %}     <div class='card-description mb2'> {% endcomment %}
-      {% comment %}       Learn how monitor your bot during each steps of its existence and continue improving it all the time. {% endcomment %}
-      {% comment %}     </div> {% endcomment %}
-      {% comment %}     <div class='card-goTo flex flex-center'> {% endcomment %}
-      {% comment %}       <span>Lean more </span> {% endcomment %}
-      {% comment %}       <span class='icon ion-md-arrow-round-forward ml1'/> {% endcomment %}
-      {% comment %}     </div> {% endcomment %}
-      {% comment %}   </div> {% endcomment %}
-      {% comment %} </a> {% endcomment %}
-    {% comment %} </div> {% endcomment %}
 
     {%- include contact.html -%}
 
