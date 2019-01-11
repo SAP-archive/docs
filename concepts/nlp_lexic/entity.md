@@ -55,7 +55,6 @@ To train a **free** custom entity:
 
 2) You can also provide a list of values for this entity without tagging it in sentences. In SAP Conversational AI, go to *Entities* and just add synonyms. These values are combined with the expressions you annotated to improve the training of our entity detection system. **Caution:** If you provide too many examples of values in this list of synonyms, the algorithm will give more weight to the list of synonyms and less to the contextual information of the tagged expressions.
 
-
 ### How restricted custom entities work
 
 A **restricted** custom entity is used if you have a strict list of words to detect and don't need automatic detection of the entity. No word can be recognized as an entity if it doesn’t appear in a closed list of synonyms. For example, you build a bot to help your customers order pizza. You want to detect all pizza names that your restaurant offers.
@@ -69,6 +68,72 @@ In SAP Conversational AI, go to *Entities*, click **CREATE**, and select **Restr
 You can define a strictness parameter that is used to determine if a word matches a given value in your list. With a strictness of 100, a word must exactly match an entry of the gazette to be detected as such.
 
 You can still tag a **restricted** custom entity in your sentences, but it will not help entity detection. It will just provide additional information for intent classification.
+
+## Custom entity enrichments
+
+Whenever an entity is detected, the JSON returned by the NLP API is enriched with
+additional information about the entity.
+
+For example:
+
+~~~ json
+{
+  "formatted": "Thursday, 06 October 2017 at 09:00:00 AM",
+  "iso": "2016-10-06T09:00:00Z",
+  "accuracy": "day",
+  "chronology": "future",
+  "raw": "tomorrow",
+  "confidence": 0.92
+}
+~~~
+
+Enrichments for gold entities are fixed by the API and cannot be configured but it is now possible to configure additional enrichments for custom entities.
+
+This configuration is done in two steps:
+- Define new JSON keys
+- Define specific enrichments for these keys
+
+### Key
+
+You can create new JSON keys by providing a name and a default enrichment.
+
+![new key](https://cdn.cai.tools.sap/man/nlp-lexic/new_custom_key.png)
+
+![keys](https://cdn.cai.tools.sap/man/nlp-lexic/new_custom_key_2.png)
+
+An enrichment must be a [valid JSON value](https://www.json.org/)
+
+Keys are language independent while enrichments are language dependent.
+
+### Specific enrichment
+
+For a key, its default enrichment can be overridden with specific enrichments.
+A single key can have several specific enrichments.
+
+A specific enrichment is configured with:
+- A valid JSON value
+- A list of entity values
+
+![enrichments](https://cdn.cai.tools.sap/man/nlp-lexic/specific_enrichments.png)
+
+The list of entity values is used at runtime. When a custom entity is detected, the corresponding value
+is compared to this list of entity values to decide which specific enrichment should be applied.
+
+For example, with our `#CHEESE` entity and its enrichments, if the value `beaufort` is
+detected in a sentence, the enriched JSON will be:
+
+~~~ json
+{
+  "raw": "beaufort",
+  "value": "beaufort",
+  "confidence": 0.92,
+  "deliciousness": 2
+}
+~~~
+
+For a restricted entity, the list of entity values will be a subset of the entity synonyms.
+
+For a free entity, the list of entity values is free and manually created. Additionally, a matching strictness can be configured for a free entity.
 
 ## References between entities
 
