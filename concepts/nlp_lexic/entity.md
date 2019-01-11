@@ -74,7 +74,7 @@ You can still tag a **restricted** custom entity in your sentences, but it will 
 Whenever an entity is detected, the JSON returned by the NLP API is enriched with
 additional information about the entity.
 
-For example:
+For example, a datetime (gold entity):
 
 ~~~ json
 {
@@ -87,11 +87,23 @@ For example:
 }
 ~~~
 
-Enrichments for gold entities are fixed by the API and cannot be configured but it is now possible to configure additional enrichments for custom entities.
+Enrichments for gold entities are fixed by the SAP Conversational AI team and cannot be configured but it is now possible to configure additional enrichments for custom entities.
+
+You will be able to have additional informations like this:
+I create an entity "cheeses" for my shopping-assistant, when "tomato" will be detected in a sentence, I could have this JSON:
+~~~ json
+{
+  "value": "camembert",
+  "raw": "camembert",
+  "coming-from": "France, pays d'Auge",
+  "price": "1,3$",
+  "confidence": 0.92
+}
+~~~
 
 This configuration is done in two steps:
-- Define new JSON keys
-- Define specific enrichments for these keys
+- Define new JSON keys (like "coming-from" and "price" here)
+- Define specific enrichments for these keys (which price you want)
 
 ### Key
 
@@ -101,9 +113,9 @@ You can create new JSON keys by providing a name and a default enrichment.
 
 ![keys](https://cdn.cai.tools.sap/man/nlp-lexic/new_custom_key_2.png)
 
-An enrichment must be a [valid JSON value](https://www.json.org/)
+An enrichment value must be a [valid JSON value](https://www.json.org/)
 
-Keys are language independent while enrichments are language dependent.
+Keys are language independent while enrichments are language dependent. Eg: you create a key "price", it will always be present in your JSON in all language. If you doesn't define enrichment for this key, null will be sent, like  `{ "price": null }`
 
 ### Specific enrichment
 
@@ -126,8 +138,8 @@ detected in a sentence, the enriched JSON will be:
 {
   "raw": "beaufort",
   "value": "beaufort",
-  "confidence": 0.92,
-  "deliciousness": 2
+  "deliciousness": 2,
+  "confidence": 0.92
 }
 ~~~
 
