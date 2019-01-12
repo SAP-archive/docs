@@ -12,13 +12,13 @@ However, you're not limited to these gold entities. You can also tag your own **
 
 ## Gold entities
 
-All gold entities are detected automatically. This means that you cannot deactivate them and train them. To bring you a precise service with true added value, we enrich each gold entity with essential core information.
+All gold entities are detected automatically. This means that you cannot deactivate them and train them. To provide a precise service with true added value, we enrich each gold entity with essential core information.
 For example, when the gold entity \`tomorrow\` is detected in a sentence, a formatted version of the datetime that you can use as a reply is returned.
 
 ~~~ json
 {
-  "formatted": "Thursday, 06 October 2017 at 09:00:00 AM",
-  "iso": "2016-10-06T09:00:00Z",
+  "formatted": "Thursday, 06 October 2018 at 09:00:00 AM",
+  "iso": "2018-10-06T09:00:00Z",
   "accuracy": "day",
   "chronology": "future",
   "raw": "tomorrow",
@@ -71,15 +71,12 @@ You can still tag a **restricted** custom entity in your sentences, but it will 
 
 ## Custom entity enrichments
 
-Whenever an entity is detected, the JSON returned by the NLP API is enriched with
-additional information about the entity.
-
-For example, a datetime (gold entity):
+Whenever an entity is detected, the JSON returned by the NLP API is enriched with additional information about the entity. For example, the following JSON is for a datetime, which is a gold entity.
 
 ~~~ json
 {
-  "formatted": "Thursday, 06 October 2017 at 09:00:00 AM",
-  "iso": "2016-10-06T09:00:00Z",
+  "formatted": "Thursday, 06 October 2018 at 09:00:00 AM",
+  "iso": "2018-10-06T09:00:00Z",
   "accuracy": "day",
   "chronology": "future",
   "raw": "tomorrow",
@@ -87,23 +84,23 @@ For example, a datetime (gold entity):
 }
 ~~~
 
-Enrichments for gold entities are fixed by the SAP Conversational AI team and cannot be configured but it is now possible to configure additional enrichments for custom entities.
+Enrichments for gold entities are fixed by the SAP Conversational AI team and cannot be configured. However, you can configure additional enrichments for custom entities. For example, you create the custom entity `#CHEESE` for your shopping assistant. When "Camembert" is detected in a sentence, you could have this JSON:
 
-You will be able to have additional informations like this:
-I create an entity "cheeses" for my shopping-assistant, when "tomato" will be detected in a sentence, I could have this JSON:
 ~~~ json
 {
   "value": "camembert",
   "raw": "camembert",
-  "coming-from": "France, pays d'Auge",
-  "price": "1,3$",
+  "origin": "France, Pays d'Auge",
+  "price": "$1.30",
   "confidence": 0.92
 }
 ~~~
 
-This configuration is done in two steps:
-- Define new JSON keys (like "coming-from" and "price" here)
-- Define specific enrichments for these keys (which price you want)
+You do this configuration in two steps:
+
+1) Define new JSON keys (like "origin" and "price" in this example).
+
+2) Define specific enrichments for these keys (for example, the desired price).
 
 ### Key
 
@@ -113,13 +110,13 @@ You can create new JSON keys by providing a name and a default enrichment.
 
 ![keys](https://cdn.cai.tools.sap/man/nlp-lexic/new_custom_key_2.png)
 
-An enrichment value must be a [valid JSON value](https://www.json.org/)
+An enrichment value must be a [valid JSON value](https://www.json.org/).
 
-Keys are language independent while enrichments are language dependent. Eg: you create a key "price", it will always be present in your JSON in all language. If you doesn't define enrichment for this key, null will be sent, like  `{ "price": null }`
+Keys are language-independent, while enrichments are language-dependent. For example, if you create the key "price", it will always be present in your JSON in all languages. If you don't define an enrichment for this key, null will be sent, for example, `{ "price": null }`.
 
 ### Specific enrichment
 
-For a key, its default enrichment can be overridden with specific enrichments.
+The default enrichment for a key can be overridden with specific enrichments.
 A single key can have several specific enrichments.
 
 A specific enrichment is configured with:
@@ -129,10 +126,7 @@ A specific enrichment is configured with:
 ![enrichments](https://cdn.cai.tools.sap/man/nlp-lexic/specific_enrichments.png)
 
 The list of entity values is used at runtime. When a custom entity is detected, the corresponding value
-is compared to this list of entity values to decide which specific enrichment should be applied.
-
-For example, with our `#CHEESE` entity and its enrichments, if the value `beaufort` is
-detected in a sentence, the enriched JSON will be:
+is compared to this list of entity values to decide which specific enrichment should be applied. For example, in the case of our entity `#CHEESE` and its enrichments, if the value `beaufort` is detected in a sentence, the enriched JSON is as follows:
 
 ~~~ json
 {
@@ -143,9 +137,9 @@ detected in a sentence, the enriched JSON will be:
 }
 ~~~
 
-For a restricted entity, the list of entity values will be a subset of the entity synonyms.
+For a restricted entity, the list of entity values is a subset of the entity synonyms.
 
-For a free entity, the list of entity values is free and manually created. Additionally, a matching strictness can be configured for a free entity.
+For a free entity, the list of entity values is free and created manually. Additionally, you can configure a matching strictness for a free entity.
 
 ## References between entities
 
