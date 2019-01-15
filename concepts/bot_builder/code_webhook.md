@@ -8,14 +8,14 @@ permalink: /concepts/code-and-webhook
 At many points in your conversation, you most likely want to retrieve business information or connect to an external system to perform actions. You can do this through webhooks.
 A webhook is a simple HTTP call to your backend. To configure your HTTP call, click **CALL WEBHOOK** in the Bot Builder.
 
-![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/webhook.png)
+![SAP Conversational AI - Webhook](//cdn.cai.tools.sap/man/webhook/webhook.png)
 
 You can provide the full URL or route (starting with a '/') to be called by the Bot Builder. 
 If you provide a route, the **Bot webhook base URL** (configurable in your bot's settings) will be prepended to it.
 
 You can specify the HTTP method to use in your webhook call (GET, POST, PUT, or PATCH).
 
-![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/header.png)
+![SAP Conversational AI - Webhook](//cdn.cai.tools.sap/man/webhook/header.png)
 
 ## Authentication configuration
 
@@ -27,13 +27,13 @@ You have the following options:
 
 •	OAuth 2 authentication: A client ID, client secret, and authorization URL is passed with the request.
 
-![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/authentication.png)
+![SAP Conversational AI - Webhook](//cdn.cai.tools.sap/man/webhook/authentication.png)
 
 ## Header configuration
 
 HTTP headers are accommodated by configuring a key-value pair, where you can name keys and set a value to be passed along in the header.
 
-![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/webhook-header.png)
+![SAP Conversational AI - Webhook](//cdn.cai.tools.sap/man/webhook/webhook-header.png)
 
 ## Body configuration
 
@@ -80,20 +80,20 @@ The default body format is as follows:
 ~~~
 
 <br><br>
-In custom HTTP request bodies, you can reference conversation variables (like memory variables, NLP information, etc.) in place of hard-coded values, for example, `{{memory.person.raw}}`. Check all the [variables](https://recast.ai/docs/concepts/builder_messages#variables) you can use.
+In custom HTTP request bodies, you can reference conversation variables (like memory variables, NLP information, etc.) in place of hard-coded values, for example, `{{memory.person.raw}}`. Check all the [variables](https://cai.tools.sap/docs/concepts/builder_messages#variables) you can use.
 
-![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/body.png)
+![SAP Conversational AI - Webhook](//cdn.cai.tools.sap/man/webhook/body.png)
 
 
 ## Templates
 
 You can reuse specific configurations of authorizations, headers, and bodies in other skills by choosing **Templates** in the skill view.
 
-![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/templates-skill.png)
+![SAP Conversational AI - Webhook](//cdn.cai.tools.sap/man/webhook/templates-skill.png)
 
  You can manage these templates on the **Templates** tab.
  
- ![Recast.AI - Webhook](//cdn.recast.ai/man/webhook/templates-builder.png)
+![SAP Conversational AI - Webhook](//cdn.cai.tools.sap/man/webhook/templates-builder.png)
 
 ## Formatting the response of the webhook call
 
@@ -135,7 +135,7 @@ The `conversation` data you send back will update the state of your conversation
 
 The `replies` are sent in the body of the result of the main Bot Builder and will appear in the `messages` key:
 
-POST `https://api.recast.ai/build/v1/dialog`
+POST `https://api.cai.tools.sap/build/v1/dialog`
 <br>
 
 ~~~ json
@@ -155,7 +155,7 @@ POST `https://api.recast.ai/build/v1/dialog`
     },
     "nlp": {
         "uuid": "b96bc782-6aba-4fac-aeaa-2326936b08bf",
-        "source": "Hello Recast.AI",
+        "source": "Hello SAP Conversational AI",
         "intents": [
             {
                 "slug": "greetings",
@@ -179,7 +179,7 @@ POST `https://api.recast.ai/build/v1/dialog`
 ## Formatting the array of replies
 
 You can format objects in the array of reply as desired, depending on your needs when you request the Bot Builder API.
-If you are using the Bot Connector (that is, you have connected a channel on the Recast.AI platform like Facebook Messenger, Slack, or a webchat), you need to follow the Bot Connector format:  **<a href="https://recast.ai/docs/concepts/structured-messages">Check the format to send rich messages</a>**
+If you are using the Bot Connector (that is, you have connected a channel on the SAP Conversational AI platform like Facebook Messenger, Slack, or a webchat), you need to follow the Bot Connector format:  **<a href="https://cai.tools.sap/docs/concepts/structured-messages">Check the format to send rich messages</a>**
 
 ~~~ json
 {

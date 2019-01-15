@@ -12,7 +12,7 @@ Organizations are shared accounts, allowing groups of people to collaborate on m
 
 From your profile, you can create **private** and **public** organizations.
 
-![Recast.AI - Organization](https://cdn.recast.ai/man/organisation/create-org.png)
+![SAP Conversational AI - Organization](https://cdn.cai.tools.sap/man/organisation/create-org.png)
 
 Everyone can view public organizations, their bots, as well as their members. Private organizations can only be viewed by their members.
 
@@ -22,9 +22,9 @@ Within an organization, all members have the same bot permissions. However, only
 
 To transfer an existing bot, go to the **Settings** page for the bot. Under **Danger Zone**, you can can then transfer the bot to one of your organizations.
 
-![Recast.AI - Organization](https://cdn.recast.ai/man/organisation/transfer.png)
+![SAP Conversational AI - Organization](https://cdn.cai.tools.sap/man/organisation/transfer.png)
 
 ## What's the difference between my user account and an organization account?
 
-Your user account is your identity on Recast.AI. Your user account can be a member of any number of organizations.
+Your user account is your identity on SAP Conversational AI. Your user account can be a member of any number of organizations.
 

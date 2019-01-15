@@ -101,7 +101,7 @@ Your confusion matrix is used to gain further insight into intents that may clas
 
 You can order the confusion matrix by intent name and by performance. If you don't have any problems between your intents, you should have a confusion matrix with a beautiful diagonal since 100% of expressions match the right intent, as expected.
 
-![Recast.AI - Confusion Matrix](//cdn.recast.ai/man/monitoring/confusion-matrix.png)
+![SAP Conversational AI - Confusion Matrix](//cdn.cai.tools.sap/man/monitoring/confusion-matrix.png)
 
 
 ## Tips to improve your intent classification

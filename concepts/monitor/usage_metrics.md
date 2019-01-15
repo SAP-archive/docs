@@ -26,7 +26,7 @@ All metrics are filtered by one of the `languages` of your bot (except for some 
 <table>
 <tr>
 <td width='200px'>
-<img class='custom' src='https://cdn.recast.ai/website/bot-analytics/recast-ai-analytics-conversation.svg' width='150px'>
+<img class='custom' src='https://cdn.cai.tools.sap/website/bot-analytics/recast-ai-analytics-conversation.svg' width='150px'>
 </td>
 <td>
 <p>
@@ -42,7 +42,7 @@ The conversation ID can be the same for a user who has 3 conversations with your
 <table>
 <tr>
 <td width='200px'>
-<img class='custom' src='https://cdn.recast.ai/website/bot-analytics/recast-ai-analytics-users.svg' width='150px'>
+<img class='custom' src='https://cdn.cai.tools.sap/website/bot-analytics/recast-ai-analytics-users.svg' width='150px'>
 </td>
 <td>
 <p>
@@ -59,7 +59,7 @@ A user can have several conversations with a bot. Users are unique by channel. T
 <table>
 <tr>
 <td width='200px'>
-<img class='custom' src='https://cdn.recast.ai/website/bot-analytics/recast-ai-analytics-one-message.svg' width='150px'>
+<img class='custom' src='https://cdn.cai.tools.sap/website/bot-analytics/recast-ai-analytics-one-message.svg' width='150px'>
 </td>
 <td>
 <p>
@@ -75,7 +75,7 @@ All messages sent by your users are considered as messages received when the use
 <table>
 <tr>
 <td width='200px'>
-<img class='custom' src='https://cdn.recast.ai/website/bot-analytics/recast-ai-analytics-average-messages.svg' width='150px'>
+<img class='custom' src='https://cdn.cai.tools.sap/website/bot-analytics/recast-ai-analytics-average-messages.svg' width='150px'>
 </td>
 <td>
 <p>

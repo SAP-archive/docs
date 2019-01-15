@@ -6,13 +6,13 @@ permalink: /concepts/create-builder-bot
 
 ## Introduction
 
-Here are the first steps to understand the core concepts of the Recast.AI platform. You'll then be able to build a chatbot that can manage an entire conversation with a user.
+Here are the first steps to understand the core concepts of the SAP Conversational AI platform. You'll then be able to build a chatbot that can manage an entire conversation with a user.
 
-A Recast.AI chatbot is composed of two main elements: **Skills** and a **training dataset**.
+A chatbot is composed of two main elements: **Skills** and a **training dataset**.
 
 A **skill** is a block of conversation that has a clear purpose and that your bot can execute to achieve a goal. You need to configure these skills to build the scope of your bot.
 
-A **training dataset** is composed of many sentences organized into [intents](https://recastai.github.io/docs/concepts/intent) that represent what users say to your chatbot. The training dataset is used to train the bot to understand the user's needs and to trigger the right piece of conversation, reply correctly, and have a smooth conversation.
+A **training dataset** is composed of many sentences organized into [intents](https://sapconversationalai.github.io/docs/concepts/intent) that represent what users say to your chatbot. The training dataset is used to train the bot to understand the user's needs and to trigger the right piece of conversation, reply correctly, and have a smooth conversation.
 
 Ready? Click **+ New Bot** at the top right of the page and let's create your first chatbot.
 
@@ -21,9 +21,9 @@ Ready? Click **+ New Bot** at the top right of the page and let's create your fi
 You can choose one or several predefined skills to use as a starting point. Let's select **Greetings**.
 You're free to modify them if you don't like them as such, or even delete them once you're ready to make your own.
 
-If you want to fork the skills later on, they're available here: [https://recast.ai/scaffolder/starter-skills](https://recast.ai/scaffolder/starter-skills)
+If you want to fork the skills later on, they're available here: [https://cai.tools.sap/scaffolder/starter-skills](https://cai.tools.sap/scaffolder/starter-skills)
 
-![Recast.AI create bot](https://cdn.recast.ai/man/introduction/predefined-skills.png)
+![SAP Conversational AI create bot](https://cdn.cai.tools.sap/man/introduction/predefined-skills.png)
 
 ## Create your bot
 
@@ -37,7 +37,7 @@ If you want to fork the skills later on, they're available here: [https://recast
 
 5) Click **CREATE A BOT**.
 
-![Recast.AI create bot](https://cdn.recast.ai/man/introduction/create-bot.png)
+![SAP Conversational AI create bot](https://cdn.cai.tools.sap/man/introduction/create-bot.png)
 
 ## Discover your first intents and skills
 

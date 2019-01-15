@@ -28,7 +28,7 @@ If you don't set a delay, the messages are sent consecutively in the order you s
 
 <div class="flex flex-center mb3">
   <img
-    src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-text.svg"
+    src="https://cdn.cai.tools.sap/website/bot-connector/recast-ai-bc-text.svg"
     class="custom mb2 mr4"
     alt="Bot Connector - messenger text format"
   />
@@ -49,7 +49,7 @@ If you don't set a delay, the messages are sent consecutively in the order you s
 
 <div class="flex flex-center mb3">
   <img
-    src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-quickreplies.svg"
+    src="https://cdn.cai.tools.sap/website/bot-connector/recast-ai-bc-quickreplies.svg"
     class="custom m0 mb2 mr4"
     alt="Bot Connector - messenger Quick Replies format"
   />
@@ -78,7 +78,7 @@ If you don't set a delay, the messages are sent consecutively in the order you s
 
 <div class="flex flex-center mb3">
   <img
-    src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-cards.svg"
+    src="https://cdn.cai.tools.sap/website/bot-connector/recast-ai-bc-cards.svg"
     class="custom m0 mb2 mr4"
     alt="Bot Connector - Messenger Card format"
   />
@@ -110,7 +110,7 @@ If you don't set a delay, the messages are sent consecutively in the order you s
 
 <div class="flex flex-center mb3">
   <img
-    src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-buttons.svg"
+    src="https://cdn.cai.tools.sap/website/bot-connector/recast-ai-bc-buttons.svg"
     class="custom m0 mb2 mr4"
     alt="Bot Connector - Messenger Buttons format"
   />
@@ -140,7 +140,7 @@ If you don't set a delay, the messages are sent consecutively in the order you s
 
 <div class="flex flex-center mb3">
   <img
-    src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-carousel-01.svg"
+    src="https://cdn.cai.tools.sap/website/bot-connector/recast-ai-bc-carousel-01.svg"
     class="custom m0 mb2 mr4"
     alt="Bot Connector - Messenger Carousel format"
   />
@@ -174,7 +174,7 @@ If you don't set a delay, the messages are sent consecutively in the order you s
 
 <div class="flex flex-center mb3">
   <img
-    src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-list.svg"
+    src="https://cdn.cai.tools.sap/website/bot-connector/recast-ai-bc-list.svg"
     class="custom m0 mb2 mr4"
     alt="Bot Connector - Messenger List format"
   />
@@ -217,7 +217,7 @@ If you don't set a delay, the messages are sent consecutively in the order you s
 
 <div class="flex flex-center mb3">
   <img
-    src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-image.svg"
+    src="https://cdn.cai.tools.sap/website/bot-connector/recast-ai-bc-image.svg"
     class="custom m0 mb2 mr4"
     alt="Bot Connector - Messenger Picture format"
   />
@@ -238,7 +238,7 @@ If you don't set a delay, the messages are sent consecutively in the order you s
 
 <div class="flex flex-center mb3">
   <img
-    src="https://cdn.recast.ai/website/bot-connector/recast-ai-bc-video.svg"
+    src="https://cdn.cai.tools.sap/website/bot-connector/recast-ai-bc-video.svg"
     class="custom m0 mb2 mr4"
     alt="Bot Connector - Messenger Video format"
   />
@@ -259,7 +259,7 @@ If you don't set a delay, the messages are sent consecutively in the order you s
 
 ### Sending a message to a conversation
 
-<span class='label label-post'>POST</span> `https://api.recast.ai/connect/v1/conversations/:conversation_id/messages`
+<span class='label label-post'>POST</span> `https://api.cai.tools.sap/connect/v1/conversations/:conversation_id/messages`
 
 | Name | Type | Description | Constraints |
 | -----| ---- | ----------- | -------- |
@@ -268,7 +268,7 @@ If you don't set a delay, the messages are sent consecutively in the order you s
 
 ### Broadcast a message to all your bot's conversations
 
-<span class='label label-post'>POST</span> `https://api.recast.ai/connect/v1/messages`
+<span class='label label-post'>POST</span> `https://api.cai.tools.sap/connect/v1/messages`
 
 | Name | Type | Description | Constraints |
 | -----| ---- | ----------- | -------- |
