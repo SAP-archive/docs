@@ -15,7 +15,7 @@ Currently, we support the CSV- and the JSON format for importing your NLP data.
 Each entity can have multiple synonyms.
 To import synonyms, you need to specify the actual value of the synonym as well as the iso code indicating to which language the value belongs.
 
-<br><br>
+<br>
 
 | Key         | Required | Value  | Description                  |
 | ----------- | -------- | -------| ---------------------------- |
@@ -43,7 +43,7 @@ The import process using the merge option does not get executed if the value of 
 
 Each expression is defined through the language it is written in and a source/ sentence.
 
-<br><br>
+<br>
 
 | Key        | Required | Value  | Description                                                 |
 | ---------- | -------- | ------ | ----------------------------------------------------------- |
