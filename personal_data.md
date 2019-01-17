@@ -11,9 +11,11 @@ If you are a bot developer and you want to update your username and/or your emai
 
 <br/>
 
-### Delete your personal data
+### Delete your account
 
-If you are a bot developer and you want to delete your account and all bots associated with it, please email sap-cai-privacy@sap.com from the email address associated with your SAP Conversational AI profile.
+**Caution:** All bots that you created with this account will also be deleted, except for bots that you created from within an organization if there are still members of that organization (including another administrator). If there are still members of the organization, and you are the sole administrator, you must first make another member an administrator before you can delete your account.
+
+If you are a bot developer and you want to delete your account, click your avatar at the top right of the page in SAP Conversational AI, choose **Settings**, and then click **DELETE YOUR ACCOUNT**.
 
 <br/>
 
