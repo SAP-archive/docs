@@ -25,4 +25,28 @@ If the intent is **order-food**, some good expressions could be:
 * How about a salad?
 * A veggie burger and fries would do nicely.
 
+## Import a CSV
 
+The import should enable you to speed up your bot development process. 
+
+| Key        | Required | Value  | Description                                                 |
+| ---------- | -------- | ------ | ----------------------------------------------------------- |
+| expression | Yes      | String | A sentence or word group                                    |
+| language   | Yes      | String | The iso code representing the language                      |
+
+<br>
+
+Please format the CSV file as the following:
+(<a href="/assets/import-examples/expressions.csv" download>Example</a>)
+
+<br>
+
+| expression                | language |
+| ------------------------- | -------- |
+| I want to travel to NYC.  | en       |
+| Let's travel to New York! | en       |
+
+<br>
+There is a limit for importing expressions.
+You are allowed to import 10,000 expressions at once, while not exceeding the file size limit of 1 MB.
+Additionally, you cannot add the same expression multiple times to the same intent.
