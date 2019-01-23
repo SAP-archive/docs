@@ -70,7 +70,7 @@ You can define a strictness parameter that is used to determine if a word matche
 
 You can still tag a **restricted** custom entity in your sentences, but it will not help entity detection. It will just provide additional information for intent classification.
 
-### Import synonyms in your entity
+### Import synonyms with a CSV file
 
 To import synonyms, you need to specify the actual value of the synonym as well as the iso code indicating to which language the value belongs.
 
