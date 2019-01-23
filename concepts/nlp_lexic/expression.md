@@ -55,8 +55,9 @@ Let's travel to New York!;en
 
 <br>
 When importing expressions, please note the following:
-- You can import up to 10,000 expressions at the same time.
-- Be sure not to exceed the file size limit of 1 MB.
+
+* You can import up to 10,000 expressions at the same time.
+* Be sure not to exceed the file size limit of 1 MB.
 
 Additionally, you cannot add the same expression multiple times to the same intent.
 
