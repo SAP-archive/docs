@@ -37,7 +37,7 @@ The import should enable you to speed up your bot development process.
 <br>
 
 Please format the CSV file as the following:
-~~~JSON
+~~~ json
 expression;language
 I want to travel to NYC.;en
 Let's travel to New York!;en
