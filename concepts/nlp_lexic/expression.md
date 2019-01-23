@@ -25,7 +25,7 @@ If the intent is **order-food**, some good expressions could be:
 * How about a salad?
 * A veggie burger and fries would do nicely.
 
-## Import a CSV
+## Import expressions with a CSV file
 
 The import should enable you to speed up your bot development process. 
 
