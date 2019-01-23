@@ -82,7 +82,15 @@ To import synonyms, you need to specify the actual value of the synonym as well 
 | language    | Yes      | String | The iso code of the language |
 
 Please format the CSV file as the following:
-(<a href="/assets/import-examples/synonyms.csv" download>Example</a>)
+~~~ json
+value;language
+the big apple;en
+NYC;en
+new york;en
+new york city;en
+la grande pomme;fr
+nou yorke;fr
+~~~
 
 <br>
 
