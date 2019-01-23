@@ -84,13 +84,13 @@ Whenever an entity is detected, the JSON returned by the NLP API is enriched wit
 }
 ~~~
 
-Enrichments for gold entities are fixed by the SAP Conversational AI team and cannot be configured. However, you can configure additional enrichments for custom entities. For example, you create the custom entity `#CHEESE` for your shopping assistant. When "Camembert" is detected in a sentence, you could have this JSON:
+Enrichments for gold entities are fixed by the SAP Conversational AI team and cannot be configured. However, you can configure additional enrichments for custom entities. For example, you create the custom entity `#CHEESE` for your shopping assistant. When "Cheddar" is detected in a sentence, you could have this JSON:
 
 ~~~ json
 {
-  "value": "camembert",
-  "raw": "camembert",
-  "origin": "France, Pays d'Auge",
+  "value": "cheddar",
+  "raw": "cheddar",
+  "origin": "USA, Wisconsin",
   "price": "$1.30",
   "confidence": 0.92
 }
@@ -126,12 +126,12 @@ A specific enrichment is configured with:
 ![enrichments](https://cdn.cai.tools.sap/man/nlp-lexic/specific_enrichments.png)
 
 The list of entity values is used at runtime. When a custom entity is detected, the corresponding value
-is compared to this list of entity values to decide which specific enrichment should be applied. For example, in the case of our entity `#CHEESE` and its enrichments, if the value `beaufort` is detected in a sentence, the enriched JSON is as follows:
+is compared to this list of entity values to decide which specific enrichment should be applied. For example, in the case of our entity `#CHEESE` and its enrichments, if the value `mozzarella` is detected in a sentence, the enriched JSON is as follows:
 
 ~~~ json
 {
-  "raw": "beaufort",
-  "value": "beaufort",
+  "raw": "mozzarella",
+  "value": "mozzarella",
   "deliciousness": 2,
   "confidence": 0.92
 }
