@@ -34,5 +34,3 @@ sections:
 - title: Custom code and webhooks
   url: /concepts/code-and-webhook
 
-- title: Import NLP data
-  url: /concepts/import

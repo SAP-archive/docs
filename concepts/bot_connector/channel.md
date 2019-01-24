@@ -116,7 +116,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-close"></i></td>
     </tr>
     <tr>
         <td>Card</td>
@@ -152,7 +152,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-close"></i></td>
     </tr>
     <tr>
         <td>Buttons</td>
@@ -228,3 +228,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
     </tr>
     </tbody>
 </table>
+
+## Open-source Bot Connector
+
+The code to run the Bot Connector is hosted publicly at [https://github.com/SAPConversationalAI/bot-connector](https://github.com/SAPConversationalAI/bot-connector). This means that you or your enterprise can download the Bot Connector and run a chatbot within a virtual network. This is especially useful if you're apprehensive about opening your internal network to the internet. You can also vote for the next channels you want us to implement, or you can contribute yourself!
