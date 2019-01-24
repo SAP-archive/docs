@@ -70,24 +70,24 @@ You can define a strictness parameter that is used to determine if a word matche
 
 You can still tag a **restricted** custom entity in your sentences, but it will not help entity detection. It will just provide additional information for intent classification.
 
-### Import synonyms with a CSV file
+### Importing synonyms with a CSV file
 
-To import synonyms, you need to specify the actual value of the synonym as well as the iso code indicating to which language the value belongs.
+To import synonyms, you need to specify the actual value of the synonym as well as the ISO code for the language of the value.
 
 <br>
 
-| Key         | Required | Value  | Description                  |
-| ----------- | -------- | -------| ---------------------------- |
-| value       | Yes      | String | The synonym                  |
-| language    | Yes      | String | The iso code of the language |
+| Key         | Required | Value  | Description                   |
+| ----------- | -------- | -------| ----------------------------- |
+| value       | Yes      | String | The synonym                   |
+| language    | Yes      | String | The ISO code for the language |
 
-Please format the CSV file as the following:
+Please format the CSV file as follows:
 ~~~ json
 value;language
-the big apple;en
+The Big Apple;en
 NYC;en
-new york;en
-new york city;en
+New York;en
+New York City;en
 la grande pomme;fr
 nou yorke;fr
 ~~~
@@ -97,14 +97,16 @@ nou yorke;fr
 | value           | language |
 | --------------- | -------- |
 | NYC             | en       |
-| the big apple   | en       |
+| The Big Apple   | en       |
 | la grande pomme | fr       |
 
 <br>
 
-There is a limit for importing synonyms.
-You are allowed to import 10,000 synonyms at once, while not exceeding the file size limit of 1 MB.
-The import process using the merge option does not get executed if the value of the synonym is already existing.
+When importing synonyms, please note the following:
+
+* You can import up to 10,000 synonyms at the same time.
+* Be sure not to exceed the file size limit of 1 MB.
+* The import process using the merge option is not executed if the value of the synonym already exists.
 
 ## References between entities
 
