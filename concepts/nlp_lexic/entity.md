@@ -74,15 +74,15 @@ You can still tag a **restricted** custom entity in your sentences, but it will 
 
 To import synonyms, you need to specify the actual value of the synonym as well as the ISO code for the language of the value.
 
-<br>
 
 | Key         | Required | Value  | Description                   |
 | ----------- | -------- | -------| ----------------------------- |
 | value       | Yes      | String | The synonym                   |
 | language    | Yes      | String | The ISO code for the language |
 
+<br>
 Please format the CSV file as follows:
-~~~ json
+~~~
 value;language
 The Big Apple;en
 NYC;en
