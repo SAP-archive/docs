@@ -44,3 +44,6 @@ If you are a bot developer and one of your end users wants to access or delete t
 |Twitch|User name, for example, johnmiller|
 |Twitter|User name, for example, johnmiller|
 
+SAP CoPilot doesn't store the end-user’s conversation with the assistant beyond the UI session.
+
+In addition, at any point the user can go to the SAP CoPilot settings and perform a clear assistant activity to delete/clear the conversations. Alternatively, the user can get a report about their personal data stored, as documented in <a href="https://help.sap.com/viewer/5fc83c01bbdc4999b6bb8b915f395b7f/1811/en-US/f4b33e88f2b4414bb48f51d168a4f2e4.html" target="_blank" >User Offboarding</a> in the SAP CoPilot User Help. That report also offers a function for the user to entirely offboard SAP CoPilot; this would also delete the conversations with the assistant.
