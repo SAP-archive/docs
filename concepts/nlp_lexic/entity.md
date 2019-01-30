@@ -69,6 +69,45 @@ You can define a strictness parameter that is used to determine if a word matche
 
 You can still tag a **restricted** custom entity in your sentences, but it will not help entity detection. It will just provide additional information for intent classification.
 
+### Importing synonyms with a CSV file
+
+To import synonyms, you need to specify the actual value of the synonym as well as the ISO code for the language of the value.
+
+
+| Key         | Required | Value  | Description                   |
+| ----------- | -------- | -------| ----------------------------- |
+| value       | Yes      | String | The synonym                   |
+| language    | Yes      | String | The ISO code for the language |
+
+<br>
+Please format the CSV file as follows:
+~~~
+value;language
+The Big Apple;en
+NYC;en
+New York;en
+New York City;en
+la grande pomme;fr
+nou yorke;fr
+~~~
+
+<br>
+
+| value           | language |
+| --------------- | -------- |
+| NYC             | en       |
+| The Big Apple   | en       |
+| la grande pomme | fr       |
+
+<br>
+
+When importing synonyms, please note the following:
+
+* You can import up to 10,000 synonyms at the same time.
+* Be sure not to exceed the file size limit of 1 MB.
+* The import process using the merge option is not executed if the value of the synonym already exists.
+
+
 ## Custom entity enrichments
 
 Whenever an entity is detected, the JSON returned by the NLP API is enriched with additional information about the entity. For example, the following JSON is for a datetime, which is a gold entity.
@@ -140,6 +179,7 @@ is compared to this list of entity values to decide which specific enrichment sh
 For a restricted entity, the list of entity values is a subset of the entity synonyms.
 
 For a free entity, the list of entity values is free and created manually. Additionally, you can configure a matching strictness for a free entity.
+
 
 ## References between entities
 
