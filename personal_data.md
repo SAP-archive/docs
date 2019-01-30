@@ -5,13 +5,13 @@ permalink: /personal-data/
 ---
 
 
-### Update your personal data
+## Update your personal data
 
 If you are a bot developer and you want to update your username and/or your email address, click your avatar at the top right of the page in SAP Conversational AI and choose **Settings**.
 
 <br/>
 
-### Delete your account
+## Delete your account
 
 **Caution:** All bots that you created with this account will also be deleted, except for bots that you created from within an organization if there are still members of that organization (including another administrator). If there are still members of the organization, and you are the sole administrator, you must first make another member an administrator before you can delete your account.
 
@@ -19,7 +19,7 @@ If you are a bot developer and you want to delete your account, click your avata
 
 <br/>
 
-### Access or delete bot user's personal data
+## Access or delete bot user's personal data
 
 If you are a bot developer and one of your end users wants to access or delete their own personal data, please email the following information to sap-cai-privacy@sap.com from the email address associated with your SAP Conversational AI profile:
 -   Name of the channel used to access the bot
@@ -43,6 +43,8 @@ If you are a bot developer and one of your end users wants to access or delete t
 |Twilio|Phone number, for example, +11234567890|
 |Twitch|User name, for example, johnmiller|
 |Twitter|User name, for example, johnmiller|
+
+### SAP CoPilot
 
 SAP CoPilot doesn't store the end-user’s conversation with the assistant beyond the UI session.
 
