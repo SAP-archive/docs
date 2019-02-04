@@ -171,7 +171,7 @@ is compared to this list of entity values to decide which specific enrichment sh
 {
   "raw": "mozzarella",
   "value": "mozzarella",
-  "deliciousness": 2,
+  "deliciousness": -10,
   "confidence": 0.92
 }
 ~~~
