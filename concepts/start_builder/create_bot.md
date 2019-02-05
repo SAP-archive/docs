@@ -14,30 +14,32 @@ A **skill** is a block of conversation that has a clear purpose and that your bo
 
 A **training dataset** is composed of many sentences organized into [intents](https://sapconversationalai.github.io/docs/concepts/intent) that represent what users say to your chatbot. The training dataset is used to train the bot to understand the user's needs and to trigger the right piece of conversation, reply correctly, and have a smooth conversation.
 
-Ready? Click **+ New Bot** at the top right of the page and let's create your first chatbot.
+Ready? Click **+ New Bot** at the top right of the page in SAP Conversational AI and let's create your first chatbot.
 
 ## Select predefined skills for your bot
 
 You can choose one or several predefined skills to use as a starting point. Let's select **Greetings**.
 You're free to modify them if you don't like them as such, or even delete them once you're ready to make your own.
 
-If you want to fork the skills later on, they're available here: [https://cai.tools.sap/scaffolder/starter-skills](https://cai.tools.sap/scaffolder/starter-skills)
+If you want to fork the skills later on, they're available at [https://cai.tools.sap/scaffolder/starter-skills](https://cai.tools.sap/scaffolder/starter-skills).
 
 ![SAP Conversational AI create bot](https://cdn.cai.tools.sap/man/introduction/predefined-skills.png)
 
 ## Create your bot
 
-1) Enter a name and (optional) a description.
+1) Enter a name and, if desired, a description.
 
-2) (Optional) Add up to six topics to your bot (for example, *Customer Support*, *HR*, *Payments*, etc.). By categorizing your bot in this way, we can suggest more appropriate training data to improve it later.
+2) (Optional) Add up to six topics to your bot (for example, *Customer Support*, *HR*, *Payments*, etc.). By categorizing your bot in this way, we can suggest more appropriate training data to improve it later on.
 
 3) Set the default language. You can add more languages later. 
 
-4) Specify whether your bot is public or private.
-
-5) Click **CREATE A BOT**.
-
 ![SAP Conversational AI create bot](https://cdn.cai.tools.sap/man/introduction/create-bot.png)
+
+4) To comply with General Data Protection Regulation (GDPR) requirements, select the type of data processed by your bot (nonpersonal, personal, sensitive personal, or health) and the type of end users (non-vulnerable or vulnerable).
+
+5) Specify whether your bot is public or private.
+
+6) Click **CREATE A BOT**.
 
 ## Discover your first intents and skills
 
