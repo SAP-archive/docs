@@ -1,6 +1,6 @@
 ---
 layout: concept
-title: Hello World
+title: Getting started with the Bot Connector
 permalink: /concepts/hello-world
 ---
 
