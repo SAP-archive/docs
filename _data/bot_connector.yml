@@ -7,7 +7,7 @@ sections:
 - title: Webchat
   url: /concepts/webchat
 
-- title: Hello World
+- title: Getting started with the Bot Connector
   url: /concepts/hello-world
 
 - title: Receive messages
