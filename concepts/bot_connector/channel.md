@@ -59,74 +59,48 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
                                                           src="https://cdn.cai.tools.sap/man/copilot.png" width="30px"
                                                           alt="SAP CoPilot"></th>
         
+    
     </tr>
     </thead>
     <tbody>
     <tr>
         <th width="25%"></th>
-        <td>SAP Conversational AI Webchat</td>
-        <td>callr</td>
-        <td>Cisco Webex Teams</td>
-        <td>kik</td>
-        <td>LINE</td>
-        <td>Facebook Messenger</td>
-        <td>Skype</td>
-        <td>Slack</td>
-        <td>SAP Jam Collaboration</td>
-        <td>Telegram</td>
-        <td>Twilio</td>
-        <td>Twitch</td>
-        <td>Twitter</td>
-        <td>Amazon Alexa</td>
-        <td>SAP CoPilot</td>
+        <td>Text</td>
+        <td>Image/Gif</td>
+        <td>Card</td>
+        <td>Carousel</td>
+        <td>Buttons</td>
+        <td>Quick Replies</td>
+        <td>List</td>
+        <td>Voice</td>
 
     </tr>
     <tr>
-        <td>Text</td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td>Amazon Alexa</td>  
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         
     </tr>
     <tr>
-        <td>Image/Gif</td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle "></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td>callr</td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        
     </tr>
     <tr>
-        <td>Card</td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td>Cisco Webex Teams</td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
@@ -134,97 +108,139 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
     </tr>
     <tr>
-        <td>Carousel</td>
+        <td>Facebook Messenger</td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-close"></i></td>
     </tr>
     <tr>
-        <td>Buttons</td>
+        <td>kik</td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
     <tr>
-        <td>Quick Replies</td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td>LINE</td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
     </tr>
     <tr>
-        <td>List</td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td>SAP Conversational AI Webchat</td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
     </tr>
      <tr>
-        <td>Voice</td>
+        <td>SAP CoPilot</td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+    </tr>
+      <tr>
+        <td>SAP Jam Collaboration</td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+    </tr>
+    <tr>
+        <td>Skype</td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+     </tr>
+     <tr>
+        <td>Slack</td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+      </tr>
+      <tr>
+        <td>Telegram</td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+    </tr>
+    <tr>
+        <td>Twilio</td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+    </tr>
+    <tr>
+        <td>Twitch</td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+    </tr>
+    <tr>
+        <td>Twitter</td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
     </tr>
     </tbody>
 </table>
