@@ -10,58 +10,6 @@ This comparison grid provides a comprehensive view of features supported across 
 If a channel doesn't natively support a rich format, Bot Connector will handle it and rewrite the content to have a readable message everywhere.
 
 <table class="mb3" style="width: 100%; text-align: center">
-    <thead>
-    <tr style='font-size: 12px'>
-        <th width="25%"></th>
-        <th width="50px" style="text-align: center;"><i class="ion-ios-chatbubbles c-amber-500"
-                                                        style="font-size: 30px; width: 40px; margin: 0px 0.5rem;"></i>
-        </th>
-        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://www.cai.tools.sap/assets/images/integrations/callr.png" width="30px"
-                                                          alt="callr"></th>
-        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://cdn.cai.tools.sap/man/channels/cisco.png" width="30px"
-                                                          alt="Cisco Webex Teams"></th>
-        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://www.cai.tools.sap/assets/images/integrations/kik.svg" width="30px" alt="kik">
-        </th>
-        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://www.cai.tools.sap/assets/images/integrations/line.svg" width="30px"
-                                                          alt="LINE"></th>
-        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://www.cai.tools.sap/assets/images/integrations/messenger.svg" width="30px"
-                                                          alt="Facebook Messenger"></th>
-        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://www.cai.tools.sap/assets/images/integrations/skype.svg" width="30px"
-                                                          alt="Skype"></th>
-        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://www.cai.tools.sap/assets/images/integrations/slack.svg" width="30px"
-                                                          alt="Slack"></th>
-        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://www.cai.tools.sap/assets/images/integrations/sapjam.png" width="30px"
-                                                          alt="SAP Jam Collaboration"></th>
-        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://www.cai.tools.sap/assets/images/integrations/telegram.svg" width="30px"
-                                                          alt="Telegram"></th>
-        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://www.cai.tools.sap/assets/images/integrations/twilio.svg" width="30px"
-                                                          alt="Twilio"></th>
-        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://www.cai.tools.sap/assets/images/integrations/twitch.svg" width="30px"
-                                                          alt="Twitch"></th>
-        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://www.cai.tools.sap/assets/images/integrations/twitter.svg" width="30px"
-                                                          alt="Twitter"></th>
-        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://cdn.cai.tools.sap/man/channels/alexa.png" width="30px"
-                                                          alt="Amazon Alexa"></th>
-        <th width="50px" style="text-align: center;"><img class="custom mx-auto mb1 noShadow"
-                                                          src="https://cdn.cai.tools.sap/man/copilot.png" width="30px"
-                                                          alt="SAP CoPilot"></th>
-        
-    
-    </tr>
-    </thead>
     <tbody>
     <tr>
         <th width="25%"></th>
