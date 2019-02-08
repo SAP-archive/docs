@@ -61,7 +61,7 @@ The goal of this file is to represent reality, that is, to show how users use yo
 
 To ensure that your validation file reflects the way that people actually use your bot, we recommend creating your file as follows:
 
-1) On the **Monitor** tab, go to the **Log Feed** section and filter only matched logs from the past 1 to 3 months.
+1) On the **Monitor** tab, go to **Log Feed** and filter matched **and** unmatched production logs from the past 1 to 3 months.
 
 2) Export these logs by clicking **Merge duplicate logs on a single line**.
 
