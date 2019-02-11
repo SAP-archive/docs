@@ -29,6 +29,20 @@ If your bot is connected to a channel through the Bot Connector, these messages 
 
 On the platform, we display a character limit for every message. For example, a text message has a limit of 640 characters. This isn't a real limitation; you can still create a text message with more characters. It serves as an indication based on what Facebook Messenger will accept. So if you're using Messenger, it's a good idea to observe the character limit; otherwise your messages won't be posted in the user's conversation.
 
+### Markdown
+
+When creating text messages or quick replies, you can use markdown to format text as **bold**, _italics_, or as a [hyperlink](https://cai.tools.sap). (Note that in quick replies, you can use markdown only in the quick reply value, not in the quick reply title.)
+
+- For **bold**, add two asterisks (\*\*) or two underscores (\_\_) before and after a word or phrase. For instance, "Tell me what you want, what you \*\*really, really\*\* want" will be rendered as "Tell me what you want, what you **really, really** want".
+
+- For _italics_, add a single asterisk (\*) or single underscore (\_) before and after a word or phrase. For instance, "This is how you \_italicize\_ text" will be rendered as "This is how you _italicize_ text". 
+
+- For [hyperlinks](https://cai.tools.sap), use \[link text](URL)\. For instance, "Find us at \[SAP Conversational AI](https[]()://cai.tools.sap)" will be rendered as "Find us at [SAP Conversational AI](https://cai.tools.sap)". If you don't provide a link text, the URL itself will be rendered as the link. For instance, "Find us at \[](https[]()://cai.tools.sap)" will be rendered as "Find us at [https://cai.tools.sap](https://cai.tools.sap)".
+
+For a preview of how your text message or quick reply will be rendered, simply save it.
+ 
+If you've connected your bot to a channel that doesn't support bold or italics, the formatting will be removed and replaced with single quotes (') instead of italics, and double quotes (") instead of bold, so that the formatted words are still given special attention. For instance, "Tell me what you want, what you \*\*really, really\*\* want" will be rendered as "Tell me what you want, what you "really, really" want". If a channel doesn't support hyperlinks, the hyperlink will be replaced with "text (URL)", for example, “SAP Conversational AI (https[]()://cai.tools.sap)”.
+
 ### Message delay
 
 You can add a delay of up to 5 seconds between each message in a group of messages.
