@@ -31,7 +31,7 @@ On the platform, we display a character limit for every message. For example, a 
 
 ### Markdown
 
-When creating text messages or quick replies, you can use markdown to format text as **bold**, _italics_, or as a [hyperlink](https://cai.tools.sap). (Note that in quick replies, you can use markdown only in the quick reply value, not in the quick reply title.)
+When creating text messages or quick replies, you can use markdown to format text as **bold**, _italics_, or as a [hyperlink](https://cai.tools.sap). 
 
 - For **bold**, add two asterisks (\*\*) or two underscores (\_\_) before and after a word or phrase. For instance, "Tell me what you want, what you \*\*really, really\*\* want" will be rendered as "Tell me what you want, what you **really, really** want".
 
