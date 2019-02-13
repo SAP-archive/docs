@@ -17,7 +17,7 @@ All metrics are extracted from the conversations that users have with your bot t
 | I'm using the NLP API and Bot Connector | Not available |
 
 <br>
-All metrics are filtered by one of the `languages` of your bot (except for some graphics, where indicated) and a time range that you can select. For quicker loading, the default time range is the last week. To change the time range, click **SHOW FILTERS**. Also for better loading, the metrics are fetched asynchronously.
+All metrics are filtered by one of the `languages` of your bot (except for some graphics, where indicated) and a time range that you can select. For quicker loading, the default time range is the previous week. To change the time range, click **SHOW FILTERS**. Also for better loading, the metrics are fetched asynchronously.
 
 ## Metrics type
 
