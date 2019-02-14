@@ -54,7 +54,7 @@ You can dynamically inject the content gathered from the conversation in the bot
 You can create all of the following variables:
 
 * `{{conversation_id}}`: ID of the current conversation.
-* `{{participant_data}}`: An object filled with participant information that is provided by the channel connected through the Bot Connector. By default, you always have a `username`. You can easily use `{{participant_data.username}}`.
+* `{{participant_data}}`: An object filled with participant information that is provided by the channel connected through the Bot Connector. For example, for those channels that supply a username, it is returned as `userName`. You can easily use `{{participant_data.userName}}`.
 * `{{memory}}`: The complete memory object. You can access each element like `{{memory.person.raw}}`. Here, *person* is the alias of a requirement.
 * `{{skill_occurences}}`: Number of consecutive occurrences of the current skill.
 * `{{language}}`: Language ISO code of the current conversation.
