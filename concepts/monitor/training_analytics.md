@@ -103,6 +103,7 @@ You can order the confusion matrix by intent name and by performance. If you don
 
 ![SAP Conversational AI - Confusion Matrix](//cdn.cai.tools.sap/man/monitoring/confusion-matrix.png)
 
+**Tip:** When you click a single intent in your benchmark, the same line will be in focus in your confusion matrix.
 
 ## Tips to improve your intent classification
 
@@ -140,6 +141,8 @@ We split the expressions inside each intent into two parts: 90% is used for trai
 ## Your entity detection confusion matrix
 
 Your confusion matrix is used to gain further insight into entities that may clash and get confused. The element at the intersection of row A and column B signifies the percentage of entities that should be detected as A, but are detected as B.
+
+**Tip:** When you click a single entity in your benchmark, the same line will be in focus in your confusion matrix.
 
 ## Tips to improve your entity detection
 
