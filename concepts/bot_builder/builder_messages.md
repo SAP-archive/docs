@@ -40,6 +40,14 @@ When creating text messages or quick replies, you can use markdown to format tex
 - For [hyperlinks](https://cai.tools.sap), use \[link text](URL)\. For instance, "Find us at \[SAP Conversational AI](https[]()://cai.tools.sap)" will be rendered as "Find us at [SAP Conversational AI](https://cai.tools.sap)". If you don't provide a link text, the URL itself will be rendered as the link. For instance, "Find us at \[](https[]()://cai.tools.sap)" will be rendered as "Find us at [https://cai.tools.sap](https://cai.tools.sap)".
 
 For a preview of how your text message or quick reply will be rendered, simply save it.
+
+Markdown in the text messages and quick replies that you create in SAP Conversational AI is supported in the following channels:
+
+- Facebook Messenger
+- Skype
+- Slack
+- Telegram
+- Webchat
  
 If you've connected your bot to a channel that doesn't support bold or italics, the formatting will be removed and replaced with single quotes (') instead of italics, and double quotes (") instead of bold, so that the formatted words are still given special attention. For instance, "Tell me what you want, what you \*\*really, really\*\* want" will be rendered as "Tell me what you want, what you "really, really" want". If a channel doesn't support hyperlinks, the hyperlink will be replaced with "text (URL)", for example, “SAP Conversational AI (https[]()://cai.tools.sap)”.
 
