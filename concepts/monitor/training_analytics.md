@@ -22,7 +22,7 @@ For more accurate results, we use your bot training data and a validation file t
 
 ### Your bot training data
 
-We split the expressions inside each intent into two parts: 90% is used for training, 10% is used to evaluate the classification. The evaluation is simple: Each sentence is tested with your training dataset, and we check if the first intent returned is the right one. We repeat this process five times to enforce randomness in the splits. Once the evaluation is done, we average the results while taking into account the number of occurrences of each intent. This results in four metrics between 0 and 1 for each intent (**Accuracy**, **Precision**, **Recall**, and **F1 score**) and four global metrics for the entire dataset.
+We split the expressions inside each intent into two parts: 90% is used for training, 10% is used to evaluate the classification. The evaluation is simple: Each sentence is tested with your training dataset, and we check if the first intent returned is the right one. We repeat this process five times to enforce randomness in the splits. Once the evaluation is done, we average the results while taking into account the number of occurrences of each intent. This results in three metrics between 0 and 1 for each intent (**Precision**, **Recall**, and **F1 score**) and three global metrics for the entire dataset.
 
 Note that the scores may differ slightly if you run the benchmark again on the same dataset. This is because we randomly pick 90% of your training dataset to evaluate.
 
@@ -30,7 +30,7 @@ Note that the scores may differ slightly if you run the benchmark again on the s
 
 A validation file is composed of sentences with their corresponding intents. It reflects the reality, so it's important to build this file with real sentences that users actually sent to your bot.
 
-Each sentence is tested with your training dataset, and we check if the first intent returned is the right one. Once the evaluation is done, we also get four metrics between 0 and 1 for each intent (**Accuracy**, **Precision**, **Recall**, and **F1 score**) and one global metric.
+Each sentence is tested with your training dataset, and we check if the first intent returned is the right one. Once the evaluation is done, we also get three metrics between 0 and 1 for each intent (**Precision**, **Recall**, and **F1 score**) and one global metric.
 
 ### How do I create a validation file?
 
@@ -82,8 +82,6 @@ Upload your file to the platform. We'll analyze it and provide feedback. For exa
 
 ## Your benchmark scores
 
-**Accuracy** is a global grade on the performance of your bot. It's the proportion of successful classifications out of all of the predictions conducted during your benchmark. While it's a good indication of performance for bots with balanced intents, it may be biased for unbalanced bots.
-
 **Precision** is a metric that is calculated per intent. For each intent, it measures the proportion of correct predictions out of all the times the intent was declared during the benchmark. It answers the question *Out of all the times my bot predicted this intent, how many times was it correct?* Low precision usually signifies the relevant intent needs cleaning, which means removing sentences that don't belong to this intent.
 
 For your bot users, a low precision means *The bot always thinks I'm talking about A, no matter what I say!*
@@ -105,6 +103,7 @@ You can order the confusion matrix by intent name and by performance. If you don
 
 ![SAP Conversational AI - Confusion Matrix](//cdn.cai.tools.sap/man/monitoring/confusion-matrix.png)
 
+**Tip:** When you click a single intent in your benchmark, the same line will be in focus in your confusion matrix.
 
 ## Tips to improve your intent classification
 
@@ -137,11 +136,13 @@ Under **Make your dataset closer to reality**, choose an intent in the dropdown.
 
 ## Your entity detection benchmark
 
-We split the expressions inside each intent into two parts: 90% is used for training, 10% is used to evaluate the custom entity detection. The evaluation is simple: We detect each custom entity in each sentence, based on the knowledge we have from the training dataset. We check if each word has been properly detected as a custom entity or as a simple word. We repeat this process five times to enforce randomness in the splits. This results in four metrics between 0 and 1 for each entity (**Accuracy**, **Precision**, **Recall**, and **F1 score**) and four global metrics for the entire dataset.
+We split the expressions inside each intent into two parts: 90% is used for training, 10% is used to evaluate the custom entity detection. The evaluation is simple: We detect each custom entity in each sentence, based on the knowledge we have from the training dataset. We check if each word has been properly detected as a custom entity or as a simple word. We repeat this process five times to enforce randomness in the splits. This results in five metrics between 0 and 1 for each entity (**Precision**, **Recall**, **F1 score**, **Ranking**, and **Size**) and five global metrics for the entire dataset.
 
 ## Your entity detection confusion matrix
 
 Your confusion matrix is used to gain further insight into entities that may clash and get confused. The element at the intersection of row A and column B signifies the percentage of entities that should be detected as A, but are detected as B.
+
+**Tip:** When you click a single entity in your benchmark, the same line will be in focus in your confusion matrix.
 
 ## Tips to improve your entity detection
 
