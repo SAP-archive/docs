@@ -4,7 +4,7 @@ title: Training analytics
 permalink: /concepts/training-analytics
 ---
 
-On the **Monitor** tab, the **Training Analytics** section helps you to build a great dataset for your bot. These analytics are only available for bots with at least 5 intents and at least 30 expressions per intent.
+On the **Monitor** tab, the **Training Analytics** section helps you to build a great dataset for your bot. These analytics are only available for bots with at least 4 intents and at least 30 expressions per intent.
 
 Your dataset (that is, all the intents and entities that you created and trained) is a fundamental element of your bot. If your bot isn't well-trained (meaning your dataset isn't well-structured or is incomplete), your bot won't be able to correctly understand messages from its users, resulting in a disappointing conversational experience.
 
