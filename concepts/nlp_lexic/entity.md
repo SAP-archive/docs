@@ -82,13 +82,13 @@ To import synonyms, you need to specify the actual value of the synonym as well 
 <br>
 Please format the CSV file as follows:
 ~~~
-value;language
-The Big Apple;en
-NYC;en
-New York;en
-New York City;en
-la grande pomme;fr
-nou yorke;fr
+"value","language"
+"The Big Apple","en"
+"NYC","en"
+"New York","en"
+"New York City","en"
+"la grande pomme","fr"
+"nou yorke","fr"
 ~~~
 
 <br>
