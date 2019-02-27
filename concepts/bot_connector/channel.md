@@ -196,3 +196,9 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
 ## Open-source Bot Connector
 
 The code to run the Bot Connector is hosted publicly at [https://github.com/SAPConversationalAI/bot-connector](https://github.com/SAPConversationalAI/bot-connector). This means that you or your enterprise can download the Bot Connector and run a chatbot within a virtual network. This is especially useful if you're apprehensive about opening your internal network to the internet. You can also vote for the next channels you want us to implement, or you can contribute yourself!
+
+## Special notes for individual channels
+
+### SAP Jam Collaboration
+
+To connect your chatbot to SAP Jam Collaboration, you need to be an SAP Jam administrator. For information about SAP Jam Collaboration, please see [SAP Jam Collaboration](https://help.sap.com/viewer/p/SAP_JAM_COLLABORATION) on SAP Help Portal.
