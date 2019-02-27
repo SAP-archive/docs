@@ -210,3 +210,7 @@ Remember to set a message that your bot can use if it is unable to map the prono
 ![SAP Conversational AI gold entities](https://cdn.cai.tools.sap/man/nlp-lexic/edit-replies.png)
 
 ![SAP Conversational AI gold entities](https://cdn.cai.tools.sap/man/nlp-lexic/message-example.png)
+
+## Retrieving your bot's entities with an API call
+
+See [Indexing A Dataset’s Entities](https://cai.tools.sap/docs/api-reference/#indexing-a-dataset-39-s-entities) in the API Reference.
