@@ -213,4 +213,4 @@ Remember to set a message that your bot can use if it is unable to map the prono
 
 ## Retrieving your bot's entities with an API call
 
-See [Indexing A Dataset’s Entities](https://cai.tools.sap/docs/api-reference/#indexing-a-dataset-39-s-entities) in the API Reference.
+You can fetch the entities for a specific bot with an API call. For more information, please see [Indexing A Dataset’s Entities](https://cai.tools.sap/docs/api-reference/#indexing-a-dataset-39-s-entities) in the API Reference.
