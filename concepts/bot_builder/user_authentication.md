@@ -25,6 +25,4 @@ Below is an example of a `POST /dialog` request body with `memory` field. In thi
 }
 ~~~
 
-You can access this memory field during the entire conversation and use it, for example, in webhook actions, headers, or authentication fields.
-
 ![SAP Conversational AI - webhook with variables](//cdn.cai.tools.sap/man/bot-builder/headers-with-id.png)
