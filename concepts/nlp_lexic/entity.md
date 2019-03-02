@@ -65,7 +65,7 @@ In SAP Conversational AI, go to *Entities*, click **CREATE**, and select **Restr
 
 ![synonyms](https://cdn.cai.tools.sap/man/nlp-lexic/synonym-list.png)
 
-You can define a strictness parameter that is used to determine if a word matches a given value in your list. With a strictness of 100, a word must exactly match an entry of the list to be detected as such.
+By clicking **Settings**, you can define a strictness parameter that determines if a word matches a given value in your list. For example, if you have the restricted entity #PIZZA with values like _margherita_ and _pepperoni_, your user may type _margarita_ or _peperoni_. By adjusting the fuzzy matching strictness, you can define if _margarita_ and _peperoni_ should be considered as #PIZZA or not. With a strictness of 100, a word must exactly match an entry in the list to be detected as such.
 
 You can still tag a **restricted** custom entity in your sentences, but it will not help entity detection. It will just provide additional information for intent classification.
 
