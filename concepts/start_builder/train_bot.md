@@ -31,6 +31,12 @@ We call them gold entities. If you need another entity – for example, a custom
 
 ![SAP Conversational AI tag entities](https://cdn.cai.tools.sap/man/recast-ai-tag-entitiesb.png)
 
+## Training mode
+
+Unless your bot is a big bot, the default setting for the training mode is **Automatic**. This means that training is automatically triggered by any change to the bot. If you wish, you can change the training mode to **Manual** in your bot settings. This lets you decide for yourself when you want to update the bot's training.
+
+For big bots (that is, bots with more than 10,000 expressions or more than 15 custom entities), the training mode is always set to **Manual**. It cannot be changed to **Automatic**.
+
 ## Test with the NLP console
 
 Once you’ve created new intents, you can test them with the console. To display the console, click **TEST** at the top right of the page. To test if your bot is well-trained, try typing \`I want meeting room 2 for tomorrow\`.
