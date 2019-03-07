@@ -25,4 +25,4 @@ Below is an example of a `POST /dialog` request body with `memory` field. In thi
 }
 ~~~
 
-![SAP Conversational AI - webhook with variables](//cdn.cai.tools.sap/man/bot-builder/headers-with-id.png)
+![SAP Conversational AI - webhook with variables](https://cdn.cai.tools.sap/man/bot-builder/headers-with-id.png)
