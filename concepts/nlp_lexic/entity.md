@@ -183,6 +183,8 @@ For a free entity, the list of entity values is free and created manually. Addit
 
 ## References between entities
 
+### Resolve pronouns
+
 For users to meaningfully converse with your chatbot using natural language, your bot needs to be able to recognize pronouns (like *it* or *that*) and map them to entities previously mentioned in the conversation. In the following example, the pronoun *it* refers to the entity *Apple USB-C to HDMI dongle*.
 
 <img src='https://cdn.cai.tools.sap/man/nlp-lexic/entity-and-pronoun-example.png' width='380px' />
@@ -210,6 +212,18 @@ Remember to set a message that your bot can use if it is unable to map the prono
 ![SAP Conversational AI gold entities](https://cdn.cai.tools.sap/man/nlp-lexic/edit-replies.png)
 
 ![SAP Conversational AI gold entities](https://cdn.cai.tools.sap/man/nlp-lexic/message-example.png)
+
+### Resolve descriptions
+
+When a user is conversing with your bot in English, French, or Spanish, and your bot replies with a list, carousel, quick replies, or buttons, the user can refer to an item in the message using a superlative like *cheapest* or *most expensive*. For example, if the bot displays a list of flights, the user can tell the bot to book the cheapest or shortest flight, or to book the first or last flight.
+
+For your bot to map superlatives to items in the message, the **Resolve descriptions** checkbox must be selected in your bot's settings. You can check this on the **Settings** page for your bot under **Options**. For new bots, this checkbox is selected by default. For existing bots, you'll need to select it manually. Remember that only English, French, and Spanish are presently supported.
+
+When mapping superlatives to items in a message, the bot will always use the most recent list, carousel, quick replies, or buttons in the conversation history (if the conversation history contains more than one of these).
+
+Certain superlatives can describe different types of entities. For example, _longest_ can refer to duration and distance. If the message contains more than one of these entity types, the bot will always choose the first entity type that the superlative can refer to. For example, if flight CAI 001 is listed as 3 hours and 1,000 miles, the bot will interpret *longest* as referring to the duration of 3 hours.
+
+Remember to set a message that your bot can use if it is unable to map the description to an entity. You can also use the information provided by superlatives in a webhook. The detected superlatives can be enriched with this information in the NLP JSON.
 
 ## Retrieving your bot's entities with an API call
 
