@@ -31,7 +31,7 @@ On the platform, we display a character limit for every message. For example, a 
 
 ### Markdown
  
-When creating text messages or quick replies, you can use markdown to format text as **bold**, _italics_, or as a [hyperlink](https://cai.tools.sap).
+When creating text messages or quick replies, you can use markdown to format text as **bold**, _italics_, or as a [hyperlink](https://cai.tools.sap). This requires you to select the **Enable rich text for this message** checkbox.
  
 - For **bold**, add two asterisks (\*\*) or two underscores (\_\_) before and after a word or phrase. For instance, "Tell me what you want, what you \*\*really, really\*\* want" will be rendered as "Tell me what you want, what you **really, really** want".
  
@@ -50,6 +50,8 @@ Markdown in the text messages and quick replies that you create in SAP Conversat
 - Webchat 
   
 If you've connected your bot to a channel that doesn't support bold or italics, the formatting will be removed and replaced with single quotes (') instead of italics, and double quotes (") instead of bold, so that the formatted words are still given special attention. For instance, "Tell me what you want, what you \*\*really, really\*\* want" will be rendered as "Tell me what you want, what you "really, really" want". If a channel doesn't support hyperlinks, the hyperlink will be replaced with "text (URL)", for example, “SAP Conversational AI (https[]()://cai.tools.sap)”.
+
+If you use markdown without selecting the **Enable rich text for this message** checkbox, the characters that you entered will be passed to the channel exactly as you entered them.
 
 ### Message delay
 
