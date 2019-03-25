@@ -39,7 +39,7 @@ If you are the administrator of an organization, you can assign one of the follo
 - Read and write  
 - Create bot (+ Read and write)  
 
-You can also assign additional permissions to teams within the organization. You create the team and add members on the **Teams** tab. (Tip: You can also add members to teams on the **Members** tab.) You then assign the additional permission to the team on the **Settings and Permissions** tab. This additional, team-specific permission is applied to all bots within the organization.
+You can also assign additional permissions to teams within the organization. You create the team and add members on the **Teams** tab. (Tip: You can also add members to teams on the **Members** tab.) You then assign the additional permission to the team on the **Settings and Permissions** tab. These additional, team-specific permissions are applied to all bots within the organization.
 
 ## Transfer a bot to an organization
 
