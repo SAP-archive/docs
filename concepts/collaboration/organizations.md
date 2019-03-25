@@ -16,11 +16,30 @@ From your profile, you can create **private** and **public** organizations.
 
 Public organizations, their public bots, and members are visible to all. Private organizations, their bots, and members are visible only to the members of the organization.
 
-You can change an **organization** from private to public in the settings for your organization. The existing private bots of the organization will remain visible only to the members of the organization. (To change a **bot** from private to public, go to the settings for the bot and click **Danger Zone** and then **MAKE PUBLIC**.) 
+You can change an **organization** from private to public in the settings for your organization. The existing private bots of the organization will remain visible only to the members of the organization. (Note: To change a **bot** from private to public, go to the settings for the bot and click **Danger Zone** and then **MAKE PUBLIC**.) 
 
 ## Manage an organization
 
-Administrators manage member access to an organization’s bots. Within an organization, all members have the same bot permissions. However, only administrators can update the members list and change the organization settings. An organization must always have at least one administrator. If an organization has only one administrator, the administrator will be unable to update their own role, remove themselves from the organization, or delete their account until they make another member an administrator.
+An organization must always have at least one administrator. If an organization has only one administrator, the administrator will be unable to update their own role, remove themselves from the organization, or delete their account until they make another member an administrator.
+
+### Add or remove members
+
+If you are the administrator of an organization, you can add and remove members from the organization. To add members, go to the **Members** tab and click **+ NEW MEMBER**. To remove a member, go to the **Members** tab, click the dropdown to the right of the user's name, and choose **REMOVE FROM ORGANIZATION**.
+
+### Change the organization's settings
+
+If you are the administrator of an organization, you can change the organization's settings, such as change the organization's name, assign permissions, make the organization private or public, and delete the organization. You do this on the **Settings and Permissions** tab.
+
+### Assign permissions
+
+If you are the administrator of an organization, you can assign one of the following base permissions to all members of the organization. You do this on the **Settings and Permissions** tab. This base permission is applied to all bots within the organization.
+
+- No access  
+- Read only  
+- Read and write  
+- Create bot (+ Read and write)  
+
+You can also assign additional permissions to teams within the organization. You create the team and add members on the **Teams** tab. (Tip: You can also add members to teams on the **Members** tab.) You then assign the additional permission to the team on the **Settings and Permissions** tab. This additional, team-specific permission is applied to all bots within the organization.
 
 ## Transfer a bot to an organization
 
