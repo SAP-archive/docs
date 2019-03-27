@@ -3,3 +3,6 @@ sections:
 
 - title: Organizations
   url: /concepts/organization-account
+
+- title: Permissions
+  url: /concepts/permissions
