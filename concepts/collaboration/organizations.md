@@ -30,16 +30,17 @@ If you are the administrator of an organization, you can add and remove members 
 
 If you are the administrator of an organization, you can change the organization's settings, such as change the organization's name, assign permissions, make the organization private or public, and delete the organization. You do this on the **Settings and Permissions** tab.
 
-### Assign permissions
+## Create and manage teams
 
-If you are the administrator of an organization, you can assign one of the following base permissions to all members of the organization. You do this on the **Settings and Permissions** tab. This base permission is applied to all bots within the organization.
+If you are the administrator of an organization, you can create and manage teams within the organization and assign additional permissions to them. See also Permissions.
 
-- No access  
-- Read only  
-- Read and write  
-- Create bot (+ Read and write)  
+### Create teams
 
-You can also assign additional permissions to teams within the organization. You create the team and add members on the **Teams** tab. (Tip: You can also add members to teams on the **Members** tab.) You then assign the additional permission to the team on the **Settings and Permissions** tab. These additional, team-specific permissions are applied to all bots within the organization.
+You can create teams and add members on the **Teams** tab. (Tip: You can also add members to teams on the **Members** tab.) 
+
+### Manage teams
+
+You can change the name of an existing team and delete teams on the **Teams** tab.
 
 ## Transfer a bot to an organization
 
