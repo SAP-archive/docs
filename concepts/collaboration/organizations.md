@@ -36,7 +36,13 @@ If you are the administrator of an organization, you can create and manage teams
 
 ### Create teams
 
-You can create teams and add members on the **Teams** tab. (Tip: You can also add members to teams on the **Members** tab.) 
+You can create teams and add members on the **Teams** tab.  
+
+![SAP Conversational AI - Organization](https://cdn.cai.tools.sap/man/organisation/organizationteams.png)
+
+**Tip:** You can also add members to teams on the **Members** tab.
+
+![SAP Conversational AI - Organization](https://cdn.cai.tools.sap/man/organisation/organizationmembers.png)
 
 ### Manage teams
 
