@@ -24,6 +24,8 @@ plus they can change the organization's settings, as well as manage teams and me
 ## Base permission
 
 The base permission is the default permission granted to all members of the organization and applied to all bots within the organization.
+
+![SAP Conversational AI - Base permissions](https://cdn.cai.tools.sap/man/organisation/basepermissions.png)
  
 For existing organizations, the default base permission is **Create bot (+ Read and write)**. For new organizations, the default base permission is **No access**.
  
@@ -32,6 +34,8 @@ For existing organizations, the default base permission is **Create bot (+ Read 
 Team permissions let you give additional permissions to teams of one or more members of the organization. Team permissions are applied to all bots within the organization.
 
 You create teams and add members to teams on the **Teams** tab. (Tip: You can also add members to teams on the **Members** tab.) You then assign the additional permission to the team on the **Settings and Permissions** tab. 
+
+![SAP Conversational AI - Team permissions](https://cdn.cai.tools.sap/man/organisation/teampermissions.png)
 
 Since these additional permissions are provided only to teams, if you want to assign an additional permission to only one member of the organization, you simply create a team with only that member.
 
