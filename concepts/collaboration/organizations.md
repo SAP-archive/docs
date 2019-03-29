@@ -1,10 +1,8 @@
 ---
 layout: concept
-title: Collaboration
+title: Organizations
 permalink: /concepts/organization-account
 ---
-
-# Organizations
 
 Organizations are shared accounts, allowing groups of people to collaborate on several bots at the same time. Your user account (which is your identity on SAP Conversational AI) can be a member of any number of organizations.
 
