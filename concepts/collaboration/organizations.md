@@ -14,8 +14,6 @@ From your profile, you can create **private** and **public** organizations.
 
 Public organizations, their public bots, and members are visible to all. Private organizations, their bots, and members are visible only to the members of the organization.
 
-You can change an **organization** from private to public in the settings for your organization. The existing private bots of the organization will remain visible only to the members of the organization. (Note: To change a **bot** from private to public, go to the settings for the bot and click **Danger Zone** and then **MAKE PUBLIC**.) 
-
 ## Manage an organization
 
 An organization must always have at least one administrator. If an organization has only one administrator, the administrator will be unable to update their own role, remove themselves from the organization, or delete their account until they make another member an administrator.
@@ -28,9 +26,13 @@ If you are the administrator of an organization, you can add and remove members 
 
 If you are the administrator of an organization, you can change the organization's settings, such as change the organization's name, assign permissions, make the organization private or public, and delete the organization. You do this on the **Settings and Permissions** tab.
 
+If you change an **organization** from private to public, the existing private bots of the organization remain private, that is, they remain visible only to the members of the organization. (Note: To change a **bot** from private to public, go to the settings for the bot and click **Danger Zone** and then **MAKE PUBLIC**.) 
+
+If you change an **organization** from public to private, the existing public bots of the organization are also made private.
+
 ## Create and manage teams
 
-If you are the administrator of an organization, you can create and manage teams within the organization and assign additional permissions to them. See also Permissions.
+If you are the administrator of an organization, you can create and manage teams within the organization and assign additional permissions to them. See also [Permissions](https://cai.tools.sap/docs/concepts/organization-account).
 
 ### Create teams
 
