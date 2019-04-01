@@ -215,7 +215,7 @@ Remember to set a message that your bot can use if it is unable to map the prono
 
 ### Resolve descriptions
 
-When a user is conversing with your bot in English, French, or Spanish, and your bot replies with a list, carousel, quick replies, or buttons, the user can refer to an item in the message using a superlative like *cheapest* or *most expensive* or using an ordinal like *first* or *last*. For example, if the bot displays a list of flights, the user can tell the bot to book the cheapest or shortest flight, or to book the first or last flight.
+When a user is conversing with your bot in English, French, or Spanish, and your bot replies with a list, carousel, quick replies, or buttons, the user can refer to an item in the message using a superlative like *cheapest* or *most expensive* or using an ordinal like *first* or *second*. For example, if the bot displays a list of flights, the user can tell the bot to book the cheapest or shortest flight, or to book the first or last flight.
 
 For your bot to map superlatives to items in the message, you must select the **Resolve descriptions** checkbox on the **Settings** page for your bot under **Options**. Remember that only English, French, and Spanish are presently supported.
 
