@@ -38,15 +38,15 @@ For multilingual bots, please upload one file for each supported language.
 
 **File format**
 
-Your file must be a valid CSV file. It must end with .csv and the separator must be a comma “,”. If you want to include quotes in your expressions or intents, you must add two double quotation marks before and after the quoted word(s).
+Your file must be a valid CSV file. It must end with .csv and the separator must be a semicolon “;”. If you want to include quotes in your expressions or intents, you must add two double quotation marks before and after the quoted word(s).
 For example, it should look like this:
 
 ~~~
-"intent","expression"
-"greetings","Hello"
-"greetings","Hi"
-"weather","What’s the weather in Paris?"
-"translation","What does ""Bonjour"" in French mean?"
+"intent";"expression"
+"greetings";"Hello"
+"greetings";"Hi"
+"weather";"What’s the weather in Paris?"
+"translation";"What does ""Bonjour"" in French mean?"
 ~~~
 
 <br/>
