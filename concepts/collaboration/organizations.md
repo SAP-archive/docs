@@ -1,30 +1,61 @@
 ---
 layout: concept
-title: Collaboration
+title: Organizations
 permalink: /concepts/organization-account
 ---
 
-# Organizations
+Organizations are shared accounts, allowing groups of people to collaborate on several bots at the same time. Your user account (which is your identity on SAP Conversational AI) can be a member of any number of organizations.
 
-Organizations are shared accounts, allowing groups of people to collaborate on many bots at the same time. Administrators manage member access to an organization's bots.
-
-## Create and manage an organization
+## Create an organization
 
 From your profile, you can create **private** and **public** organizations.
 
 ![SAP Conversational AI - Organization](https://cdn.cai.tools.sap/man/organisation/create-org.png)
 
-Everyone can view public organizations, their bots, as well as their members. Private organizations can only be viewed by their members.
+Public organizations, their public bots, and members are visible to all. Private organizations, their bots, and members are visible only to the members of the organization.
 
-Within an organization, all members have the same bot permissions. However, only administrators can update the members list and change the organization settings. An organization must always have at least one administrator. If an organization has only one administrator, the administrator will be unable to update their own role, remove themselves from the organization, or delete their account until they make another member an administrator.
+## Manage an organization
 
-## Transfer your bots
+An organization must always have at least one administrator. If an organization has only one administrator, the administrator will be unable to update their own role, remove themselves from the organization, or delete their account until they make another member an administrator.
 
-To transfer an existing bot, go to the **Settings** page for the bot. Under **Danger Zone**, you can can then transfer the bot to one of your organizations.
+### Add or remove members
+
+If you are the administrator of an organization, you can add and remove members from the organization. To add members, go to the **Members** tab and click **+ NEW MEMBER**. To remove a member, go to the **Members** tab, click the dropdown to the right of the user's name, and choose **REMOVE FROM ORGANIZATION**.
+
+### Change the organization's settings
+
+If you are the administrator of an organization, you can change the organization's settings, such as change the organization's name, assign permissions, make the organization private or public, and delete the organization. You do this on the **Settings and Permissions** tab.
+
+If you change an **organization** from private to public, the existing private bots of the organization remain private, that is, they remain visible only to the members of the organization. (Note: To change a **bot** from private to public, go to the settings for the bot and click **Danger Zone** and then **MAKE PUBLIC**.) 
+
+If you change an **organization** from public to private, the existing public bots of the organization are also made private.
+
+## Create and manage teams
+
+If you are the administrator of an organization, you can create and manage teams within the organization and assign additional permissions to them. See also [Permissions](https://cai.tools.sap/docs/concepts/organization-account).
+
+### Create teams
+
+You can create teams and add members on the **Teams** tab.  
+
+![SAP Conversational AI - Organization](https://cdn.cai.tools.sap/man/organisation/organizationteams.png)
+
+**Tip:** You can also add members to teams on the **Members** tab.
+
+![SAP Conversational AI - Organization](https://cdn.cai.tools.sap/man/organisation/organizationmembers.png)
+
+### Manage teams
+
+You can change the name of an existing team and delete teams on the **Teams** tab.
+
+## Transfer a bot to an organization
+
+To transfer an existing bot to one of your organizations:
+
+1. Go to the **Settings** page for the bot.  
+2. Under **Danger Zone**, click **TRANSFER OWNERSHIP**.
 
 ![SAP Conversational AI - Organization](https://cdn.cai.tools.sap/man/organisation/transfer.png)
 
-## What's the difference between my user account and an organization account?
 
-Your user account is your identity on SAP Conversational AI. Your user account can be a member of any number of organizations.
 
