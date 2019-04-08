@@ -8,7 +8,7 @@ You can use versions and environments to manage and update large, complex chatbo
 
 ## What's a version and why are they useful?
 
-A version is a package of your bot training dataset and skills. Each version is independent of the others and can be managed individually. For example, you might want to create a new version prior to major updates to your training dataset or skills. Additionally, separate versions may be useful if you want to leverage two variations of the same core bot. 
+A version is a package of your bot training dataset and skills. Each version is independent of the others and can be managed individually. For example, you might want to create a new version prior to major updates to your training dataset or skills. Or you might want to create two or more variants of the same core bot for different audiences.  
 
 ## Enable versioning for your bot
 
