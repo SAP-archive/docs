@@ -32,7 +32,7 @@ If you change an **organization** from public to private, the existing public bo
 
 ## Create and manage teams
 
-If you are the administrator of an organization, you can create and manage teams within the organization and assign additional permissions to them. See also [Permissions](https://cai.tools.sap/docs/concepts/organization-account).
+If you are the administrator of an organization, you can create and manage teams within the organization and assign additional permissions to them. See also [Permissions](https://cai.tools.sap/docs/concepts/permissions).
 
 ### Create teams
 
