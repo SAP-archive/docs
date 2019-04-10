@@ -202,3 +202,5 @@ The code to run the Bot Connector is hosted publicly at [https://github.com/SAPC
 ### SAP Jam Collaboration
 
 To connect your chatbot to SAP Jam Collaboration, you need to be an SAP Jam administrator. For information about SAP Jam Collaboration, please see [SAP Jam Collaboration](https://help.sap.com/viewer/p/SAP_JAM_COLLABORATION) on SAP Help Portal.
+
+Only the button type *postback* is supported. The button types *web_url* and *phone number* are not supported.
