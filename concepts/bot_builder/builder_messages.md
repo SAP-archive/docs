@@ -89,7 +89,7 @@ You can create all of the following variables:
 
 ### Context management
 
-For users to meaningfully converse with your bot using natural language, your bot can recognize pronouns (like _it_ or _that_) and map them to entities previously mentioned in the conversation. Similarly, if a user uses a superlative like _cheapest_ or _most expensive_, your bot can map the superlative to an item in the message. For more information, and in particular, how to enable this in your bot, see [Entities](https://cai.tools.sap/docs/concepts/entity) and scroll down to _References between entities_. 
+For users to meaningfully converse with your bot using natural language, your bot can recognize pronouns (like _it_ or _that_) and map them to entities previously mentioned in the conversation. Similarly, if a user uses a superlative like _cheapest_ or _most expensive_, or an ordinal like _first_ or _second_, your bot can map the superlative or ordinal to an item in the message. For more information, and in particular, how to enable this in your bot, see [Entities](https://cai.tools.sap/docs/concepts/entity) and scroll down to _References between entities_. 
 
 ## How to send rich messages from your code
 
