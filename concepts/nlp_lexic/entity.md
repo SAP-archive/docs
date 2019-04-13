@@ -215,11 +215,11 @@ Remember to set a message that your bot can use if it is unable to map the prono
 
 ### Resolve descriptions
 
-When a user is conversing with your bot in English, French, or Spanish, and your bot replies with a list, carousel, quick replies, or buttons, the user can refer to an item in the message using a superlative like *cheapest* or *most expensive* or using an ordinal like *first* or *second*. For example, if the bot displays a list of flights, the user can tell the bot to book the cheapest or shortest flight, or to book the first or last flight.
+When a user is conversing with your bot in English, French, or Spanish, and your bot replies with a list, carousel, quick replies, or buttons, the user can refer to an item in the message using a superlative like *cheapest* or *most expensive*, or using an ordinal like *first* or *second*. For example, if the bot displays a list of flights, the user can tell the bot to book the cheapest or shortest flight, or to book the first or last flight.
 
-For your bot to map superlatives to items in the message, you must select the **Resolve descriptions** checkbox on the **Settings** page for your bot under **Options**. Remember that only English, French, and Spanish are presently supported.
+For your bot to map superlatives and ordinals to items in the message, you must select the **Resolve descriptions** checkbox on the **Settings** page for your bot under **Options**. Remember that only English, French, and Spanish are presently supported.
 
-When mapping superlatives to items in a message, the bot will always use the most recent list, carousel, quick replies, or buttons in the conversation history (if the conversation history contains more than one of these).
+When mapping superlatives and ordinals to items in a message, the bot will always use the most recent list, carousel, quick replies, or buttons in the conversation history (if the conversation history contains more than one of these).
 
 Certain superlatives can describe different types of entities. For example, _longest_ can refer to duration and distance. If the message contains more than one of these entity types, the bot will always choose the first entity type that the superlative can refer to. For example, if flight CAI 001 is listed as 3 hours and 1,000 miles, the bot will interpret *longest* as referring to the duration of 3 hours.
 
