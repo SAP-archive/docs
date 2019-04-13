@@ -25,6 +25,8 @@ If your bot is connected to a channel through the Bot Connector, these messages 
 
 ![SAP Conversational AI - Message types](https://cdn.cai.tools.sap/man/bot-builder/test-card-recast-ai.png)
 
+**Note:** If you specify an image, the image must have the protocol HTTPS to be displayed correctly when the action is triggered.
+
 ### Character limits
 
 On the platform, we display a character limit for every message. For example, a text message has a limit of 640 characters. This isn't a real limitation; you can still create a text message with more characters. It serves as an indication based on what Facebook Messenger will accept. So if you're using Messenger, it's a good idea to observe the character limit; otherwise your messages won't be posted in the user's conversation.
