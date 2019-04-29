@@ -28,7 +28,7 @@ By default, your bot has only one main version `v1`. You can create a new versio
 
 ![SAP Conversational AI versioning](https://cdn.cai.tools.sap/man/monitoring/versioning-new-version.png)
 
-**Note:** Bots are restricted to five or fewer versions.
+**Note:** Bots are restricted to eleven or fewer versions.
 
 ### Version request token
 
