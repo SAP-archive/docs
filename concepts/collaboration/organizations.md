@@ -50,12 +50,15 @@ You can change the name of an existing team and delete teams on the **Teams** ta
 
 ## Transfer a bot to an organization
 
-To transfer an existing bot to one of your organizations:
+You can transfer an existing bot from your user account or from an organization account to another organization account.
+
+### Prerequisites
+
+In both the sending organization and target organization, you are an administrator or belong to a team with **Read and write** permission. For more information, see [Permissions](https://cai.tools.sap/docs/concepts/permissions).
+
+### To transfer a bot to an organization:
 
 1. Go to the **Settings** page for the bot.  
 2. Under **Danger Zone**, click **TRANSFER OWNERSHIP**.
 
 ![SAP Conversational AI - Organization](https://cdn.cai.tools.sap/man/organisation/transfer.png)
-
-
-
