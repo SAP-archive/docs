@@ -21,6 +21,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td>Quick Replies</td>
         <td>List</td>
         <td>Voice</td>
+        <td>Video</td>
 
     </tr>
     <tr>
@@ -33,12 +34,14 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         
     </tr>
     <tr>
         <td>callr</td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
@@ -57,6 +60,8 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        
     </tr>
     <tr>
         <td>Facebook Messenger</td>
@@ -68,6 +73,8 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        
     </tr>
     <tr>
         <td>kik</td>
@@ -79,6 +86,8 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        
     </tr>
     <tr>
         <td>LINE</td>
@@ -90,6 +99,8 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        
     </tr>
     <tr>
         <td>SAP Conversational AI Webchat</td>
@@ -101,6 +112,8 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        
     </tr>
      <tr>
         <td>SAP CoPilot</td>
@@ -112,6 +125,8 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        
     </tr>
       <tr>
         <td>SAP Jam Collaboration</td>
@@ -123,6 +138,8 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        
     </tr>
     <tr>
         <td>Skype</td>
@@ -134,6 +151,8 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        
      </tr>
      <tr>
         <td>Slack</td>
@@ -145,6 +164,8 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        
       </tr>
       <tr>
         <td>Telegram</td>
@@ -156,6 +177,8 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        
     </tr>
     <tr>
         <td>Twilio</td>
@@ -167,6 +190,8 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        
     </tr>
     <tr>
         <td>Twitch</td>
@@ -178,6 +203,8 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        
     </tr>
     <tr>
         <td>Twitter</td>
@@ -189,6 +216,8 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
+        
     </tr>
     </tbody>
 </table>
