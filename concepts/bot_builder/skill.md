@@ -42,10 +42,10 @@ A skill is made up of three distinct parts:
 
 If you have a lot of skills, you can organize them in skill groups for better housekeeping:
 
-1. In the gray command panel on the right, switch to **List view**.
+1) In the gray command panel on the right, switch to **List view**.
 
-2. In the gray command panel on the left, click **Create skill group**.
+2) In the gray command panel on the left, click **Create skill group**.
 
-3. Enter a name for the skill group and click **CREATE GROUP**.
+3) Enter a name for the skill group and click **CREATE GROUP**.
 
-4. Select the skills you want to add to the skill group, click the **Select group to move** dropdown, select the group, and click the checkmark. The skill group is then activated.
+4) Select the skills you want to add to the skill group, click the **Select group to move** dropdown, select the group, and click the checkmark. The skill group is then activated.
