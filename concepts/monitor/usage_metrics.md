@@ -31,7 +31,7 @@ All metrics are filtered by one of the `languages` of your bot (except for some 
 <td>
 <p>
 A conversation is a sequence of interactions between your bot and your users. When no new messages appear in the conversation for 10 minutes, we consider the conversation to be over.
-The conversation ID can be the same for a user who has 3 conversations with your bot. This happen when your bot is connected to Facebook Messenger. If a user has one long conversation with your bot, we split this long conversation into several parts to understand when the user starts a real new conversation with your bot. 
+The conversation ID can be the same for a user who has 3 conversations with your bot. This happens when your bot is connected to Facebook Messenger. If a user has one long conversation with your bot, we split this long conversation into several parts to understand when the user starts a real new conversation with your bot. 
 </p>
 </td>
 </tr>
