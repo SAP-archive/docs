@@ -309,6 +309,11 @@ Keep an eye on it, as we're always improving the detection for current entities,
 | `place` | String, the Google Places id of the location |
 | `type` | Float, the precision type of the location |
 || Can be one of `country`, `locality`, `sublocality`, `postal_code`, `route`, `intersection`, `political`, `neighborhood`, `premise`, `airport`, `park`, ... |
+| `street_number` | String, the street number of the location |
+| `street_name` | String, the street name of the location |
+| `postal_code` | String, the ZIP or postal code of the location |
+| `city` | String, the city of the location |
+| `state` | String, the state or province of the location |
 | `country` | String, the <a target="_blank" href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166-2</a> code for the country in which the location is |
 | `raw` | The raw value extracted from the sentence |
 | `confidence` | The confidence score between 0 and 1 for the detection |
