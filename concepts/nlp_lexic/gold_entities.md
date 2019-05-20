@@ -306,9 +306,9 @@ Keep an eye on it, as we're always improving the detection for current entities,
 | `formatted` | String, the full denomination of the location |
 | `lat` | Float, the latitude of the location |
 | `lng` | Float, the longitude of the location |
-| `place` | String, the Google Places id of the location |
 | `type` | Float, the precision type of the location |
 || Can be one of `country`, `locality`, `sublocality`, `postal_code`, `route`, `intersection`, `political`, `neighborhood`, `premise`, `airport`, `park`, ... |
+| `place` | String, the Google Places ID of the location |
 | `street_number` | String, the street number of the location |
 | `street_name` | String, the street name of the location |
 | `postal_code` | String, the ZIP or postal code of the location |
