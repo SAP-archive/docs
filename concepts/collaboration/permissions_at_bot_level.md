@@ -7,13 +7,16 @@ permalink: /concepts/permissions-at-bot-level
 If you are the administrator of an organization, or if you have **Read and write** permission for the Settings module, you can assign one of the following permissions to a team for a given bot. You can assign the permission as a bot permission or as an environment permission (see below). You do this on the **Settings and Permissions** tab for the bot.
 
 - Read only  
-  The team can access the bot in read-only mode, that is, they can view, search, and filter the bot. They can also fork the bot, but only to a destination where they have read/write access.  
+  The team can access the bot or module in read-only mode, that is, they can view, search, and filter the bot items. They can also fork the bot, intents, entities or skills, but only to a destination where they have read/write access.  
 - Read and write  
-  The team can access the bot in read/write mode, that is, they can edit, delete, and transfer the bot. They can also fork the bot, but only to a destination where they have read/write access.  
+  The team can access the bot or module in read/write mode, that is, they can edit, delete the bot or bot items and transfer the bot. They can also fork the bot, intents, entities or skills as well as reload tokens, but only to a destination where they have read/write access.  
+**Notes:**
+	1.	Request tokens for at least one module of the bot are displayed to the team with Read Only access, but it can be reloaded only if you are the administrator of an organization or if you have Read and Write permissions on “Settings”.
+	2.	Dev tokens are displayed and can be reloaded only if you are the administrator of an organization or if you have Read and Write permissions on **Settings**.
 
 ## Bot permissions
 Bot permissions are granted to a specific team and applied to all versions of the bot, irrespective of the environment.
-You can set these permissions individually for the following modules. For example, you can set **Read only** for the Train module, but **Read and write** for the Build module:
+You can set these permissions individually for the following modules. For example, you can set **Read only** for the Train module, but **Read and write** for the Connect module:
 
 - Train  
   Includes the **Train** tab, NLP settings, log feed, and training analytics.  
@@ -23,6 +26,9 @@ You can set these permissions individually for the following modules. For exampl
   Includes the **Connect** tab and bot connector settings.  
 - Settings  
   Includes the bot settings and permission management.  
+**Notes**
+	1.	Permissions that you apply to**Build** are also replicated to **Train**.
+	2.	Permissions that you apply to **Settings** are also replicated to **Train** and **Build**.  
 
 (Screenshot)
 
@@ -40,6 +46,7 @@ You can set these permissions individually for the following modules:
   Includes the **Train** tab, NLP settings, log feed, and training analytics.  
 - Build  
   Includes the **Build** tab and bot builder settings.  
+  **Note**	Permissions that you apply to**Build** are also replicated to **Train**.
 
 (Screenshot)
 
