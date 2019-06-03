@@ -13,9 +13,12 @@ If you are the administrator of an organization, or if you have **Read and write
 **Notes:**
 	1.	Request tokens for at least one module of the bot are displayed to the team with Read Only access, but it can be reloaded only if you are the administrator of an organization or if you have Read and Write permissions on “Settings”.
 	2.	Dev tokens are displayed and can be reloaded only if you are the administrator of an organization or if you have Read and Write permissions on **Settings**.
+ 
+ https://cdn.cai.tools.sap/man/organisation/Permissions.png
 
 ## Bot permissions
 Bot permissions are granted to a specific team and applied to all versions of the bot, irrespective of the environment.
+https://cdn.cai.tools.sap/man/organisation/Bot-Chooseteam.png
 You can set these permissions individually for the following modules. For example, you can set **Read only** for the Train module, but **Read and write** for the Connect module:
 
 - Train  
@@ -30,16 +33,18 @@ You can set these permissions individually for the following modules. For exampl
 	1.	Permissions that you apply to**Build** are also replicated to **Train**.
 	2.	Permissions that you apply to **Settings** are also replicated to **Train** and **Build**.  
 
-(Screenshot)
+https://cdn.cai.tools.sap/man/organisation/Bot-set-permissions.png
 
 By default, the bot permissions correspond to the permissions defined at organization level. See [Permissions at organization level](https://cai.tools.sap/docs/concepts/permissions-at-organization-level).
+
+https://cdn.cai.tools.sap/man/organisation/Bot-permissionscreated.png
 
 Note that the bot permissions correspond to the minimum environment permissions for a given team.
 
 ## Environment permissions
 
 Environment permissions are granted to a specific team and applied to a particular environment (that is, the version of the bot that is linked to this environment) or to no environment (that is, all versions of the bot that are not linked to any environment). Examples of environments are Production, Development, and so on.
-
+https://cdn.cai.tools.sap/man/organisation/Env-Choose-env.png
 You can set these permissions individually for the following modules:
 
 - Train  
@@ -48,7 +53,8 @@ You can set these permissions individually for the following modules:
   Includes the **Build** tab and bot builder settings.  
   **Note**	Permissions that you apply to**Build** are also replicated to **Train**.
 
-(Screenshot)
+https://cdn.cai.tools.sap/man/organisation/Env-set-permissions.png
 
 By default, the environment permissions correspond to the permissions defined in the bot permissions. If no bot permissions are set, the permissions defined at organization level are applied.
+https://cdn.cai.tools.sap/man/organisation/Env-perm-created.png
 
