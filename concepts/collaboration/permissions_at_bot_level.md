@@ -11,7 +11,7 @@ If you are the administrator of an organization, or if you have **Read and write
 - Read and write  
   The team can access the bot or module in read/write mode, that is, they can edit, delete the bot or bot items and transfer the bot. They can also fork the bot, intents, entities or skills as well as reload tokens, but only to a destination where they have read/write access.  
 **Notes:**
-	1.	Request tokens for at least one module of the bot are displayed to the team with Read Only access, but it can be reloaded only if you are the administrator of an organization or if you have Read and Write permissions on “Settings”.
+	1.	Request tokens for at least one module of the bot are displayed to the team with Read Only access, but it can be reloaded only if you are the administrator of an organization or if you have Read and Write permissions on **Settings**.
 	2.	Dev tokens are displayed and can be reloaded only if you are the administrator of an organization or if you have Read and Write permissions on **Settings**.
  
  https://cdn.cai.tools.sap/man/organisation/Permissions.png
