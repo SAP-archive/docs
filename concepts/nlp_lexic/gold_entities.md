@@ -291,8 +291,8 @@ Keep an eye on it, as we're always improving the detection for current entities,
   "formatted": "41000 Blois, France",
   "lat": 47.58609209999999,
   "lng": 1.3359475,
-  "place": "ChIJXdLII5VX40cRsCk4BdfIDQQ",
   "type": "locality",
+  "place": "ChIJXdLII5VX40cRsCk4BdfIDQQ",
   "country": "fr",
   "raw": "Blois",
   "confidence": 0.84
@@ -306,9 +306,14 @@ Keep an eye on it, as we're always improving the detection for current entities,
 | `formatted` | String, the full denomination of the location |
 | `lat` | Float, the latitude of the location |
 | `lng` | Float, the longitude of the location |
-| `place` | String, the Google Places id of the location |
 | `type` | Float, the precision type of the location |
 || Can be one of `country`, `locality`, `sublocality`, `postal_code`, `route`, `intersection`, `political`, `neighborhood`, `premise`, `airport`, `park`, ... |
+| `place` | String, the Google Places ID of the location |
+| `street_number` | String, the street number of the location |
+| `street_name` | String, the street name of the location |
+| `postal_code` | String, the ZIP or postal code of the location |
+| `city` | String, the city of the location |
+| `state` | String, the state or province of the location |
 | `country` | String, the <a target="_blank" href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166-2</a> code for the country in which the location is |
 | `raw` | The raw value extracted from the sentence |
 | `confidence` | The confidence score between 0 and 1 for the detection |
