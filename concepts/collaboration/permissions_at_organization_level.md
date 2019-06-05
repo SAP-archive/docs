@@ -1,7 +1,7 @@
 ---
 layout: concept
 title: Permissions at organization level
-permalink: /concepts/permissions
+permalink: /concepts/permissions-at-organization-level
 ---
 
 If you are the administrator of an organization, you can assign one of the following permissions as the base permission to all members of the organization. You can also assign one of the following permissions as an additional permission to a team of one or more members of the organization. You do this on the **Settings and Permissions** tab for the organization.

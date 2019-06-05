@@ -4,5 +4,8 @@ sections:
 - title: Organizations
   url: /concepts/organization-account
 
-- title: Permissions
-  url: /concepts/permissions
+- title: Permissions at organization level
+  url: /concepts/permissions-at-organization-level
+
+- title: Permissions at bot level
+  url: /concepts/permissions-at-bot-level
