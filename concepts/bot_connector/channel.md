@@ -21,7 +21,6 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td>Quick Replies</td>
         <td>List</td>
         <td>Voice</td>
-
     </tr>
     <tr>
         <td>Amazon Alexa</td>  
@@ -32,11 +31,10 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        
+        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>     
     </tr>
     <tr>
-        <td>callr</td>
+        <td>callr*</td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
@@ -45,10 +43,9 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
-        
     </tr>
     <tr>
-        <td>Cisco Webex Teams</td>
+        <td>Cisco Webex Teams (CISCO Spark*)</td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
@@ -70,7 +67,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
     </tr>
     <tr>
-        <td>kik</td>
+        <td>kik*</td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
@@ -114,7 +111,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
     </tr>
       <tr>
-        <td>SAP Jam Collaboration</td>
+        <td>SAP Jam Collaboration**</td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
@@ -125,7 +122,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
     </tr>
     <tr>
-        <td>Skype (see note)</td>
+        <td>Skype***</td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
@@ -158,7 +155,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
     </tr>
     <tr>
-        <td>Twilio</td>
+        <td>Twilio*</td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
@@ -169,7 +166,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
     </tr>
     <tr>
-        <td>Twitch</td>
+        <td>Twitch*</td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
@@ -182,7 +179,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
     <tr>
         <td>Twitter</td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
-        <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
+        <td class="center"><p>Currently not available</p></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
@@ -193,23 +190,20 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
     </tbody>
 </table>
 
-**Note:** We support Skype but we do not support Skype for Business.
+### Channels Planned for Deprecation*
+
+Callr, CiscoSpark, Kik, Twilio, and Twitch are planned for deprecation. Please migrate to other channels for an uninterrupted experience of SAP Conversational AI. For more information, please see [What's New in SAP Conversational AI](https://help.sap.com/viewer/9825cb46d5ff49ee88b8c37f0f651a87/1906/en-US).
+
+### SAP Jam Collaboration**
+
+To connect your chatbot to SAP Jam Collaboration, you need to be an SAP Jam administrator. For information about SAP Jam Collaboration, please see [SAP Jam Collaboration](https://help.sap.com/viewer/p/SAP_JAM_COLLABORATION) on SAP Help Portal.
+
+Only the button type *postback* is supported. The button types *web_url* and *phone number* are not supported. If the button types *web_url* and *phone number* are used, the buttons will behave like postback buttons.
+
+### Skype**
+
+SAP Conversational AI is available for Skype but not for Skype for Business.
 
 ## Open-source Bot Connector
 
 The code to run the Bot Connector is hosted publicly at [https://github.com/SAPConversationalAI/bot-connector](https://github.com/SAPConversationalAI/bot-connector). This means that you or your enterprise can download the Bot Connector and run a chatbot within a virtual network. This is especially useful if you're apprehensive about opening your internal network to the internet. You can also vote for the next channels you want us to implement, or you can contribute yourself!
-
-## Special notes for individual channels
-
-### SAP Jam Collaboration
-
-To connect your chatbot to SAP Jam Collaboration, you need to be an SAP Jam administrator. For information about SAP Jam Collaboration, please see [SAP Jam Collaboration](https://help.sap.com/viewer/p/SAP_JAM_COLLABORATION) on SAP Help Portal.
-
-Only the button type *postback* is supported. The button types *web_url* and *phone number* are not supported. If the button types *web_url* and *phone number* are used, the buttons will behave like postback buttons. 
-
-#### Skype
-We support Skype but we **do not** support Skype for Business.
-
-##### Channels Planned for Deprecation
-Callr, CiscoSpark, Kik, Twilio, and Twitch are planned for deprecation. Please migrate to other channels for an uninterrupted experience of SAP Conversational AI.
-
