@@ -288,14 +288,19 @@ Keep an eye on it, as we're always improving the detection for current entities,
 
 ```json
 {
-  "formatted": "41000 Blois, France",
-  "lat": 47.58609209999999,
-  "lng": 1.3359475,
+  "formatted": "28 Rhubarb Lane, San Francisco, CA 94133, United States",
+  "lat": "37.7749",
+  "lng": "122.4194",
   "type": "locality",
-  "place": "ChIJXdLII5VX40cRsCk4BdfIDQQ",
-  "country": "fr",
-  "raw": "Blois",
-  "confidence": 0.84
+  "place": "ChIJIQBpAG2ahYAR_6128GcTUEo",
+  "street_number": "28",
+  "street_name": "Rhubarb Lane",
+  "postal_code": "94133",
+  "city": "San Francisco",
+  "state": "California",
+  "country": "us",
+  "raw": "San Francisco",
+  "confidence": "0.84"
 }
 ```
 
