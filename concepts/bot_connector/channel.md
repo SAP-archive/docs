@@ -45,7 +45,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
     </tr>
     <tr>
-        <td>Cisco Webex Teams (CISCO Spark*)</td>
+        <td>Cisco Webex Teams (Cisco Spark*)</td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-blue-500 ion-md-checkmark-circle"></i></td>
         <td class="center"><i class="c-grey-400 ion-md-close"></i></td>
@@ -192,7 +192,7 @@ If a channel doesn't natively support a rich format, Bot Connector will handle i
 
 ### Channels Planned for Deprecation*
 
-Callr, CiscoSpark, Kik, Twilio, and Twitch are planned for deprecation. Please migrate to other channels for an uninterrupted experience of SAP Conversational AI. For more information, please see [What's New in SAP Conversational AI](https://help.sap.com/viewer/9825cb46d5ff49ee88b8c37f0f651a87/1906/en-US).
+Callr, Cisco Spark, Kik, Twilio, and Twitch are planned for deprecation. Please migrate to other channels for an uninterrupted experience of SAP Conversational AI. For more information, please see [What's New in SAP Conversational AI](https://help.sap.com/viewer/9825cb46d5ff49ee88b8c37f0f651a87/1906/en-US).
 
 ### SAP Jam Collaboration**
 
@@ -200,7 +200,7 @@ To connect your chatbot to SAP Jam Collaboration, you need to be an SAP Jam admi
 
 Only the button type *postback* is supported. The button types *web_url* and *phone number* are not supported. If the button types *web_url* and *phone number* are used, the buttons will behave like postback buttons.
 
-### Skype**
+### Skype***
 
 SAP Conversational AI is available for Skype but not for Skype for Business.
 
