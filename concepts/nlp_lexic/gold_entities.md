@@ -288,19 +288,19 @@ Keep an eye on it, as we're always improving the detection for current entities,
 
 ```json
 {
-  "formatted": "28 Rhubarb Lane, San Francisco, CA 94133, United States",
-  "lat": "37.7749",
-  "lng": "122.4194",
-  "type": "locality",
-  "place": "ChIJIQBpAG2ahYAR_6128GcTUEo",
-  "street_number": "28",
-  "street_name": "Rhubarb Lane",
-  "postal_code": "94133",
-  "city": "San Francisco",
-  "state": "California",
+  "formatted": "3410 Hillview Avenue, Palo Alto, CA 94304, United States",
+  "lat": 37.399169,
+  "lng": -122.146475,
+  "type": "establishment",
+  "place": "ChIJEyiYgJ66j4ARVZ9bxK83pSQ",
+  "street_number": "3410",
+  "street_name": "Hillview Avenue",
+  "postal_code": "94304",
+  "city": "Palo Alto",
+  "state": "CA",
   "country": "us",
-  "raw": "San Francisco",
-  "confidence": "0.84"
+  "raw": "3410 hillview avenue",
+  "confidence": 0.99  
 }
 ```
 
