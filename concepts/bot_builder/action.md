@@ -43,7 +43,7 @@ When your URL is called, a default body is sent with the complete conversation s
 
 This action lets you redirect the conversation to a human agent. First, you need to connect the fallback channel where you want SAP Conversational AI to redirect the message. You can do this on the **Connect** tab by selecting a fallback channel and following the instructions. After connecting the fallback channel, remember to activate it by checking the input.
 
-![SAP Conversational AI - Fallback action](https://cdn.cai.tools.sap/man/fallback-channel.png)
+![SAP Conversational AI - Fallback action](https://cdn.cai.tools.sap/man/fallback-channel_1906.png)
 
 In a skill, you can configure a fallback action by selecting your fallback channel and the group to which you want to redirect the conversation. (Usually, your support center is organized into different groups.) When the fallback action is triggered, the bot doesn't reply, but instead sends the conversation history to your support channel, where a human agent writes a reply that is redirected to the user. When the human agent closes the ticket or conversation in your support center, the bot is able to talk to the user again.
 
