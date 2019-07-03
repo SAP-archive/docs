@@ -1,10 +1,10 @@
 ---
 layout: concept
-title: Permissions
-permalink: /concepts/permissions
+title: Permissions at organization level
+permalink: /concepts/permissions-at-organization-level
 ---
 
-If you are the administrator of an organization, you can assign one of the following permissions as the base permission to all members of the organization. You can also assign one of the following permissions as an additional permission to a team of one or more members of the organization. You do this on the **Settings and Permissions** tab.
+If you are the administrator of an organization, you can assign one of the following permissions as the base permission to all members of the organization. You can also assign one of the following permissions as an additional permission to a team of one or more members of the organization. You do this on the **Settings and Permissions** tab for the organization.
  
 - No access  
   Members of the organization who have only this permission cannot see or access any of the organization's private bots. However, they can access its public bots.
