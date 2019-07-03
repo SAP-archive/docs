@@ -5,7 +5,7 @@
     font-weight: 500;
   }
 
-  .sap-ans, .contact {
+  .slack, .contact {
 
     &-logo {
       width: 50px;
@@ -24,9 +24,8 @@
     }
   }
 
-  .sap-ans-content {
+  .slack-content {
     max-width: 450px;
-    margin-top: 12px;
   }
 
   .contact-content {
