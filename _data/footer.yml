@@ -68,9 +68,6 @@ sections:
         external: true
         url: "https://cai.tools.sap/blog/add-smalltalk-chatfuel-bot/"
 logos:
-  - logo: "ion-logo-slack"
-    title: "slack"
-    link: "https://slack.cai.tools.sap"
   - logo: "ion-logo-github"
     title: "github"
     link: "https://github.com/SAPConversationalAI"
