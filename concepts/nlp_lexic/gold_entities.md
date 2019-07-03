@@ -288,14 +288,19 @@ Keep an eye on it, as we're always improving the detection for current entities,
 
 ```json
 {
-  "formatted": "41000 Blois, France",
-  "lat": 47.58609209999999,
-  "lng": 1.3359475,
-  "type": "locality",
-  "place": "ChIJXdLII5VX40cRsCk4BdfIDQQ",
-  "country": "fr",
-  "raw": "Blois",
-  "confidence": 0.84
+  "formatted": "3410 Hillview Avenue, Palo Alto, CA 94304, United States",
+  "lat": 37.399169,
+  "lng": -122.146475,
+  "type": "establishment",
+  "place": "ChIJEyiYgJ66j4ARVZ9bxK83pSQ",
+  "street_number": "3410",
+  "street_name": "Hillview Avenue",
+  "postal_code": "94304",
+  "city": "Palo Alto",
+  "state": "CA",
+  "country": "us",
+  "raw": "3410 hillview avenue",
+  "confidence": 0.99  
 }
 ```
 
