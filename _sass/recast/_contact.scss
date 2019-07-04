@@ -24,12 +24,8 @@
     }
   }
 
-  .sap-ans-content {
+  .sap-ans-content, .contact-content {
     max-width: 450px;
-  }
-
-  .contact-content {
-    max-width: 330px;
-    margin-top: 12px;
+    height : 70px;
   }
 }
