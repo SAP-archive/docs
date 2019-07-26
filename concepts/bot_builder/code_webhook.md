@@ -193,22 +193,59 @@ If you are using the Bot Connector (that is, you have connected a channel on the
 ~~~
 
 
-
-## Checking your code
+## Running your basic API
 
 Copy and paste this snippet in a file, install the dependencies, and run the file.
 
-JS:
-<span class="code">npm install express body-parser --save</span>
+### JavaScript (JS)
 
-Python:
-<span class="code">pip install flask</span>
+We recommend using version 6.1.0 of Node.js.
 
-Ruby:
-<span class="code">gem install sinatra</span>
+1. Create a directory `mkdir my-bot` and `cd my-bot && npm init`  
 
-PHP:
-<span class="code">composer require slim/slim</span>
+2. Create your main file `touch index.js`  
+
+3. Install the dependencies `npm install express body-parser --save`  
+
+4. Open your `index.js` and copy and paste the sample code.
+
+5. Run your code `node index.js`
+
+### Ruby
+
+We recommend using version 2.3+ of Ruby.
+
+1. Create a directory `mkdir my-bot` and `cd my-bot && touch bot.rb`  
+
+2. Install the dependencies `gem install sinatra`  
+
+3. Open your `bot.rb` and copy and paste the sample code.
+
+4. Run your code `ruby bot.rb`  
+
+### Python
+
+We recommend using version 2.7+ of Python.
+
+1. Create a directory `mkdir my-bot` and `cd my-bot && touch bot.py`  
+
+2. Install the dependencies `pip install flask`  
+
+3. Open your `bot.py` and copy and paste the sample code.  
+
+4. Run your code `python bot.py`  
+
+### PHP
+
+We recommend using version 7.x of PHP.
+
+1. Create a directory `my-bot` and `cd my-bot && touch index.php`  
+
+2. Install the dependencies `composer require slim/slim`  
+
+3. Copy and paste the sample code in the `index.php`  
+
+4. Run your server with `php -S localhost:5000 index.php`  
 
 <br/>
 
@@ -393,3 +430,13 @@ $app->post('/errors', function ($request, $response) {
 
 $app->run();
 ~~~
+
+## Exposing the opened port to connect it to a webhook
+
+If you don’t have a public server, or if you want to test your webhook during development, ngrok is a very handy tool. It creates a public URL for you and forwards requests to your computer.
+
+Once you’ve installed it, run the following command:  
+`ngrok http 5000`
+
+Then copy the forwarding URL in HTTPS (https://XXX.ngrok.io) to the **Bot webhook base URL** field in your bot settings. All requests made to this URL will be forwarded to port 5000 of your computer, so that your local webserver listening on this port can respond.
+
