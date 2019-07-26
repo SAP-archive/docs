@@ -207,7 +207,7 @@ We recommend using version 6.1.0 of Node.js.
 
 3. Install the dependencies `npm install express body-parser --save`  
 
-4. Open your `index.js` and copy and paste the code snippet.
+4. Open your `index.js` and copy and paste the sample code.
 
 5. Run your code `node index.js`
 
@@ -219,7 +219,7 @@ We recommend using version 2.3+ of Ruby.
 
 2. Install the dependencies `gem install sinatra`  
 
-3. Open your `bot.rb` and copy and paste the code snippet.
+3. Open your `bot.rb` and copy and paste the sample code.
 
 4. Run your code `ruby bot.rb`  
 
@@ -231,7 +231,7 @@ We recommend using version 2.7+ of Python.
 
 2. Install the dependencies `pip install flask`  
 
-3. Open your `bot.py` and copy and paste the code snippet.  
+3. Open your `bot.py` and copy and paste the sample code.  
 
 4. Run your code `python bot.py`  
 
@@ -243,7 +243,7 @@ We recommend using version 7.x of PHP.
 
 2. Install the dependencies `composer require slim/slim`  
 
-3. Copy and paste the code snippet in the `index.php`  
+3. Copy and paste the sample code in the `index.php`  
 
 4. Run your server with `php -S localhost:5000 index.php`  
 
